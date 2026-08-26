@@ -2,7 +2,7 @@
 """
 FP-AMB Dataset & Master Ground-Truth Loader
 --------------------------------------------
-Loads the ~540k token corpus and 281-item Master Ground-Truth Answer Key.
+Loads the ~512k token corpus and 281-item Master Ground-Truth Answer Key.
 """
 
 import json
@@ -13,7 +13,7 @@ RAW_CORPUS_FILE = ROOT / "data" / "fp_amb_500k_cross_session.jsonl"
 MASTER_KEY_FILE = ROOT / "data" / "master_ground_truth_answer_key.json"
 
 def load_corpus():
-    """Loads the 458 conversation turns from the ~540k token corpus."""
+    """Loads the 677 conversation turns from the ~512k token corpus."""
     turns = []
     with open(RAW_CORPUS_FILE, 'r') as f:
         for line in f:

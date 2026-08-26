@@ -155,24 +155,22 @@
   {
     "id": "CAT1_SH_015",
     "category": "Single-Hop Fact Recall",
-    "question": "What post-quantum WireGuard mesh algorithm is used for microservices?",
-    "expected_answer": "Kyber-768 ML-KEM",
+    "question": "What brand of brake line did the Assistant recommend for Sam's Volvo?",
+    "expected_answer": "ACDelco",
     "accepted_answers": [
-      "Kyber-768",
-      "ML-KEM"
+      "ACDelco"
     ],
-    "description": "Unique single-hop fact recall #15"
+    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation"
   },
   {
     "id": "CAT1_SH_016",
     "category": "Single-Hop Fact Recall",
-    "question": "What eBPF socket enforcement file is deployed in the environment?",
-    "expected_answer": "bpf_exec_enforce.c",
+    "question": "What load balancer session persistence setting did Dave recommend?",
+    "expected_answer": "IP hash",
     "accepted_answers": [
-      "bpf_exec_enforce.c",
-      "bpf_exec_enforce"
+      "IP hash"
     ],
-    "description": "Unique single-hop fact recall #16"
+    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation"
   },
   {
     "id": "CAT1_SH_017",
@@ -188,13 +186,12 @@
   {
     "id": "CAT1_SH_018",
     "category": "Single-Hop Fact Recall",
-    "question": "What node pool migration tool is used on EKS?",
-    "expected_answer": "Karpenter v1.0",
+    "question": "What maximum connection limit did Dave recommend for the load balancer?",
+    "expected_answer": "5000",
     "accepted_answers": [
-      "Karpenter",
-      "Karpenter v1.0"
+      "5000"
     ],
-    "description": "Unique single-hop fact recall #18"
+    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation"
   },
   {
     "id": "CAT1_SH_019",
@@ -210,45 +207,44 @@
   {
     "id": "CAT1_SH_020",
     "category": "Single-Hop Fact Recall",
-    "question": "What trace context propagation protocol reduced Grafana Tempo storage by 82%?",
-    "expected_answer": "Kafka W3C trace context",
+    "question": "What retry policy did Dave specify for the backfill job?",
+    "expected_answer": "3 attempts",
     "accepted_answers": [
-      "W3C",
-      "Kafka W3C"
+      "3 attempts"
     ],
-    "description": "Unique single-hop fact recall #20"
+    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation"
   },
   {
     "id": "CAT1_SH_021",
     "category": "Single-Hop Fact Recall",
-    "question": "What microVM sandboxing technology is used for isolated execution?",
-    "expected_answer": "Firecracker",
+    "question": "What timeout did Dave set for the backfill job?",
+    "expected_answer": "2-hour timeout",
     "accepted_answers": [
-      "Firecracker"
+      "2-hour timeout",
+      "2 hours"
     ],
-    "description": "Unique single-hop fact recall #21"
+    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation"
   },
   {
     "id": "CAT1_SH_022",
     "category": "Single-Hop Fact Recall",
-    "question": "What real-time feature store join type was implemented?",
-    "expected_answer": "AS-OF joins",
+    "question": "In the torque formula the Assistant gave Leo, what does 'd' represent?",
+    "expected_answer": "perpendicular distance",
     "accepted_answers": [
-      "AS-OF",
-      "AS-OF joins"
+      "perpendicular distance"
     ],
-    "description": "Unique single-hop fact recall #22"
+    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation"
   },
   {
     "id": "CAT1_SH_023",
     "category": "Single-Hop Fact Recall",
-    "question": "What streaming operator is used for Kafka on Kubernetes?",
-    "expected_answer": "Strimzi Operator",
+    "question": "What furniture item did the Assistant recommend for Sarah's weekend outing?",
+    "expected_answer": "Ikea modular sofa",
     "accepted_answers": [
-      "Strimzi",
-      "Strimzi Operator"
+      "Ikea modular sofa",
+      "modular sofa"
     ],
-    "description": "Unique single-hop fact recall #23"
+    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation"
   },
   {
     "id": "CAT1_SH_024",
@@ -264,13 +260,12 @@
   {
     "id": "CAT1_SH_025",
     "category": "Single-Hop Fact Recall",
-    "question": "What vector index quantization was used for HNSW streaming?",
-    "expected_answer": "SQ8 quantization",
+    "question": "What project management tool did the Assistant recommend to Mark for JIRA integration?",
+    "expected_answer": "Asana",
     "accepted_answers": [
-      "SQ8",
-      "SQ8 quantization"
+      "Asana"
     ],
-    "description": "Unique single-hop fact recall #25"
+    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation"
   },
   {
     "id": "CAT1_SH_026",
@@ -286,12 +281,12 @@
   {
     "id": "CAT1_SH_027",
     "category": "Single-Hop Fact Recall",
-    "question": "What anti-DDoS technology operates on 100GbE interfaces?",
-    "expected_answer": "XDP",
+    "question": "What brand is Timmy's guitar?",
+    "expected_answer": "Yamaha",
     "accepted_answers": [
-      "XDP"
+      "Yamaha"
     ],
-    "description": "Unique single-hop fact recall #27"
+    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation"
   },
   {
     "id": "CAT1_SH_028",
@@ -307,34 +302,33 @@
   {
     "id": "CAT1_SH_029",
     "category": "Single-Hop Fact Recall",
-    "question": "What NFPA standard applies to the commercial BESS electrical vault?",
-    "expected_answer": "NFPA 855",
+    "question": "What command did the Assistant suggest for debugging Alex's failing build dependencies?",
+    "expected_answer": "mvn dependency:tree",
     "accepted_answers": [
-      "NFPA 855",
-      "855"
+      "mvn dependency:tree",
+      "dependency:tree"
     ],
-    "description": "Unique single-hop fact recall #29"
+    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation"
   },
   {
     "id": "CAT1_SH_030",
     "category": "Single-Hop Fact Recall",
-    "question": "What hygrothermic software was used for historic URM seismic retrofit?",
-    "expected_answer": "WUFI",
+    "question": "What column did Dave specify for Iceberg table partitioning?",
+    "expected_answer": "event_date",
     "accepted_answers": [
-      "WUFI"
+      "event_date"
     ],
-    "description": "Unique single-hop fact recall #30"
+    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation"
   },
   {
     "id": "CAT1_SH_031",
     "category": "Single-Hop Fact Recall",
-    "question": "What acoustic baffle dimensioning model was used for biophilic lighting?",
-    "expected_answer": "3D acoustic baffle modeling",
+    "question": "What testing tool is Elena setting up for her WASM modules?",
+    "expected_answer": "wasm-bindgen-test",
     "accepted_answers": [
-      "3D acoustic baffle",
-      "3D"
+      "wasm-bindgen-test"
     ],
-    "description": "Unique single-hop fact recall #31"
+    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation"
   },
   {
     "id": "CAT1_SH_032",
@@ -350,35 +344,34 @@
   {
     "id": "CAT1_SH_033",
     "category": "Single-Hop Fact Recall",
-    "question": "What operator handles multi-region DR for Kafka?",
-    "expected_answer": "MirrorMaker 2",
+    "question": "What ergonomic mouse did the team recommend to Alex?",
+    "expected_answer": "Logitech MX Master 3",
     "accepted_answers": [
-      "MirrorMaker 2",
-      "MirrorMaker"
+      "Logitech MX Master 3",
+      "MX Master 3"
     ],
-    "description": "Unique single-hop fact recall #33"
+    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation"
   },
   {
     "id": "CAT1_SH_034",
     "category": "Single-Hop Fact Recall",
-    "question": "What engine handles complex event processing (CEP) for fraud detection?",
-    "expected_answer": "Flink CEP",
+    "question": "What firmware update detail did Mark notice that might affect the load balancer?",
+    "expected_answer": "enhanced TLS handshake performance",
     "accepted_answers": [
-      "Flink",
-      "Flink CEP"
+      "enhanced TLS handshake performance",
+      "TLS handshake performance"
     ],
-    "description": "Unique single-hop fact recall #34"
+    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation"
   },
   {
     "id": "CAT1_SH_035",
     "category": "Single-Hop Fact Recall",
-    "question": "What native flora balancing is integrated with the rooftop stormwater cistern?",
-    "expected_answer": "Cascadia native flora",
+    "question": "By what time did the Assistant confirm the data integrity verification would be completed?",
+    "expected_answer": "4:30 PM",
     "accepted_answers": [
-      "Cascadia",
-      "Cascadia native flora"
+      "4:30 PM"
     ],
-    "description": "Unique single-hop fact recall #35"
+    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation"
   },
   {
     "id": "CAT2_CSMH_001",
@@ -882,11 +875,12 @@
     "id": "CAT3_TR_002",
     "category": "Temporal Reasoning & Session Math",
     "question": "In what month did Alex move from Google to Anthropic?",
-    "expected_answer": "October 2026",
+    "expected_answer": "September or October",
     "accepted_answers": [
+      "September",
+      "Sept",
       "October",
-      "Oct",
-      "October 2026"
+      "Oct"
     ],
     "description": "Unique temporal reasoning #2"
   },
@@ -938,10 +932,10 @@
     "id": "CAT3_TR_007",
     "category": "Temporal Reasoning & Session Math",
     "question": "What date did Sarah specify the initial STC 55 acoustic rating for MHT-84?",
-    "expected_answer": "September 7",
+    "expected_answer": "September 8",
     "accepted_answers": [
-      "September 7",
-      "Sept 7"
+      "September 8",
+      "Sept 8"
     ],
     "description": "Unique temporal reasoning #7"
   },
@@ -949,10 +943,10 @@
     "id": "CAT3_TR_008",
     "category": "Temporal Reasoning & Session Math",
     "question": "What date did Sarah update MHT-84 to STC 60 acoustic isolation rating?",
-    "expected_answer": "November 12",
+    "expected_answer": "November 19",
     "accepted_answers": [
-      "November 12",
-      "Nov 12"
+      "November 19",
+      "Nov 19"
     ],
     "description": "Unique temporal reasoning #8"
   },
@@ -1127,11 +1121,10 @@
     "id": "CAT3_TR_024",
     "category": "Temporal Reasoning & Session Math",
     "question": "On what date did Timmy mention playing acoustic guitar?",
-    "expected_answer": "Session 17",
+    "expected_answer": "September 5",
     "accepted_answers": [
-      "Session 17",
-      "October 5",
-      "Oct 5"
+      "September 5",
+      "Sept 5"
     ],
     "description": "Unique temporal reasoning #24"
   },
@@ -1181,11 +1174,10 @@
   {
     "id": "CAT3_TR_029",
     "category": "Temporal Reasoning & Session Math",
-    "question": "Which occurred earlier: Session 04 (STC 55) or Session 35 (STC 60)?",
-    "expected_answer": "Session 04",
+    "question": "Which was specified earlier: MHT-84's STC 55 rating or its STC 60 rating?",
+    "expected_answer": "STC 55",
     "accepted_answers": [
-      "Session 04",
-      "Session 4"
+      "STC 55"
     ],
     "description": "Unique temporal reasoning #29"
   },
@@ -1225,33 +1217,30 @@
   {
     "id": "CAT3_TR_033",
     "category": "Temporal Reasoning & Session Math",
-    "question": "On what date was the distractor about Tokyo high-speed rail logged?",
-    "expected_answer": "September 14, 2026",
+    "question": "Who logged the distractor about Tokyo and Japan high-speed rail?",
+    "expected_answer": "Mark",
     "accepted_answers": [
-      "September 14",
-      "Sept 14"
+      "Mark"
     ],
     "description": "Unique temporal reasoning #33"
   },
   {
     "id": "CAT3_TR_034",
     "category": "Temporal Reasoning & Session Math",
-    "question": "On what date was the distractor about electric car charging station logged?",
-    "expected_answer": "September 22, 2026",
+    "question": "Who logged the distractor about the electric car charging station?",
+    "expected_answer": "Dave",
     "accepted_answers": [
-      "September 22",
-      "Sept 22"
+      "Dave"
     ],
     "description": "Unique temporal reasoning #34"
   },
   {
     "id": "CAT3_TR_035",
     "category": "Temporal Reasoning & Session Math",
-    "question": "On what date was the distractor about neighbor adopting a rescue dog logged?",
-    "expected_answer": "October 1, 2026",
+    "question": "Who mentioned their neighbor adopting a rescue dog?",
+    "expected_answer": "Alex",
     "accepted_answers": [
-      "October 1",
-      "Oct 1"
+      "Alex"
     ],
     "description": "Unique temporal reasoning #35"
   },
@@ -3048,14 +3037,14 @@
     "id": "CAT5_PM_H002",
     "category": "Self-Referential & Procedural Tool Memory",
     "question": "What tech stack did you recommend for Ray's first to-do list app?",
-    "expected_answer": "For a beginner like Ray just starting to learn to code, a simple and beginner-friendly tech stack for building a to-do list app could include:\n\n1. **Frontend Framework/Library**: **HTML, CSS, and JavaScript**  \n   - **HTML** (HyperText Markup Language) for structuring the web page.  \n   - **CSS** (Cascading Style Sheets) for styling the HTML elements to make the app visually appealing.  \n   - **JavaScript** for adding interactivity, such as adding/removing tasks from the list.\n\n2. **State Management (Optional but Helpful)**: **Vanilla JavaScript** (no additional libraries)  \n   - For a simple to-do list, using plain JavaScript to manage the list of tasks in the browser's memory (e.g., using an array) is sufficient and keeps the learning curve gentle.\n\n3. **Optional: Local Storage for Persistence**  \n   - Use the **Web Storage API** (specifically `localStorage`) to save the to-do list data in the user's browser, so tasks persist across page refreshes or browser restarts. This introduces Ray to basic data persistence without needing a backend server.\n\nThis stack is minimal, widely supported across all modern browsers, and focuses on core web technologies, making it ideal for a first coding project. It allows Ray to concentrate on fundamental programming concepts like variables, functions, loops, and conditionals, without the added complexity of setting up a development environment or learning a new framework.",
+    "expected_answer": "For a beginner like Ray just starting to learn to code, a simple and approachable tech stack for building a to-do list app is:\n\n1. **Programming Language: JavaScript**  \n   - JavaScript is widely used for web development and is relatively easy for beginners to grasp. It allows for both front-end and back-end development (with Node.js) in a single language, which can be beneficial for learning purposes.\n\n2. **Front-End Framework/Library: HTML + CSS + Vanilla JavaScript (no framework)**  \n   - Starting with plain HTML for structure, CSS for styling, and vanilla JavaScript for interactivity keeps the learning curve gentle. This approach helps Ray understand the fundamentals before introducing more complex frameworks.  \n   - Alternatively, if Ray is interested in a lightweight framework, **React** could be considered later, but for a first project, sticking with vanilla JavaScript is ideal.\n\n3. **Data Storage (Optional, for persistence): Local Storage**  \n   - To store the to-do items locally in the user's browser without needing a backend server, using **Web Storage API (localStorage)** is a straightforward choice. It allows saving key-value pairs in the browser, which is perfect for a simple to-do list app.\n\nThis stack focuses on simplicity and clarity, allowing Ray to concentrate on learning the core concepts of coding without being overwhelmed by complex tooling or infrastructure. As Ray becomes more comfortable, he can explore adding a backend (e.g., using Node.js with Express) or more sophisticated front-end frameworks (e.g., React, Vue.js) to expand his skills.",
     "accepted_answers": [
-      "For a beginner like Ray just starting to learn to code, a simple and beginner-friendly tech stack for building a to-do list app could include:\n\n1. **Frontend Framework/Library**: **HTML, CSS, and JavaScript**  \n   - **HTML** (HyperText Markup Language) for structuring the web page.  \n   - **CSS** (Cascading Style Sheets) for styling the HTML elements to make the app visually appealing.  \n   - **JavaScript** for adding interactivity, such as adding/removing tasks from the list.\n\n2. **State Management (Optional but Helpful)**: **Vanilla JavaScript** (no additional libraries)  \n   - For a simple to-do list, using plain JavaScript to manage the list of tasks in the browser's memory (e.g., using an array) is sufficient and keeps the learning curve gentle.\n\n3. **Optional: Local Storage for Persistence**  \n   - Use the **Web Storage API** (specifically `localStorage`) to save the to-do list data in the user's browser, so tasks persist across page refreshes or browser restarts. This introduces Ray to basic data persistence without needing a backend server.\n\nThis stack is minimal, widely supported across all modern browsers, and focuses on core web technologies, making it ideal for a first coding project. It allows Ray to concentrate on fundamental programming concepts like variables, functions, loops, and conditionals, without the added complexity of setting up a development environment or learning a new framework.",
+      "For a beginner like Ray just starting to learn to code, a simple and approachable tech stack for building a to-do list app is:\n\n1. **Programming Language: JavaScript**  \n   - JavaScript is widely used for web development and is relatively easy for beginners to grasp. It allows for both front-end and back-end development (with Node.js) in a single language, which can be beneficial for learning purposes.\n\n2. **Front-End Framework/Library: HTML + CSS + Vanilla JavaScript (no framework)**  \n   - Starting with plain HTML for structure, CSS for styling, and vanilla JavaScript for interactivity keeps the learning curve gentle. This approach helps Ray understand the fundamentals before introducing more complex frameworks.  \n   - Alternatively, if Ray is interested in a lightweight framework, **React** could be considered later, but for a first project, sticking with vanilla JavaScript is ideal.\n\n3. **Data Storage (Optional, for persistence): Local Storage**  \n   - To store the to-do items locally in the user's browser without needing a backend server, using **Web Storage API (localStorage)** is a straightforward choice. It allows saving key-value pairs in the browser, which is perfect for a simple to-do list app.\n\nThis stack focuses on simplicity and clarity, allowing Ray to concentrate on learning the core concepts of coding without being overwhelmed by complex tooling or infrastructure. As Ray becomes more comfortable, he can explore adding a backend (e.g., using Node.js with Express) or more sophisticated front-end frameworks (e.g., React, Vue.js) to expand his skills.",
       "beginner",
       "starting",
       "learn",
       "simple",
-      "beginner-friendly"
+      "approachable"
     ],
     "description": "Live-harvested self-referential recall probe (ray_todo_app_stack_advice)"
   },

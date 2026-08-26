@@ -68,11 +68,13 @@ env/
 *.tmp
 
 # Generated benchmark evaluation results & scorecards
-results/
-!results/.gitkeep
+# (results/* not results/ -- lets the negations below re-include specific
+# curated files; a directory-level exclude can't be re-included per-file)
+results/*
 *_scorecard.json
 *_scorecard.html
 *_scorecard.md
+*_scorecard_misses.txt
 *_report.html
 *_report.json
 *_report.md
@@ -80,3 +82,12 @@ logs/
 outputs/
 runs/
 .eval_cache/
+
+# Curated example results shipped with the repo (real integrations + baseline)
+!results/.gitkeep
+!results/real_mempalace_provider_scorecard.*
+!results/real_mempalace_provider_scorecard_misses.txt
+!results/real_mrag_provider_scorecard.*
+!results/real_mrag_provider_scorecard_misses.txt
+!results/sample_tf_idf_provider_scorecard.*
+!results/sample_tf_idf_provider_scorecard_misses.txt

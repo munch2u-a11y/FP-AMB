@@ -6,7 +6,7 @@
 
 **FP-AMB (First-Person Agent Memory Benchmark)** is an industry-standard, framework-agnostic evaluation suite engineered for long-term AI agent memory systems operating over realistic, multi-session conversational streams.
 
-It evaluates context recall, multi-hop graph reasoning, temporal date math, adaptability/fact overwrites, speaker attribution traps (incorporating **LoCoMO** and **BEAM** features), refusal to hallucinate absent memories (incorporating **LongMemEval** features), source credibility resolution, and agentic tool-use execution across **10 core categories plus dynamic answer key bindings** over **~540,878 tokens** and 458 turns spanning 60 distinct conversational sessions.
+It evaluates context recall, multi-hop graph reasoning, temporal date math, adaptability/fact overwrites, speaker attribution traps (incorporating **LoCoMO** and **BEAM** features), refusal to hallucinate absent memories (incorporating **LongMemEval** features), source credibility resolution, and agentic tool-use execution across **10 core categories plus dynamic answer key bindings** over **~512,266 tokens** and 677 turns spanning 60 distinct conversational sessions.
 
 ---
 
@@ -26,7 +26,7 @@ It evaluates context recall, multi-hop graph reasoning, temporal date math, adap
 
 ## ✨ Key Features
 
-- **Realistic Multi-Session Corpus**: 60 multi-turn user/assistant conversational sessions comprising **458 turns and ~540,878 tokens**.
+- **Realistic Multi-Session Corpus**: 60 multi-turn user/assistant conversational sessions comprising **677 turns and ~512,266 tokens**.
 - **Framework Agnostic**: Simple 2-method SDK interface (`ingest_turn` and `retrieve_context`) compatible with any RAG, Graph, or Agent memory system (Mem0, Zep, MemGPT, LangChain, LlamaIndex, Pinecone, etc.).
 - **10 Core Evaluation Categories**: Evaluates recall, multi-hop links, temporal reasoning, fact overwrites, speaker traps, refusal, credibility, and agentic tool usage.
 - **Dynamic Answer Key Compilation Portion**: Compiles dynamic key bindings (`harvested_output_advice_keys`, `fact_correction_keys`, `tool_learning_keys`) into the master ground-truth answer key.
@@ -148,11 +148,15 @@ python -m fp_amb evaluate --provider examples/sample_memory_provider.py
 
 FP-AMB automatically exports interactive HTML dashboards, terminal-ready Markdown scorecards, and a dedicated **Misses & Failure Taxonomy Text Report** (`*_misses.txt`) after every evaluation run:
 
+These are real, unedited runs against the real integrations shipped in `examples/` and packaged in `results/` — [real MemPalace](examples/real_mempalace_provider.py) (52.3%) and [real mRAG](examples/real_mrag_provider.py) (76.5%).
+
 ### 1. Interactive Visual HTML Dashboard
-![FP-AMB Visual HTML Exam Report](assets/html_report_sample.png)
+![FP-AMB Visual HTML Exam Report — real mRAG](assets/html_report_sample_mrag.png)
+![FP-AMB Visual HTML Exam Report — real MemPalace](assets/html_report_sample_mempalace.png)
 
 ### 2. Markdown & Terminal Scorecard Report
-![FP-AMB Markdown Scorecard Report](assets/markdown_report_sample.png)
+![FP-AMB Markdown Scorecard Report — real mRAG](assets/markdown_report_sample_mrag.png)
+![FP-AMB Markdown Scorecard Report — real MemPalace](assets/markdown_report_sample_mempalace.png)
 
 ### 3. Automated Misses & Root-Cause Failure Report (`*_misses.txt`)
 Saved automatically alongside each scorecard run to analyze and debug provider performance. It categorizes failed evaluation items first by **Question Category Type**, then by **Root Cause of Miss**:
@@ -161,12 +165,14 @@ Saved automatically alongside each scorecard run to analyze and debug provider p
 - **`FALSE_RETRIEVAL_DISTRACTOR_TRAP`**: The provider retrieved distractor memory context for an unanswerable refusal query.
 - **`FORMAT_OR_EXACT_KEYWORD_MISMATCH`**: Ground-truth fact was in context, but exact keyword matching rules failed.
 
+![FP-AMB Missed Questions & Failure Taxonomy Report — real MemPalace](assets/misses_report_sample.png)
+
 ---
 
 ## 📈 Comprehensive Token & Payload Metrics
 
 FP-AMB tracks detailed context payload efficiency to prevent memory providers from "cheating" by injecting excessive context:
-- **Total Corpus Size**: Total tokens (~540k) across 458 conversation turns.
+- **Total Corpus Size**: Total tokens (~512k) across 677 conversation turns.
 - **Total Injected Context Payload**: Cumulative tokens injected across all queries in the battery.
 - **Avg & Range Payload Size**: Average tokens/chars per query payload, along with minimum and maximum payload boundaries.
 - **Token Efficiency Ratio**: $\text{Accuracy \%} / (\text{Avg Payload Tokens} / 1000)$, measuring accuracy points achieved per 1,000 injected tokens.
@@ -178,32 +184,43 @@ FP-AMB tracks detailed context payload efficiency to prevent memory providers fr
 ```
 fp-amb-benchmark/
 ├── assets/                               # Sample report screenshots for documentation
-│   ├── html_report_sample.png
-│   └── markdown_report_sample.png
+│   ├── html_report_sample_mrag.png       # HTML dashboard, real mRAG run (76.5%)
+│   ├── html_report_sample_mempalace.png  # HTML dashboard, real MemPalace run (52.3%)
+│   ├── markdown_report_sample_mrag.png   # Markdown/ASCII scorecard, real mRAG run
+│   ├── markdown_report_sample_mempalace.png # Markdown/ASCII scorecard, real MemPalace run
+│   └── misses_report_sample.png          # Misses & failure-taxonomy report, real MemPalace run
 ├── data/                                 # Corpus datasets & compiled ground-truth answer keys
-│   ├── fp_amb_500k_cross_session.jsonl   # 60 sessions, 458 turns (~540k tokens)
+│   ├── fp_amb_500k_cross_session.jsonl   # 60 sessions, 677 turns (~512k tokens)
 │   ├── fp_amb_cross_session_questions.json # 281 static evaluation questions
 │   ├── dynamic_answer_keys.json          # Dynamic keys (advice, fact corrections, tool learning)
 │   └── master_ground_truth_answer_key.json # Master answer key (281 items + dynamic bindings)
-├── examples/                             # Provider template & baseline examples
-│   └── sample_memory_provider.py         # Pure Python baseline provider template
+├── examples/                              # Provider templates & real integration examples
+│   ├── sample_memory_provider.py         # Minimal keyword-match baseline provider template
+│   ├── sample_tf_idf_provider.py         # TF-IDF cosine-similarity baseline
+│   ├── real_mempalace_provider.py        # Real MemPalace integration (ChromaDB + BM25 hybrid)
+│   ├── real_mrag_provider.py             # Real mRAG integration (ChromaDB embeddings)
+│   └── real_mem0_provider.py             # Real Mem0 integration (local Ollama LLM + embedder)
+├── personas/                              # Identity files for multi-persona conversation generation
+│   ├── ai_agent.md                       # The AI Agent persona (system under test)
+│   └── sarah.md, alex.md, mark.md, dave.md, elena.md  # Human personas with distinct voices/quirks
 ├── fp_amb/                               # Core FP-AMB Benchmark Engine
 │   ├── __init__.py                       # Package exports (BaseMemoryProvider, FPAMBEvaluator)
 │   ├── __main__.py                       # python -m fp_amb entry point
 │   ├── agentic_eval.py                   # Category 10 Agentic tool-use evaluation engine
 │   ├── cli.py                            # CLI command interface
-│   ├── compile_master_answer_key.py      # Master answer key compiler utility
+│   ├── compile_master_answer_key.py      # Rebuilds the master key from the current question set
+│   ├── conversation_gen.py               # Persona-driven live conversation generator (single exchange)
+│   ├── batch_conversation_gen.py         # Batch runner for conversation_gen across many sessions
 │   ├── dataset.py                        # Corpus & ground-truth data loader
 │   ├── evaluator.py                      # Main evaluation runner (Categories 1-9)
-│   ├── graph_adapter.py                  # Graph memory adapter utilities
-│   ├── harvest.py                        # Metric harvesting & dynamic key compiler
+│   ├── harvest.py                        # Live output-harvesting pipeline (self-referential recall probes)
 │   ├── interface.py                      # BaseMemoryProvider abstract interface
-│   ├── report.py                         # HTML & Markdown report generators
+│   ├── report.py                         # HTML, Markdown/Mermaid, and misses-report generators
 │   └── sdk.py                            # Framework SDK & plug-and-play evaluator
 ├── .github/                              # GitHub Issue and PR templates
 │   ├── ISSUE_TEMPLATE/
 │   └── PULL_REQUEST_TEMPLATE.md
-├── results/                              # Output scorecards (JSON, HTML, MD) — gitignored
+├── results/                              # Output scorecards (JSON, HTML, MD, misses) — gitignored
 ├── .gitignore                            # Standard Python & results exclusion rules
 ├── pyproject.toml                        # Package configuration (PEP 621)
 ├── CONTRIBUTING.md                       # Contribution guidelines

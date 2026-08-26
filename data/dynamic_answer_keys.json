@@ -1,5 +1,14 @@
 {
-  "harvested_output_advice_keys": {},
+  "harvested_output_advice_keys": {
+    "ray_todo_app_stack_advice": {
+      "probe_id": "probe_ray_todo_app_stack_advice",
+      "captured_prompt": "My neighbor's kid Ray just started learning to code and wants to build a simple to-do list app as his first project. What's a good, simple tech stack for a total beginner? Keep it to 2-3 concrete recommendations.",
+      "captured_advice": "For a beginner like Ray just starting to learn to code, a simple and approachable tech stack for building a to-do list app is:\n\n1. **Programming Language: JavaScript**  \n   - JavaScript is widely used for web development and is relatively easy for beginners to grasp. It allows for both front-end and back-end development (with Node.js) in a single language, which can be beneficial for learning purposes.\n\n2. **Front-End Framework/Library: HTML + CSS + Vanilla JavaScript (no framework)**  \n   - Starting with plain HTML for structure, CSS for styling, and vanilla JavaScript for interactivity keeps the learning curve gentle. This approach helps Ray understand the fundamentals before introducing more complex frameworks.  \n   - Alternatively, if Ray is interested in a lightweight framework, **React** could be considered later, but for a first project, sticking with vanilla JavaScript is ideal.\n\n3. **Data Storage (Optional, for persistence): Local Storage**  \n   - To store the to-do items locally in the user's browser without needing a backend server, using **Web Storage API (localStorage)** is a straightforward choice. It allows saving key-value pairs in the browser, which is perfect for a simple to-do list app.\n\nThis stack focuses on simplicity and clarity, allowing Ray to concentrate on learning the core concepts of coding without being overwhelmed by complex tooling or infrastructure. As Ray becomes more comfortable, he can explore adding a backend (e.g., using Node.js with Express) or more sophisticated front-end frameworks (e.g., React, Vue.js) to expand his skills.",
+      "evaluation_question": "What tech stack did you recommend for Ray's first to-do list app?",
+      "timestamp": "2026-08-26 12:50:32",
+      "model": "granite4.1:8b"
+    }
+  },
   "fact_correction_keys": {},
   "tool_learning_keys": {}
 }
