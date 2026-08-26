@@ -75,6 +75,10 @@ results/*
 *_scorecard.html
 *_scorecard.md
 *_scorecard_misses.txt
+*_scorecard_*.json
+*_scorecard_*.html
+*_scorecard_*.md
+*_scorecard_*_misses.txt
 *_report.html
 *_report.json
 *_report.md

@@ -280,7 +280,8 @@ Answer accurately based on context above. If context does not contain informatio
 
         if output_path is None:
             DEFAULT_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-            output_path = DEFAULT_OUTPUT_DIR / f"{self.provider_name.lower()}_fp_amb_scorecard.json"
+            run_stamp = time.strftime("%Y%m%d_%H%M%S")
+            output_path = DEFAULT_OUTPUT_DIR / f"{self.provider_name.lower()}_scorecard_{run_stamp}.json"
 
         with open(output_path, 'w') as f:
             json.dump(report_payload, f, indent=2)

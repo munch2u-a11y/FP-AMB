@@ -359,7 +359,8 @@ def run_agentic_eval(provider: BaseMemoryProvider, provider_name: str = "Provide
     }
 
     if output_path is None:
-        output_path = Path("results") / f"{provider_name.lower()}_agentic_tool_use_scorecard.json"
+        run_stamp = time.strftime("%Y%m%d_%H%M%S")
+        output_path = Path("results") / f"{provider_name.lower()}_agentic_tool_use_scorecard_{run_stamp}.json"
     Path(output_path).parent.mkdir(parents=True, exist_ok=True)
     with open(output_path, "w") as f:
         json.dump(payload, f, indent=2)
