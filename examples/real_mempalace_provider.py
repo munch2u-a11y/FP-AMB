@@ -2,11 +2,10 @@
 """
 Real MemPalace Memory Provider Adapter for FP-AMB
 ------------------------------------------------------
-Wraps the actual /home/nemo/mempalace CLI (real project, ChromaDB + BM25 hybrid
-search, not a mock) behind the FP-AMB BaseMemoryProvider interface. Buffers
-ingested turns, writes them as a real Claude-Code-style conversation JSONL,
-mines them into a fresh palace via `mempalace mine --mode convos`, then shells
-out to `mempalace search` per query.
+Wraps the actual MemPalace CLI (ChromaDB + BM25 hybrid search, not a mock)
+behind the FP-AMB BaseMemoryProvider interface. Buffers ingested turns,
+writes them as a real conversation JSONL, mines them into a fresh palace via
+`mempalace mine --mode convos`, then shells out to `mempalace search` per query.
 """
 
 import json
@@ -16,10 +15,13 @@ import tempfile
 import shutil
 from pathlib import Path
 
-from fp_amb import BaseMemoryProvider
+# Dynamically resolve mempalace package and executable paths
+home = Path.home()
+mempalace_dir = str(home / "mempalace")
+if mempalace_dir not in sys.path:
+    sys.path.insert(0, mempalace_dir)
 
-MEMPALACE_BIN = "/home/nemo/mempalace/.venv/bin/mempalace"
-sys.path.insert(0, "/home/nemo/mempalace")
+MEMPALACE_BIN = shutil.which("mempalace") or str(home / "mempalace" / ".venv" / "bin" / "mempalace")
 
 
 class RealMemPalaceProvider(BaseMemoryProvider):

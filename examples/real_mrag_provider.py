@@ -2,16 +2,18 @@
 """
 Real mRAG (Micro-RAG) Memory Provider Adapter for FP-AMB
 ------------------------------------------------------------
-Wraps the user's actual mRAG package (github.com/munch2u-a11y/mRAG, local dev
-install at /home/nemo/Local-mRag) behind the FP-AMB BaseMemoryProvider
-interface. No mocking -- uses the real MemoryIngestor (Layer 1, zero LLM
-calls) and PreGenerativeInjector (multi-head retrieval) exactly as designed.
+Wraps the user's actual mRAG package (github.com/munch2u-a11y/mRAG)
+behind the FP-AMB BaseMemoryProvider interface. No mocking -- uses the real
+MemoryIngestor (Layer 1, zero LLM calls) and PreGenerativeInjector (multi-head
+retrieval) exactly as designed.
 """
 
-import sys
-import tempfile
+from pathlib import Path
 
-sys.path.insert(0, "/home/nemo/Local-mRag")
+# Dynamically resolve local package path if present
+local_mrag_dir = str(Path.home() / "Local-mRag")
+if local_mrag_dir not in sys.path:
+    sys.path.insert(0, local_mrag_dir)
 
 from mrag import BeliefStore, create_vector_store, PreGenerativeInjector
 from mrag.core.memory_ingestor import MemoryIngestor
