@@ -8,6 +8,8 @@ MemoryIngestor (Layer 1, zero LLM calls) and PreGenerativeInjector (multi-head
 retrieval) exactly as designed.
 """
 
+import sys
+import tempfile
 from pathlib import Path
 
 # Dynamically resolve local package path if present

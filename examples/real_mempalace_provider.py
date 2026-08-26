@@ -15,6 +15,8 @@ import tempfile
 import shutil
 from pathlib import Path
 
+from fp_amb import BaseMemoryProvider
+
 # Dynamically resolve mempalace package and executable paths
 home = Path.home()
 mempalace_dir = str(home / "mempalace")
