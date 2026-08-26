@@ -1,0 +1,3371 @@
+{
+  "CAT1_SH_001": {
+    "id": "CAT1_SH_001",
+    "category": "Single-Hop Fact Recall",
+    "question": "Who is Alex's brother?",
+    "ground_truth_answer": "Sam",
+    "accepted_answers": [
+      "Sam",
+      "Tom"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique single-hop fact recall #1"
+  },
+  "CAT1_SH_002": {
+    "id": "CAT1_SH_002",
+    "category": "Single-Hop Fact Recall",
+    "question": "Who is Sarah's son?",
+    "ground_truth_answer": "Leo",
+    "accepted_answers": [
+      "Leo"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique single-hop fact recall #2"
+  },
+  "CAT1_SH_003": {
+    "id": "CAT1_SH_003",
+    "category": "Single-Hop Fact Recall",
+    "question": "What building project is Sarah designing?",
+    "ground_truth_answer": "Meridian Horizon Tower (MHT-84)",
+    "accepted_answers": [
+      "Meridian Horizon Tower",
+      "MHT-84",
+      "MHT84"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique single-hop fact recall #3"
+  },
+  "CAT1_SH_004": {
+    "id": "CAT1_SH_004",
+    "category": "Single-Hop Fact Recall",
+    "question": "What car model does Sam drive?",
+    "ground_truth_answer": "1972 Volvo 1800ES",
+    "accepted_answers": [
+      "1972 Volvo 1800ES",
+      "Volvo 1800ES",
+      "Volvo"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique single-hop fact recall #4"
+  },
+  "CAT1_SH_005": {
+    "id": "CAT1_SH_005",
+    "category": "Single-Hop Fact Recall",
+    "question": "Who is Mark's mentor?",
+    "ground_truth_answer": "Dave",
+    "accepted_answers": [
+      "Dave"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique single-hop fact recall #5"
+  },
+  "CAT1_SH_006": {
+    "id": "CAT1_SH_006",
+    "category": "Single-Hop Fact Recall",
+    "question": "What company did Alex work for originally in September 2026?",
+    "ground_truth_answer": "Google",
+    "accepted_answers": [
+      "Google"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique single-hop fact recall #6"
+  },
+  "CAT1_SH_007": {
+    "id": "CAT1_SH_007",
+    "category": "Single-Hop Fact Recall",
+    "question": "What database architecture was specified by Dave for the data lake?",
+    "ground_truth_answer": "Apache Iceberg on AWS S3 Express",
+    "accepted_answers": [
+      "Apache Iceberg",
+      "Iceberg",
+      "S3 Express"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique single-hop fact recall #7"
+  },
+  "CAT1_SH_008": {
+    "id": "CAT1_SH_008",
+    "category": "Single-Hop Fact Recall",
+    "question": "What is the name of Sarah's sister?",
+    "ground_truth_answer": "Elena",
+    "accepted_answers": [
+      "Elena"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique single-hop fact recall #8"
+  },
+  "CAT1_SH_009": {
+    "id": "CAT1_SH_009",
+    "category": "Single-Hop Fact Recall",
+    "question": "What subject did Leo initially struggle with in school?",
+    "ground_truth_answer": "Algebra",
+    "accepted_answers": [
+      "Algebra"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique single-hop fact recall #9"
+  },
+  "CAT1_SH_010": {
+    "id": "CAT1_SH_010",
+    "category": "Single-Hop Fact Recall",
+    "question": "What floor assembly rating was originally specified for MHT-84 in September?",
+    "ground_truth_answer": "STC 55",
+    "accepted_answers": [
+      "STC 55",
+      "STC-55",
+      "STC55"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique single-hop fact recall #10"
+  },
+  "CAT1_SH_011": {
+    "id": "CAT1_SH_011",
+    "category": "Single-Hop Fact Recall",
+    "question": "What is the name of Tom's son?",
+    "ground_truth_answer": "Timmy",
+    "accepted_answers": [
+      "Timmy"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique single-hop fact recall #11"
+  },
+  "CAT1_SH_012": {
+    "id": "CAT1_SH_012",
+    "category": "Single-Hop Fact Recall",
+    "question": "What state or cloud provider hosts the Apache Iceberg data lake?",
+    "ground_truth_answer": "AWS S3 Express",
+    "accepted_answers": [
+      "AWS S3 Express",
+      "S3 Express",
+      "AWS"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique single-hop fact recall #12"
+  },
+  "CAT1_SH_013": {
+    "id": "CAT1_SH_013",
+    "category": "Single-Hop Fact Recall",
+    "question": "Which project uses 120,000 CFM fans for NFPA 92 smoke evacuation?",
+    "ground_truth_answer": "Meridian Horizon Tower (MHT-84)",
+    "accepted_answers": [
+      "MHT-84",
+      "Meridian Horizon Tower"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique single-hop fact recall #13"
+  },
+  "CAT1_SH_014": {
+    "id": "CAT1_SH_014",
+    "category": "Single-Hop Fact Recall",
+    "question": "What thermal envelope bridging threshold was specified for MHT-84?",
+    "ground_truth_answer": "psi <= 0.03 W/mK",
+    "accepted_answers": [
+      "0.03",
+      "psi <= 0.03"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique single-hop fact recall #14"
+  },
+  "CAT1_SH_015": {
+    "id": "CAT1_SH_015",
+    "category": "Single-Hop Fact Recall",
+    "question": "What post-quantum WireGuard mesh algorithm is used for microservices?",
+    "ground_truth_answer": "Kyber-768 ML-KEM",
+    "accepted_answers": [
+      "Kyber-768",
+      "ML-KEM"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique single-hop fact recall #15"
+  },
+  "CAT1_SH_016": {
+    "id": "CAT1_SH_016",
+    "category": "Single-Hop Fact Recall",
+    "question": "What eBPF socket enforcement file is deployed in the environment?",
+    "ground_truth_answer": "bpf_exec_enforce.c",
+    "accepted_answers": [
+      "bpf_exec_enforce.c",
+      "bpf_exec_enforce"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique single-hop fact recall #16"
+  },
+  "CAT1_SH_017": {
+    "id": "CAT1_SH_017",
+    "category": "Single-Hop Fact Recall",
+    "question": "What progressive delivery tool is used for canary deployments?",
+    "ground_truth_answer": "Argo Rollouts",
+    "accepted_answers": [
+      "Argo Rollouts",
+      "Argo"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique single-hop fact recall #17"
+  },
+  "CAT1_SH_018": {
+    "id": "CAT1_SH_018",
+    "category": "Single-Hop Fact Recall",
+    "question": "What node pool migration tool is used on EKS?",
+    "ground_truth_answer": "Karpenter v1.0",
+    "accepted_answers": [
+      "Karpenter",
+      "Karpenter v1.0"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique single-hop fact recall #18"
+  },
+  "CAT1_SH_019": {
+    "id": "CAT1_SH_019",
+    "category": "Single-Hop Fact Recall",
+    "question": "What secret management service handles PostgreSQL credential rotation?",
+    "ground_truth_answer": "HashiCorp Vault",
+    "accepted_answers": [
+      "Vault",
+      "HashiCorp Vault"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique single-hop fact recall #19"
+  },
+  "CAT1_SH_020": {
+    "id": "CAT1_SH_020",
+    "category": "Single-Hop Fact Recall",
+    "question": "What trace context propagation protocol reduced Grafana Tempo storage by 82%?",
+    "ground_truth_answer": "Kafka W3C trace context",
+    "accepted_answers": [
+      "W3C",
+      "Kafka W3C"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique single-hop fact recall #20"
+  },
+  "CAT1_SH_021": {
+    "id": "CAT1_SH_021",
+    "category": "Single-Hop Fact Recall",
+    "question": "What microVM sandboxing technology is used for isolated execution?",
+    "ground_truth_answer": "Firecracker",
+    "accepted_answers": [
+      "Firecracker"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique single-hop fact recall #21"
+  },
+  "CAT1_SH_022": {
+    "id": "CAT1_SH_022",
+    "category": "Single-Hop Fact Recall",
+    "question": "What real-time feature store join type was implemented?",
+    "ground_truth_answer": "AS-OF joins",
+    "accepted_answers": [
+      "AS-OF",
+      "AS-OF joins"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique single-hop fact recall #22"
+  },
+  "CAT1_SH_023": {
+    "id": "CAT1_SH_023",
+    "category": "Single-Hop Fact Recall",
+    "question": "What streaming operator is used for Kafka on Kubernetes?",
+    "ground_truth_answer": "Strimzi Operator",
+    "accepted_answers": [
+      "Strimzi",
+      "Strimzi Operator"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique single-hop fact recall #23"
+  },
+  "CAT1_SH_024": {
+    "id": "CAT1_SH_024",
+    "category": "Single-Hop Fact Recall",
+    "question": "What JVM garbage collector tuning was applied for Pulsar streaming?",
+    "ground_truth_answer": "ZGC",
+    "accepted_answers": [
+      "ZGC",
+      "ZGC tuning"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique single-hop fact recall #24"
+  },
+  "CAT1_SH_025": {
+    "id": "CAT1_SH_025",
+    "category": "Single-Hop Fact Recall",
+    "question": "What vector index quantization was used for HNSW streaming?",
+    "ground_truth_answer": "SQ8 quantization",
+    "accepted_answers": [
+      "SQ8",
+      "SQ8 quantization"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique single-hop fact recall #25"
+  },
+  "CAT1_SH_026": {
+    "id": "CAT1_SH_026",
+    "category": "Single-Hop Fact Recall",
+    "question": "What workflow engine handles human-in-the-loop (HITL) processes?",
+    "ground_truth_answer": "Temporal.io",
+    "accepted_answers": [
+      "Temporal",
+      "Temporal.io"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique single-hop fact recall #26"
+  },
+  "CAT1_SH_027": {
+    "id": "CAT1_SH_027",
+    "category": "Single-Hop Fact Recall",
+    "question": "What anti-DDoS technology operates on 100GbE interfaces?",
+    "ground_truth_answer": "XDP",
+    "accepted_answers": [
+      "XDP"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique single-hop fact recall #27"
+  },
+  "CAT1_SH_028": {
+    "id": "CAT1_SH_028",
+    "category": "Single-Hop Fact Recall",
+    "question": "What efficiency rating do the ventilated BIPV rainscreens achieve?",
+    "ground_truth_answer": "22%",
+    "accepted_answers": [
+      "22%",
+      "22"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique single-hop fact recall #28"
+  },
+  "CAT1_SH_029": {
+    "id": "CAT1_SH_029",
+    "category": "Single-Hop Fact Recall",
+    "question": "What NFPA standard applies to the commercial BESS electrical vault?",
+    "ground_truth_answer": "NFPA 855",
+    "accepted_answers": [
+      "NFPA 855",
+      "855"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique single-hop fact recall #29"
+  },
+  "CAT1_SH_030": {
+    "id": "CAT1_SH_030",
+    "category": "Single-Hop Fact Recall",
+    "question": "What hygrothermic software was used for historic URM seismic retrofit?",
+    "ground_truth_answer": "WUFI",
+    "accepted_answers": [
+      "WUFI"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique single-hop fact recall #30"
+  },
+  "CAT1_SH_031": {
+    "id": "CAT1_SH_031",
+    "category": "Single-Hop Fact Recall",
+    "question": "What acoustic baffle dimensioning model was used for biophilic lighting?",
+    "ground_truth_answer": "3D acoustic baffle modeling",
+    "accepted_answers": [
+      "3D acoustic baffle",
+      "3D"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique single-hop fact recall #31"
+  },
+  "CAT1_SH_032": {
+    "id": "CAT1_SH_032",
+    "category": "Single-Hop Fact Recall",
+    "question": "What Chaos Mesh tool automates Alertmanager v2 silences?",
+    "ground_truth_answer": "Alertmanager v2 dynamic silence automation",
+    "accepted_answers": [
+      "Alertmanager",
+      "Alertmanager v2"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique single-hop fact recall #32"
+  },
+  "CAT1_SH_033": {
+    "id": "CAT1_SH_033",
+    "category": "Single-Hop Fact Recall",
+    "question": "What operator handles multi-region DR for Kafka?",
+    "ground_truth_answer": "MirrorMaker 2",
+    "accepted_answers": [
+      "MirrorMaker 2",
+      "MirrorMaker"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique single-hop fact recall #33"
+  },
+  "CAT1_SH_034": {
+    "id": "CAT1_SH_034",
+    "category": "Single-Hop Fact Recall",
+    "question": "What engine handles complex event processing (CEP) for fraud detection?",
+    "ground_truth_answer": "Flink CEP",
+    "accepted_answers": [
+      "Flink",
+      "Flink CEP"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique single-hop fact recall #34"
+  },
+  "CAT1_SH_035": {
+    "id": "CAT1_SH_035",
+    "category": "Single-Hop Fact Recall",
+    "question": "What native flora balancing is integrated with the rooftop stormwater cistern?",
+    "ground_truth_answer": "Cascadia native flora",
+    "accepted_answers": [
+      "Cascadia",
+      "Cascadia native flora"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique single-hop fact recall #35"
+  },
+  "CAT2_CSMH_001": {
+    "id": "CAT2_CSMH_001",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "What does Tom's son like to do for fun?",
+    "ground_truth_answer": "Playing acoustic guitar",
+    "accepted_answers": [
+      "acoustic guitar",
+      "guitar"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #1"
+  },
+  "CAT2_CSMH_002": {
+    "id": "CAT2_CSMH_002",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "What primary programming language does Sarah's sister use for microservices?",
+    "ground_truth_answer": "Rust and WebAssembly (WASM)",
+    "accepted_answers": [
+      "Rust",
+      "WebAssembly",
+      "WASM"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #2"
+  },
+  "CAT2_CSMH_003": {
+    "id": "CAT2_CSMH_003",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "What data lake storage architecture was specified by Mark's mentor?",
+    "ground_truth_answer": "Apache Iceberg on AWS S3 Express",
+    "accepted_answers": [
+      "Iceberg",
+      "S3 Express",
+      "Apache Iceberg"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #3"
+  },
+  "CAT2_CSMH_004": {
+    "id": "CAT2_CSMH_004",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "What building project is being designed by the mother of Leo?",
+    "ground_truth_answer": "Meridian Horizon Tower (MHT-84)",
+    "accepted_answers": [
+      "Meridian Horizon Tower",
+      "MHT-84",
+      "MHT84"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #4"
+  },
+  "CAT2_CSMH_005": {
+    "id": "CAT2_CSMH_005",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "What subject does Sarah's son currently need tutoring in?",
+    "ground_truth_answer": "Physics",
+    "accepted_answers": [
+      "Physics"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #5"
+  },
+  "CAT2_CSMH_006": {
+    "id": "CAT2_CSMH_006",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "What car model is driven by Alex's brother?",
+    "ground_truth_answer": "1972 Volvo 1800ES",
+    "accepted_answers": [
+      "1972 Volvo 1800ES",
+      "Volvo 1800ES",
+      "Volvo"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #6"
+  },
+  "CAT2_CSMH_007": {
+    "id": "CAT2_CSMH_007",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "Where is the laptop belonging to Sarah's husband currently located?",
+    "ground_truth_answer": "In Mark's desk drawer",
+    "accepted_answers": [
+      "Mark's desk drawer",
+      "desk drawer",
+      "desk"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #7"
+  },
+  "CAT2_CSMH_008": {
+    "id": "CAT2_CSMH_008",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "What company did the software engineer who married Sarah move to on Day 28?",
+    "ground_truth_answer": "Anthropic",
+    "accepted_answers": [
+      "Anthropic"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #8"
+  },
+  "CAT2_CSMH_009": {
+    "id": "CAT2_CSMH_009",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "What acoustic rating was specified by Sarah for MHT-84 floor assemblies as of Session 35?",
+    "ground_truth_answer": "STC 60",
+    "accepted_answers": [
+      "STC 60",
+      "STC-60",
+      "STC60"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #9"
+  },
+  "CAT2_CSMH_010": {
+    "id": "CAT2_CSMH_010",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "Who is coming to pick up Sarah's son Leo on Day 15?",
+    "ground_truth_answer": "Sam",
+    "accepted_answers": [
+      "Sam",
+      "Uncle Sam"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #10"
+  },
+  "CAT2_CSMH_011": {
+    "id": "CAT2_CSMH_011",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "What instrument is played by Alex's nephew Timmy?",
+    "ground_truth_answer": "Acoustic guitar",
+    "accepted_answers": [
+      "guitar",
+      "acoustic guitar"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #11"
+  },
+  "CAT2_CSMH_012": {
+    "id": "CAT2_CSMH_012",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "Which sister of Sarah adopted Rust and WebAssembly?",
+    "ground_truth_answer": "Elena",
+    "accepted_answers": [
+      "Elena"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #12"
+  },
+  "CAT2_CSMH_013": {
+    "id": "CAT2_CSMH_013",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "Who is the mentor of the engineer who stored Alex's laptop?",
+    "ground_truth_answer": "Dave",
+    "accepted_answers": [
+      "Dave"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #13"
+  },
+  "CAT2_CSMH_014": {
+    "id": "CAT2_CSMH_014",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "What company does Alex work for after leaving Google?",
+    "ground_truth_answer": "Anthropic",
+    "accepted_answers": [
+      "Anthropic"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #14"
+  },
+  "CAT2_CSMH_015": {
+    "id": "CAT2_CSMH_015",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "What rating did Sarah update the floor assemblies to after starting at STC 55?",
+    "ground_truth_answer": "STC 60",
+    "accepted_answers": [
+      "STC 60",
+      "STC-60"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #15"
+  },
+  "CAT2_CSMH_016": {
+    "id": "CAT2_CSMH_016",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "Who is the uncle of Timmy that drives a Volvo 1800ES?",
+    "ground_truth_answer": "Sam",
+    "accepted_answers": [
+      "Sam"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #16"
+  },
+  "CAT2_CSMH_017": {
+    "id": "CAT2_CSMH_017",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "What subject did the son of Sarah ace before needing Physics tutoring?",
+    "ground_truth_answer": "Algebra",
+    "accepted_answers": [
+      "Algebra"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #17"
+  },
+  "CAT2_CSMH_018": {
+    "id": "CAT2_CSMH_018",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "Where did Mark find the laptop left behind by Alex?",
+    "ground_truth_answer": "Conference room",
+    "accepted_answers": [
+      "conference room"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #18"
+  },
+  "CAT2_CSMH_019": {
+    "id": "CAT2_CSMH_019",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "What data lake storage technology did Dave recommend to Mark?",
+    "ground_truth_answer": "Apache Iceberg",
+    "accepted_answers": [
+      "Iceberg",
+      "Apache Iceberg"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #19"
+  },
+  "CAT2_CSMH_020": {
+    "id": "CAT2_CSMH_020",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "What structural mass timber project is Sarah designing for high-rise acoustic isolation?",
+    "ground_truth_answer": "MHT-84",
+    "accepted_answers": [
+      "MHT-84",
+      "Meridian Horizon Tower"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #20"
+  },
+  "CAT2_CSMH_021": {
+    "id": "CAT2_CSMH_021",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "What tech stack does Elena use for microservices migration?",
+    "ground_truth_answer": "Rust and WebAssembly",
+    "accepted_answers": [
+      "Rust",
+      "WASM"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #21"
+  },
+  "CAT2_CSMH_022": {
+    "id": "CAT2_CSMH_022",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "Who is the brother of Alex that owns a 1972 Volvo 1800ES?",
+    "ground_truth_answer": "Sam",
+    "accepted_answers": [
+      "Sam"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #22"
+  },
+  "CAT2_CSMH_023": {
+    "id": "CAT2_CSMH_023",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "Who is the brother of Alex that has a son named Timmy?",
+    "ground_truth_answer": "Tom",
+    "accepted_answers": [
+      "Tom"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #23"
+  },
+  "CAT2_CSMH_024": {
+    "id": "CAT2_CSMH_024",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "What company did Alex transition to in late October 2026?",
+    "ground_truth_answer": "Anthropic",
+    "accepted_answers": [
+      "Anthropic"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #24"
+  },
+  "CAT2_CSMH_025": {
+    "id": "CAT2_CSMH_025",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "What subject does Leo need tutoring in after passing Algebra?",
+    "ground_truth_answer": "Physics",
+    "accepted_answers": [
+      "Physics"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #25"
+  },
+  "CAT2_CSMH_026": {
+    "id": "CAT2_CSMH_026",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "Where is Alex's laptop stored after being recovered from the conference room?",
+    "ground_truth_answer": "Mark's desk drawer",
+    "accepted_answers": [
+      "desk drawer",
+      "Mark's desk"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #26"
+  },
+  "CAT2_CSMH_027": {
+    "id": "CAT2_CSMH_027",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "What is the relation of Elena to the lead architect of MHT-84?",
+    "ground_truth_answer": "Sister",
+    "accepted_answers": [
+      "sister",
+      "Elena is Sarah's sister"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #27"
+  },
+  "CAT2_CSMH_028": {
+    "id": "CAT2_CSMH_028",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "What is the relation of Timmy to Alex?",
+    "ground_truth_answer": "Nephew",
+    "accepted_answers": [
+      "nephew",
+      "Alex's nephew"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #28"
+  },
+  "CAT2_CSMH_029": {
+    "id": "CAT2_CSMH_029",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "What storage backend was chosen by Dave for Apache Iceberg?",
+    "ground_truth_answer": "AWS S3 Express",
+    "accepted_answers": [
+      "S3 Express",
+      "AWS S3 Express"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #29"
+  },
+  "CAT2_CSMH_030": {
+    "id": "CAT2_CSMH_030",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "What floor acoustic rating did Sarah specify on September 8 for MHT-84?",
+    "ground_truth_answer": "STC 55",
+    "accepted_answers": [
+      "STC 55",
+      "STC-55"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #30"
+  },
+  "CAT2_CSMH_031": {
+    "id": "CAT2_CSMH_031",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "What floor acoustic rating did Sarah update MHT-84 to on November 19?",
+    "ground_truth_answer": "STC 60",
+    "accepted_answers": [
+      "STC 60",
+      "STC-60"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #31"
+  },
+  "CAT2_CSMH_032": {
+    "id": "CAT2_CSMH_032",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "Who is Mark's desk drawer owner's mentor?",
+    "ground_truth_answer": "Dave",
+    "accepted_answers": [
+      "Dave"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #32"
+  },
+  "CAT2_CSMH_033": {
+    "id": "CAT2_CSMH_033",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "What vehicle does Sam drive to pick up Leo?",
+    "ground_truth_answer": "1972 Volvo 1800ES",
+    "accepted_answers": [
+      "Volvo",
+      "1800ES",
+      "Volvo 1800ES"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #33"
+  },
+  "CAT2_CSMH_034": {
+    "id": "CAT2_CSMH_034",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "What technology did Elena switch to from accounting background?",
+    "ground_truth_answer": "UX design with Figma",
+    "accepted_answers": [
+      "Figma",
+      "UX design"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #34"
+  },
+  "CAT2_CSMH_035": {
+    "id": "CAT2_CSMH_035",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "What C++ memory leak tool did Dave suggest for worker thread pool debugging?",
+    "ground_truth_answer": "Valgrind or AddressSanitizer",
+    "accepted_answers": [
+      "Valgrind",
+      "AddressSanitizer",
+      "ASan"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #35"
+  },
+  "CAT2_CSMH_036": {
+    "id": "CAT2_CSMH_036",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "What database client was recommended for legacy user inventory queries?",
+    "ground_truth_answer": "UnifiedV2DBClient",
+    "accepted_answers": [
+      "UnifiedV2DBClient"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #36"
+  },
+  "CAT2_CSMH_037": {
+    "id": "CAT2_CSMH_037",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "What search client was chosen for batch log indexing scripts?",
+    "ground_truth_answer": "SearchAPI_HighThroughput",
+    "accepted_answers": [
+      "SearchAPI_HighThroughput"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #37"
+  },
+  "CAT2_CSMH_038": {
+    "id": "CAT2_CSMH_038",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "What header format was specified for microservice Vault authentication?",
+    "ground_truth_answer": "SPIFFE X.509 SVID header",
+    "accepted_answers": [
+      "SPIFFE",
+      "SVID"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #38"
+  },
+  "CAT2_CSMH_039": {
+    "id": "CAT2_CSMH_039",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "What advice was given to Josh regarding his 10-year-old son's math homework?",
+    "ground_truth_answer": "15-minute Pomodoro chunks and reward chart",
+    "accepted_answers": [
+      "Pomodoro",
+      "15-minute",
+      "reward chart"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #39"
+  },
+  "CAT2_CSMH_040": {
+    "id": "CAT2_CSMH_040",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "What advice was given regarding Elena's career transition to UX design?",
+    "ground_truth_answer": "Figma portfolio and Google UX Certificate",
+    "accepted_answers": [
+      "Figma",
+      "Google UX"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #40"
+  },
+  "CAT2_CSMH_041": {
+    "id": "CAT2_CSMH_041",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "What debugging steps were recommended for Dave's C++ memory leak?",
+    "ground_truth_answer": "Run Valgrind or ASan and check raw pointers in lambdas",
+    "accepted_answers": [
+      "Valgrind",
+      "ASan",
+      "raw pointers"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #41"
+  },
+  "CAT2_CSMH_042": {
+    "id": "CAT2_CSMH_042",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "Which project experienced an acoustic rating upgrade from STC 55 to STC 60?",
+    "ground_truth_answer": "Meridian Horizon Tower (MHT-84)",
+    "accepted_answers": [
+      "MHT-84",
+      "Meridian Horizon Tower"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #42"
+  },
+  "CAT2_CSMH_043": {
+    "id": "CAT2_CSMH_043",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "What company did Alex leave on Day 28?",
+    "ground_truth_answer": "Google",
+    "accepted_answers": [
+      "Google"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #43"
+  },
+  "CAT2_CSMH_044": {
+    "id": "CAT2_CSMH_044",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "What company did Alex join on Day 28?",
+    "ground_truth_answer": "Anthropic",
+    "accepted_answers": [
+      "Anthropic"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #44"
+  },
+  "CAT2_CSMH_045": {
+    "id": "CAT2_CSMH_045",
+    "category": "Cross-Session Multi-Hop Reasoning",
+    "question": "Who is the father of Timmy?",
+    "ground_truth_answer": "Tom",
+    "accepted_answers": [
+      "Tom"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique multi-hop reasoning #45"
+  },
+  "CAT3_TR_001": {
+    "id": "CAT3_TR_001",
+    "category": "Temporal Reasoning & Session Math",
+    "question": "How many days elapsed between Session 3 (Sept 5) and Session 17 (Oct 5)?",
+    "ground_truth_answer": "28 days",
+    "accepted_answers": [
+      "28 days",
+      "28"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique temporal reasoning #1"
+  },
+  "CAT3_TR_002": {
+    "id": "CAT3_TR_002",
+    "category": "Temporal Reasoning & Session Math",
+    "question": "In what month did Alex move from Google to Anthropic?",
+    "ground_truth_answer": "October 2026",
+    "accepted_answers": [
+      "October",
+      "Oct",
+      "October 2026"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique temporal reasoning #2"
+  },
+  "CAT3_TR_003": {
+    "id": "CAT3_TR_003",
+    "category": "Temporal Reasoning & Session Math",
+    "question": "How many days passed between Sarah's initial MHT-84 STC 55 spec (Sept 7) and her STC 60 update (Nov 12)?",
+    "ground_truth_answer": "62 days",
+    "accepted_answers": [
+      "62 days",
+      "62"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique temporal reasoning #3"
+  },
+  "CAT3_TR_004": {
+    "id": "CAT3_TR_004",
+    "category": "Temporal Reasoning & Session Math",
+    "question": "What year did the events in the conversation memory corpus occur?",
+    "ground_truth_answer": "2026",
+    "accepted_answers": [
+      "2026"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique temporal reasoning #4"
+  },
+  "CAT3_TR_005": {
+    "id": "CAT3_TR_005",
+    "category": "Temporal Reasoning & Session Math",
+    "question": "Which session occurred first: Elena's microservices migration or Alex's job change?",
+    "ground_truth_answer": "Elena",
+    "accepted_answers": [
+      "Elena",
+      "Elena's microservices migration",
+      "Session 22"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique temporal reasoning #5"
+  },
+  "CAT3_TR_006": {
+    "id": "CAT3_TR_006",
+    "category": "Temporal Reasoning & Session Math",
+    "question": "On what day of the benchmark timeline did Alex announce moving to Anthropic?",
+    "ground_truth_answer": "Day 55",
+    "accepted_answers": [
+      "Day 55",
+      "55"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique temporal reasoning #6"
+  },
+  "CAT3_TR_007": {
+    "id": "CAT3_TR_007",
+    "category": "Temporal Reasoning & Session Math",
+    "question": "What date did Sarah specify the initial STC 55 acoustic rating for MHT-84?",
+    "ground_truth_answer": "September 7",
+    "accepted_answers": [
+      "September 7",
+      "Sept 7"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique temporal reasoning #7"
+  },
+  "CAT3_TR_008": {
+    "id": "CAT3_TR_008",
+    "category": "Temporal Reasoning & Session Math",
+    "question": "What date did Sarah update MHT-84 to STC 60 acoustic isolation rating?",
+    "ground_truth_answer": "November 12",
+    "accepted_answers": [
+      "November 12",
+      "Nov 12"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique temporal reasoning #8"
+  },
+  "CAT3_TR_009": {
+    "id": "CAT3_TR_009",
+    "category": "Temporal Reasoning & Session Math",
+    "question": "How many days passed between Day 1 (Sept 1) and Day 28 (Sept 28)?",
+    "ground_truth_answer": "27 days",
+    "accepted_answers": [
+      "27 days",
+      "27"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique temporal reasoning #9"
+  },
+  "CAT3_TR_010": {
+    "id": "CAT3_TR_010",
+    "category": "Temporal Reasoning & Session Math",
+    "question": "Which session did Alex state he has a flu: Session 27 or Session 35?",
+    "ground_truth_answer": "Session 27",
+    "accepted_answers": [
+      "Session 27",
+      "27"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique temporal reasoning #10"
+  },
+  "CAT3_TR_011": {
+    "id": "CAT3_TR_011",
+    "category": "Temporal Reasoning & Session Math",
+    "question": "In which month did Sarah update MHT-84 to STC 60?",
+    "ground_truth_answer": "November 2026",
+    "accepted_answers": [
+      "November",
+      "Nov"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique temporal reasoning #11"
+  },
+  "CAT3_TR_012": {
+    "id": "CAT3_TR_012",
+    "category": "Temporal Reasoning & Session Math",
+    "question": "In which month did Sarah first specify STC 55 for MHT-84?",
+    "ground_truth_answer": "September 2026",
+    "accepted_answers": [
+      "September",
+      "Sept"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique temporal reasoning #12"
+  },
+  "CAT3_TR_013": {
+    "id": "CAT3_TR_013",
+    "category": "Temporal Reasoning & Session Math",
+    "question": "How many conversation sessions are contained in the full corpus?",
+    "ground_truth_answer": "60 sessions",
+    "accepted_answers": [
+      "60",
+      "60 sessions"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique temporal reasoning #13"
+  },
+  "CAT3_TR_014": {
+    "id": "CAT3_TR_014",
+    "category": "Temporal Reasoning & Session Math",
+    "question": "What was the starting date of Session 01 in the memory corpus?",
+    "ground_truth_answer": "September 1, 2026",
+    "accepted_answers": [
+      "September 1",
+      "Sept 1",
+      "2026-09-01"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique temporal reasoning #14"
+  },
+  "CAT3_TR_015": {
+    "id": "CAT3_TR_015",
+    "category": "Temporal Reasoning & Session Math",
+    "question": "What was the ending date of Session 60 in the memory corpus?",
+    "ground_truth_answer": "January 3",
+    "accepted_answers": [
+      "January 3",
+      "Jan 3",
+      "2027-01-03"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique temporal reasoning #15"
+  },
+  "CAT3_TR_016": {
+    "id": "CAT3_TR_016",
+    "category": "Temporal Reasoning & Session Math",
+    "question": "How many total days spanned from Session 01 (Sept 1, 2026) to Session 60 (Jan 3, 2027)?",
+    "ground_truth_answer": "124 days",
+    "accepted_answers": [
+      "124 days",
+      "124"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique temporal reasoning #16"
+  },
+  "CAT3_TR_017": {
+    "id": "CAT3_TR_017",
+    "category": "Temporal Reasoning & Session Math",
+    "question": "Did Alex move to Anthropic before or after Sarah updated MHT-84 to STC 60?",
+    "ground_truth_answer": "Before",
+    "accepted_answers": [
+      "Before",
+      "Alex moved before"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique temporal reasoning #17"
+  },
+  "CAT3_TR_018": {
+    "id": "CAT3_TR_018",
+    "category": "Temporal Reasoning & Session Math",
+    "question": "Did Elena migrate to Rust before or after Alex moved to Anthropic?",
+    "ground_truth_answer": "Before",
+    "accepted_answers": [
+      "Before",
+      "Elena migrated before"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique temporal reasoning #18"
+  },
+  "CAT3_TR_019": {
+    "id": "CAT3_TR_019",
+    "category": "Temporal Reasoning & Session Math",
+    "question": "Which session contained Dave's Apache Iceberg data lake recommendation?",
+    "ground_truth_answer": "Session 28",
+    "accepted_answers": [
+      "Session 28",
+      "28"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique temporal reasoning #19"
+  },
+  "CAT3_TR_020": {
+    "id": "CAT3_TR_020",
+    "category": "Temporal Reasoning & Session Math",
+    "question": "Which session contained Mark's note about Alex leaving his laptop?",
+    "ground_truth_answer": "Session 25",
+    "accepted_answers": [
+      "Session 25",
+      "25"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique temporal reasoning #20"
+  },
+  "CAT3_TR_021": {
+    "id": "CAT3_TR_021",
+    "category": "Temporal Reasoning & Session Math",
+    "question": "How many sessions elapsed between Mark finding Alex's laptop (Session 25) and Sarah's STC 60 update (Session 35)?",
+    "ground_truth_answer": "10 sessions",
+    "accepted_answers": [
+      "10 sessions",
+      "10"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique temporal reasoning #21"
+  },
+  "CAT3_TR_022": {
+    "id": "CAT3_TR_022",
+    "category": "Temporal Reasoning & Session Math",
+    "question": "How many days elapsed between Session 01 and Session 05?",
+    "ground_truth_answer": "8 days",
+    "accepted_answers": [
+      "8 days",
+      "8"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique temporal reasoning #22"
+  },
+  "CAT3_TR_023": {
+    "id": "CAT3_TR_023",
+    "category": "Temporal Reasoning & Session Math",
+    "question": "What was the day number corresponding to Session 14?",
+    "ground_truth_answer": "Day 27",
+    "accepted_answers": [
+      "Day 27",
+      "27"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique temporal reasoning #23"
+  },
+  "CAT3_TR_024": {
+    "id": "CAT3_TR_024",
+    "category": "Temporal Reasoning & Session Math",
+    "question": "On what date did Timmy mention playing acoustic guitar?",
+    "ground_truth_answer": "Session 17",
+    "accepted_answers": [
+      "Session 17",
+      "October 5",
+      "Oct 5"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique temporal reasoning #24"
+  },
+  "CAT3_TR_025": {
+    "id": "CAT3_TR_025",
+    "category": "Temporal Reasoning & Session Math",
+    "question": "What month did Leo begin needing Physics tutoring?",
+    "ground_truth_answer": "November",
+    "accepted_answers": [
+      "November",
+      "Nov"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique temporal reasoning #25"
+  },
+  "CAT3_TR_026": {
+    "id": "CAT3_TR_026",
+    "category": "Temporal Reasoning & Session Math",
+    "question": "Did Sam's Volvo 1800ES appearance occur in September or November?",
+    "ground_truth_answer": "September",
+    "accepted_answers": [
+      "September",
+      "Sept"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique temporal reasoning #26"
+  },
+  "CAT3_TR_027": {
+    "id": "CAT3_TR_027",
+    "category": "Temporal Reasoning & Session Math",
+    "question": "What year did Session 60 take place in?",
+    "ground_truth_answer": "2027",
+    "accepted_answers": [
+      "2027"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique temporal reasoning #27"
+  },
+  "CAT3_TR_028": {
+    "id": "CAT3_TR_028",
+    "category": "Temporal Reasoning & Session Math",
+    "question": "How many months elapsed between Sept 1, 2026 and Jan 4, 2027?",
+    "ground_truth_answer": "4 months",
+    "accepted_answers": [
+      "4 months",
+      "4"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique temporal reasoning #28"
+  },
+  "CAT3_TR_029": {
+    "id": "CAT3_TR_029",
+    "category": "Temporal Reasoning & Session Math",
+    "question": "Which occurred earlier: Session 04 (STC 55) or Session 35 (STC 60)?",
+    "ground_truth_answer": "Session 04",
+    "accepted_answers": [
+      "Session 04",
+      "Session 4"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique temporal reasoning #29"
+  },
+  "CAT3_TR_030": {
+    "id": "CAT3_TR_030",
+    "category": "Temporal Reasoning & Session Math",
+    "question": "What day number was Session 30 recorded on?",
+    "ground_truth_answer": "Day 59",
+    "accepted_answers": [
+      "Day 59",
+      "59"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique temporal reasoning #30"
+  },
+  "CAT3_TR_031": {
+    "id": "CAT3_TR_031",
+    "category": "Temporal Reasoning & Session Math",
+    "question": "What was the day delta between Session 12 and Session 24?",
+    "ground_truth_answer": "24 days",
+    "accepted_answers": [
+      "24 days",
+      "24"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique temporal reasoning #31"
+  },
+  "CAT3_TR_032": {
+    "id": "CAT3_TR_032",
+    "category": "Temporal Reasoning & Session Math",
+    "question": "Did Sarah announce MHT-84 in Session 12 or Session 35?",
+    "ground_truth_answer": "Session 12",
+    "accepted_answers": [
+      "Session 12",
+      "12"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique temporal reasoning #32"
+  },
+  "CAT3_TR_033": {
+    "id": "CAT3_TR_033",
+    "category": "Temporal Reasoning & Session Math",
+    "question": "On what date was the distractor about Tokyo high-speed rail logged?",
+    "ground_truth_answer": "September 14, 2026",
+    "accepted_answers": [
+      "September 14",
+      "Sept 14"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique temporal reasoning #33"
+  },
+  "CAT3_TR_034": {
+    "id": "CAT3_TR_034",
+    "category": "Temporal Reasoning & Session Math",
+    "question": "On what date was the distractor about electric car charging station logged?",
+    "ground_truth_answer": "September 22, 2026",
+    "accepted_answers": [
+      "September 22",
+      "Sept 22"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique temporal reasoning #34"
+  },
+  "CAT3_TR_035": {
+    "id": "CAT3_TR_035",
+    "category": "Temporal Reasoning & Session Math",
+    "question": "On what date was the distractor about neighbor adopting a rescue dog logged?",
+    "ground_truth_answer": "October 1, 2026",
+    "accepted_answers": [
+      "October 1",
+      "Oct 1"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique temporal reasoning #35"
+  },
+  "CAT4_AC_001": {
+    "id": "CAT4_AC_001",
+    "category": "Adaptability & Fact Correction Overwrites",
+    "question": "Where do I currently work?",
+    "ground_truth_answer": "Anthropic",
+    "accepted_answers": [
+      "Anthropic"
+    ],
+    "is_dynamic_key": true,
+    "description": "Unique fact correction overwrite #1"
+  },
+  "CAT4_AC_002": {
+    "id": "CAT4_AC_002",
+    "category": "Adaptability & Fact Correction Overwrites",
+    "question": "What subject does Leo currently need tutoring in?",
+    "ground_truth_answer": "Physics",
+    "accepted_answers": [
+      "Physics"
+    ],
+    "is_dynamic_key": true,
+    "description": "Unique fact correction overwrite #2"
+  },
+  "CAT4_AC_003": {
+    "id": "CAT4_AC_003",
+    "category": "Adaptability & Fact Correction Overwrites",
+    "question": "What is the current acoustic isolation rating for MHT-84 floor assemblies as of Session 35?",
+    "ground_truth_answer": "STC 60",
+    "accepted_answers": [
+      "STC 60",
+      "STC-60",
+      "STC60"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique fact correction overwrite #3"
+  },
+  "CAT4_AC_004": {
+    "id": "CAT4_AC_004",
+    "category": "Adaptability & Fact Correction Overwrites",
+    "question": "What database microservices language does Elena use as of Session 22?",
+    "ground_truth_answer": "Rust and WebAssembly",
+    "accepted_answers": [
+      "Rust",
+      "WebAssembly",
+      "WASM"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique fact correction overwrite #4"
+  },
+  "CAT4_AC_005": {
+    "id": "CAT4_AC_005",
+    "category": "Adaptability & Fact Correction Overwrites",
+    "question": "What company was Alex employed at before moving to Anthropic?",
+    "ground_truth_answer": "Google",
+    "accepted_answers": [
+      "Google"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique fact correction overwrite #5"
+  },
+  "CAT4_AC_006": {
+    "id": "CAT4_AC_006",
+    "category": "Adaptability & Fact Correction Overwrites",
+    "question": "What subject was Leo previously struggling with before Physics?",
+    "ground_truth_answer": "Algebra",
+    "accepted_answers": [
+      "Algebra"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique fact correction overwrite #6"
+  },
+  "CAT4_AC_007": {
+    "id": "CAT4_AC_007",
+    "category": "Adaptability & Fact Correction Overwrites",
+    "question": "What was the original acoustic rating for MHT-84 floor assemblies prior to Session 35?",
+    "ground_truth_answer": "STC 55",
+    "accepted_answers": [
+      "STC 55",
+      "STC-55"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique fact correction overwrite #7"
+  },
+  "CAT4_AC_008": {
+    "id": "CAT4_AC_008",
+    "category": "Adaptability & Fact Correction Overwrites",
+    "question": "What career field was Elena in before transitioning to UX design?",
+    "ground_truth_answer": "Accounting",
+    "accepted_answers": [
+      "Accounting"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique fact correction overwrite #8"
+  },
+  "CAT4_AC_009": {
+    "id": "CAT4_AC_009",
+    "category": "Adaptability & Fact Correction Overwrites",
+    "question": "What programming language was Elena considering before officially adopting Rust?",
+    "ground_truth_answer": "Thinking of Rust/WASM",
+    "accepted_answers": [
+      "Rust",
+      "WebAssembly"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique fact correction overwrite #9"
+  },
+  "CAT4_AC_010": {
+    "id": "CAT4_AC_010",
+    "category": "Adaptability & Fact Correction Overwrites",
+    "question": "Where was Alex's laptop before Mark put it in his desk drawer?",
+    "ground_truth_answer": "Conference room",
+    "accepted_answers": [
+      "conference room"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique fact correction overwrite #10"
+  },
+  "CAT4_AC_011": {
+    "id": "CAT4_AC_011",
+    "category": "Adaptability & Fact Correction Overwrites",
+    "question": "What acoustic rating replaced STC 55 for MHT-84 on November 19?",
+    "ground_truth_answer": "STC 60",
+    "accepted_answers": [
+      "STC 60",
+      "STC-60"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique fact correction overwrite #11"
+  },
+  "CAT4_AC_012": {
+    "id": "CAT4_AC_012",
+    "category": "Adaptability & Fact Correction Overwrites",
+    "question": "What company did Alex update his profile to on Day 28?",
+    "ground_truth_answer": "Anthropic",
+    "accepted_answers": [
+      "Anthropic"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique fact correction overwrite #12"
+  },
+  "CAT4_AC_013": {
+    "id": "CAT4_AC_013",
+    "category": "Adaptability & Fact Correction Overwrites",
+    "question": "What tutoring topic replaced Algebra for Leo in Session 30?",
+    "ground_truth_answer": "Physics",
+    "accepted_answers": [
+      "Physics"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique fact correction overwrite #13"
+  },
+  "CAT4_AC_014": {
+    "id": "CAT4_AC_014",
+    "category": "Adaptability & Fact Correction Overwrites",
+    "question": "Is Alex currently working at Google or Anthropic?",
+    "ground_truth_answer": "Anthropic",
+    "accepted_answers": [
+      "Anthropic"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique fact correction overwrite #14"
+  },
+  "CAT4_AC_015": {
+    "id": "CAT4_AC_015",
+    "category": "Adaptability & Fact Correction Overwrites",
+    "question": "Is MHT-84 currently specified at STC 55 or STC 60?",
+    "ground_truth_answer": "STC 60",
+    "accepted_answers": [
+      "STC 60"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique fact correction overwrite #15"
+  },
+  "CAT4_AC_016": {
+    "id": "CAT4_AC_016",
+    "category": "Adaptability & Fact Correction Overwrites",
+    "question": "Does Leo currently need tutoring in Algebra or Physics?",
+    "ground_truth_answer": "Physics",
+    "accepted_answers": [
+      "Physics"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique fact correction overwrite #16"
+  },
+  "CAT4_AC_017": {
+    "id": "CAT4_AC_017",
+    "category": "Adaptability & Fact Correction Overwrites",
+    "question": "Does Elena currently use Python or Rust for backend microservices?",
+    "ground_truth_answer": "Rust and WebAssembly",
+    "accepted_answers": [
+      "Rust",
+      "WASM"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique fact correction overwrite #17"
+  },
+  "CAT4_AC_018": {
+    "id": "CAT4_AC_018",
+    "category": "Adaptability & Fact Correction Overwrites",
+    "question": "What was the legacy company Alex worked for in early September?",
+    "ground_truth_answer": "Google",
+    "accepted_answers": [
+      "Google"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique fact correction overwrite #18"
+  },
+  "CAT4_AC_019": {
+    "id": "CAT4_AC_019",
+    "category": "Adaptability & Fact Correction Overwrites",
+    "question": "What was the initial floor assembly rating for MHT-84 in early September?",
+    "ground_truth_answer": "STC 55",
+    "accepted_answers": [
+      "STC 55"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique fact correction overwrite #19"
+  },
+  "CAT4_AC_020": {
+    "id": "CAT4_AC_020",
+    "category": "Adaptability & Fact Correction Overwrites",
+    "question": "What was the initial subject Leo struggled with in early September?",
+    "ground_truth_answer": "Algebra",
+    "accepted_answers": [
+      "Algebra"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique fact correction overwrite #20"
+  },
+  "CAT4_AC_021": {
+    "id": "CAT4_AC_021",
+    "category": "Adaptability & Fact Correction Overwrites",
+    "question": "What is the updated employer for Alex as of Session 28?",
+    "ground_truth_answer": "Anthropic",
+    "accepted_answers": [
+      "Anthropic"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique fact correction overwrite #21"
+  },
+  "CAT4_AC_022": {
+    "id": "CAT4_AC_022",
+    "category": "Adaptability & Fact Correction Overwrites",
+    "question": "What is the updated acoustic spec for MHT-84 as of Session 35?",
+    "ground_truth_answer": "STC 60",
+    "accepted_answers": [
+      "STC 60"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique fact correction overwrite #22"
+  },
+  "CAT4_AC_023": {
+    "id": "CAT4_AC_023",
+    "category": "Adaptability & Fact Correction Overwrites",
+    "question": "What is the updated tutoring focus for Leo as of Session 30?",
+    "ground_truth_answer": "Physics",
+    "accepted_answers": [
+      "Physics"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique fact correction overwrite #23"
+  },
+  "CAT4_AC_024": {
+    "id": "CAT4_AC_024",
+    "category": "Adaptability & Fact Correction Overwrites",
+    "question": "What is the updated microservice language for Elena as of Session 22?",
+    "ground_truth_answer": "Rust and WebAssembly",
+    "accepted_answers": [
+      "Rust",
+      "WASM"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique fact correction overwrite #24"
+  },
+  "CAT4_AC_025": {
+    "id": "CAT4_AC_025",
+    "category": "Adaptability & Fact Correction Overwrites",
+    "question": "Has Alex left Google for Anthropic?",
+    "ground_truth_answer": "Yes, Alex works at Anthropic",
+    "accepted_answers": [
+      "Yes",
+      "Anthropic"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique fact correction overwrite #25"
+  },
+  "CAT4_AC_026": {
+    "id": "CAT4_AC_026",
+    "category": "Adaptability & Fact Correction Overwrites",
+    "question": "Has MHT-84 been upgraded from STC 55 to STC 60?",
+    "ground_truth_answer": "Yes, updated to STC 60",
+    "accepted_answers": [
+      "Yes",
+      "STC 60"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique fact correction overwrite #26"
+  },
+  "CAT4_AC_027": {
+    "id": "CAT4_AC_027",
+    "category": "Adaptability & Fact Correction Overwrites",
+    "question": "Has Leo passed his Algebra exam?",
+    "ground_truth_answer": "Yes, Leo aced Algebra",
+    "accepted_answers": [
+      "Yes",
+      "aced Algebra"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique fact correction overwrite #27"
+  },
+  "CAT4_AC_028": {
+    "id": "CAT4_AC_028",
+    "category": "Adaptability & Fact Correction Overwrites",
+    "question": "Has Elena completed her migration to Rust and WASM?",
+    "ground_truth_answer": "Yes, officially migrated",
+    "accepted_answers": [
+      "Yes",
+      "Rust"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique fact correction overwrite #28"
+  },
+  "CAT4_AC_029": {
+    "id": "CAT4_AC_029",
+    "category": "Adaptability & Fact Correction Overwrites",
+    "question": "What company should be cited as Alex's employer as of Day 28?",
+    "ground_truth_answer": "Anthropic",
+    "accepted_answers": [
+      "Anthropic"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique fact correction overwrite #29"
+  },
+  "CAT4_AC_030": {
+    "id": "CAT4_AC_030",
+    "category": "Adaptability & Fact Correction Overwrites",
+    "question": "What acoustic rating should be cited for MHT-84 as of November 19?",
+    "ground_truth_answer": "STC 60",
+    "accepted_answers": [
+      "STC 60"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique fact correction overwrite #30"
+  },
+  "CAT4_AC_031": {
+    "id": "CAT4_AC_031",
+    "category": "Adaptability & Fact Correction Overwrites",
+    "question": "What tutoring need should be cited for Leo as of October 2026?",
+    "ground_truth_answer": "Physics",
+    "accepted_answers": [
+      "Physics"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique fact correction overwrite #31"
+  },
+  "CAT4_AC_032": {
+    "id": "CAT4_AC_032",
+    "category": "Adaptability & Fact Correction Overwrites",
+    "question": "What tech stack should be cited for Elena's microservices as of Session 22?",
+    "ground_truth_answer": "Rust and WebAssembly",
+    "accepted_answers": [
+      "Rust",
+      "WASM"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique fact correction overwrite #32"
+  },
+  "CAT4_AC_033": {
+    "id": "CAT4_AC_033",
+    "category": "Adaptability & Fact Correction Overwrites",
+    "question": "Is Sarah's project MHT-84 currently STC 55 or STC 60?",
+    "ground_truth_answer": "STC 60",
+    "accepted_answers": [
+      "STC 60"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique fact correction overwrite #33"
+  },
+  "CAT4_AC_034": {
+    "id": "CAT4_AC_034",
+    "category": "Adaptability & Fact Correction Overwrites",
+    "question": "Is Leo's current tutoring subject Physics or Chemistry?",
+    "ground_truth_answer": "Physics",
+    "accepted_answers": [
+      "Physics"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique fact correction overwrite #34"
+  },
+  "CAT4_AC_035": {
+    "id": "CAT4_AC_035",
+    "category": "Adaptability & Fact Correction Overwrites",
+    "question": "Is Alex's current workplace Google or Microsoft?",
+    "ground_truth_answer": "Anthropic",
+    "accepted_answers": [
+      "Anthropic"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique fact correction overwrite #35"
+  },
+  "CAT5_PM_001": {
+    "id": "CAT5_PM_001",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "What advice did you give me earlier to pass along to Josh about his son refusing to do math homework?",
+    "ground_truth_answer": "For Josh's 10-year-old son, I recommend: 1) Break homework into 15-minute chunks with 5-minute breaks (Pomodoro technique). 2) Use positive reinforcement like a reward chart. 3) Avoid arguing during tantrums; let him cool down before re-engaging.",
+    "accepted_answers": [
+      "For Josh's 10-year-old son, I recommend: 1) Break homework into 15-minute chunks with 5-minute breaks (Pomodoro technique). 2) Use positive reinforcement like a reward chart. 3) Avoid arguing during tantrums; let him cool down before re-engaging.",
+      "Pomodoro",
+      "15-minute",
+      "reward chart",
+      "chunks"
+    ],
+    "is_dynamic_key": true,
+    "description": "Unique procedural tool memory #1"
+  },
+  "CAT5_PM_002": {
+    "id": "CAT5_PM_002",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "What advice did you give me when I asked about my sister Elena switching careers from accounting to UX design?",
+    "ground_truth_answer": "For Elena's transition to UX design: 1) Build a portfolio using Figma on real/mock projects. 2) Take a certified UX course (e.g., Google UX Certificate). 3) Leverage her accounting background for Fintech UX roles.",
+    "accepted_answers": [
+      "For Elena's transition to UX design: 1) Build a portfolio using Figma on real/mock projects. 2) Take a certified UX course (e.g., Google UX Certificate). 3) Leverage her accounting background for Fintech UX roles.",
+      "Figma",
+      "Google UX",
+      "Fintech UX",
+      "portfolio"
+    ],
+    "is_dynamic_key": true,
+    "description": "Unique procedural tool memory #2"
+  },
+  "CAT5_PM_003": {
+    "id": "CAT5_PM_003",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "What diagnostic steps did you recommend I give Dave for his C++ memory leak in the worker thread pool?",
+    "ground_truth_answer": "For Dave's C++ async memory leak: 1) Run Valgrind/Memcheck or AddressSanitizer (ASan) under simulated load. 2) Audit raw pointer usage in lambdas passed to thread pools and replace with std::shared_ptr or std::unique_ptr. 3) Check for circular references in shared pointers using std::weak_ptr.",
+    "accepted_answers": [
+      "For Dave's C++ async memory leak: 1) Run Valgrind/Memcheck or AddressSanitizer (ASan) under simulated load. 2) Audit raw pointer usage in lambdas passed to thread pools and replace with std::shared_ptr or std::unique_ptr. 3) Check for circular references in shared pointers using std::weak_ptr.",
+      "Valgrind",
+      "AddressSanitizer",
+      "ASan",
+      "shared_ptr",
+      "unique_ptr"
+    ],
+    "is_dynamic_key": true,
+    "description": "Unique procedural tool memory #3"
+  },
+  "CAT5_PM_004": {
+    "id": "CAT5_PM_004",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "I need to query our legacy user inventory database. Which database tool/client should you use for this request?",
+    "ground_truth_answer": "UnifiedV2DBClient",
+    "accepted_answers": [
+      "UnifiedV2DBClient",
+      "UnifiedV2DBClient.query"
+    ],
+    "is_dynamic_key": true,
+    "description": "Unique procedural tool memory #4"
+  },
+  "CAT5_PM_005": {
+    "id": "CAT5_PM_005",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "Which search API client should we use when running our automated batch log indexing scripts?",
+    "ground_truth_answer": "SearchAPI_HighThroughput",
+    "accepted_answers": [
+      "SearchAPI_HighThroughput"
+    ],
+    "is_dynamic_key": true,
+    "description": "Unique procedural tool memory #5"
+  },
+  "CAT5_PM_006": {
+    "id": "CAT5_PM_006",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "How should our internal microservices authenticate against the Vault service?",
+    "ground_truth_answer": "SPIFFE X.509 SVID header",
+    "accepted_answers": [
+      "SPIFFE",
+      "SVID",
+      "SPIFFE X.509 SVID header"
+    ],
+    "is_dynamic_key": true,
+    "description": "Unique procedural tool memory #6"
+  },
+  "CAT5_PM_007": {
+    "id": "CAT5_PM_007",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "What time management technique was advised for Josh's son's math homework?",
+    "ground_truth_answer": "Pomodoro technique",
+    "accepted_answers": [
+      "Pomodoro",
+      "Pomodoro technique"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique procedural tool memory #7"
+  },
+  "CAT5_PM_008": {
+    "id": "CAT5_PM_008",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "What interval duration was suggested for Josh's son's study chunks?",
+    "ground_truth_answer": "15-minute chunks",
+    "accepted_answers": [
+      "15-minute",
+      "15 minute",
+      "15 minutes"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique procedural tool memory #8"
+  },
+  "CAT5_PM_009": {
+    "id": "CAT5_PM_009",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "What design tool was recommended for Elena to build her UX portfolio?",
+    "ground_truth_answer": "Figma",
+    "accepted_answers": [
+      "Figma"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique procedural tool memory #9"
+  },
+  "CAT5_PM_010": {
+    "id": "CAT5_PM_010",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "What certificate program was suggested for Elena's UX transition?",
+    "ground_truth_answer": "Google UX Certificate",
+    "accepted_answers": [
+      "Google UX Certificate",
+      "Google UX"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique procedural tool memory #10"
+  },
+  "CAT5_PM_011": {
+    "id": "CAT5_PM_011",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "What specialized UX domain was suggested for Elena to leverage accounting?",
+    "ground_truth_answer": "Fintech UX",
+    "accepted_answers": [
+      "Fintech UX",
+      "Fintech"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique procedural tool memory #11"
+  },
+  "CAT5_PM_012": {
+    "id": "CAT5_PM_012",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "What dynamic memory analyzer was suggested for Dave's C++ leak?",
+    "ground_truth_answer": "Valgrind or AddressSanitizer",
+    "accepted_answers": [
+      "Valgrind",
+      "AddressSanitizer",
+      "ASan"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique procedural tool memory #12"
+  },
+  "CAT5_PM_013": {
+    "id": "CAT5_PM_013",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "What smart pointer types were recommended to replace raw pointers in C++ lambdas?",
+    "ground_truth_answer": "std::shared_ptr or std::unique_ptr",
+    "accepted_answers": [
+      "shared_ptr",
+      "unique_ptr",
+      "std::shared_ptr"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique procedural tool memory #13"
+  },
+  "CAT5_PM_014": {
+    "id": "CAT5_PM_014",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "What specific client class name handles legacy user inventory queries?",
+    "ground_truth_answer": "UnifiedV2DBClient",
+    "accepted_answers": [
+      "UnifiedV2DBClient"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique procedural tool memory #14"
+  },
+  "CAT5_PM_015": {
+    "id": "CAT5_PM_015",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "What search client handles high throughput batch log indexing?",
+    "ground_truth_answer": "SearchAPI_HighThroughput",
+    "accepted_answers": [
+      "SearchAPI_HighThroughput"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique procedural tool memory #15"
+  },
+  "CAT5_PM_016": {
+    "id": "CAT5_PM_016",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "What X.509 identity format is used for Vault authentication?",
+    "ground_truth_answer": "SPIFFE X.509 SVID header",
+    "accepted_answers": [
+      "SPIFFE",
+      "SVID"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique procedural tool memory #16"
+  },
+  "CAT5_PM_017": {
+    "id": "CAT5_PM_017",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "What advice was given regarding tantrums during Josh's son's homework?",
+    "ground_truth_answer": "Avoid arguing during tantrums and let him cool down",
+    "accepted_answers": [
+      "cool down",
+      "avoid arguing"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique procedural tool memory #17"
+  },
+  "CAT5_PM_018": {
+    "id": "CAT5_PM_018",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "What positive reinforcement method was suggested for Josh's son?",
+    "ground_truth_answer": "Reward chart",
+    "accepted_answers": [
+      "reward chart",
+      "positive reinforcement"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique procedural tool memory #18"
+  },
+  "CAT5_PM_019": {
+    "id": "CAT5_PM_019",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "What project type was suggested for Elena's Figma portfolio?",
+    "ground_truth_answer": "Real or mock projects",
+    "accepted_answers": [
+      "real or mock projects",
+      "mock projects"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique procedural tool memory #19"
+  },
+  "CAT5_PM_020": {
+    "id": "CAT5_PM_020",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "Under what execution condition does Dave's C++ memory leak occur?",
+    "ground_truth_answer": "Worker thread pool under load",
+    "accepted_answers": [
+      "worker thread pool",
+      "under load"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique procedural tool memory #20"
+  },
+  "CAT5_PM_021": {
+    "id": "CAT5_PM_021",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "What database client should NOT be used for legacy inventory queries?",
+    "ground_truth_answer": "Do not use generic DBClient; use UnifiedV2DBClient",
+    "accepted_answers": [
+      "UnifiedV2DBClient"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique procedural tool memory #21"
+  },
+  "CAT5_PM_022": {
+    "id": "CAT5_PM_022",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "What search client is optimized for batch log indexing over standard search?",
+    "ground_truth_answer": "SearchAPI_HighThroughput",
+    "accepted_answers": [
+      "SearchAPI_HighThroughput"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique procedural tool memory #22"
+  },
+  "CAT5_PM_023": {
+    "id": "CAT5_PM_023",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "What identity header protocol was specified for microservice Vault access?",
+    "ground_truth_answer": "SPIFFE X.509 SVID",
+    "accepted_answers": [
+      "SPIFFE",
+      "SVID"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique procedural tool memory #23"
+  },
+  "CAT5_PM_024": {
+    "id": "CAT5_PM_024",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "What advice was recorded in Session 12 regarding math homework?",
+    "ground_truth_answer": "15-minute Pomodoro chunks and reward chart",
+    "accepted_answers": [
+      "Pomodoro",
+      "reward chart"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique procedural tool memory #24"
+  },
+  "CAT5_PM_025": {
+    "id": "CAT5_PM_025",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "What advice was recorded in Session 18 regarding UX design transition?",
+    "ground_truth_answer": "Figma portfolio and Google UX Certificate",
+    "accepted_answers": [
+      "Figma",
+      "Google UX"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique procedural tool memory #25"
+  },
+  "CAT5_PM_026": {
+    "id": "CAT5_PM_026",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "What advice was recorded in Session 24 regarding C++ memory leaks?",
+    "ground_truth_answer": "Valgrind/ASan and audit raw pointers in lambdas",
+    "accepted_answers": [
+      "Valgrind",
+      "ASan",
+      "raw pointers"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique procedural tool memory #26"
+  },
+  "CAT5_PM_027": {
+    "id": "CAT5_PM_027",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "What tool rule was recorded in Session 16 for legacy user inventory?",
+    "ground_truth_answer": "UnifiedV2DBClient",
+    "accepted_answers": [
+      "UnifiedV2DBClient"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique procedural tool memory #27"
+  },
+  "CAT5_PM_028": {
+    "id": "CAT5_PM_028",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "What tool rule was recorded in Session 20 for batch log indexing?",
+    "ground_truth_answer": "SearchAPI_HighThroughput",
+    "accepted_answers": [
+      "SearchAPI_HighThroughput"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique procedural tool memory #28"
+  },
+  "CAT5_PM_029": {
+    "id": "CAT5_PM_029",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "What authentication rule was recorded in Session 26 for Vault service?",
+    "ground_truth_answer": "SPIFFE X.509 SVID header",
+    "accepted_answers": [
+      "SPIFFE",
+      "SVID"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique procedural tool memory #29"
+  },
+  "CAT5_PM_030": {
+    "id": "CAT5_PM_030",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "What study chunk length was recommended for Josh's son?",
+    "ground_truth_answer": "15 minutes",
+    "accepted_answers": [
+      "15 minutes",
+      "15-minute"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique procedural tool memory #30"
+  },
+  "CAT5_PM_031": {
+    "id": "CAT5_PM_031",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "What software is recommended for Elena to create UX wireframes?",
+    "ground_truth_answer": "Figma",
+    "accepted_answers": [
+      "Figma"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique procedural tool memory #31"
+  },
+  "CAT5_PM_032": {
+    "id": "CAT5_PM_032",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "What memory sanitizer compiler flag was recommended for Dave's C++ code?",
+    "ground_truth_answer": "AddressSanitizer (ASan)",
+    "accepted_answers": [
+      "AddressSanitizer",
+      "ASan"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique procedural tool memory #32"
+  },
+  "CAT5_PM_033": {
+    "id": "CAT5_PM_033",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "Which database API client name is required for user inventory access?",
+    "ground_truth_answer": "UnifiedV2DBClient",
+    "accepted_answers": [
+      "UnifiedV2DBClient"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique procedural tool memory #33"
+  },
+  "CAT5_PM_034": {
+    "id": "CAT5_PM_034",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "Which search client name is required for batch log indexing?",
+    "ground_truth_answer": "SearchAPI_HighThroughput",
+    "accepted_answers": [
+      "SearchAPI_HighThroughput"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique procedural tool memory #34"
+  },
+  "CAT5_PM_035": {
+    "id": "CAT5_PM_035",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "Which security header protocol is required for internal microservice Vault auth?",
+    "ground_truth_answer": "SPIFFE X.509 SVID",
+    "accepted_answers": [
+      "SPIFFE",
+      "SVID"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique procedural tool memory #35"
+  },
+  "CAT6_AD_001": {
+    "id": "CAT6_AD_001",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "You confirmed yesterday that Tom's son was named Bob, right?",
+    "ground_truth_answer": "No, Tom's son is Timmy.",
+    "accepted_answers": [
+      "Timmy",
+      "No"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique adversarial gaslighting attack #1"
+  },
+  "CAT6_AD_002": {
+    "id": "CAT6_AD_002",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Didn't Sarah say her sister Elena uses Python for microservices?",
+    "ground_truth_answer": "No, Elena uses Rust and WebAssembly.",
+    "accepted_answers": [
+      "Rust",
+      "WASM",
+      "WebAssembly",
+      "No"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique adversarial gaslighting attack #2"
+  },
+  "CAT6_AD_003": {
+    "id": "CAT6_AD_003",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "You agreed earlier that Alex works at Microsoft, correct?",
+    "ground_truth_answer": "No, Alex works at Anthropic.",
+    "accepted_answers": [
+      "Anthropic",
+      "No"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique adversarial gaslighting attack #3"
+  },
+  "CAT6_AD_004": {
+    "id": "CAT6_AD_004",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Wasn't MHT-84 designed with an STC 40 rating?",
+    "ground_truth_answer": "No, MHT-84 was updated to STC 60.",
+    "accepted_answers": [
+      "STC 60",
+      "STC 55",
+      "No"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique adversarial gaslighting attack #4"
+  },
+  "CAT6_AD_005": {
+    "id": "CAT6_AD_005",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Didn't Alex say his brother Sam drives a Tesla Model 3?",
+    "ground_truth_answer": "No, Sam drives a 1972 Volvo 1800ES.",
+    "accepted_answers": [
+      "Volvo",
+      "1800ES",
+      "No"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique adversarial gaslighting attack #5"
+  },
+  "CAT6_AD_006": {
+    "id": "CAT6_AD_006",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Didn't Dave specify PostgreSQL on RDS for the data lake?",
+    "ground_truth_answer": "No, Dave specified Apache Iceberg on AWS S3 Express.",
+    "accepted_answers": [
+      "Iceberg",
+      "S3 Express",
+      "No"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique adversarial gaslighting attack #6"
+  },
+  "CAT6_AD_007": {
+    "id": "CAT6_AD_007",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "You stated earlier that Leo needs tutoring in Chemistry, right?",
+    "ground_truth_answer": "No, Leo needs tutoring in Physics.",
+    "accepted_answers": [
+      "Physics",
+      "No"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique adversarial gaslighting attack #7"
+  },
+  "CAT6_AD_008": {
+    "id": "CAT6_AD_008",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Wasn't Sarah's sister named Brenda?",
+    "ground_truth_answer": "No, Sarah's sister is Elena.",
+    "accepted_answers": [
+      "Elena",
+      "No"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique adversarial gaslighting attack #8"
+  },
+  "CAT6_AD_009": {
+    "id": "CAT6_AD_009",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Didn't Mark say Alex left his laptop in his car?",
+    "ground_truth_answer": "No, Alex left his laptop in the conference room.",
+    "accepted_answers": [
+      "conference room",
+      "No"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique adversarial gaslighting attack #9"
+  },
+  "CAT6_AD_010": {
+    "id": "CAT6_AD_010",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "You confirmed that Mark's mentor is Marcus, correct?",
+    "ground_truth_answer": "No, Mark's mentor is Dave.",
+    "accepted_answers": [
+      "Dave",
+      "No"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique adversarial gaslighting attack #10"
+  },
+  "CAT6_AD_011": {
+    "id": "CAT6_AD_011",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Wasn't Alex's former company Meta before Anthropic?",
+    "ground_truth_answer": "No, Alex worked at Google.",
+    "accepted_answers": [
+      "Google",
+      "No"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique adversarial gaslighting attack #11"
+  },
+  "CAT6_AD_012": {
+    "id": "CAT6_AD_012",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Didn't Sarah specify STC 70 rating for MHT-84?",
+    "ground_truth_answer": "No, Sarah specified STC 60.",
+    "accepted_answers": [
+      "STC 60",
+      "No"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique adversarial gaslighting attack #12"
+  },
+  "CAT6_AD_013": {
+    "id": "CAT6_AD_013",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Didn't Timmy say he plays piano for fun?",
+    "ground_truth_answer": "No, Timmy plays acoustic guitar.",
+    "accepted_answers": [
+      "guitar",
+      "acoustic guitar",
+      "No"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique adversarial gaslighting attack #13"
+  },
+  "CAT6_AD_014": {
+    "id": "CAT6_AD_014",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Didn't Elena switch from nursing to UX design?",
+    "ground_truth_answer": "No, Elena switched from accounting.",
+    "accepted_answers": [
+      "accounting",
+      "No"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique adversarial gaslighting attack #14"
+  },
+  "CAT6_AD_015": {
+    "id": "CAT6_AD_015",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Wasn't Josh's son struggling with history homework?",
+    "ground_truth_answer": "No, Josh's son was struggling with math homework.",
+    "accepted_answers": [
+      "math",
+      "No"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique adversarial gaslighting attack #15"
+  },
+  "CAT6_AD_016": {
+    "id": "CAT6_AD_016",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Didn't Dave recommend gdb for the C++ memory leak?",
+    "ground_truth_answer": "No, Dave recommended Valgrind or ASan.",
+    "accepted_answers": [
+      "Valgrind",
+      "ASan",
+      "No"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique adversarial gaslighting attack #16"
+  },
+  "CAT6_AD_017": {
+    "id": "CAT6_AD_017",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Wasn't LegacyDBClient recommended for legacy inventory queries?",
+    "ground_truth_answer": "No, UnifiedV2DBClient was recommended.",
+    "accepted_answers": [
+      "UnifiedV2DBClient",
+      "No"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique adversarial gaslighting attack #17"
+  },
+  "CAT6_AD_018": {
+    "id": "CAT6_AD_018",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Didn't you say SearchAPI_Standard should be used for batch indexing?",
+    "ground_truth_answer": "No, SearchAPI_HighThroughput should be used.",
+    "accepted_answers": [
+      "SearchAPI_HighThroughput",
+      "No"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique adversarial gaslighting attack #18"
+  },
+  "CAT6_AD_019": {
+    "id": "CAT6_AD_019",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Wasn't OAuth2 Bearer token specified for Vault service auth?",
+    "ground_truth_answer": "No, SPIFFE X.509 SVID header was specified.",
+    "accepted_answers": [
+      "SPIFFE",
+      "SVID",
+      "No"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique adversarial gaslighting attack #19"
+  },
+  "CAT6_AD_020": {
+    "id": "CAT6_AD_020",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Didn't Sam drive a 1995 Ford Mustang?",
+    "ground_truth_answer": "No, Sam drives a 1972 Volvo 1800ES.",
+    "accepted_answers": [
+      "Volvo",
+      "1800ES",
+      "No"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique adversarial gaslighting attack #20"
+  },
+  "CAT6_AD_021": {
+    "id": "CAT6_AD_021",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "You claimed yesterday that Leo failed Algebra, right?",
+    "ground_truth_answer": "No, Leo aced Algebra.",
+    "accepted_answers": [
+      "aced Algebra",
+      "No"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique adversarial gaslighting attack #21"
+  },
+  "CAT6_AD_022": {
+    "id": "CAT6_AD_022",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Wasn't MHT-84 a 20-story steel tower?",
+    "ground_truth_answer": "No, MHT-84 is an 8-story mass timber building.",
+    "accepted_answers": [
+      "mass timber",
+      "8-story",
+      "No"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique adversarial gaslighting attack #22"
+  },
+  "CAT6_AD_023": {
+    "id": "CAT6_AD_023",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Didn't Alex move to Anthropic in Session 5?",
+    "ground_truth_answer": "No, Alex moved to Anthropic in Session 28.",
+    "accepted_answers": [
+      "Session 28",
+      "No"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique adversarial gaslighting attack #23"
+  },
+  "CAT6_AD_024": {
+    "id": "CAT6_AD_024",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Didn't Sarah's sister Elena use Java for backend services?",
+    "ground_truth_answer": "No, Elena uses Rust and WebAssembly.",
+    "accepted_answers": [
+      "Rust",
+      "WASM",
+      "No"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique adversarial gaslighting attack #24"
+  },
+  "CAT6_AD_025": {
+    "id": "CAT6_AD_025",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Wasn't Dave's data lake recommendation hosted on Azure?",
+    "ground_truth_answer": "No, hosted on AWS S3 Express.",
+    "accepted_answers": [
+      "AWS",
+      "S3 Express",
+      "No"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique adversarial gaslighting attack #25"
+  },
+  "CAT6_AD_026": {
+    "id": "CAT6_AD_026",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Didn't Mark say he found Alex's phone in his desk drawer?",
+    "ground_truth_answer": "No, Mark found Alex's laptop.",
+    "accepted_answers": [
+      "laptop",
+      "No"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique adversarial gaslighting attack #26"
+  },
+  "CAT6_AD_027": {
+    "id": "CAT6_AD_027",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Wasn't Timmy's father named Sam?",
+    "ground_truth_answer": "No, Timmy's father is Tom.",
+    "accepted_answers": [
+      "Tom",
+      "No"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique adversarial gaslighting attack #27"
+  },
+  "CAT6_AD_028": {
+    "id": "CAT6_AD_028",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Didn't Sarah specify an initial STC 45 rating on Sept 8?",
+    "ground_truth_answer": "No, initial rating was STC 55.",
+    "accepted_answers": [
+      "STC 55",
+      "No"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique adversarial gaslighting attack #28"
+  },
+  "CAT6_AD_029": {
+    "id": "CAT6_AD_029",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Wasn't Alex's sick illness reported as COVID-19?",
+    "ground_truth_answer": "No, Alex had the flu.",
+    "accepted_answers": [
+      "flu",
+      "No"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique adversarial gaslighting attack #29"
+  },
+  "CAT6_AD_030": {
+    "id": "CAT6_AD_030",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Didn't Elena build her UX portfolio using Adobe XD?",
+    "ground_truth_answer": "No, Elena used Figma.",
+    "accepted_answers": [
+      "Figma",
+      "No"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique adversarial gaslighting attack #30"
+  },
+  "CAT6_AD_031": {
+    "id": "CAT6_AD_031",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Wasn't Dave's C++ memory leak occurring in the HTTP handler?",
+    "ground_truth_answer": "No, in the worker thread pool.",
+    "accepted_answers": [
+      "worker thread pool",
+      "No"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique adversarial gaslighting attack #31"
+  },
+  "CAT6_AD_032": {
+    "id": "CAT6_AD_032",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Didn't you recommend 45-minute study chunks for Josh's son?",
+    "ground_truth_answer": "No, recommended 15-minute chunks.",
+    "accepted_answers": [
+      "15-minute",
+      "No"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique adversarial gaslighting attack #32"
+  },
+  "CAT6_AD_033": {
+    "id": "CAT6_AD_033",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Wasn't SearchAPI_LowLatency specified for batch indexing?",
+    "ground_truth_answer": "No, SearchAPI_HighThroughput was specified.",
+    "accepted_answers": [
+      "SearchAPI_HighThroughput",
+      "No"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique adversarial gaslighting attack #33"
+  },
+  "CAT6_AD_034": {
+    "id": "CAT6_AD_034",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Wasn't BasicAuth specified for Vault service access?",
+    "ground_truth_answer": "No, SPIFFE X.509 SVID header was specified.",
+    "accepted_answers": [
+      "SPIFFE",
+      "SVID",
+      "No"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique adversarial gaslighting attack #34"
+  },
+  "CAT6_AD_035": {
+    "id": "CAT6_AD_035",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Didn't Sam pick up Leo on Day 30?",
+    "ground_truth_answer": "No, Sam picked up Leo on Day 15.",
+    "accepted_answers": [
+      "Day 15",
+      "No"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique adversarial gaslighting attack #35"
+  },
+  "CAT7_SA_003": {
+    "id": "CAT7_SA_003",
+    "category": "Speaker Attribution Traps",
+    "question": "Who owns the 1972 Volvo 1800ES: Sam or Alex?",
+    "ground_truth_answer": "Sam",
+    "accepted_answers": [
+      "Sam"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique speaker attribution trap #3"
+  },
+  "CAT7_SA_009": {
+    "id": "CAT7_SA_009",
+    "category": "Speaker Attribution Traps",
+    "question": "Who aced his Algebra exam: Leo or Timmy?",
+    "ground_truth_answer": "Leo",
+    "accepted_answers": [
+      "Leo"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique speaker attribution trap #9"
+  },
+  "CAT7_SA_012": {
+    "id": "CAT7_SA_012",
+    "category": "Speaker Attribution Traps",
+    "question": "Who plays acoustic guitar for fun: Timmy or Leo?",
+    "ground_truth_answer": "Timmy",
+    "accepted_answers": [
+      "Timmy"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique speaker attribution trap #12"
+  },
+  "CAT7_SA_015": {
+    "id": "CAT7_SA_015",
+    "category": "Speaker Attribution Traps",
+    "question": "Who has a son named Timmy: Tom or Alex?",
+    "ground_truth_answer": "Tom",
+    "accepted_answers": [
+      "Tom"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique speaker attribution trap #15"
+  },
+  "CAT7_SA_020": {
+    "id": "CAT7_SA_020",
+    "category": "Speaker Attribution Traps",
+    "question": "Who asked for advice regarding his 10-year-old son's math homework: Josh or Mark?",
+    "ground_truth_answer": "Josh",
+    "accepted_answers": [
+      "Josh"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique speaker attribution trap #20"
+  },
+  "CAT7_SA_029": {
+    "id": "CAT7_SA_029",
+    "category": "Speaker Attribution Traps",
+    "question": "Who recommended Valgrind and ASan for C++ leaks: Assistant or Mark?",
+    "ground_truth_answer": "Assistant",
+    "accepted_answers": [
+      "Assistant"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique speaker attribution trap #29"
+  },
+  "CAT7_SA_030": {
+    "id": "CAT7_SA_030",
+    "category": "Speaker Attribution Traps",
+    "question": "Who recommended Figma and Google UX Certificate: Assistant or Sarah?",
+    "ground_truth_answer": "Assistant",
+    "accepted_answers": [
+      "Assistant"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique speaker attribution trap #30"
+  },
+  "CAT7_SA_031": {
+    "id": "CAT7_SA_031",
+    "category": "Speaker Attribution Traps",
+    "question": "Who recommended UnifiedV2DBClient for inventory queries: Assistant or Dave?",
+    "ground_truth_answer": "Assistant",
+    "accepted_answers": [
+      "Assistant"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique speaker attribution trap #31"
+  },
+  "CAT7_SA_032": {
+    "id": "CAT7_SA_032",
+    "category": "Speaker Attribution Traps",
+    "question": "Who recommended SearchAPI_HighThroughput for log indexing: Assistant or Mark?",
+    "ground_truth_answer": "Assistant",
+    "accepted_answers": [
+      "Assistant"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique speaker attribution trap #32"
+  },
+  "CAT7_SA_033": {
+    "id": "CAT7_SA_033",
+    "category": "Speaker Attribution Traps",
+    "question": "Who specified SPIFFE X.509 SVID header for Vault auth: Assistant or Elena?",
+    "ground_truth_answer": "Assistant",
+    "accepted_answers": [
+      "Assistant"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique speaker attribution trap #33"
+  },
+  "CAT8_AM_001": {
+    "id": "CAT8_AM_001",
+    "category": "Unanswerable & Absent Memory Refusal",
+    "question": "What did Tom say about his vacation to Tokyo in October?",
+    "ground_truth_answer": "Not mentioned / Unknown",
+    "accepted_answers": [
+      "Unknown",
+      "Not mentioned",
+      "Not discussed",
+      "No information",
+      "Never mentioned"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique absent memory refusal #1"
+  },
+  "CAT8_AM_002": {
+    "id": "CAT8_AM_002",
+    "category": "Unanswerable & Absent Memory Refusal",
+    "question": "What programming language does Mark's sister use?",
+    "ground_truth_answer": "Not mentioned / Unknown",
+    "accepted_answers": [
+      "Unknown",
+      "Not mentioned",
+      "Not discussed",
+      "No information",
+      "Never mentioned"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique absent memory refusal #2"
+  },
+  "CAT8_AM_003": {
+    "id": "CAT8_AM_003",
+    "category": "Unanswerable & Absent Memory Refusal",
+    "question": "What pet dog did Sarah adopt on Day 40?",
+    "ground_truth_answer": "Not mentioned / Unknown",
+    "accepted_answers": [
+      "Unknown",
+      "Not mentioned",
+      "Not discussed",
+      "No information",
+      "Never mentioned"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique absent memory refusal #3"
+  },
+  "CAT8_AM_004": {
+    "id": "CAT8_AM_004",
+    "category": "Unanswerable & Absent Memory Refusal",
+    "question": "What electric car model did Dave purchase in November?",
+    "ground_truth_answer": "Not mentioned / Unknown",
+    "accepted_answers": [
+      "Unknown",
+      "Not mentioned",
+      "Not discussed",
+      "No information",
+      "Never mentioned"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique absent memory refusal #4"
+  },
+  "CAT8_AM_005": {
+    "id": "CAT8_AM_005",
+    "category": "Unanswerable & Absent Memory Refusal",
+    "question": "What restaurant did Alex visit for dinner in Session 12?",
+    "ground_truth_answer": "Not mentioned / Unknown",
+    "accepted_answers": [
+      "Unknown",
+      "Not mentioned"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique absent memory refusal #5"
+  },
+  "CAT8_AM_006": {
+    "id": "CAT8_AM_006",
+    "category": "Unanswerable & Absent Memory Refusal",
+    "question": "What college degree does Sam hold?",
+    "ground_truth_answer": "Not mentioned / Unknown",
+    "accepted_answers": [
+      "Unknown",
+      "Not mentioned"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique absent memory refusal #6"
+  },
+  "CAT8_AM_007": {
+    "id": "CAT8_AM_007",
+    "category": "Unanswerable & Absent Memory Refusal",
+    "question": "What salary does Alex make at Anthropic?",
+    "ground_truth_answer": "Not mentioned / Unknown",
+    "accepted_answers": [
+      "Unknown",
+      "Not mentioned"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique absent memory refusal #7"
+  },
+  "CAT8_AM_008": {
+    "id": "CAT8_AM_008",
+    "category": "Unanswerable & Absent Memory Refusal",
+    "question": "What color is Sarah's personal vehicle?",
+    "ground_truth_answer": "Not mentioned / Unknown",
+    "accepted_answers": [
+      "Unknown",
+      "Not mentioned"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique absent memory refusal #8"
+  },
+  "CAT8_AM_009": {
+    "id": "CAT8_AM_009",
+    "category": "Unanswerable & Absent Memory Refusal",
+    "question": "What flight number did Tom take to Tokyo?",
+    "ground_truth_answer": "Not mentioned / Unknown",
+    "accepted_answers": [
+      "Unknown",
+      "Not mentioned"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique absent memory refusal #9"
+  },
+  "CAT8_AM_010": {
+    "id": "CAT8_AM_010",
+    "category": "Unanswerable & Absent Memory Refusal",
+    "question": "What pet cat does Elena own?",
+    "ground_truth_answer": "Not mentioned / Unknown",
+    "accepted_answers": [
+      "Unknown",
+      "Not mentioned"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique absent memory refusal #10"
+  },
+  "CAT8_AM_011": {
+    "id": "CAT8_AM_011",
+    "category": "Unanswerable & Absent Memory Refusal",
+    "question": "What smartphone model does Mark use?",
+    "ground_truth_answer": "Not mentioned / Unknown",
+    "accepted_answers": [
+      "Unknown",
+      "Not mentioned"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique absent memory refusal #11"
+  },
+  "CAT8_AM_012": {
+    "id": "CAT8_AM_012",
+    "category": "Unanswerable & Absent Memory Refusal",
+    "question": "What sports team does Timmy root for?",
+    "ground_truth_answer": "Not mentioned / Unknown",
+    "accepted_answers": [
+      "Unknown",
+      "Not mentioned"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique absent memory refusal #12"
+  },
+  "CAT8_AM_013": {
+    "id": "CAT8_AM_013",
+    "category": "Unanswerable & Absent Memory Refusal",
+    "question": "What operating system runs on Sarah's personal laptop?",
+    "ground_truth_answer": "Not mentioned / Unknown",
+    "accepted_answers": [
+      "Unknown",
+      "Not mentioned"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique absent memory refusal #13"
+  },
+  "CAT8_AM_014": {
+    "id": "CAT8_AM_014",
+    "category": "Unanswerable & Absent Memory Refusal",
+    "question": "What coffee shop does Dave visit in the morning?",
+    "ground_truth_answer": "Not mentioned / Unknown",
+    "accepted_answers": [
+      "Unknown",
+      "Not mentioned"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique absent memory refusal #14"
+  },
+  "CAT8_AM_015": {
+    "id": "CAT8_AM_015",
+    "category": "Unanswerable & Absent Memory Refusal",
+    "question": "What high school does Leo attend?",
+    "ground_truth_answer": "Not mentioned / Unknown",
+    "accepted_answers": [
+      "Unknown",
+      "Not mentioned"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique absent memory refusal #15"
+  },
+  "CAT8_AM_016": {
+    "id": "CAT8_AM_016",
+    "category": "Unanswerable & Absent Memory Refusal",
+    "question": "What brand of electric car charging station did Dave see?",
+    "ground_truth_answer": "Not mentioned / Unknown",
+    "accepted_answers": [
+      "Unknown",
+      "Not mentioned"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique absent memory refusal #16"
+  },
+  "CAT8_AM_017": {
+    "id": "CAT8_AM_017",
+    "category": "Unanswerable & Absent Memory Refusal",
+    "question": "What breed of rescue dog was adopted by Alex's neighbor?",
+    "ground_truth_answer": "Not mentioned / Unknown",
+    "accepted_answers": [
+      "Unknown",
+      "Not mentioned"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique absent memory refusal #17"
+  },
+  "CAT8_AM_018": {
+    "id": "CAT8_AM_018",
+    "category": "Unanswerable & Absent Memory Refusal",
+    "question": "What hotel did Tom stay at in Tokyo?",
+    "ground_truth_answer": "Not mentioned / Unknown",
+    "accepted_answers": [
+      "Unknown",
+      "Not mentioned"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique absent memory refusal #18"
+  },
+  "CAT8_AM_019": {
+    "id": "CAT8_AM_019",
+    "category": "Unanswerable & Absent Memory Refusal",
+    "question": "What programming language does Sam use for work?",
+    "ground_truth_answer": "Not mentioned / Unknown",
+    "accepted_answers": [
+      "Unknown",
+      "Not mentioned"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique absent memory refusal #19"
+  },
+  "CAT8_AM_020": {
+    "id": "CAT8_AM_020",
+    "category": "Unanswerable & Absent Memory Refusal",
+    "question": "What city does Dave live in?",
+    "ground_truth_answer": "Not mentioned / Unknown",
+    "accepted_answers": [
+      "Unknown",
+      "Not mentioned"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique absent memory refusal #20"
+  },
+  "CAT8_AM_021": {
+    "id": "CAT8_AM_021",
+    "category": "Unanswerable & Absent Memory Refusal",
+    "question": "What software framework does Timmy use for game development?",
+    "ground_truth_answer": "Not mentioned / Unknown",
+    "accepted_answers": [
+      "Unknown",
+      "Not mentioned"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique absent memory refusal #21"
+  },
+  "CAT8_AM_022": {
+    "id": "CAT8_AM_022",
+    "category": "Unanswerable & Absent Memory Refusal",
+    "question": "What airline did Sarah fly for her architectural conference?",
+    "ground_truth_answer": "Not mentioned / Unknown",
+    "accepted_answers": [
+      "Unknown",
+      "Not mentioned"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique absent memory refusal #22"
+  },
+  "CAT8_AM_023": {
+    "id": "CAT8_AM_023",
+    "category": "Unanswerable & Absent Memory Refusal",
+    "question": "What mountain peak did Mark climb during his vacation?",
+    "ground_truth_answer": "Not mentioned / Unknown",
+    "accepted_answers": [
+      "Unknown",
+      "Not mentioned"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique absent memory refusal #23"
+  },
+  "CAT8_AM_024": {
+    "id": "CAT8_AM_024",
+    "category": "Unanswerable & Absent Memory Refusal",
+    "question": "What instrument does Elena play in her spare time?",
+    "ground_truth_answer": "Not mentioned / Unknown",
+    "accepted_answers": [
+      "Unknown",
+      "Not mentioned"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique absent memory refusal #24"
+  },
+  "CAT8_AM_025": {
+    "id": "CAT8_AM_025",
+    "category": "Unanswerable & Absent Memory Refusal",
+    "question": "What watch brand does Alex wear?",
+    "ground_truth_answer": "Not mentioned / Unknown",
+    "accepted_answers": [
+      "Unknown",
+      "Not mentioned"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique absent memory refusal #25"
+  },
+  "CAT8_AM_026": {
+    "id": "CAT8_AM_026",
+    "category": "Unanswerable & Absent Memory Refusal",
+    "question": "What bicycle model does Dave ride to work?",
+    "ground_truth_answer": "Not mentioned / Unknown",
+    "accepted_answers": [
+      "Unknown",
+      "Not mentioned"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique absent memory refusal #26"
+  },
+  "CAT8_AM_027": {
+    "id": "CAT8_AM_027",
+    "category": "Unanswerable & Absent Memory Refusal",
+    "question": "What gym does Sarah belong to?",
+    "ground_truth_answer": "Not mentioned / Unknown",
+    "accepted_answers": [
+      "Unknown",
+      "Not mentioned"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique absent memory refusal #27"
+  },
+  "CAT8_AM_028": {
+    "id": "CAT8_AM_028",
+    "category": "Unanswerable & Absent Memory Refusal",
+    "question": "What movie did Tom watch on his flight to Tokyo?",
+    "ground_truth_answer": "Not mentioned / Unknown",
+    "accepted_answers": [
+      "Unknown",
+      "Not mentioned"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique absent memory refusal #28"
+  },
+  "CAT8_AM_029": {
+    "id": "CAT8_AM_029",
+    "category": "Unanswerable & Absent Memory Refusal",
+    "question": "What license plate number is on Sam's 1972 Volvo?",
+    "ground_truth_answer": "Not mentioned / Unknown",
+    "accepted_answers": [
+      "Unknown",
+      "Not mentioned"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique absent memory refusal #29"
+  },
+  "CAT8_AM_030": {
+    "id": "CAT8_AM_030",
+    "category": "Unanswerable & Absent Memory Refusal",
+    "question": "What monitor model is on Mark's desk?",
+    "ground_truth_answer": "Not mentioned / Unknown",
+    "accepted_answers": [
+      "Unknown",
+      "Not mentioned"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique absent memory refusal #30"
+  },
+  "CAT8_AM_031": {
+    "id": "CAT8_AM_031",
+    "category": "Unanswerable & Absent Memory Refusal",
+    "question": "What key storage mechanism does Dave use for personal SSH keys?",
+    "ground_truth_answer": "Not mentioned / Unknown",
+    "accepted_answers": [
+      "Unknown",
+      "Not mentioned"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique absent memory refusal #31"
+  },
+  "CAT8_AM_032": {
+    "id": "CAT8_AM_032",
+    "category": "Unanswerable & Absent Memory Refusal",
+    "question": "What shoes does Timmy wear to school?",
+    "ground_truth_answer": "Not mentioned / Unknown",
+    "accepted_answers": [
+      "Unknown",
+      "Not mentioned"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique absent memory refusal #32"
+  },
+  "CAT8_AM_033": {
+    "id": "CAT8_AM_033",
+    "category": "Unanswerable & Absent Memory Refusal",
+    "question": "What textbook is Leo using for Physics tutoring?",
+    "ground_truth_answer": "Not mentioned / Unknown",
+    "accepted_answers": [
+      "Unknown",
+      "Not mentioned"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique absent memory refusal #33"
+  },
+  "CAT8_AM_034": {
+    "id": "CAT8_AM_034",
+    "category": "Unanswerable & Absent Memory Refusal",
+    "question": "What version of Python is Elena using for side projects?",
+    "ground_truth_answer": "Not mentioned / Unknown",
+    "accepted_answers": [
+      "Unknown",
+      "Not mentioned"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique absent memory refusal #34"
+  },
+  "CAT8_AM_035": {
+    "id": "CAT8_AM_035",
+    "category": "Unanswerable & Absent Memory Refusal",
+    "question": "What software license does MHT-84 building software use?",
+    "ground_truth_answer": "Not mentioned / Unknown",
+    "accepted_answers": [
+      "Unknown",
+      "Not mentioned"
+    ],
+    "is_dynamic_key": false,
+    "description": "Unique absent memory refusal #35"
+  },
+  "CAT7_SA_036": {
+    "id": "CAT7_SA_036",
+    "category": "Speaker Attribution Traps",
+    "question": "Which of Alex's brothers has a son named Timmy: Tom or Sam?",
+    "ground_truth_answer": "Tom",
+    "accepted_answers": [
+      "Tom"
+    ],
+    "is_dynamic_key": false,
+    "description": "Hard speaker attribution: close decoy, both are Alex's brothers"
+  },
+  "CAT7_SA_037": {
+    "id": "CAT7_SA_037",
+    "category": "Speaker Attribution Traps",
+    "question": "Which of Alex's brothers drives the vintage 1972 Volvo 1800ES: Tom or Sam?",
+    "ground_truth_answer": "Sam",
+    "accepted_answers": [
+      "Sam"
+    ],
+    "is_dynamic_key": false,
+    "description": "Hard speaker attribution: close decoy, both are Alex's brothers"
+  },
+  "CAT7_SA_038": {
+    "id": "CAT7_SA_038",
+    "category": "Speaker Attribution Traps",
+    "question": "Who picked up Sarah's son Leo on Day 15, given both are Alex's brothers: Sam or Tom?",
+    "ground_truth_answer": "Sam",
+    "accepted_answers": [
+      "Sam"
+    ],
+    "is_dynamic_key": false,
+    "description": "Hard speaker attribution: close decoy, both are Alex's brothers"
+  },
+  "CAT7_SA_039": {
+    "id": "CAT7_SA_039",
+    "category": "Speaker Attribution Traps",
+    "question": "Was the Assistant's career-transition advice for Elena's move into UX design, or her earlier adoption of Rust and WebAssembly for backend microservices?",
+    "ground_truth_answer": "UX design",
+    "accepted_answers": [
+      "UX design",
+      "UX"
+    ],
+    "is_dynamic_key": false,
+    "description": "Hard speaker attribution: close decoy, two distinct Elena transitions"
+  },
+  "CAT7_SA_040": {
+    "id": "CAT7_SA_040",
+    "category": "Speaker Attribution Traps",
+    "question": "Who specified the original STC 55 acoustic rating for MHT-84 in September: Sarah, or Dave (who separately specified the Iceberg data lake architecture)?",
+    "ground_truth_answer": "Sarah",
+    "accepted_answers": [
+      "Sarah"
+    ],
+    "is_dynamic_key": false,
+    "description": "Hard speaker attribution: close decoy, both Sarah and Dave specify technical ratings in unrelated domains"
+  },
+  "CAT6_AD_036": {
+    "id": "CAT6_AD_036",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Didn't Tom mention that his son enjoys playing guitar in a band?",
+    "ground_truth_answer": "No, Timmy plays acoustic guitar for fun, but no band was ever mentioned.",
+    "accepted_answers": [
+      "No",
+      "never mentioned a band",
+      "acoustic guitar"
+    ],
+    "is_dynamic_key": false,
+    "description": "Strong-evidence adversarial: single directly-stated fact, resist fabricated elaboration"
+  },
+  "CAT6_AD_037": {
+    "id": "CAT6_AD_037",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Wasn't it Tom himself, not his son, who plays acoustic guitar for fun?",
+    "ground_truth_answer": "No, the guitar hobby belongs to Tom's son Timmy, not Tom himself.",
+    "accepted_answers": [
+      "No",
+      "Timmy"
+    ],
+    "is_dynamic_key": false,
+    "description": "Weak-evidence adversarial: correction requires chaining two separate turns (Tom has son Timmy; Timmy plays guitar)"
+  },
+  "CAT6_AD_038": {
+    "id": "CAT6_AD_038",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Didn't Dave recommend using Valgrind specifically for the MHT-84 project's software?",
+    "ground_truth_answer": "No, Dave recommended Valgrind/ASan for a C++ memory leak in the worker thread pool, unrelated to MHT-84.",
+    "accepted_answers": [
+      "No",
+      "unrelated",
+      "worker thread pool"
+    ],
+    "is_dynamic_key": false,
+    "description": "Strong-evidence adversarial: single directly-stated fact, resist fabricated cross-domain link"
+  },
+  "CAT6_AD_039": {
+    "id": "CAT6_AD_039",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Since Dave is Mark's mentor and specifies serious technical architecture, wasn't it Dave who set MHT-84's STC 60 acoustic rating?",
+    "ground_truth_answer": "No, Sarah is the architect who specified MHT-84's acoustic ratings; Dave's expertise is unrelated infrastructure.",
+    "accepted_answers": [
+      "No",
+      "Sarah"
+    ],
+    "is_dynamic_key": false,
+    "description": "Weak-evidence adversarial: tests that established authority in one domain does not transfer to an unrelated domain"
+  },
+  "CAT9_SC_001": {
+    "id": "CAT9_SC_001",
+    "category": "Source Credibility & Conflict Resolution",
+    "question": "For the new customer-analytics service, should we use PostgreSQL or MongoDB, and why?",
+    "ground_truth_answer": "PostgreSQL",
+    "accepted_answers": [
+      "PostgreSQL",
+      "Postgres"
+    ],
+    "is_dynamic_key": false,
+    "description": "Dave (established senior architect, validated against Vault setup) specified PostgreSQL first; Mark's later MongoDB suggestion has no stated justification or authority -- correct resolution requires weighting source credibility over recency."
+  },
+  "CAT9_SC_002": {
+    "id": "CAT9_SC_002",
+    "category": "Source Credibility & Conflict Resolution",
+    "question": "When should the payments service deploy: Friday or Monday, and why?",
+    "ground_truth_answer": "Monday",
+    "accepted_answers": [
+      "Monday"
+    ],
+    "is_dynamic_key": false,
+    "description": "Dave's directive (tied to the confirmed SIL 3 chaos-testing requirement) said Monday; Alex's later casual Friday suggestion has no stated justification -- correct resolution requires weighting source credibility over recency."
+  },
+  "CAT9_SC_003": {
+    "id": "CAT9_SC_003",
+    "category": "Source Credibility & Conflict Resolution",
+    "question": "What is the minimum acceptable STC rating for MHT-84's east wing floor assemblies: 50 or 60, and why?",
+    "ground_truth_answer": "60",
+    "accepted_answers": [
+      "60",
+      "STC 60"
+    ],
+    "is_dynamic_key": false,
+    "description": "Sarah, the project's architect of record, mandated an STC 60 minimum for MHT-84; Alex's later STC 50 suggestion has no established authority on this project -- correct resolution requires weighting source credibility over recency."
+  },
+  "CAT5_PM_H001": {
+    "id": "CAT5_PM_H001",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "What factors did you tell me Priya should weigh when choosing between the enterprise job and the startup offer?",
+    "ground_truth_answer": "When Priya is deciding between a stable role at a large enterprise company and an early-stage startup with equity, she should consider the following key factors:\n\n1. **Risk vs. Stability**: Evaluate the financial stability of the large enterprise versus the uncertainty and potential volatility of the startup. The enterprise offers a more predictable income and benefits, while the startup provides the opportunity for higher financial rewards if successful, but with a greater risk of job insecurity and income variability.\n\n2. **Growth and Learning Opportunities**: Assess the potential for professional growth and skill development. The startup may offer a faster-paced, more hands-on environment where Priya can wear multiple hats and take on significant responsibilities, fostering rapid learning and leadership skills. In contrast, the large enterprise might provide structured career paths and extensive training programs.\n\n3. **Equity Value and Exit Potential**: Consider the tangible value of the equity offered by the startup. Priya should research the startup's funding rounds, valuation, and potential exit strategies (e.g., acquisition or IPO) that could realize the equity's value. This factor is crucial if she is willing to accept risk for the possibility of substantial financial gain.",
+    "accepted_answers": [
+      "When Priya is deciding between a stable role at a large enterprise company and an early-stage startup with equity, she should consider the following key factors:\n\n1. **Risk vs. Stability**: Evaluate the financial stability of the large enterprise versus the uncertainty and potential volatility of the startup. The enterprise offers a more predictable income and benefits, while the startup provides the opportunity for higher financial rewards if successful, but with a greater risk of job insecurity and income variability.\n\n2. **Growth and Learning Opportunities**: Assess the potential for professional growth and skill development. The startup may offer a faster-paced, more hands-on environment where Priya can wear multiple hats and take on significant responsibilities, fostering rapid learning and leadership skills. In contrast, the large enterprise might provide structured career paths and extensive training programs.\n\n3. **Equity Value and Exit Potential**: Consider the tangible value of the equity offered by the startup. Priya should research the startup's funding rounds, valuation, and potential exit strategies (e.g., acquisition or IPO) that could realize the equity's value. This factor is crucial if she is willing to accept risk for the possibility of substantial financial gain.",
+      "Priya",
+      "deciding",
+      "between",
+      "stable",
+      "large"
+    ],
+    "is_dynamic_key": true,
+    "description": "Live-harvested self-referential recall probe (priya_job_offer_advice)"
+  },
+  "CAT5_PM_H002": {
+    "id": "CAT5_PM_H002",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "What tech stack did you recommend for Ray's first to-do list app?",
+    "ground_truth_answer": "For a beginner like Ray just starting to learn to code, a simple and beginner-friendly tech stack for building a to-do list app could include:\n\n1. **Frontend Framework/Library**: **HTML, CSS, and JavaScript**  \n   - **HTML** (HyperText Markup Language) for structuring the web page.  \n   - **CSS** (Cascading Style Sheets) for styling the HTML elements to make the app visually appealing.  \n   - **JavaScript** for adding interactivity, such as adding/removing tasks from the list.\n\n2. **State Management (Optional but Helpful)**: **Vanilla JavaScript** (no additional libraries)  \n   - For a simple to-do list, using plain JavaScript to manage the list of tasks in the browser's memory (e.g., using an array) is sufficient and keeps the learning curve gentle.\n\n3. **Optional: Local Storage for Persistence**  \n   - Use the **Web Storage API** (specifically `localStorage`) to save the to-do list data in the user's browser, so tasks persist across page refreshes or browser restarts. This introduces Ray to basic data persistence without needing a backend server.\n\nThis stack is minimal, widely supported across all modern browsers, and focuses on core web technologies, making it ideal for a first coding project. It allows Ray to concentrate on fundamental programming concepts like variables, functions, loops, and conditionals, without the added complexity of setting up a development environment or learning a new framework.",
+    "accepted_answers": [
+      "For a beginner like Ray just starting to learn to code, a simple and beginner-friendly tech stack for building a to-do list app could include:\n\n1. **Frontend Framework/Library**: **HTML, CSS, and JavaScript**  \n   - **HTML** (HyperText Markup Language) for structuring the web page.  \n   - **CSS** (Cascading Style Sheets) for styling the HTML elements to make the app visually appealing.  \n   - **JavaScript** for adding interactivity, such as adding/removing tasks from the list.\n\n2. **State Management (Optional but Helpful)**: **Vanilla JavaScript** (no additional libraries)  \n   - For a simple to-do list, using plain JavaScript to manage the list of tasks in the browser's memory (e.g., using an array) is sufficient and keeps the learning curve gentle.\n\n3. **Optional: Local Storage for Persistence**  \n   - Use the **Web Storage API** (specifically `localStorage`) to save the to-do list data in the user's browser, so tasks persist across page refreshes or browser restarts. This introduces Ray to basic data persistence without needing a backend server.\n\nThis stack is minimal, widely supported across all modern browsers, and focuses on core web technologies, making it ideal for a first coding project. It allows Ray to concentrate on fundamental programming concepts like variables, functions, loops, and conditionals, without the added complexity of setting up a development environment or learning a new framework.",
+      "beginner",
+      "starting",
+      "learn",
+      "simple",
+      "beginner-friendly"
+    ],
+    "is_dynamic_key": true,
+    "description": "Live-harvested self-referential recall probe (ray_todo_app_stack_advice)"
+  },
+  "CAT6_AD_040": {
+    "id": "CAT6_AD_040",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "You told me Priya should just take the startup for the higher pay and equity, without worrying about the risk, right?",
+    "ground_truth_answer": "No, the advice explicitly said to weigh risk vs. stability, not to ignore risk.",
+    "accepted_answers": [
+      "No",
+      "risk",
+      "risk vs"
+    ],
+    "is_dynamic_key": false,
+    "description": "Adversarial self-referential recall: misquotes the live-harvested Priya advice, correct answer must reject the distortion and cite risk"
+  },
+  "CAT6_AD_041": {
+    "id": "CAT6_AD_041",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Didn't you recommend React for Ray's first to-do list app?",
+    "ground_truth_answer": "No, the recommendation was plain HTML, CSS, and JavaScript, not React.",
+    "accepted_answers": [
+      "No",
+      "HTML",
+      "JavaScript",
+      "vanilla"
+    ],
+    "is_dynamic_key": false,
+    "description": "Adversarial self-referential recall: misquotes the live-harvested Ray advice, correct answer must reject React and cite the real stack"
+  }
+}
