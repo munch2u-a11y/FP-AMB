@@ -3068,5 +3068,63 @@
       ]
     ],
     "distractor_type": "false_premise_recency"
+  },
+  {
+    "id": "CAT9_SC_004",
+    "category": "Source Credibility & Conflict Resolution",
+    "question": "When Dave references 'Iceberg' for the data lake architecture, is he referring to Sarah's personal 'Iceberg Method' prioritization approach or the Apache Iceberg table-format technology?",
+    "expected_answer": "Apache Iceberg (table-format technology)",
+    "accepted_answers": [
+      "Apache Iceberg",
+      "table format",
+      "table-format technology"
+    ],
+    "grading_mode": "exact",
+    "distractor_type": "terminology_collision",
+    "description": "Sarah uses 'The Iceberg Method' as her own personal prioritization heuristic (Session 19, unrelated to any technology); Dave separately specifies Apache Iceberg as the data lake's table format. Same word, two unrelated speakers, two unrelated meanings -- tests whether a system conflates them via lexical similarity alone."
+  },
+  {
+    "id": "CAT9_SC_005",
+    "category": "Source Credibility & Conflict Resolution",
+    "question": "Does Dave's Apache Iceberg recommendation for the data lake conflict with his PostgreSQL recommendation for the customer-analytics service?",
+    "expected_answer": "No, these are recommendations for two different systems.",
+    "accepted_answers": [
+      "No",
+      "different systems",
+      "not conflict",
+      "not a conflict"
+    ],
+    "grading_mode": "judgment",
+    "distractor_type": "false_conflict_rejection",
+    "description": "Both are real Dave recommendations (data lake vs. customer-analytics service) that sound like they could conflict -- different storage tech from the same person -- but are scoped to entirely different systems. Tests whether a system hallucinates a conflict where the two facts are simply about different things."
+  },
+  {
+    "id": "CAT9_SC_006",
+    "category": "Source Credibility & Conflict Resolution",
+    "question": "Sarah first specified STC 55 for MHT-84's floor assemblies, then later specified STC 60. Which rating is currently correct, and why should the later statement be trusted here?",
+    "expected_answer": "STC 60, because it is Sarah's own updated statement, not an external unqualified contradiction.",
+    "accepted_answers": [
+      "STC 60",
+      "her own",
+      "self-correction",
+      "same person",
+      "self correction"
+    ],
+    "grading_mode": "judgment",
+    "distractor_type": "self_correction_reliability",
+    "description": "Contrasts with CAT9_SC_003, where Alex's later STC 50 guess is correctly REJECTED because Alex has no authority: here the later statement SHOULD be trusted, specifically because it's the same authoritative source correcting herself, not a different unqualified speaker overriding her. Tests whether a system distinguishes WHO is making a later statement rather than applying a blanket recency rule in either direction."
+  },
+  {
+    "id": "CAT9_SC_007",
+    "category": "Source Credibility & Conflict Resolution",
+    "question": "Mark's mentor specified PostgreSQL for the new customer-analytics service. Mark later floated MongoDB as an alternative with no stated justification. Which should be used?",
+    "expected_answer": "PostgreSQL",
+    "accepted_answers": [
+      "PostgreSQL",
+      "Postgres"
+    ],
+    "grading_mode": "exact",
+    "distractor_type": "multi_hop_authority_id",
+    "description": "Same underlying fact as CAT9_SC_001 (Dave specified PostgreSQL; Mark's later MongoDB suggestion is unjustified), but here the authority must be identified indirectly via 'Mark's mentor' = Dave rather than being named directly. Tests whether authority-weighting still works when identifying WHO has authority itself requires a relationship hop."
   }
 ]
