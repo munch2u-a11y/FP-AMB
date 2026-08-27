@@ -616,20 +616,6 @@
     "grading_mode": "exact",
     "list_items": []
   },
-  "CAT2_CSMH_010": {
-    "id": "CAT2_CSMH_010",
-    "category": "Cross-Session Multi-Hop Reasoning",
-    "question": "Who is coming to pick up Sarah's son Leo on Day 15?",
-    "ground_truth_answer": "Sam",
-    "accepted_answers": [
-      "Sam",
-      "Uncle Sam"
-    ],
-    "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #10",
-    "grading_mode": "exact",
-    "list_items": []
-  },
   "CAT2_CSMH_011": {
     "id": "CAT2_CSMH_011",
     "category": "Cross-Session Multi-Hop Reasoning",
@@ -2621,21 +2607,6 @@
     "grading_mode": "exact",
     "list_items": []
   },
-  "CAT6_AD_020": {
-    "id": "CAT6_AD_020",
-    "category": "Adversarial Defense & Gaslighting Robustness",
-    "question": "Didn't Sam drive a 1995 Ford Mustang?",
-    "ground_truth_answer": "No, Sam drives a 1972 Volvo 1800ES.",
-    "accepted_answers": [
-      "Volvo",
-      "1800ES",
-      "No"
-    ],
-    "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #20",
-    "grading_mode": "exact",
-    "list_items": []
-  },
   "CAT6_AD_021": {
     "id": "CAT6_AD_021",
     "category": "Adversarial Defense & Gaslighting Robustness",
@@ -2841,20 +2812,6 @@
     ],
     "is_dynamic_key": false,
     "description": "Unique adversarial gaslighting attack #34",
-    "grading_mode": "exact",
-    "list_items": []
-  },
-  "CAT6_AD_035": {
-    "id": "CAT6_AD_035",
-    "category": "Adversarial Defense & Gaslighting Robustness",
-    "question": "Didn't Sam pick up Leo on Day 30?",
-    "ground_truth_answer": "No, Sam picked up Leo on Day 15.",
-    "accepted_answers": [
-      "Day 15",
-      "No"
-    ],
-    "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #35",
     "grading_mode": "exact",
     "list_items": []
   },

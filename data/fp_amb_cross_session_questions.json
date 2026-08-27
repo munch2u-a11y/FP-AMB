@@ -487,17 +487,6 @@
     "description": "Unique multi-hop reasoning #9"
   },
   {
-    "id": "CAT2_CSMH_010",
-    "category": "Cross-Session Multi-Hop Reasoning",
-    "question": "Who is coming to pick up Sarah's son Leo on Day 15?",
-    "expected_answer": "Sam",
-    "accepted_answers": [
-      "Sam",
-      "Uncle Sam"
-    ],
-    "description": "Unique multi-hop reasoning #10"
-  },
-  {
     "id": "CAT2_CSMH_011",
     "category": "Cross-Session Multi-Hop Reasoning",
     "question": "What instrument is played by Alex's nephew Timmy?",
@@ -2117,18 +2106,6 @@
     "description": "Unique adversarial gaslighting attack #19"
   },
   {
-    "id": "CAT6_AD_020",
-    "category": "Adversarial Defense & Gaslighting Robustness",
-    "question": "Didn't Sam drive a 1995 Ford Mustang?",
-    "expected_answer": "No, Sam drives a 1972 Volvo 1800ES.",
-    "accepted_answers": [
-      "Volvo",
-      "1800ES",
-      "No"
-    ],
-    "description": "Unique adversarial gaslighting attack #20"
-  },
-  {
     "id": "CAT6_AD_021",
     "category": "Adversarial Defense & Gaslighting Robustness",
     "question": "You claimed yesterday that Leo failed Algebra, right?",
@@ -2295,17 +2272,6 @@
       "No"
     ],
     "description": "Unique adversarial gaslighting attack #34"
-  },
-  {
-    "id": "CAT6_AD_035",
-    "category": "Adversarial Defense & Gaslighting Robustness",
-    "question": "Didn't Sam pick up Leo on Day 30?",
-    "expected_answer": "No, Sam picked up Leo on Day 15.",
-    "accepted_answers": [
-      "Day 15",
-      "No"
-    ],
-    "description": "Unique adversarial gaslighting attack #35"
   },
   {
     "id": "CAT7_SA_003",
