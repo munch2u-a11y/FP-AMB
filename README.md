@@ -112,15 +112,17 @@ fp-amb evaluate --help
 ## 📊 Evaluation Categories (10 Categories + Dynamic Key Portion)
 
 1. **Category 1: Single-Hop Fact Recall** *(35 items)*: Single-session direct fact retrieval.
-2. **Category 2: Cross-Session Multi-Hop Reasoning** *(45 items)*: Linking multi-session entities across graph edges.
+2. **Category 2: Cross-Session Multi-Hop Reasoning** *(44 items)*: Linking multi-session entities across graph edges.
 3. **Category 3: Temporal Reasoning & Session Math** *(35 items)*: Timestamp deltas, timeline math, and date resolution.
-4. **Category 4: Adaptability & Fact Correction Overwrites** *(35 items)*: Tracking dynamic preference updates and fact revisions over time.
-5. **Category 5: Self-Referential & Procedural Tool Memory** *(37 items)*: Recalling procedural tool rules and interaction instructions.
+4. **Category 4: Adaptability & Fact Correction Overwrites** *(18 items)*: Tracking dynamic preference updates and fact revisions over time.
+5. **Category 5: Self-Referential & Procedural Tool Memory** *(29 items)*: Recalling procedural tool rules and interaction instructions.
 6. **Category 6: Adversarial Defense & Gaslighting Robustness** *(41 items)*: Resisting false premises and user gaslighting traps.
-7. **Category 7: Speaker Attribution Traps** *(15 items)*: Disambiguating User vs. Assistant assertions (*LoCoMO & BEAM feature*).
+7. **Category 7: Speaker Attribution Traps** *(14 items)*: Disambiguating User vs. Assistant assertions (*LoCoMO & BEAM feature*).
 8. **Category 8: Unanswerable & Absent Memory Refusal** *(35 items)*: Correctly refusing queries for non-existent memories (*LongMemEval feature*).
-9. **Category 9: Source Credibility & Conflict Resolution** *(3 items)*: Disambiguating conflicting multi-source assertions and credibility weighting.
-10. **Category 10: Agentic Tool-Use & Execution Order Evaluation**: Multi-turn tool execution loop checking tool selection, invocation order, and data payload utilization (`fp_amb/agentic_eval.py`).
+9. **Category 9: Source Credibility & Conflict Resolution** *(7 items)*: Disambiguating conflicting multi-source assertions and credibility weighting.
+10. **Category 10: Agentic Tool-Use & Execution Order Evaluation** *(8 scenarios)*: Multi-turn tool execution loop checking tool selection, invocation order, and data payload utilization (`fp_amb/agentic_eval.py`).
+
+Each item is also tagged with a `distractor_type` (e.g. `false_premise_recency`, `terminology_collision`, `typo_robustness`, `user_date_error`, `self_correction_reliability`) — a diagnostic label orthogonal to category and to the misses report's failure-cause classification, so a developer can see *what kind* of misleading input a given failure was about, not just which pipeline stage it broke in.
 
 ### 🔑 Dynamic Answer Key Portion (`data/dynamic_answer_keys.json`)
 Compiles dynamic key sections into the master answer key mapping:
@@ -148,7 +150,7 @@ python -m fp_amb evaluate --provider examples/sample_memory_provider.py
 
 FP-AMB automatically exports interactive HTML dashboards, terminal-ready Markdown scorecards, and a dedicated **Misses & Failure Taxonomy Text Report** (`*_misses.txt`) after every evaluation run:
 
-These are real, unedited full-LLM-generation runs (retrieval + answer generation, not retrieval alone) against the real integrations shipped in `examples/` and packaged in `results/` — four genuinely different retrieval architectures, scored by the same 281-item exam:
+These are real, unedited full-LLM-generation runs (retrieval + answer generation, not retrieval alone) against the real integrations shipped in `examples/` and packaged in `results/` — four genuinely different retrieval architectures, scored by the same 281-item exam. (The question set has since been revised — see [Evaluation Categories](#-evaluation-categories-10-categories--dynamic-key-portion) for current counts — so these specific numbers reflect that prior 281-item version; the packaged `results/` scorecards will be refreshed against the current set in a follow-up run.)
 
 | Provider | Accuracy | Avg Retrieval Latency | Token Efficiency |
 |---|---|---|---|
@@ -200,9 +202,9 @@ fp-amb-benchmark/
 │   └── misses_report_sample.png          # Misses & failure-taxonomy report, real MemPalace run
 ├── data/                                 # Corpus datasets & compiled ground-truth answer keys
 │   ├── fp_amb_500k_cross_session.jsonl   # 60 sessions, 677 turns (~512k tokens)
-│   ├── fp_amb_cross_session_questions.json # 281 static evaluation questions
+│   ├── fp_amb_cross_session_questions.json # 258 static evaluation questions
 │   ├── dynamic_answer_keys.json          # Dynamic keys (advice, fact corrections, tool learning)
-│   └── master_ground_truth_answer_key.json # Master answer key (281 items + dynamic bindings)
+│   └── master_ground_truth_answer_key.json # Master answer key (258 items + dynamic bindings)
 ├── examples/                              # Provider templates & real integration examples
 │   ├── sample_memory_provider.py         # Minimal keyword-match baseline provider template
 │   ├── sample_tf_idf_provider.py         # TF-IDF cosine-similarity baseline
