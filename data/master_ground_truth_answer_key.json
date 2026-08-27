@@ -3463,26 +3463,13 @@
   "CAT7_SA_037": {
     "id": "CAT7_SA_037",
     "category": "Speaker Attribution Traps",
-    "question": "Which of Alex's brothers drives the vintage 1972 Volvo 1800ES: Tom or Sam?",
+    "question": "Which of Alex's brothers owns a vintage car: Tom or Sam?",
     "ground_truth_answer": "Sam",
     "accepted_answers": [
       "Sam"
     ],
     "is_dynamic_key": false,
-    "description": "Hard speaker attribution: close decoy, both are Alex's brothers",
-    "grading_mode": "exact",
-    "list_items": []
-  },
-  "CAT7_SA_038": {
-    "id": "CAT7_SA_038",
-    "category": "Speaker Attribution Traps",
-    "question": "Who picked up Sarah's son Leo on Day 15, given both are Alex's brothers: Sam or Tom?",
-    "ground_truth_answer": "Sam",
-    "accepted_answers": [
-      "Sam"
-    ],
-    "is_dynamic_key": false,
-    "description": "Hard speaker attribution: close decoy, both are Alex's brothers",
+    "description": "Hard speaker attribution: close decoy, both are Alex's brothers (reworded to remove the leaked car-model descriptor, which let a system keyword-match past the intended disambiguation.)",
     "grading_mode": "exact",
     "list_items": []
   },
