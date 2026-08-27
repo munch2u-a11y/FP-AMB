@@ -148,7 +148,16 @@ python -m fp_amb evaluate --provider examples/sample_memory_provider.py
 
 FP-AMB automatically exports interactive HTML dashboards, terminal-ready Markdown scorecards, and a dedicated **Misses & Failure Taxonomy Text Report** (`*_misses.txt`) after every evaluation run:
 
-These are real, unedited full-LLM-generation runs (retrieval + answer generation, not retrieval alone) against the real integrations shipped in `examples/` and packaged in `results/` — [real MemPalace](examples/real_mempalace_provider.py) (33.8%) and [real mRAG](examples/real_mrag_provider.py) (58.2%).
+These are real, unedited full-LLM-generation runs (retrieval + answer generation, not retrieval alone) against the real integrations shipped in `examples/` and packaged in `results/` — four genuinely different retrieval architectures, scored by the same 281-item exam:
+
+| Provider | Accuracy | Avg Retrieval Latency | Token Efficiency |
+|---|---|---|---|
+| [TF-IDF baseline](examples/sample_tf_idf_provider.py) | 68.5% | 2.5 ms | 82.0 pts/1k tok |
+| [real mRAG](examples/real_mrag_provider.py) | 58.2% | 2,731 ms | 83.2 pts/1k tok |
+| [real Fractal Memory](examples/real_fractal_memory_provider.py) | 50.2% | 37,930 ms | 116.8 pts/1k tok |
+| [real MemPalace](examples/real_mempalace_provider.py) | 33.8% | 166 ms | 79.7 pts/1k tok |
+
+Same corpus, same 281 questions, four very different scores and cost profiles depending on the actual retrieval architecture under test — not a flat hit/miss regardless of what's being evaluated. Fractal Memory's graph-crystallization design (topics promote from lightweight routing nodes to full vault nodes as they accumulate hits, then get retrieved via multi-hop traversal + multi-head cross-search + reranking) lands mid-pack on accuracy but is the most token-efficient of the four and by far the slowest per query (~14x mRAG, ~230x MemPalace) — a real architecture-driven tradeoff the benchmark surfaces rather than obscures.
 
 ### 1. Interactive Visual HTML Dashboard
 ![FP-AMB Visual HTML Exam Report — real mRAG](assets/html_report_sample_mrag.png)
@@ -199,7 +208,9 @@ fp-amb-benchmark/
 │   ├── sample_tf_idf_provider.py         # TF-IDF cosine-similarity baseline
 │   ├── real_mempalace_provider.py        # Real MemPalace integration (ChromaDB + BM25 hybrid)
 │   ├── real_mrag_provider.py             # Real mRAG integration (ChromaDB embeddings)
-│   └── real_mem0_provider.py             # Real Mem0 integration (local Ollama LLM + embedder)
+│   ├── real_mem0_provider.py             # Real Mem0 integration (local Ollama LLM + embedder)
+│   ├── real_fractal_memory_provider.py   # Real Fractal Memory integration (graph vault crystallization)
+│   └── _vendor/fractal_memory_task695/   # Pinned Fractal Memory snapshot -- see its PROVENANCE.md
 ├── personas/                              # Identity files for multi-persona conversation generation
 │   ├── ai_agent.md                       # The AI Agent persona (system under test)
 │   └── sarah.md, alex.md, mark.md, dave.md, elena.md  # Human personas with distinct voices/quirks

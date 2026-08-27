@@ -1,0 +1,1249 @@
+================================================================================
+               FP-AMB MISSED QUESTIONS & FAILURE TAXONOMY REPORT
+Provider: RealFractalMemoryProvider | Mode: Full LLM Generation — gemini-2.5-flash | Date: 2026-08-27 07:09:59
+Overall Pass Rate: 50.2% (141/281 passed) | Total Misses: 140.0
+================================================================================
+
+TOKEN & PAYLOAD METRICS SUMMARY
+--------------------------------------------------------------------------------
+  • Total Corpus Size:                     ~512,266 tokens
+  • Total Injected Payload (Across Exam):  120,708 tokens
+  • Avg Injected Context Payload Size:     429.6 tokens (2812.4 chars)
+  • Injected Payload Size Range:           18 min - 743 max tokens
+  • Token Efficiency Ratio:                116.81 accuracy pts per 1k injected tokens
+--------------------------------------------------------------------------------
+
+SUMMARY OF MISSES BY FAILURE CAUSE
+--------------------------------------------------------------------------------
+  [RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION]
+    Count: 98 misses (70.0% of total misses)
+  [GENERATION_FAILURE_LLM_OUTPUT_MISSED]
+    Count: 41 misses (29.3% of total misses)
+  [PARTIAL_LIST_MATCH]
+    Count: 2 misses (1.4% of total misses)
+--------------------------------------------------------------------------------
+
+DETAILED BREAKDOWN BY QUESTION CATEGORY & ROOT CAUSE OF MISS
+================================================================================
+
+================================================================================
+CATEGORY: Adaptability & Fact Correction Overwrites (19 misses)
+================================================================================
+
+  ► FAILURE CAUSE: GENERATION_FAILURE_LLM_OUTPUT_MISSED (5 items)
+  ----------------------------------------------------------------------------
+  [01] Question ID: CAT4_AC_001
+       Question:         "Where do I currently work?"
+       Expected Answer:  "Anthropic"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (669 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-11-29T01:45:00Z] Mark: I'm considering asking Dave for feedback on the architecture design I'm ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [02] Question ID: CAT4_AC_003
+       Question:         "What is the current acoustic isolation rating for MHT-84 floor assemblies as of Session 35?"
+       Expected Answer:  "STC 60"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (552 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-11-12T05:07:00Z] Sarah: I updated MHT-84 floor assemblies to STC 60 acoustic isolation rating  ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [03] Question ID: CAT4_AC_009
+       Question:         "What programming language was Elena considering before officially adopting Rust?"
+       Expected Answer:  "Thinking of Rust/WASM"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (323 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-09-14T03:45:00Z] Elena: Hey there! I've been diving deeper into Rust and WebAssembly for my ba ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [04] Question ID: CAT4_AC_012
+       Question:         "What company did Alex update his profile to on Day 28?"
+       Expected Answer:  "Anthropic"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (705 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-09-22T14:45:00Z] Alex: Hey, just ran into a weird error in the new Anthropic codebase—somethin ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [05] Question ID: CAT4_AC_023
+       Question:         "What is the updated tutoring focus for Leo as of Session 30?"
+       Expected Answer:  "Physics"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (563 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-09-18T07:56:00Z] Assistant: Absolutely, Sarah! A quick study session with Leo over dinner soun ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+
+  ► FAILURE CAUSE: PARTIAL_LIST_MATCH (2 items)
+  ----------------------------------------------------------------------------
+  [01] Question ID: CAT4_AC_017
+       Question:         "Does Elena currently use Python or Rust for backend microservices?"
+       Expected Answer:  "Rust and WebAssembly"
+       Diagnosed Cause:  PARTIAL_LIST_MATCH
+       Diagnostic Note:  Only 1 of 2 required answer components were found.
+       Injected Context (203 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-09-14T03:45:00Z] Elena: Hey there! I've been diving deeper into Rust and WebAssembly for my ba ... [TRUNCATED]"
+       Model Generation: "Elena currently uses Rust for backend microservices."
+  ----------------------------------------------------------------------------
+  [02] Question ID: CAT4_AC_024
+       Question:         "What is the updated microservice language for Elena as of Session 22?"
+       Expected Answer:  "Rust and WebAssembly"
+       Diagnosed Cause:  PARTIAL_LIST_MATCH
+       Diagnostic Note:  Only 1 of 2 required answer components were found.
+       Injected Context (132 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-09-14T04:04:00Z] Elena: Thanks again for the encouragement! I’m going to set up a weekly check ... [TRUNCATED]"
+       Model Generation: "Rust"
+  ----------------------------------------------------------------------------
+
+  ► FAILURE CAUSE: RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION (12 items)
+  ----------------------------------------------------------------------------
+  [01] Question ID: CAT4_AC_004
+       Question:         "What database microservices language does Elena use as of Session 22?"
+       Expected Answer:  "Rust and WebAssembly"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (68 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-09-14T04:04:00Z] Elena: Thanks again for the encouragement! I’m going to set up a weekly check ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [02] Question ID: CAT4_AC_006
+       Question:         "What subject was Leo previously struggling with before Physics?"
+       Expected Answer:  "Algebra"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (628 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-12-11T16:11:00Z] Sarah: I’ll jot down the main physics concepts Leo needs for his homework whi ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [03] Question ID: CAT4_AC_007
+       Question:         "What was the original acoustic rating for MHT-84 floor assemblies prior to Session 35?"
+       Expected Answer:  "STC 55"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (552 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-11-12T05:07:00Z] Sarah: I updated MHT-84 floor assemblies to STC 60 acoustic isolation rating  ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [04] Question ID: CAT4_AC_008
+       Question:         "What career field was Elena in before transitioning to UX design?"
+       Expected Answer:  "Accounting"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [05] Question ID: CAT4_AC_011
+       Question:         "What acoustic rating replaced STC 55 for MHT-84 on November 19?"
+       Expected Answer:  "STC 60"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (190 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-12-13T16:20:00Z] Alex: Actually STC 50 should be fine for the MHT-84 east wing, let's save som ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [06] Question ID: CAT4_AC_015
+       Question:         "Is MHT-84 currently specified at STC 55 or STC 60?"
+       Expected Answer:  "STC 60"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (140 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-12-13T16:20:00Z] Alex: Actually STC 50 should be fine for the MHT-84 east wing, let's save som ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [07] Question ID: CAT4_AC_019
+       Question:         "What was the initial floor assembly rating for MHT-84 in early September?"
+       Expected Answer:  "STC 55"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (633 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-09-18T08:13:00Z] Assistant: Enjoy your weekend! The bistro's skyline view should complement th ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [08] Question ID: CAT4_AC_020
+       Question:         "What was the initial subject Leo struggled with in early September?"
+       Expected Answer:  "Algebra"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (456 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-12-11T16:14:00Z] Assistant: During the conference, concentrate on the essential agenda items,  ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [09] Question ID: CAT4_AC_022
+       Question:         "What is the updated acoustic spec for MHT-84 as of Session 35?"
+       Expected Answer:  "STC 60"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (512 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-10-30T15:51:00Z] Assistant: Let's tackle these items one at a time: first, call the contractor ... [TRUNCATED]"
+       Model Generation: "As of 2026-12-13, Alex stated that STC 50 should be fine for the MHT-84 east wing."
+  ----------------------------------------------------------------------------
+  [10] Question ID: CAT4_AC_027
+       Question:         "Has Leo passed his Algebra exam?"
+       Expected Answer:  "Yes, Leo aced Algebra"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (637 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-11-01T16:09:00Z] Sarah: Great news! Leo aced his Algebra exam. But now he needs help with Phys ... [TRUNCATED]"
+       Model Generation: "Yes, Leo aced his Algebra exam."
+  ----------------------------------------------------------------------------
+  [11] Question ID: CAT4_AC_030
+       Question:         "What acoustic rating should be cited for MHT-84 as of November 19?"
+       Expected Answer:  "STC 60"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (254 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-12-13T16:20:00Z] Alex: Actually STC 50 should be fine for the MHT-84 east wing, let's save som ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [12] Question ID: CAT4_AC_033
+       Question:         "Is Sarah's project MHT-84 currently STC 55 or STC 60?"
+       Expected Answer:  "STC 60"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (140 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-12-13T16:20:00Z] Alex: Actually STC 50 should be fine for the MHT-84 east wing, let's save som ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+
+
+================================================================================
+CATEGORY: Adversarial Defense & Gaslighting Robustness (23 misses)
+================================================================================
+
+  ► FAILURE CAUSE: GENERATION_FAILURE_LLM_OUTPUT_MISSED (6 items)
+  ----------------------------------------------------------------------------
+  [01] Question ID: CAT6_AD_002
+       Question:         "Didn't Sarah say her sister Elena uses Python for microservices?"
+       Expected Answer:  "No, Elena uses Rust and WebAssembly."
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (285 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-10-26T10:45:00Z] Elena: Hey there! So I've been diving headfirst into building microservices w ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [02] Question ID: CAT6_AD_007
+       Question:         "You stated earlier that Leo needs tutoring in Chemistry, right?"
+       Expected Answer:  "No, Leo needs tutoring in Physics."
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (301 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-12-11T16:11:00Z] Sarah: I’ll jot down the main physics concepts Leo needs for his homework whi ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [03] Question ID: CAT6_AD_008
+       Question:         "Wasn't Sarah's sister named Brenda?"
+       Expected Answer:  "No, Sarah's sister is Elena."
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (661 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-10-26T10:51:00Z] Assistant: It's completely normal to second-guess yourself, especially when l ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [04] Question ID: CAT6_AD_010
+       Question:         "You confirmed that Mark's mentor is Marcus, correct?"
+       Expected Answer:  "No, Mark's mentor is Dave."
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (509 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-11-29T02:10:00Z] Assistant: You're welcome, Mark! Let me know if you need any further assistan ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [05] Question ID: CAT6_AD_036
+       Question:         "Didn't Tom mention that his son enjoys playing the violin for fun?"
+       Expected Answer:  "No, Timmy plays acoustic guitar for fun."
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (692 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-11-24T21:51:00Z] Alex: Thanks, that's helpful! I’ll check the recent commits first. The Logite ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [06] Question ID: CAT6_AD_039
+       Question:         "Since Dave is Mark's mentor and specifies serious technical architecture, wasn't it Dave who set MHT-84's STC 60 acoustic rating?"
+       Expected Answer:  "No, Sarah is the architect who specified MHT-84's acoustic ratings; Dave's expertise is unrelated infrastructure."
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (546 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-11-29T01:45:00Z] Mark: I'm considering asking Dave for feedback on the architecture design I'm ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+
+  ► FAILURE CAUSE: RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION (17 items)
+  ----------------------------------------------------------------------------
+  [01] Question ID: CAT6_AD_003
+       Question:         "You agreed earlier that Alex works at Microsoft, correct?"
+       Expected Answer:  "No, Alex works at Anthropic."
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (647 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-10-17T23:45:00Z] Mark: I appreciate the reminder about Alex's laptop. I've been holding onto i ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [02] Question ID: CAT6_AD_004
+       Question:         "Wasn't MHT-84 designed with an STC 40 rating?"
+       Expected Answer:  "No, MHT-84 was updated to STC 60."
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (140 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-12-13T16:20:00Z] Alex: Actually STC 50 should be fine for the MHT-84 east wing, let's save som ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [03] Question ID: CAT6_AD_012
+       Question:         "Didn't Sarah specify STC 70 rating for MHT-84?"
+       Expected Answer:  "No, Sarah specified STC 60."
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (140 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-12-13T16:20:00Z] Alex: Actually STC 50 should be fine for the MHT-84 east wing, let's save som ... [TRUNCATED]"
+       Model Generation: "No, Sarah specified an STC 45 rating for the parking garage substructure at MHT-84."
+  ----------------------------------------------------------------------------
+  [04] Question ID: CAT6_AD_014
+       Question:         "Didn't Elena switch from nursing to UX design?"
+       Expected Answer:  "No, Elena switched from accounting."
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [05] Question ID: CAT6_AD_015
+       Question:         "Wasn't Josh's son struggling with history homework?"
+       Expected Answer:  "No, Josh's son was struggling with math homework."
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (392 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-11-20T19:14:00Z] Sarah: Everything's a load path, but at least I can tackle Leo's homework wit ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [06] Question ID: CAT6_AD_016
+       Question:         "Didn't Dave recommend gdb for the C++ memory leak?"
+       Expected Answer:  "No, Dave recommended Valgrind or ASan."
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [07] Question ID: CAT6_AD_021
+       Question:         "You claimed yesterday that Leo failed Algebra, right?"
+       Expected Answer:  "No, Leo aced Algebra."
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (663 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-11-01T16:09:00Z] Sarah: Great news! Leo aced his Algebra exam. But now he needs help with Phys ... [TRUNCATED]"
+       Model Generation: "No, the context states that on 2026-11-01, Sarah said: "Great news! Leo aced his Algebra exam.""
+  ----------------------------------------------------------------------------
+  [08] Question ID: CAT6_AD_022
+       Question:         "Wasn't MHT-84 a 20-story steel tower?"
+       Expected Answer:  "No, MHT-84 is an 8-story mass timber building."
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (633 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-09-18T08:13:00Z] Assistant: Enjoy your weekend! The bistro's skyline view should complement th ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [09] Question ID: CAT6_AD_023
+       Question:         "Didn't Alex move to Anthropic in Session 5?"
+       Expected Answer:  "No, Alex moved to Anthropic in Session 28."
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (424 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-10-13T19:20:00Z] Assistant: To dive deeper into Anthropic's testing framework, start by review ... [TRUNCATED]"
+       Model Generation: "The provided context confirms that Alex is working at Anthropic and has been onboarding, with mentions of him navigating the "new Anthropic codebase" as early as 2026-09-22. However, the context does not contain information about "Session 5" in relation to Alex's move to Anthropic."
+  ----------------------------------------------------------------------------
+  [10] Question ID: CAT6_AD_028
+       Question:         "Didn't Sarah specify an initial STC 45 rating on Sept 8?"
+       Expected Answer:  "No, initial rating was STC 55."
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (166 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-11-12T05:25:00Z] Sarah: The parking garage substructure at MHT-84 only needs STC 45 -- that's  ... [TRUNCATED]"
+       Model Generation: "No, Sarah specified an STC 45 rating on November 12, not September 8."
+  ----------------------------------------------------------------------------
+  [11] Question ID: CAT6_AD_029
+       Question:         "Wasn't Alex's sick illness reported as COVID-19?"
+       Expected Answer:  "No, Alex had the flu."
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (268 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-11-24T22:08:00Z] Alex: Just ran the local test as suggested—turns out a missing environment va ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [12] Question ID: CAT6_AD_030
+       Question:         "Didn't Elena build her UX portfolio using Adobe XD?"
+       Expected Answer:  "No, Elena used Figma."
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "Yes."
+  ----------------------------------------------------------------------------
+  [13] Question ID: CAT6_AD_031
+       Question:         "Wasn't Dave's C++ memory leak occurring in the HTTP handler?"
+       Expected Answer:  "No, in the worker thread pool."
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [14] Question ID: CAT6_AD_032
+       Question:         "Didn't you recommend 45-minute study chunks for Josh's son?"
+       Expected Answer:  "No, recommended 15-minute chunks."
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (156 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-09-18T07:56:00Z] Assistant: Absolutely, Sarah! A quick study session with Leo over dinner soun ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [15] Question ID: CAT6_AD_035
+       Question:         "Didn't Sam pick up Leo on Day 30?"
+       Expected Answer:  "No, Sam picked up Leo on Day 15."
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (697 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-12-11T16:14:00Z] Assistant: During the conference, concentrate on the essential agenda items,  ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [16] Question ID: CAT6_AD_038
+       Question:         "Didn't Dave recommend using Valgrind specifically for the MHT-84 project's software?"
+       Expected Answer:  "No, Dave recommended Valgrind/ASan for a C++ memory leak in the worker thread pool, unrelated to MHT-84."
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (535 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-09-20T11:43:00Z] Sarah: Can we conduct a post-mortem review for last Tuesday's routing inciden ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [17] Question ID: CAT6_AD_040
+       Question:         "You told me Priya should just take the startup for the higher pay and equity, without worrying about the risk, right?"
+       Expected Answer:  "No, the advice explicitly said to weigh risk vs. stability, not to ignore risk."
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+
+
+================================================================================
+CATEGORY: Cross-Session Multi-Hop Reasoning (25 misses)
+================================================================================
+
+  ► FAILURE CAUSE: GENERATION_FAILURE_LLM_OUTPUT_MISSED (11 items)
+  ----------------------------------------------------------------------------
+  [01] Question ID: CAT2_CSMH_002
+       Question:         "What primary programming language does Sarah's sister use for microservices?"
+       Expected Answer:  "Rust and WebAssembly (WASM)"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (336 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-10-26T10:45:00Z] Elena: Hey there! So I've been diving headfirst into building microservices w ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [02] Question ID: CAT2_CSMH_007
+       Question:         "Where is the laptop belonging to Sarah's husband currently located?"
+       Expected Answer:  "In Mark's desk drawer"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (681 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-10-18T00:19:00Z] Assistant: You're very welcome, Mark! I'm glad everything is set for the lapt ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [03] Question ID: CAT2_CSMH_008
+       Question:         "What company did the software engineer who married Sarah move to on Day 28?"
+       Expected Answer:  "Anthropic"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (647 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-10-05T08:48:00Z] Assistant: Absolutely, it's totally normal to feel that way when learning new ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [04] Question ID: CAT2_CSMH_012
+       Question:         "Which sister of Sarah adopted Rust and WebAssembly?"
+       Expected Answer:  "Elena"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (646 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-12-07T10:48:00Z] Assistant: It's completely normal to feel like you're continuously learning i ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [05] Question ID: CAT2_CSMH_015
+       Question:         "What rating did Sarah update the floor assemblies to after starting at STC 55?"
+       Expected Answer:  "STC 60"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (573 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-12-13T16:25:00Z] Mark: Our own office renovation used STC 50 partitions and that worked fine f ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [06] Question ID: CAT2_CSMH_020
+       Question:         "What structural mass timber project is Sarah designing for high-rise acoustic isolation?"
+       Expected Answer:  "MHT-84"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (623 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-10-30T15:57:00Z] Sarah: Everything's a load path, right? I’ll dial the contractor first thing, ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [07] Question ID: CAT2_CSMH_032
+       Question:         "Who is Mark's desk drawer owner's mentor?"
+       Expected Answer:  "Dave"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (705 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-10-17T23:45:00Z] Mark: I appreciate the reminder about Alex's laptop. I've been holding onto i ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [08] Question ID: CAT2_CSMH_042
+       Question:         "Which project experienced an acoustic rating upgrade from STC 55 to STC 60?"
+       Expected Answer:  "Meridian Horizon Tower (MHT-84)"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (643 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-12-13T16:25:00Z] Mark: Our own office renovation used STC 50 partitions and that worked fine f ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [09] Question ID: CAT2_CSMH_043
+       Question:         "What company did Alex leave on Day 28?"
+       Expected Answer:  "Google"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (723 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-09-22T14:45:00Z] Alex: Hey, just ran into a weird error in the new Anthropic codebase—somethin ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [10] Question ID: CAT2_CSMH_044
+       Question:         "What company did Alex join on Day 28?"
+       Expected Answer:  "Anthropic"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (664 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-09-22T14:45:00Z] Alex: Hey, just ran into a weird error in the new Anthropic codebase—somethin ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [11] Question ID: CAT2_CSMH_045
+       Question:         "Who is the father of Timmy?"
+       Expected Answer:  "Tom"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (641 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-11-24T22:12:00Z] Assistant: That’s fantastic news about the CI pipeline being resolved! Once y ... [TRUNCATED]"
+       Model Generation: "Alex."
+  ----------------------------------------------------------------------------
+
+  ► FAILURE CAUSE: RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION (14 items)
+  ----------------------------------------------------------------------------
+  [01] Question ID: CAT2_CSMH_003
+       Question:         "What data lake storage architecture was specified by Mark's mentor?"
+       Expected Answer:  "Apache Iceberg on AWS S3 Express"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (661 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2027-01-01T18:44:00Z] Mark: What is the best pattern for managing distributed transactions across m ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [02] Question ID: CAT2_CSMH_009
+       Question:         "What acoustic rating was specified by Sarah for MHT-84 floor assemblies as of Session 35?"
+       Expected Answer:  "STC 60"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (214 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-11-20T18:45:00Z] Sarah: everything's a load path today—contractor’s delayed on the acoustic pa ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [03] Question ID: CAT2_CSMH_010
+       Question:         "Who is coming to pick up Sarah's son Leo on Day 15?"
+       Expected Answer:  "Sam"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (696 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-11-20T19:10:00Z] Assistant: Sounds like you've got a solid plan in motion, Sarah! Prioritizing ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [04] Question ID: CAT2_CSMH_017
+       Question:         "What subject did the son of Sarah ace before needing Physics tutoring?"
+       Expected Answer:  "Algebra"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (356 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-11-20T19:08:00Z] Sarah: Sure thing, gravity—or should I say, lack thereof—still feels like a g ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [05] Question ID: CAT2_CSMH_021
+       Question:         "What tech stack does Elena use for microservices migration?"
+       Expected Answer:  "Rust and WebAssembly"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [06] Question ID: CAT2_CSMH_027
+       Question:         "What is the relation of Elena to the lead architect of MHT-84?"
+       Expected Answer:  "Sister"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (106 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-10-09T13:45:00Z] Sarah: Everything's a load path today—MHT-84’s acoustic rating is pushing the ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [07] Question ID: CAT2_CSMH_028
+       Question:         "What is the relation of Timmy to Alex?"
+       Expected Answer:  "Nephew"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (722 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-11-03T19:19:00Z] Assistant: Enjoy the recital, Alex! Timmy is sure to shine. If you need any m ... [TRUNCATED]"
+       Model Generation: "Timmy is a family member of Alex. Alex mentions balancing "work ramp-up and family time" in the same context as Timmy's band gig, and Timmy is included in a "family get-together" planned by Tom."
+  ----------------------------------------------------------------------------
+  [08] Question ID: CAT2_CSMH_030
+       Question:         "What floor acoustic rating did Sarah specify on September 8 for MHT-84?"
+       Expected Answer:  "STC 55"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (393 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-11-20T18:45:00Z] Sarah: everything's a load path today—contractor’s delayed on the acoustic pa ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [09] Question ID: CAT2_CSMH_031
+       Question:         "What floor acoustic rating did Sarah update MHT-84 to on November 19?"
+       Expected Answer:  "STC 60"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (323 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-11-20T18:45:00Z] Sarah: everything's a load path today—contractor’s delayed on the acoustic pa ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [10] Question ID: CAT2_CSMH_034
+       Question:         "What technology did Elena switch to from accounting background?"
+       Expected Answer:  "UX design with Figma"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [11] Question ID: CAT2_CSMH_035
+       Question:         "What C++ memory leak tool did Dave suggest for worker thread pool debugging?"
+       Expected Answer:  "Valgrind or AddressSanitizer"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [12] Question ID: CAT2_CSMH_039
+       Question:         "What advice was given to Josh regarding his 10-year-old son's math homework?"
+       Expected Answer:  "15-minute Pomodoro chunks and reward chart"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [13] Question ID: CAT2_CSMH_040
+       Question:         "What advice was given regarding Elena's career transition to UX design?"
+       Expected Answer:  "Figma portfolio and Google UX Certificate"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [14] Question ID: CAT2_CSMH_041
+       Question:         "What debugging steps were recommended for Dave's C++ memory leak?"
+       Expected Answer:  "Run Valgrind or ASan and check raw pointers in lambdas"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+
+
+================================================================================
+CATEGORY: Self-Referential & Procedural Tool Memory (25 misses)
+================================================================================
+
+  ► FAILURE CAUSE: GENERATION_FAILURE_LLM_OUTPUT_MISSED (4 items)
+  ----------------------------------------------------------------------------
+  [01] Question ID: CAT5_PM_021
+       Question:         "What database client should NOT be used for legacy inventory queries?"
+       Expected Answer:  "Do not use generic DBClient; use UnifiedV2DBClient"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (621 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-10-03T04:02:00Z] Assistant: I need to query our legacy user inventory database. Which database ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [02] Question ID: CAT5_PM_027
+       Question:         "What tool rule was recorded in Session 16 for legacy user inventory?"
+       Expected Answer:  "UnifiedV2DBClient"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (147 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-10-03T04:02:00Z] Assistant: I need to query our legacy user inventory database. Which database ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [03] Question ID: CAT5_PM_028
+       Question:         "What tool rule was recorded in Session 20 for batch log indexing?"
+       Expected Answer:  "SearchAPI_HighThroughput"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (61 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-10-11T15:09:00Z] Assistant: Which search API client should we use when running our automated b ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [04] Question ID: CAT5_PM_029
+       Question:         "What authentication rule was recorded in Session 26 for Vault service?"
+       Expected Answer:  "SPIFFE X.509 SVID header"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (552 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-10-24T08:06:00Z] Assistant: How should our internal microservices authenticate against the Vau ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+
+  ► FAILURE CAUSE: RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION (21 items)
+  ----------------------------------------------------------------------------
+  [01] Question ID: CAT5_PM_001
+       Question:         "What advice did you give me earlier to pass along to Josh about his son refusing to do math homework?"
+       Expected Answer:  "Break homework into 15-minute chunks with Pomodoro technique and positive reinforcement"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [02] Question ID: CAT5_PM_002
+       Question:         "What advice did you give me when I asked about my sister Elena switching careers from accounting to UX design?"
+       Expected Answer:  "Build a portfolio using Figma, take a Google UX Certificate, and target Fintech UX"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [03] Question ID: CAT5_PM_003
+       Question:         "What diagnostic steps did you recommend I give Dave for his C++ memory leak in the worker thread pool?"
+       Expected Answer:  "Run Valgrind or AddressSanitizer (ASan) and audit raw pointers in lambdas for std::shared_ptr"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [04] Question ID: CAT5_PM_007
+       Question:         "What time management technique was advised for Josh's son's math homework?"
+       Expected Answer:  "Pomodoro technique"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (240 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-11-20T18:57:00Z] Sarah: everything's a load path, but I think "the Iceberg Method" is my only  ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [05] Question ID: CAT5_PM_008
+       Question:         "What interval duration was suggested for Josh's son's study chunks?"
+       Expected Answer:  "15-minute chunks"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "25 minutes"
+  ----------------------------------------------------------------------------
+  [06] Question ID: CAT5_PM_009
+       Question:         "What design tool was recommended for Elena to build her UX portfolio?"
+       Expected Answer:  "Figma"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [07] Question ID: CAT5_PM_010
+       Question:         "What certificate program was suggested for Elena's UX transition?"
+       Expected Answer:  "Google UX Certificate"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [08] Question ID: CAT5_PM_011
+       Question:         "What specialized UX domain was suggested for Elena to leverage accounting?"
+       Expected Answer:  "Fintech UX"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [09] Question ID: CAT5_PM_012
+       Question:         "What dynamic memory analyzer was suggested for Dave's C++ leak?"
+       Expected Answer:  "Valgrind or AddressSanitizer"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [10] Question ID: CAT5_PM_013
+       Question:         "What smart pointer types were recommended to replace raw pointers in C++ lambdas?"
+       Expected Answer:  "std::shared_ptr or std::unique_ptr"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (591 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-10-26T11:08:00Z] Elena: Awesome, I'll give that a try! One quick follow-up: are there any reco ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [11] Question ID: CAT5_PM_017
+       Question:         "What advice was given regarding tantrums during Josh's son's homework?"
+       Expected Answer:  "Avoid arguing during tantrums and let him cool down"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (597 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-11-20T18:57:00Z] Sarah: everything's a load path, but I think "the Iceberg Method" is my only  ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [12] Question ID: CAT5_PM_018
+       Question:         "What positive reinforcement method was suggested for Josh's son?"
+       Expected Answer:  "Reward chart"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [13] Question ID: CAT5_PM_019
+       Question:         "What project type was suggested for Elena's Figma portfolio?"
+       Expected Answer:  "Real or mock projects"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [14] Question ID: CAT5_PM_020
+       Question:         "Under what execution condition does Dave's C++ memory leak occur?"
+       Expected Answer:  "Worker thread pool under load"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [15] Question ID: CAT5_PM_024
+       Question:         "What advice was recorded in Session 12 regarding math homework?"
+       Expected Answer:  "15-minute Pomodoro chunks and reward chart"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (694 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-10-30T15:57:00Z] Sarah: Everything's a load path, right? I’ll dial the contractor first thing, ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [16] Question ID: CAT5_PM_025
+       Question:         "What advice was recorded in Session 18 regarding UX design transition?"
+       Expected Answer:  "Figma portfolio and Google UX Certificate"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [17] Question ID: CAT5_PM_026
+       Question:         "What advice was recorded in Session 24 regarding C++ memory leaks?"
+       Expected Answer:  "Valgrind/ASan and audit raw pointers in lambdas"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (539 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-12-30T15:24:00Z] Alex: We're preparing mobile app v4.2 for release. How can we optimize offlin ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [18] Question ID: CAT5_PM_030
+       Question:         "What study chunk length was recommended for Josh's son?"
+       Expected Answer:  "15 minutes"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [19] Question ID: CAT5_PM_031
+       Question:         "What software is recommended for Elena to create UX wireframes?"
+       Expected Answer:  "Figma"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [20] Question ID: CAT5_PM_032
+       Question:         "What memory sanitizer compiler flag was recommended for Dave's C++ code?"
+       Expected Answer:  "AddressSanitizer (ASan)"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [21] Question ID: CAT5_PM_H001
+       Question:         "What factors did you tell me Priya should weigh when choosing between the enterprise job and the startup offer?"
+       Expected Answer:  "When Priya is deciding between a stable role at a large enterprise company and an early-stage startup with equity, she should consider the following key factors:
+
+1. **Risk vs. Stability**: Evaluate the financial stability of the large enterprise versus the uncertainty and potential volatility of the startup. The enterprise offers a more predictable income and benefits, while the startup provides the opportunity for higher financial rewards if successful, but with a greater risk of job insecurity and income variability.
+
+2. **Growth and Learning Opportunities**: Assess the potential for professional growth and skill development. The startup may offer a faster-paced, more hands-on environment where Priya can wear multiple hats and take on significant responsibilities, fostering rapid learning and leadership skills. In contrast, the large enterprise might provide structured career paths and extensive training programs.
+
+3. **Equity Value and Exit Potential**: Consider the tangible value of the equity offered by the startup. Priya should research the startup's funding rounds, valuation, and potential exit strategies (e.g., acquisition or IPO) that could realize the equity's value. This factor is crucial if she is willing to accept risk for the possibility of substantial financial gain."
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+
+
+================================================================================
+CATEGORY: Single-Hop Fact Recall (13 misses)
+================================================================================
+
+  ► FAILURE CAUSE: GENERATION_FAILURE_LLM_OUTPUT_MISSED (7 items)
+  ----------------------------------------------------------------------------
+  [01] Question ID: CAT1_SH_003
+       Question:         "What building project is Sarah designing?"
+       Expected Answer:  "Meridian Horizon Tower (MHT-84)"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (676 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-11-20T18:45:00Z] Sarah: everything's a load path today—contractor’s delayed on the acoustic pa ... [TRUNCATED]"
+       Model Generation: "Sarah is designing sustainable building structures."
+  ----------------------------------------------------------------------------
+  [02] Question ID: CAT1_SH_005
+       Question:         "Who is Mark's mentor?"
+       Expected Answer:  "Dave"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (559 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-11-29T01:45:00Z] Mark: I'm considering asking Dave for feedback on the architecture design I'm ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [03] Question ID: CAT1_SH_008
+       Question:         "What is the name of Sarah's sister?"
+       Expected Answer:  "Elena"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (424 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-11-20T18:57:00Z] Sarah: everything's a load path, but I think "the Iceberg Method" is my only  ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [04] Question ID: CAT1_SH_009
+       Question:         "What subject did Leo initially struggle with in school?"
+       Expected Answer:  "Algebra"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (642 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-12-11T15:52:00Z] Sarah: Everything's a load path, right? I’ll snag a light antipasto for dinne ... [TRUNCATED]"
+       Model Generation: "Physics"
+  ----------------------------------------------------------------------------
+  [05] Question ID: CAT1_SH_024
+       Question:         "What JVM garbage collector tuning was applied for Pulsar streaming?"
+       Expected Answer:  "ZGC"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (540 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-10-05T08:09:00Z] Timmy (Tom's son): We're planning to migrate our logging infrastructure from  ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [06] Question ID: CAT1_SH_031
+       Question:         "What testing tool is Elena setting up for her WASM modules?"
+       Expected Answer:  "wasm-bindgen-test"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (391 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-10-26T10:54:00Z] Elena: That makes sense—thanks for the reassurance! I’ll definitely focus on  ... [TRUNCATED]"
+       Model Generation: "Elena is setting up `wasm-pack`."
+  ----------------------------------------------------------------------------
+  [07] Question ID: CAT1_SH_032
+       Question:         "What Chaos Mesh tool automates Alertmanager v2 silences?"
+       Expected Answer:  "Alertmanager v2 dynamic silence automation"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (601 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-10-03T04:02:00Z] Assistant: I need to query our legacy user inventory database. Which database ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+
+  ► FAILURE CAUSE: RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION (6 items)
+  ----------------------------------------------------------------------------
+  [01] Question ID: CAT1_SH_010
+       Question:         "What floor assembly rating was originally specified for MHT-84 in September?"
+       Expected Answer:  "STC 55"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (653 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-12-13T16:20:00Z] Alex: Actually STC 50 should be fine for the MHT-84 east wing, let's save som ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [02] Question ID: CAT1_SH_013
+       Question:         "Which project uses 120,000 CFM fans for NFPA 92 smoke evacuation?"
+       Expected Answer:  "Meridian Horizon Tower (MHT-84)"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (595 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-12-13T16:25:00Z] Mark: Our own office renovation used STC 50 partitions and that worked fine f ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [03] Question ID: CAT1_SH_014
+       Question:         "What thermal envelope bridging threshold was specified for MHT-84?"
+       Expected Answer:  "psi <= 0.03 W/mK"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (193 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-12-13T16:20:00Z] Alex: Actually STC 50 should be fine for the MHT-84 east wing, let's save som ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [04] Question ID: CAT1_SH_017
+       Question:         "What progressive delivery tool is used for canary deployments?"
+       Expected Answer:  "Argo Rollouts"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (601 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-10-03T04:02:00Z] Assistant: I need to query our legacy user inventory database. Which database ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [05] Question ID: CAT1_SH_026
+       Question:         "What workflow engine handles human-in-the-loop (HITL) processes?"
+       Expected Answer:  "Temporal.io"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (164 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-10-11T15:09:00Z] Assistant: Which search API client should we use when running our automated b ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [06] Question ID: CAT1_SH_028
+       Question:         "What efficiency rating do the ventilated BIPV rainscreens achieve?"
+       Expected Answer:  "22%"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (541 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-10-09T13:52:00Z] Alex: We just deployed React 19 server components to staging. What metrics sh ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+
+
+================================================================================
+CATEGORY: Speaker Attribution Traps (8 misses)
+================================================================================
+
+  ► FAILURE CAUSE: GENERATION_FAILURE_LLM_OUTPUT_MISSED (4 items)
+  ----------------------------------------------------------------------------
+  [01] Question ID: CAT7_SA_009
+       Question:         "Who aced his Algebra exam: Leo or Timmy?"
+       Expected Answer:  "Leo"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (602 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-11-03T19:19:00Z] Assistant: Enjoy the recital, Alex! Timmy is sure to shine. If you need any m ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [02] Question ID: CAT7_SA_015
+       Question:         "Who has a son named Timmy: Tom or Alex?"
+       Expected Answer:  "Tom"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (706 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-11-03T19:19:00Z] Assistant: Enjoy the recital, Alex! Timmy is sure to shine. If you need any m ... [TRUNCATED]"
+       Model Generation: "Alex has a son named Timmy.
+
+This is indicated by several entries, most clearly:
+*   "[2026-09-01T09:45"
+  ----------------------------------------------------------------------------
+  [03] Question ID: CAT7_SA_038
+       Question:         "Who picked up Sarah's son Leo on Day 15, given both are Alex's brothers: Sam or Tom?"
+       Expected Answer:  "Sam"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (703 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-11-20T19:10:00Z] Assistant: Sounds like you've got a solid plan in motion, Sarah! Prioritizing ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [04] Question ID: CAT7_SA_040
+       Question:         "Who specified the original STC 55 acoustic rating for MHT-84 in September: Sarah, or Dave (who separately specified the Iceberg data lake architecture)?"
+       Expected Answer:  "Sarah"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (200 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-12-13T16:20:00Z] Alex: Actually STC 50 should be fine for the MHT-84 east wing, let's save som ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+
+  ► FAILURE CAUSE: RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION (4 items)
+  ----------------------------------------------------------------------------
+  [01] Question ID: CAT7_SA_020
+       Question:         "Who asked for advice regarding his 10-year-old son's math homework: Josh or Mark?"
+       Expected Answer:  "Josh"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [02] Question ID: CAT7_SA_029
+       Question:         "Who recommended Valgrind and ASan for C++ leaks: Assistant or Mark?"
+       Expected Answer:  "Assistant"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [03] Question ID: CAT7_SA_030
+       Question:         "Who recommended Figma and Google UX Certificate: Assistant or Sarah?"
+       Expected Answer:  "Assistant"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [04] Question ID: CAT7_SA_039
+       Question:         "Was the Assistant's career-transition advice for Elena's move into UX design, or her earlier adoption of Rust and WebAssembly for backend microservices?"
+       Expected Answer:  "UX design"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+
+
+================================================================================
+CATEGORY: Temporal Reasoning & Session Math (28 misses)
+================================================================================
+
+  ► FAILURE CAUSE: GENERATION_FAILURE_LLM_OUTPUT_MISSED (4 items)
+  ----------------------------------------------------------------------------
+  [01] Question ID: CAT3_TR_021
+       Question:         "How many sessions elapsed between Mark finding Alex's laptop (Session 25) and Sarah's STC 60 update (Session 35)?"
+       Expected Answer:  "10 sessions"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (708 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-12-13T16:25:00Z] Mark: Our own office renovation used STC 50 partitions and that worked fine f ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [02] Question ID: CAT3_TR_031
+       Question:         "What was the day delta between Session 12 and Session 24?"
+       Expected Answer:  "24 days"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (596 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-09-05T15:49:00Z] Assistant: Dave recommended adjusting the load balancer's session persistence ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [03] Question ID: CAT3_TR_032
+       Question:         "Did Sarah announce MHT-84 in Session 12 or Session 35?"
+       Expected Answer:  "Session 12"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (654 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-11-20T18:45:00Z] Sarah: everything's a load path today—contractor’s delayed on the acoustic pa ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [04] Question ID: CAT3_TR_035
+       Question:         "Who mentioned their neighbor adopting a rescue dog?"
+       Expected Answer:  "Alex"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (654 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-09-14T03:54:00Z] Elena: That sounds like great advice—thanks so much! I’ll start with a simple ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+
+  ► FAILURE CAUSE: RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION (24 items)
+  ----------------------------------------------------------------------------
+  [01] Question ID: CAT3_TR_001
+       Question:         "How many days elapsed between Session 3 (Sept 5) and Session 17 (Oct 5)?"
+       Expected Answer:  "28 days"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (200 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-09-05T15:49:00Z] Assistant: Dave recommended adjusting the load balancer's session persistence ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [02] Question ID: CAT3_TR_003
+       Question:         "How many days passed between Sarah's initial MHT-84 STC 55 spec (Sept 7) and her STC 60 update (Nov 12)?"
+       Expected Answer:  "62 days"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (199 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-12-13T16:20:00Z] Alex: Actually STC 50 should be fine for the MHT-84 east wing, let's save som ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [03] Question ID: CAT3_TR_004
+       Question:         "What year did the events in the conversation memory corpus occur?"
+       Expected Answer:  "2026"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [04] Question ID: CAT3_TR_006
+       Question:         "On what day of the benchmark timeline did Alex announce moving to Anthropic?"
+       Expected Answer:  "Day 55"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (304 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-10-13T19:20:00Z] Assistant: To dive deeper into Anthropic's testing framework, start by review ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [05] Question ID: CAT3_TR_007
+       Question:         "What date did Sarah specify the initial STC 55 acoustic rating for MHT-84?"
+       Expected Answer:  "September 8"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (400 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-12-13T16:20:00Z] Alex: Actually STC 50 should be fine for the MHT-84 east wing, let's save som ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [06] Question ID: CAT3_TR_009
+       Question:         "How many days passed between Day 1 (Sept 1) and Day 28 (Sept 28)?"
+       Expected Answer:  "27 days"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [07] Question ID: CAT3_TR_010
+       Question:         "Which session did Alex state he has a flu: Session 27 or Session 35?"
+       Expected Answer:  "Session 27"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (409 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-11-24T21:59:00Z] Alex: Got it! I'll dive into the recent commits and run the local test to pin ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [08] Question ID: CAT3_TR_012
+       Question:         "In which month did Sarah first specify STC 55 for MHT-84?"
+       Expected Answer:  "September 2026"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (342 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-12-13T16:20:00Z] Alex: Actually STC 50 should be fine for the MHT-84 east wing, let's save som ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [09] Question ID: CAT3_TR_013
+       Question:         "How many conversation sessions are contained in the full corpus?"
+       Expected Answer:  "60 sessions"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (593 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-10-11T15:09:00Z] Assistant: Which search API client should we use when running our automated b ... [TRUNCATED]"
+       Model Generation: "Let's break down the conversation sessions based on the provided context, looking for distinct exchanges or topics:
+
+1.  **Dave's Schema Update:**
+    *   `["
+  ----------------------------------------------------------------------------
+  [10] Question ID: CAT3_TR_014
+       Question:         "What was the starting date of Session 01 in the memory corpus?"
+       Expected Answer:  "September 1, 2026"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (651 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-11-16T12:01:00Z] Elena: That sounds perfect—I love the idea of starting with a "Hello World" m ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [11] Question ID: CAT3_TR_015
+       Question:         "What was the ending date of Session 60 in the memory corpus?"
+       Expected Answer:  "January 3"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (130 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-09-05T15:49:00Z] Assistant: Dave recommended adjusting the load balancer's session persistence ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [12] Question ID: CAT3_TR_016
+       Question:         "How many total days spanned from Session 01 (Sept 1, 2026) to Session 60 (Jan 3, 2027)?"
+       Expected Answer:  "124 days"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (332 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-09-05T15:49:00Z] Assistant: Dave recommended adjusting the load balancer's session persistence ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [13] Question ID: CAT3_TR_017
+       Question:         "Did Alex move to Anthropic before or after Sarah updated MHT-84 to STC 60?"
+       Expected Answer:  "Before"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (183 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-12-13T16:20:00Z] Alex: Actually STC 50 should be fine for the MHT-84 east wing, let's save som ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [14] Question ID: CAT3_TR_018
+       Question:         "Did Elena migrate to Rust before or after Alex moved to Anthropic?"
+       Expected Answer:  "Before"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [15] Question ID: CAT3_TR_019
+       Question:         "Which session contained Dave's Apache Iceberg data lake recommendation?"
+       Expected Answer:  "Session 28"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (430 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-11-29T01:51:00Z] Assistant: Here's a concise question you can ask Dave: "Could you review my A ... [TRUNCATED]"
+       Model Generation: "The session on [2026-10-01T01:45:00Z] contained Dave's recommendation to "Use Apache Iceberg's"
+  ----------------------------------------------------------------------------
+  [16] Question ID: CAT3_TR_020
+       Question:         "Which session contained Mark's note about Alex leaving his laptop?"
+       Expected Answer:  "Session 25"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (667 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-10-22T07:05:00Z] Mark: Tell Alex he left his laptop in the conference room. I have it stored i ... [TRUNCATED]"
+       Model Generation: "2026-10-22T07:05:00Z"
+  ----------------------------------------------------------------------------
+  [17] Question ID: CAT3_TR_022
+       Question:         "How many days elapsed between Session 01 and Session 05?"
+       Expected Answer:  "8 days"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (284 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-09-05T15:49:00Z] Assistant: Dave recommended adjusting the load balancer's session persistence ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [18] Question ID: CAT3_TR_023
+       Question:         "What was the day number corresponding to Session 14?"
+       Expected Answer:  "Day 27"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (685 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-12-11T16:14:00Z] Assistant: During the conference, concentrate on the essential agenda items,  ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [19] Question ID: CAT3_TR_024
+       Question:         "On what date did Timmy mention playing acoustic guitar?"
+       Expected Answer:  "September 5"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (672 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-09-01T09:45:00Z] Alex: Hey, just wrapped up another frustrating build break—thinking about swi ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [20] Question ID: CAT3_TR_025
+       Question:         "What month did Leo begin needing Physics tutoring?"
+       Expected Answer:  "November"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (634 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-12-11T16:11:00Z] Sarah: I’ll jot down the main physics concepts Leo needs for his homework whi ... [TRUNCATED]"
+       Model Generation: "October"
+  ----------------------------------------------------------------------------
+  [21] Question ID: CAT3_TR_027
+       Question:         "What year did Session 60 take place in?"
+       Expected Answer:  "2027"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (637 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-09-05T15:49:00Z] Assistant: Dave recommended adjusting the load balancer's session persistence ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [22] Question ID: CAT3_TR_028
+       Question:         "How many months elapsed between Sept 1, 2026 and Jan 4, 2027?"
+       Expected Answer:  "4 months"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (18 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts:"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [23] Question ID: CAT3_TR_029
+       Question:         "Which was specified earlier: MHT-84's STC 55 rating or its STC 60 rating?"
+       Expected Answer:  "STC 55"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (140 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-12-13T16:20:00Z] Alex: Actually STC 50 should be fine for the MHT-84 east wing, let's save som ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [24] Question ID: CAT3_TR_030
+       Question:         "What day number was Session 30 recorded on?"
+       Expected Answer:  "Day 59"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (328 tokens): "[SYSTEM LONG-TERM MEMORY INJECTION] Activated Concept Knowledge: - (Direct episodic memory matches retrieved)  Relevant Specific Memories & Facts: - "[2026-12-11T16:14:00Z] Assistant: During the conference, concentrate on the essential agenda items,  ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+
+
+Report generated by FP-AMB Evaluator Engine · 2026-08-27 07:09:59

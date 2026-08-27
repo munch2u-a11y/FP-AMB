@@ -95,3 +95,5 @@ runs/
 !results/real_mrag_provider_scorecard_misses.txt
 !results/sample_tf_idf_provider_scorecard.*
 !results/sample_tf_idf_provider_scorecard_misses.txt
+!results/real_fractal_memory_provider_scorecard.*
+!results/real_fractal_memory_provider_scorecard_misses.txt

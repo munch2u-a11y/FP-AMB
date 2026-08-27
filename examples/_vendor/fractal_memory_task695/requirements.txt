@@ -1,0 +1,10 @@
+# --- core (v2 pipeline) ---
+numpy>=1.24.0            # vector maths, centroids, calibration
+scikit-learn>=1.2.0      # complete-linkage agglomerative clustering
+chromadb>=0.4.0          # persistent vector store (memories + non-retrievable statements)
+# BM25 comes from SQLite FTS5 (stdlib sqlite3) -- no external BM25 package needed.
+
+# --- optional vector backends (fractal_memory/vector_adapters.py) ---
+pinecone-client>=3.0.0
+psycopg[binary]>=3.1.0
+pgvector>=0.2.0
