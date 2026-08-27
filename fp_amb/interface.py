@@ -14,7 +14,7 @@ class BaseMemoryProvider(ABC):
     def ingest_turn(self, session_id: str, timestamp: str, speaker: str, text: str):
         """
         Ingests a single conversation turn from the corpus.
-        Called sequentially for all 677 turns (~512k tokens) during ingestion phase.
+        Called sequentially for all 679 turns (~512.9k tokens) during ingestion phase.
         """
         pass
 

@@ -61,6 +61,26 @@ PROBES = [
         evaluation_question="What tech stack did you recommend for Ray's first to-do list app?",
         session_id="Session_38", day=75, timestamp="2026-11-18T15:20:00Z",
     ),
+    Probe(
+        probe_id="marcus_buy_vs_lease_advice",
+        captured_prompt=(
+            "Quick one -- my friend Marcus just got a new job with a longer commute and is "
+            "trying to decide whether to buy or lease a car for it. What should he weigh in "
+            "making that call? Keep it to 2-3 concrete factors."
+        ),
+        evaluation_question="What factors did you tell me Marcus should weigh when deciding whether to buy or lease a car for his commute?",
+        session_id="Session_44", day=87, timestamp="2026-12-01T05:46:00Z",
+    ),
+    Probe(
+        probe_id="cousin_home_wifi_advice",
+        captured_prompt=(
+            "My cousin is setting up wifi in a 2-story house and keeps getting dead zones "
+            "upstairs. Any quick recommendations to fix that? Keep it to 2-3 concrete "
+            "suggestions."
+        ),
+        evaluation_question="What did you recommend to fix the wifi dead zones in my cousin's 2-story house?",
+        session_id="Session_50", day=99, timestamp="2026-12-13T16:32:00Z",
+    ),
 ]
 
 

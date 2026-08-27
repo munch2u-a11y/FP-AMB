@@ -6,7 +6,7 @@
 
 **FP-AMB (First-Person Agent Memory Benchmark)** is an industry-standard, framework-agnostic evaluation suite engineered for long-term AI agent memory systems operating over realistic, multi-session conversational streams.
 
-It evaluates context recall, multi-hop graph reasoning, temporal date math, adaptability/fact overwrites, speaker attribution traps (incorporating **LoCoMO** and **BEAM** features), refusal to hallucinate absent memories (incorporating **LongMemEval** features), source credibility resolution, and agentic tool-use execution across **10 core categories plus dynamic answer key bindings** over **~512,266 tokens** and 677 turns spanning 60 distinct conversational sessions.
+It evaluates context recall, multi-hop graph reasoning, temporal date math, adaptability/fact overwrites, speaker attribution traps (incorporating **LoCoMO** and **BEAM** features), refusal to hallucinate absent memories (incorporating **LongMemEval** features), source credibility resolution, and agentic tool-use execution across **10 core categories plus dynamic answer key bindings** over **~512,889 tokens** and 679 turns spanning 60 distinct conversational sessions.
 
 ---
 
@@ -26,7 +26,7 @@ It evaluates context recall, multi-hop graph reasoning, temporal date math, adap
 
 ## ✨ Key Features
 
-- **Realistic Multi-Session Corpus**: 60 multi-turn user/assistant conversational sessions comprising **677 turns and ~512,266 tokens**.
+- **Realistic Multi-Session Corpus**: 60 multi-turn user/assistant conversational sessions comprising **679 turns and ~512,889 tokens**.
 - **Framework Agnostic**: Simple 2-method SDK interface (`ingest_turn` and `retrieve_context`) compatible with any RAG, Graph, or Agent memory system (Mem0, Zep, MemGPT, LangChain, LlamaIndex, Pinecone, etc.).
 - **10 Core Evaluation Categories**: Evaluates recall, multi-hop links, temporal reasoning, fact overwrites, speaker traps, refusal, credibility, and agentic tool usage.
 - **Dynamic Answer Key Compilation Portion**: Compiles dynamic key bindings (`harvested_output_advice_keys`, `fact_correction_keys`, `tool_learning_keys`) into the master ground-truth answer key.
@@ -115,8 +115,8 @@ fp-amb evaluate --help
 2. **Category 2: Cross-Session Multi-Hop Reasoning** *(44 items)*: Linking multi-session entities across graph edges.
 3. **Category 3: Temporal Reasoning & Session Math** *(35 items)*: Timestamp deltas, timeline math, and date resolution.
 4. **Category 4: Adaptability & Fact Correction Overwrites** *(18 items)*: Tracking dynamic preference updates and fact revisions over time.
-5. **Category 5: Self-Referential & Procedural Tool Memory** *(29 items)*: Recalling procedural tool rules and interaction instructions.
-6. **Category 6: Adversarial Defense & Gaslighting Robustness** *(41 items)*: Resisting false premises and user gaslighting traps.
+5. **Category 5: Self-Referential & Procedural Tool Memory** *(31 items)*: Recalling procedural tool rules and interaction instructions.
+6. **Category 6: Adversarial Defense & Gaslighting Robustness** *(43 items)*: Resisting false premises and user gaslighting traps.
 7. **Category 7: Speaker Attribution Traps** *(14 items)*: Disambiguating User vs. Assistant assertions (*LoCoMO & BEAM feature*).
 8. **Category 8: Unanswerable & Absent Memory Refusal** *(35 items)*: Correctly refusing queries for non-existent memories (*LongMemEval feature*).
 9. **Category 9: Source Credibility & Conflict Resolution** *(7 items)*: Disambiguating conflicting multi-source assertions and credibility weighting.
@@ -183,7 +183,7 @@ Saved automatically alongside each scorecard run to analyze and debug provider p
 ## 📈 Comprehensive Token & Payload Metrics
 
 FP-AMB tracks detailed context payload efficiency to prevent memory providers from "cheating" by injecting excessive context:
-- **Total Corpus Size**: Total tokens (~512k) across 677 conversation turns.
+- **Total Corpus Size**: Total tokens (~512.9k) across 679 conversation turns.
 - **Total Injected Context Payload**: Cumulative tokens injected across all queries in the battery.
 - **Avg & Range Payload Size**: Average tokens/chars per query payload, along with minimum and maximum payload boundaries.
 - **Token Efficiency Ratio**: $\text{Accuracy \%} / (\text{Avg Payload Tokens} / 1000)$, measuring accuracy points achieved per 1,000 injected tokens.
@@ -201,10 +201,10 @@ fp-amb-benchmark/
 │   ├── markdown_report_sample_mempalace.png # Markdown/ASCII scorecard, real MemPalace run
 │   └── misses_report_sample.png          # Misses & failure-taxonomy report, real MemPalace run
 ├── data/                                 # Corpus datasets & compiled ground-truth answer keys
-│   ├── fp_amb_500k_cross_session.jsonl   # 60 sessions, 677 turns (~512k tokens)
-│   ├── fp_amb_cross_session_questions.json # 258 static evaluation questions
+│   ├── fp_amb_500k_cross_session.jsonl   # 60 sessions, 679 turns (~512.9k tokens)
+│   ├── fp_amb_cross_session_questions.json # 262 static evaluation questions
 │   ├── dynamic_answer_keys.json          # Dynamic keys (advice, fact corrections, tool learning)
-│   └── master_ground_truth_answer_key.json # Master answer key (258 items + dynamic bindings)
+│   └── master_ground_truth_answer_key.json # Master answer key (262 items + dynamic bindings)
 ├── examples/                              # Provider templates & real integration examples
 │   ├── sample_memory_provider.py         # Minimal keyword-match baseline provider template
 │   ├── sample_tf_idf_provider.py         # TF-IDF cosine-similarity baseline

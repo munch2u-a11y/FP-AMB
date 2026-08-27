@@ -7,6 +7,22 @@
       "evaluation_question": "What tech stack did you recommend for Ray's first to-do list app?",
       "timestamp": "2026-08-26 12:50:32",
       "model": "granite4.1:8b"
+    },
+    "marcus_buy_vs_lease_advice": {
+      "probe_id": "probe_marcus_buy_vs_lease_advice",
+      "captured_prompt": "Quick one -- my friend Marcus just got a new job with a longer commute and is trying to decide whether to buy or lease a car for it. What should he weigh in making that call? Keep it to 2-3 concrete factors.",
+      "captured_advice": "Marcus should consider the following two key factors when deciding between buying and leasing a car for his longer commute:\n\n1. **Total Cost Over Time**:  \n   - **Buying**: Calculate the purchase price, financing costs (interest), insurance premiums, maintenance expenses, and potential resale value. Owning a car outright may lead to higher upfront costs but can be cheaper in the long run if he keeps the vehicle for several years.\n   - **Leasing**: Evaluate the monthly lease payments, any down payment required, insurance costs, and whether the lease includes maintenance (often it does). Leasing typically has lower monthly payments but adds up over time without building equity.\n\n2. **Flexibility and Vehicle Upgrade Cycle**:  \n   - **Buying**: Provides long-term ownership, allowing him to keep the car as long as he wishes or sell it later. However, he\u2019s responsible for all repairs and depreciation.\n   - **Leasing**: Offers the opportunity to drive a newer model every few years with lower upfront costs. This can be advantageous if he prefers having access to the latest technology and doesn\u2019t want to deal with selling or maintaining an older vehicle.\n\nBy weighing these factors\u2014total cost over time and flexibility/upgrade cycle\u2014he can make a decision that aligns best with his financial situation and lifestyle preferences for his longer commute.",
+      "evaluation_question": "What factors did you tell me Marcus should weigh when deciding whether to buy or lease a car for his commute?",
+      "timestamp": "2026-08-27 16:20:41",
+      "model": "granite4.1:8b"
+    },
+    "cousin_home_wifi_advice": {
+      "probe_id": "probe_cousin_home_wifi_advice",
+      "captured_prompt": "My cousin is setting up wifi in a 2-story house and keeps getting dead zones upstairs. Any quick recommendations to fix that? Keep it to 2-3 concrete suggestions.",
+      "captured_advice": "Certainly! Here are three concise recommendations to address the WiFi dead zones upstairs in your cousin's two-story house:\n\n1. **Upgrade or Reposition the Router/Extender**: \n   - Place a dual-band router (or an existing one if it supports both 2.4GHz and 5GHz) near the center of the house to maximize coverage.\n   - Consider using a mesh WiFi system or a Wi-Fi extender on the second floor to boost signal strength and eliminate dead zones.\n\n2. **Use Ethernet Backhaul for Extenders**:\n   - If using an extender, connect it via Ethernet to the main router (if possible) rather than relying solely on wireless backhaul. This ensures more stable and faster communication between devices.\n\n3. **Adjust Antenna Orientation**:\n   - Ensure that any external antennas on the router or extender are vertically oriented and elevated as high as possible (e.g., mounted on a wall or ceiling). This helps in better signal propagation throughout the house, especially upstairs.\n\nImplementing these suggestions should significantly improve WiFi coverage on the second floor.",
+      "evaluation_question": "What did you recommend to fix the wifi dead zones in my cousin's 2-story house?",
+      "timestamp": "2026-08-27 16:20:41",
+      "model": "granite4.1:8b"
     }
   },
   "fact_correction_keys": {},

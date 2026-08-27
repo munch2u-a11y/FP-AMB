@@ -3,7 +3,7 @@
 FP-AMB Framework SDK & Plug-and-Play Evaluator
 ----------------------------------------------
 Allows ANY external memory system (Mem0, MemPalace, mRAG, Zep, LangChain, LlamaIndex, Custom)
-to evaluate against the ~512k token FP-AMB Cross-Session Evaluation Battery in 5 lines of code!
+to evaluate against the ~512.9k token FP-AMB Cross-Session Evaluation Battery in 5 lines of code!
 """
 
 import json
@@ -21,7 +21,7 @@ class BaseMemoryProvider(ABC):
     
     @abstractmethod
     def ingest_turn(self, session_id: str, timestamp: str, speaker: str, text: str):
-        """Called for every conversation turn during the ~512k token ingestion phase."""
+        """Called for every conversation turn during the ~512.9k token ingestion phase."""
         pass
 
     @abstractmethod
@@ -39,7 +39,7 @@ class FPAMBEvaluator:
         self.ollama_url = ollama_url
 
     def run_ingestion(self):
-        print(f"FP-AMB Evaluator: Starting Ingestion Phase over ~512k token corpus from '{RAW_CORPUS_FILE}'...", flush=True)
+        print(f"FP-AMB Evaluator: Starting Ingestion Phase over ~512.9k token corpus from '{RAW_CORPUS_FILE}'...", flush=True)
         turn_count = 0
         with open(RAW_CORPUS_FILE, 'r') as f:
             for line in f:

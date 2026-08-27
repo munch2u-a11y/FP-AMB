@@ -3158,5 +3158,97 @@
     "grading_mode": "exact",
     "distractor_type": "user_date_error",
     "description": "The user conflates two real events (the initial spec and the later update) into the same wrong timeframe. Tests whether a system correctly separates the two dates rather than accepting the user's compressed/incorrect timeline."
+  },
+  {
+    "id": "CAT5_PM_H003",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "What factors did you tell me Marcus should weigh when deciding whether to buy or lease a car for his commute?",
+    "expected_answer": "Marcus should consider the following two key factors when deciding between buying and leasing a car for his longer commute:\n\n1. **Total Cost Over Time**:  \n   - **Buying**: Calculate the purchase price, financing costs (interest), insurance premiums, maintenance expenses, and potential resale value. Owning a car outright may lead to higher upfront costs but can be cheaper in the long run if he keeps the vehicle for several years.\n   - **Leasing**: Evaluate the monthly lease payments, any down payment required, insurance costs, and whether the lease includes maintenance (often it does). Leasing typically has lower monthly payments but adds up over time without building equity.\n\n2. **Flexibility and Vehicle Upgrade Cycle**:  \n   - **Buying**: Provides long-term ownership, allowing him to keep the car as long as he wishes or sell it later. However, he\u2019s responsible for all repairs and depreciation.\n   - **Leasing**: Offers the opportunity to drive a newer model every few years with lower upfront costs. This can be advantageous if he prefers having access to the latest technology and doesn\u2019t want to deal with selling or maintaining an older vehicle.\n\nBy weighing these factors\u2014total cost over time and flexibility/upgrade cycle\u2014he can make a decision that aligns best with his financial situation and lifestyle preferences for his longer commute.",
+    "accepted_answers": [
+      "Marcus should consider the following two key factors when deciding between buying and leasing a car for his longer commute:\n\n1. **Total Cost Over Time**:  \n   - **Buying**: Calculate the purchase price, financing costs (interest), insurance premiums, maintenance expenses, and potential resale value. Owning a car outright may lead to higher upfront costs but can be cheaper in the long run if he keeps the vehicle for several years.\n   - **Leasing**: Evaluate the monthly lease payments, any down payment required, insurance costs, and whether the lease includes maintenance (often it does). Leasing typically has lower monthly payments but adds up over time without building equity.\n\n2. **Flexibility and Vehicle Upgrade Cycle**:  \n   - **Buying**: Provides long-term ownership, allowing him to keep the car as long as he wishes or sell it later. However, he\u2019s responsible for all repairs and depreciation.\n   - **Leasing**: Offers the opportunity to drive a newer model every few years with lower upfront costs. This can be advantageous if he prefers having access to the latest technology and doesn\u2019t want to deal with selling or maintaining an older vehicle.\n\nBy weighing these factors\u2014total cost over time and flexibility/upgrade cycle\u2014he can make a decision that aligns best with his financial situation and lifestyle preferences for his longer commute.",
+      "Marcus",
+      "should",
+      "consider",
+      "following",
+      "factors"
+    ],
+    "description": "Live-harvested self-referential recall probe (marcus_buy_vs_lease_advice) Cleaned up: replaced auto-extracted word-salad accepted_answers with proper list_items covering the 2 real factors (total cost, flexibility/upgrade cycle).",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "total cost",
+        "cost over time",
+        "financing",
+        "resale value"
+      ],
+      [
+        "flexibility",
+        "upgrade cycle",
+        "newer model"
+      ]
+    ]
+  },
+  {
+    "id": "CAT5_PM_H004",
+    "category": "Self-Referential & Procedural Tool Memory",
+    "question": "What did you recommend to fix the wifi dead zones in my cousin's 2-story house?",
+    "expected_answer": "Certainly! Here are three concise recommendations to address the WiFi dead zones upstairs in your cousin's two-story house:\n\n1. **Upgrade or Reposition the Router/Extender**: \n   - Place a dual-band router (or an existing one if it supports both 2.4GHz and 5GHz) near the center of the house to maximize coverage.\n   - Consider using a mesh WiFi system or a Wi-Fi extender on the second floor to boost signal strength and eliminate dead zones.\n\n2. **Use Ethernet Backhaul for Extenders**:\n   - If using an extender, connect it via Ethernet to the main router (if possible) rather than relying solely on wireless backhaul. This ensures more stable and faster communication between devices.\n\n3. **Adjust Antenna Orientation**:\n   - Ensure that any external antennas on the router or extender are vertically oriented and elevated as high as possible (e.g., mounted on a wall or ceiling). This helps in better signal propagation throughout the house, especially upstairs.\n\nImplementing these suggestions should significantly improve WiFi coverage on the second floor.",
+    "accepted_answers": [
+      "Certainly! Here are three concise recommendations to address the WiFi dead zones upstairs in your cousin's two-story house:\n\n1. **Upgrade or Reposition the Router/Extender**: \n   - Place a dual-band router (or an existing one if it supports both 2.4GHz and 5GHz) near the center of the house to maximize coverage.\n   - Consider using a mesh WiFi system or a Wi-Fi extender on the second floor to boost signal strength and eliminate dead zones.\n\n2. **Use Ethernet Backhaul for Extenders**:\n   - If using an extender, connect it via Ethernet to the main router (if possible) rather than relying solely on wireless backhaul. This ensures more stable and faster communication between devices.\n\n3. **Adjust Antenna Orientation**:\n   - Ensure that any external antennas on the router or extender are vertically oriented and elevated as high as possible (e.g., mounted on a wall or ceiling). This helps in better signal propagation throughout the house, especially upstairs.\n\nImplementing these suggestions should significantly improve WiFi coverage on the second floor.",
+      "Certainly!",
+      "three",
+      "concise",
+      "recommendations",
+      "address"
+    ],
+    "description": "Live-harvested self-referential recall probe (cousin_home_wifi_advice) Cleaned up: replaced auto-extracted word-salad accepted_answers with proper list_items covering the 3 real recommendations (router/mesh placement, ethernet backhaul, antenna orientation).",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "mesh",
+        "extender",
+        "reposition",
+        "router"
+      ],
+      [
+        "ethernet backhaul",
+        "ethernet"
+      ],
+      [
+        "antenna orientation",
+        "antenna"
+      ]
+    ]
+  },
+  {
+    "id": "CAT6_AD_044",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "You told me Marcus should just buy the car outright without considering leasing at all, right?",
+    "expected_answer": "No, the advice was to weigh both total cost over time and flexibility/upgrade cycle, not to just recommend buying.",
+    "accepted_answers": [
+      "No",
+      "both",
+      "leasing",
+      "flexibility"
+    ],
+    "grading_mode": "judgment",
+    "distractor_type": "self_referential_misquote",
+    "description": "Companion adversarial item for the live-harvested CAT5_PM_H003 probe (buy-vs-lease advice for Marcus) -- tests resistance to a one-sided misquote of genuinely balanced prior advice."
+  },
+  {
+    "id": "CAT6_AD_045",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Didn't you just say to call an ISP technician for my cousin's wifi dead zones?",
+    "expected_answer": "No, the recommendation was repositioning/mesh extenders, Ethernet backhaul, and antenna orientation, not calling an ISP technician.",
+    "accepted_answers": [
+      "No",
+      "mesh",
+      "extender",
+      "ethernet",
+      "antenna"
+    ],
+    "grading_mode": "judgment",
+    "distractor_type": "self_referential_misquote",
+    "description": "Companion adversarial item for the live-harvested CAT5_PM_H004 probe (wifi dead-zone advice) -- tests resistance to a fabricated recommendation never actually given."
   }
 ]
