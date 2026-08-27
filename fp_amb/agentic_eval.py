@@ -235,7 +235,69 @@ def _s6_multihop_ordered():
     )
 
 
-SCENARIOS = [_s1_legacy_db(), _s2_batch_indexing(), _s3_vault_auth(), _s4_memory_leak(), _s5_payment_restart(), _s6_multihop_ordered()]
+def _s7_lb_config():
+    def scripted(name, args):
+        if name == "ConfigureLoadBalancer":
+            persistence = str(args.get("session_persistence", "")).lower()
+            max_conn = args.get("max_connections")
+            if "ip hash" in persistence and str(max_conn) == "5000":
+                return {"status": "configured", "session_persistence": "IP hash", "max_connections": 5000}
+            return {"error": "Configuration values do not match Dave's established spec -- rejected by config validator."}
+        if name == "ConfigureLoadBalancerDefaults":
+            return {"error": "Generic defaults do not match Dave's spec; validator rejected the config."}
+        return {"error": "Tool not applicable to this request."}
+    return Scenario(
+        id="TOOL_07_lb_config",
+        task_prompt="Configure the load balancer for the new service rollout using Dave's established settings.",
+        memory_query="What load balancer session persistence setting and max connection limit did Dave recommend?",
+        tools=[
+            ToolSpec("ConfigureLoadBalancer", "Configure the load balancer with specific session persistence and max connection settings.",
+                     {"type": "object", "properties": {"session_persistence": {"type": "string"}, "max_connections": {"type": "integer"}},
+                      "required": ["session_persistence", "max_connections"]}),
+            ToolSpec("ConfigureLoadBalancerDefaults", "Configure the load balancer using generic platform defaults.",
+                     {"type": "object", "properties": {}, "required": []}),
+            ToolSpec("RestartService", "Restart a running service.",
+                     {"type": "object", "properties": {"service": {"type": "string"}}, "required": ["service"]}),
+            ToolSpec("CheckWeather", "Get current weather for a location.",
+                     {"type": "object", "properties": {"location": {"type": "string"}}, "required": ["location"]}),
+        ],
+        correct_sequence=["ConfigureLoadBalancer"],
+        scripted_return=scripted,
+        final_answer_markers=["ip hash", "5000"],
+    )
+
+
+def _s8_distractor_prompt():
+    def scripted(name, args):
+        if name == "SearchAPI_HighThroughput":
+            return {"job_id": "batch-9042", "status": "started", "throughput_mode": "high"}
+        if name in ("SearchAPI_Standard", "SearchAPI_LowLatency"):
+            return {"error": f"{name} is not designed for batch throughput; job rejected."}
+        if name == "LookupElectricVehicleModels":
+            return {"error": "Not relevant to the requested task."}
+        return {"error": "Tool not applicable to this request."}
+    return Scenario(
+        id="TOOL_08_distractor_prompt",
+        task_prompt="Dave mentioned an electric car charging station he liked recently, by the way. Also, can you kick off the automated batch log indexing job for tonight?",
+        memory_query="Which search API client should be used for automated batch log indexing?",
+        tools=[
+            ToolSpec("SearchAPI_Standard", "Standard-tier search API client.",
+                     {"type": "object", "properties": {"job": {"type": "string"}}, "required": ["job"]}),
+            ToolSpec("SearchAPI_HighThroughput", "High-throughput search API client for batch workloads.",
+                     {"type": "object", "properties": {"job": {"type": "string"}}, "required": ["job"]}),
+            ToolSpec("SearchAPI_LowLatency", "Low-latency search API client for interactive queries.",
+                     {"type": "object", "properties": {"job": {"type": "string"}}, "required": ["job"]}),
+            ToolSpec("LookupElectricVehicleModels", "Look up electric vehicle model specifications and reviews.",
+                     {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}),
+        ],
+        correct_sequence=["SearchAPI_HighThroughput"],
+        scripted_return=scripted,
+        final_answer_markers=["started", "batch-9042"],
+    )
+
+
+SCENARIOS = [_s1_legacy_db(), _s2_batch_indexing(), _s3_vault_auth(), _s4_memory_leak(), _s5_payment_restart(),
+             _s6_multihop_ordered(), _s7_lb_config(), _s8_distractor_prompt()]
 
 
 def _to_ollama_tools(tools: list) -> list:
