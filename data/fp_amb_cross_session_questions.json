@@ -913,12 +913,12 @@
     "id": "CAT3_TR_001",
     "category": "Temporal Reasoning & Session Math",
     "question": "How many days elapsed between Session 3 (Sept 5) and Session 17 (Oct 5)?",
-    "expected_answer": "28 days",
+    "expected_answer": "30 days",
     "accepted_answers": [
-      "28 days",
-      "28"
+      "30 days",
+      "30"
     ],
-    "description": "Unique temporal reasoning #1"
+    "description": "Unique temporal reasoning #1 (BUGFIX: verified via real calendar-date arithmetic against the session timestamps -- the corpus's internal per-turn 'day' field drifts from true elapsed calendar days starting around Session 12, so any answer computed from that field instead of the actual dates was wrong.)"
   },
   {
     "id": "CAT3_TR_002",
@@ -936,13 +936,13 @@
   {
     "id": "CAT3_TR_003",
     "category": "Temporal Reasoning & Session Math",
-    "question": "How many days passed between Sarah's initial MHT-84 STC 55 spec (Sept 7) and her STC 60 update (Nov 12)?",
-    "expected_answer": "62 days",
+    "question": "How many days passed between Sarah's initial MHT-84 STC 55 spec (Sept 7) and her STC 60 update (Nov 19)?",
+    "expected_answer": "73 days",
     "accepted_answers": [
-      "62 days",
-      "62"
+      "73 days",
+      "73"
     ],
-    "description": "Unique temporal reasoning #3"
+    "description": "Unique temporal reasoning #3 (BUGFIX: verified via real calendar-date arithmetic against the session timestamps -- the corpus's internal per-turn 'day' field drifts from true elapsed calendar days starting around Session 12, so any answer computed from that field instead of the actual dates was wrong.) Also fixed the question's own '(Nov 12)' to '(Nov 19)' -- Nov 12 was that corpus turn's message timestamp, not the date Sarah's text states the update happened on; TR_008 and CAT2_CSMH_031 both already independently use Nov 19 as the canonical date for this same fact."
   },
   {
     "id": "CAT3_TR_004",
@@ -970,12 +970,12 @@
     "id": "CAT3_TR_006",
     "category": "Temporal Reasoning & Session Math",
     "question": "On what day of the benchmark timeline did Alex announce moving to Anthropic?",
-    "expected_answer": "Day 55",
+    "expected_answer": "Day 58",
     "accepted_answers": [
-      "Day 55",
-      "55"
+      "Day 58",
+      "58"
     ],
-    "description": "Unique temporal reasoning #6"
+    "description": "Unique temporal reasoning #6 (BUGFIX: verified via real calendar-date arithmetic against the session timestamps -- the corpus's internal per-turn 'day' field drifts from true elapsed calendar days starting around Session 12, so any answer computed from that field instead of the actual dates was wrong.)"
   },
   {
     "id": "CAT3_TR_007",
@@ -1159,12 +1159,12 @@
     "id": "CAT3_TR_023",
     "category": "Temporal Reasoning & Session Math",
     "question": "What was the day number corresponding to Session 14?",
-    "expected_answer": "Day 27",
+    "expected_answer": "Day 28",
     "accepted_answers": [
-      "Day 27",
-      "27"
+      "Day 28",
+      "28"
     ],
-    "description": "Unique temporal reasoning #23"
+    "description": "Unique temporal reasoning #23 (BUGFIX: verified via real calendar-date arithmetic against the session timestamps -- the corpus's internal per-turn 'day' field drifts from true elapsed calendar days starting around Session 12, so any answer computed from that field instead of the actual dates was wrong.)"
   },
   {
     "id": "CAT3_TR_024",
@@ -1234,23 +1234,23 @@
     "id": "CAT3_TR_030",
     "category": "Temporal Reasoning & Session Math",
     "question": "What day number was Session 30 recorded on?",
-    "expected_answer": "Day 59",
+    "expected_answer": "Day 62",
     "accepted_answers": [
-      "Day 59",
-      "59"
+      "Day 62",
+      "62"
     ],
-    "description": "Unique temporal reasoning #30"
+    "description": "Unique temporal reasoning #30 (BUGFIX: verified via real calendar-date arithmetic against the session timestamps -- the corpus's internal per-turn 'day' field drifts from true elapsed calendar days starting around Session 12, so any answer computed from that field instead of the actual dates was wrong.)"
   },
   {
     "id": "CAT3_TR_031",
     "category": "Temporal Reasoning & Session Math",
     "question": "What was the day delta between Session 12 and Session 24?",
-    "expected_answer": "24 days",
+    "expected_answer": "26 days",
     "accepted_answers": [
-      "24 days",
-      "24"
+      "26 days",
+      "26"
     ],
-    "description": "Unique temporal reasoning #31"
+    "description": "Unique temporal reasoning #31 (BUGFIX: verified via real calendar-date arithmetic against the session timestamps -- the corpus's internal per-turn 'day' field drifts from true elapsed calendar days starting around Session 12, so any answer computed from that field instead of the actual dates was wrong.)"
   },
   {
     "id": "CAT3_TR_032",
