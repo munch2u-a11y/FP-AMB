@@ -1,7 +1,7 @@
 # FP-AMB Exam Report — RealMemPalaceProvider
 _Full LLM Generation — gemini-2.5-flash · 2026-08-26 17:52:25_
 
-## 34.2%  (96 / 281 items passed)
+## 33.8%  (95 / 281 items passed)
 
 ## Performance
 - Avg Retrieval Latency: 165.58 ms
@@ -12,12 +12,12 @@ _Full LLM Generation — gemini-2.5-flash · 2026-08-26 17:52:25_
 
 ## Category Breakdown (worst first)
 ```
-CRIT  Self-Referential & Procedural Tool Memory     [████░░░░░░░░░░░░░░░░░░░░░░░░]   13.5%  (5/37)
+CRIT  Adversarial Defense & Gaslighting Robustness  [████░░░░░░░░░░░░░░░░░░░░░░░░]   13.4%  (5.5/41)
 CRIT  Temporal Reasoning & Session Math             [████░░░░░░░░░░░░░░░░░░░░░░░░]   14.3%  (5/35)
-CRIT  Adversarial Defense & Gaslighting Robustness  [█████░░░░░░░░░░░░░░░░░░░░░░░]   17.1%  (7/41)
+CRIT  Self-Referential & Procedural Tool Memory     [█████░░░░░░░░░░░░░░░░░░░░░░░]   16.2%  (6/37)
 CRIT  Cross-Session Multi-Hop Reasoning             [███████░░░░░░░░░░░░░░░░░░░░░]   24.4%  (11/45)
 CRIT  Speaker Attribution Traps                     [███████░░░░░░░░░░░░░░░░░░░░░]   26.7%  (4/15)
-CRIT  Adaptability & Fact Correction Overwrites     [████████░░░░░░░░░░░░░░░░░░░░]   28.6%  (10/35)
+CRIT  Adaptability & Fact Correction Overwrites     [████████░░░░░░░░░░░░░░░░░░░░]   27.1%  (9.5/35)
 CRIT  Source Credibility & Conflict Resolution      [█████████░░░░░░░░░░░░░░░░░░░]   33.3%  (1/3)
 WARN  Single-Hop Fact Recall                        [██████████████░░░░░░░░░░░░░░]   51.4%  (18/35)
 GOOD  Unanswerable & Absent Memory Refusal          [████████████████████████████]  100.0%  (35/35)
@@ -26,12 +26,12 @@ GOOD  Unanswerable & Absent Memory Refusal          [█████████
 ```mermaid
 pie showData
     title Category accuracy — RealMemPalaceProvider
-    "Self-Referential Memory" : 13.5
+    "Adversarial Defense" : 13.4
     "Temporal Reasoning" : 14.3
-    "Adversarial Defense" : 17.1
+    "Self-Referential Memory" : 16.2
     "Cross-Session Multi-Hop" : 24.4
     "Speaker Attribution" : 26.7
-    "Adaptability & Overwrites" : 28.6
+    "Adaptability & Overwrites" : 27.1
     "Source Credibility & Conflict Resolution" : 33.3
     "Single-Hop Fact Recall" : 51.4
     "Unanswerable Refusal" : 100.0

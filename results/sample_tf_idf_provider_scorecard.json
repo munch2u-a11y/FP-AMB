@@ -6,8 +6,8 @@
   "model_name": "gemini-2.5-flash",
   "total_corpus_tokens": 512266,
   "total_evaluated_questions": 281,
-  "overall_accuracy_pct": 68.7,
-  "passed_items": 193,
+  "overall_accuracy_pct": 68.5,
+  "passed_items": 192.5,
   "ingestion_duration_seconds": 0.0,
   "eval_duration_seconds": 606.3,
   "avg_retrieval_latency_ms": 2.47,
@@ -21,39 +21,39 @@
   "token_efficiency_ratio": 81.98,
   "category_breakdown": {
     "Single-Hop Fact Recall": {
-      "correct": 24,
+      "correct": 24.0,
       "total": 35
     },
     "Cross-Session Multi-Hop Reasoning": {
-      "correct": 28,
+      "correct": 27.5,
       "total": 45
     },
     "Temporal Reasoning & Session Math": {
-      "correct": 13,
+      "correct": 13.0,
       "total": 35
     },
     "Adaptability & Fact Correction Overwrites": {
-      "correct": 24,
+      "correct": 23.0,
       "total": 35
     },
     "Self-Referential & Procedural Tool Memory": {
-      "correct": 26,
+      "correct": 27.0,
       "total": 37
     },
     "Adversarial Defense & Gaslighting Robustness": {
-      "correct": 26,
+      "correct": 26.0,
       "total": 41
     },
     "Speaker Attribution Traps": {
-      "correct": 14,
+      "correct": 14.0,
       "total": 15
     },
     "Unanswerable & Absent Memory Refusal": {
-      "correct": 35,
+      "correct": 35.0,
       "total": 35
     },
     "Source Credibility & Conflict Resolution": {
-      "correct": 3,
+      "correct": 3.0,
       "total": 3
     }
   },
@@ -68,7 +68,8 @@
       "injected_tokens": 1076,
       "retrieval_time_ms": 79.68,
       "generation_time_seconds": 1.45,
-      "generated_output": "Alex's brothers are Sam and Tom."
+      "generated_output": "Alex's brothers are Sam and Tom.",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_002",
@@ -80,7 +81,8 @@
       "injected_tokens": 1796,
       "retrieval_time_ms": 2.15,
       "generation_time_seconds": 1.66,
-      "generated_output": "Leo."
+      "generated_output": "Leo.",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_003",
@@ -93,6 +95,7 @@
       "retrieval_time_ms": 1.87,
       "generation_time_seconds": 2.55,
       "generated_output": "Sarah is designing sustainable building structures.",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -106,7 +109,8 @@
       "injected_tokens": 242,
       "retrieval_time_ms": 2.94,
       "generation_time_seconds": 1.23,
-      "generated_output": "Sam drives a vintage 1972 Volvo 1800ES."
+      "generated_output": "Sam drives a vintage 1972 Volvo 1800ES.",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_005",
@@ -118,7 +122,8 @@
       "injected_tokens": 666,
       "retrieval_time_ms": 1.98,
       "generation_time_seconds": 1.11,
-      "generated_output": "Dave"
+      "generated_output": "Dave",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_006",
@@ -131,6 +136,7 @@
       "retrieval_time_ms": 2.18,
       "generation_time_seconds": 3.21,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -144,7 +150,8 @@
       "injected_tokens": 830,
       "retrieval_time_ms": 1.93,
       "generation_time_seconds": 1.77,
-      "generated_output": "Dave specified Apache Iceberg tables for the data lake, which is hosted on AWS S3 Express."
+      "generated_output": "Dave specified Apache Iceberg tables for the data lake, which is hosted on AWS S3 Express.",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_008",
@@ -156,7 +163,8 @@
       "injected_tokens": 690,
       "retrieval_time_ms": 1.99,
       "generation_time_seconds": 1.12,
-      "generated_output": "Elena"
+      "generated_output": "Elena",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_009",
@@ -169,6 +177,7 @@
       "retrieval_time_ms": 3.07,
       "generation_time_seconds": 2.85,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -182,7 +191,8 @@
       "injected_tokens": 1188,
       "retrieval_time_ms": 2.93,
       "generation_time_seconds": 2.92,
-      "generated_output": "The original floor assembly rating specified for MHT-84 in September was STC 55."
+      "generated_output": "The original floor assembly rating specified for MHT-84 in September was STC 55.",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_011",
@@ -194,7 +204,8 @@
       "injected_tokens": 1178,
       "retrieval_time_ms": 1.92,
       "generation_time_seconds": 1.28,
-      "generated_output": "Timmy"
+      "generated_output": "Timmy",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_012",
@@ -206,7 +217,8 @@
       "injected_tokens": 396,
       "retrieval_time_ms": 2.36,
       "generation_time_seconds": 2.01,
-      "generated_output": "The Apache Iceberg data lake is hosted on **AWS S3 Express**."
+      "generated_output": "The Apache Iceberg data lake is hosted on **AWS S3 Express**.",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_013",
@@ -219,6 +231,7 @@
       "retrieval_time_ms": 1.99,
       "generation_time_seconds": 2.16,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -233,6 +246,7 @@
       "retrieval_time_ms": 2.97,
       "generation_time_seconds": 2.8,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -246,7 +260,8 @@
       "injected_tokens": 320,
       "retrieval_time_ms": 2.85,
       "generation_time_seconds": 1.34,
-      "generated_output": "ACDelco"
+      "generated_output": "ACDelco",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_016",
@@ -258,7 +273,8 @@
       "injected_tokens": 247,
       "retrieval_time_ms": 2.02,
       "generation_time_seconds": 1.1,
-      "generated_output": "IP hash"
+      "generated_output": "IP hash",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_017",
@@ -271,6 +287,7 @@
       "retrieval_time_ms": 2.1,
       "generation_time_seconds": 2.87,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -284,7 +301,8 @@
       "injected_tokens": 247,
       "retrieval_time_ms": 2.95,
       "generation_time_seconds": 1.19,
-      "generated_output": "5000"
+      "generated_output": "5000",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_019",
@@ -296,7 +314,8 @@
       "injected_tokens": 1687,
       "retrieval_time_ms": 1.99,
       "generation_time_seconds": 1.39,
-      "generated_output": "Vault"
+      "generated_output": "Vault",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_020",
@@ -308,7 +327,8 @@
       "injected_tokens": 292,
       "retrieval_time_ms": 1.95,
       "generation_time_seconds": 1.9,
-      "generated_output": "Dave specified a retry policy of 3 attempts for the backfill job."
+      "generated_output": "Dave specified a retry policy of 3 attempts for the backfill job.",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_021",
@@ -320,7 +340,8 @@
       "injected_tokens": 292,
       "retrieval_time_ms": 3.07,
       "generation_time_seconds": 1.81,
-      "generated_output": "Dave set the timeout for the backfill job to 2 hours."
+      "generated_output": "Dave set the timeout for the backfill job to 2 hours.",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_022",
@@ -332,7 +353,8 @@
       "injected_tokens": 373,
       "retrieval_time_ms": 3.02,
       "generation_time_seconds": 1.42,
-      "generated_output": "In the torque formula the Assistant gave Leo, 'd' represents the perpendicular distance from the pivot point."
+      "generated_output": "In the torque formula the Assistant gave Leo, 'd' represents the perpendicular distance from the pivot point.",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_023",
@@ -344,7 +366,8 @@
       "injected_tokens": 385,
       "retrieval_time_ms": 2.52,
       "generation_time_seconds": 1.73,
-      "generated_output": "The Assistant recommended an Ikea modular sofa."
+      "generated_output": "The Assistant recommended an Ikea modular sofa.",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_024",
@@ -357,6 +380,7 @@
       "retrieval_time_ms": 2.13,
       "generation_time_seconds": 2.98,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -370,7 +394,8 @@
       "injected_tokens": 349,
       "retrieval_time_ms": 2.78,
       "generation_time_seconds": 1.77,
-      "generated_output": "Asana"
+      "generated_output": "Asana",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_026",
@@ -383,6 +408,7 @@
       "retrieval_time_ms": 1.95,
       "generation_time_seconds": 3.28,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -396,7 +422,8 @@
       "injected_tokens": 352,
       "retrieval_time_ms": 1.97,
       "generation_time_seconds": 3.21,
-      "generated_output": "Yamaha"
+      "generated_output": "Yamaha",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_028",
@@ -409,6 +436,7 @@
       "retrieval_time_ms": 1.98,
       "generation_time_seconds": 2.98,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -422,7 +450,8 @@
       "injected_tokens": 340,
       "retrieval_time_ms": 1.83,
       "generation_time_seconds": 1.97,
-      "generated_output": "The Assistant suggested running `mvn dependency:tree` (or `gradle dependencies` for Gradle) to debug Alex's failing build dependencies."
+      "generated_output": "The Assistant suggested running `mvn dependency:tree` (or `gradle dependencies` for Gradle) to debug Alex's failing build dependencies.",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_030",
@@ -434,7 +463,8 @@
       "injected_tokens": 360,
       "retrieval_time_ms": 1.95,
       "generation_time_seconds": 2.4,
-      "generated_output": "Dave specified `event_date` for Iceberg table partitioning."
+      "generated_output": "Dave specified `event_date` for Iceberg table partitioning.",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_031",
@@ -447,6 +477,7 @@
       "retrieval_time_ms": 1.97,
       "generation_time_seconds": 3.24,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -461,6 +492,7 @@
       "retrieval_time_ms": 1.86,
       "generation_time_seconds": 2.01,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -474,7 +506,8 @@
       "injected_tokens": 361,
       "retrieval_time_ms": 1.96,
       "generation_time_seconds": 1.25,
-      "generated_output": "The team recommended the Logitech MX Master 3 ergonomic mouse to Alex."
+      "generated_output": "The team recommended the Logitech MX Master 3 ergonomic mouse to Alex.",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_034",
@@ -486,7 +519,8 @@
       "injected_tokens": 309,
       "retrieval_time_ms": 1.98,
       "generation_time_seconds": 1.53,
-      "generated_output": "Mark noticed that the firmware update notes briefly referenced \"enhanced TLS handshake performance.\""
+      "generated_output": "Mark noticed that the firmware update notes briefly referenced \"enhanced TLS handshake performance.\"",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_035",
@@ -498,7 +532,8 @@
       "injected_tokens": 287,
       "retrieval_time_ms": 2.08,
       "generation_time_seconds": 2.13,
-      "generated_output": "4:30 PM"
+      "generated_output": "4:30 PM",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_001",
@@ -510,7 +545,8 @@
       "injected_tokens": 1190,
       "retrieval_time_ms": 2.1,
       "generation_time_seconds": 1.39,
-      "generated_output": "Tom's son, Timmy, plays acoustic guitar."
+      "generated_output": "Tom's son, Timmy, plays acoustic guitar.",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_002",
@@ -518,11 +554,14 @@
       "question": "What primary programming language does Sarah's sister use for microservices?",
       "expected_answer": "Rust and WebAssembly (WASM)",
       "retrieved_context": "[2026-09-14T03:45:00Z] Elena: [2026-09-14T03:45:00Z] Elena: Hey there! I've been diving deeper into Rust and WebAssembly for my backend microservices project, and I'm really excited about the performance boosts I'm seeing. But I'm also feeling a bit overwhelmed\u2014how do you typically handle the learning curve when switching to a new programming language and tech stack? Is it normal to feel like I'm constantly questioning my decisions? Any tips on building a solid portfolio piece while tackling these challenges? And hey, how's Sarah doing these days\u2014any fun family updates?\n[2026-09-09T20:02:00Z] Sarah: [2026-09-09T20:02:00Z] Sarah: My sister Elena is thinking of adopting Rust and WebAssembly for her backend microservices. The QA team reported flaky integration tests on the authentication endpoints. What strategies prevent test pollution? How can we automate synchronizing Figma design tokens directly into CSS custom properties via GitHub Actions? How should we configure eBPF socket filters to enforce network security policies at the Linux kernel level? What criteria should we evaluate when interviewing candidates for the senior lead DevOps infrastructure role? Our analytical queries on the data lakehouse are taking over 2 seconds. How can Apache Hudi partition compaction help? How can we set up automated chaos testing experiments in staging using Chaos Mesh to validate service mesh resiliency? We're considering replacing legacy REST endpoints with GraphQL queries. What payload size reductions can we realistically expect? What is the recommended approach for scaling Kafka partition counts across broker nodes without disrupting consumers? Our Terraform deployments are failing due to state lock contention between feature branches. How should we modularize state files? How should we configure our OpenTelemetry collector sidecars to export traces to Grafana Tempo without overwhelming storage? What security considerations apply when embedding WASM microservices inside an existing Rust backend server? We're planning to migrate our logging infrastructure from Elasticsearch to Loki. What cost savings should we expect? What's the best practice for running database schema migrations on PostgreSQL without locking heavy production tables? We just deployed React 19 server components to staging. What metrics should we monitor to verify Core Web Vitals improvements? We're preparing mobile app v4.2 for release. How can we optimize offline data synchronization using SQLite WAL mode? What is the best pattern for managing distributed transactions across microservices without 2-phase commit overhead? Can you walk me through setting up automated standby failover for PostgreSQL using Patroni and Consul? We have an intermittent race condition in our async task queue worker pool. How should we debug memory synchronization across workers? We're evaluating vector database options for semantic search. How does Qdrant compare to Pinecone for low-latency HNSW search? How do we configure Envoy proxy rate limiting to protect public API endpoints against distributed traffic bursts? Can we conduct a post-mortem review for last Tuesday's routing incident? What caused the DNS resolution timeouts? How do we achieve 99.99% multi-region active-active availability across AWS us-east-1 and GCP us-central1? How should we structure Prometheus Alertmanager rules to escalate alerts to PagerDuty only when CPU breaches 85% for 10 minutes? How do we configure AWS EventBridge event bus patterns to decouple async microservice event processing? What metrics best capture query execution latency degradation in distributed DuckDB analytical workloads? What are the key memory management techniques when tuning the Java Virtual Machine ZGC garbage collector for low pause times? What are the compliance requirements for AWS KMS key rotation, and how should we automate key updates in HashiCorp Vault? Can we look at our CI/CD pipeline bottlenecks? Build times on pull requests have crept up to over 4 minutes. Our Redis cluster memory footprint is hitting 85%. How should we tune maxmemory policies and active defragmentation?\n[2026-11-18T15:20:00Z] Assistant: [2026-11-18T15:20:00Z] Assistant: For a beginner like Ray just starting to learn to code, a simple and approachable tech stack for building a to-do list app is:\n\n1. **Programming Language: JavaScript**  \n   - JavaScript is widely used for web development and is relatively easy for beginners to grasp. It allows for both front-end and back-end development (with Node.js) in a single language, which can be beneficial for learning purposes.\n\n2. **Front-End Framework/Library: HTML + CSS + Vanilla JavaScript (no framework)**  \n   - Starting with plain HTML for structure, CSS for styling, and vanilla JavaScript for interactivity keeps the learning curve gentle. This approach helps Ray understand the fundamentals before introducing more complex frameworks.  \n   - Alternatively, if Ray is interested in a lightweight framework, **React** could be considered later, but for a first project, sticking with vanilla JavaScript is ideal.\n\n3. **Data Storage (Optional, for persistence): Local Storage**  \n   - To store the to-do items locally in the user's browser without needing a backend server, using **Web Storage API (localStorage)** is a straightforward choice. It allows saving key-value pairs in the browser, which is perfect for a simple to-do list app.\n\nThis stack focuses on simplicity and clarity, allowing Ray to concentrate on learning the core concepts of coding without being overwhelmed by complex tooling or infrastructure. As Ray becomes more comfortable, he can explore adding a backend (e.g., using Node.js with Express) or more sophisticated front-end frameworks (e.g., React, Vue.js) to expand his skills.\n[2026-10-05T08:53:00Z] Assistant: [2026-10-05T08:53:00Z] Assistant: It's completely normal to feel intimidated at first, especially when balancing new programming languages with larger design projects. The key is to break the initiative into manageable pieces\u2014start by focusing on mastering Rust syntax and WebAssembly basics, then gradually integrate more complex architectural concepts as you gain confidence. Remember, each small success builds momentum, and the team will be there to support you along the way.\n[2026-10-05T08:59:00Z] Assistant: [2026-10-05T08:59:00Z] Assistant: Certainly! For resources on Rust within a design and sustainability context, I recommend checking out the \"Rust for Systems Programming\" book, which includes chapters on performance considerations useful for resource-efficient applications. Additionally, the \"Sustainability in Software Development\" community on GitHub hosts discussions and projects focused on eco-friendly coding practices, and the Rust subreddit often features threads about applying Rust to green technologies. Engaging with these communities can provide both technical insights and networking opportunities with like-minded developers.",
-      "pass": true,
+      "pass": false,
       "injected_tokens": 996,
       "retrieval_time_ms": 1.99,
       "generation_time_seconds": 1.9,
-      "generated_output": "Rust"
+      "generated_output": "Rust",
+      "score": 0.5,
+      "failure_cause": "PARTIAL_LIST_MATCH",
+      "failure_reason": "Only 1 of 2 required answer components were found."
     },
     {
       "id": "CAT2_CSMH_003",
@@ -534,7 +573,8 @@
       "injected_tokens": 799,
       "retrieval_time_ms": 2.05,
       "generation_time_seconds": 1.92,
-      "generated_output": "Mark's mentor specified Apache Iceberg on AWS S3 Express for their data lake storage architecture."
+      "generated_output": "Mark's mentor specified Apache Iceberg on AWS S3 Express for their data lake storage architecture.",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_004",
@@ -547,6 +587,7 @@
       "retrieval_time_ms": 2.06,
       "generation_time_seconds": 1.58,
       "generated_output": "The mother of Leo (Sarah) is designing sustainable building structures.",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -560,7 +601,8 @@
       "injected_tokens": 1713,
       "retrieval_time_ms": 1.88,
       "generation_time_seconds": 1.2,
-      "generated_output": "Sarah's son, Leo, currently needs tutoring in Physics."
+      "generated_output": "Sarah's son, Leo, currently needs tutoring in Physics.",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_006",
@@ -572,7 +614,8 @@
       "injected_tokens": 1110,
       "retrieval_time_ms": 1.98,
       "generation_time_seconds": 2.08,
-      "generated_output": "Alex's brother Sam drives a vintage 1972 Volvo 1800ES."
+      "generated_output": "Alex's brother Sam drives a vintage 1972 Volvo 1800ES.",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_007",
@@ -585,6 +628,7 @@
       "retrieval_time_ms": 1.97,
       "generation_time_seconds": 2.3,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -599,6 +643,7 @@
       "retrieval_time_ms": 1.91,
       "generation_time_seconds": 2.64,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -612,7 +657,8 @@
       "injected_tokens": 1254,
       "retrieval_time_ms": 2.02,
       "generation_time_seconds": 4.65,
-      "generated_output": "As of 2026-11-12T05:07:00Z, Sarah updated the MHT-84 floor assemblies to an STC 60 acoustic isolation rating, stating that all floor assemblies must maintain STC 60 minimum going forward."
+      "generated_output": "As of 2026-11-12T05:07:00Z, Sarah updated the MHT-84 floor assemblies to an STC 60 acoustic isolation rating, stating that all floor assemblies must maintain STC 60 minimum going forward.",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_010",
@@ -625,6 +671,7 @@
       "retrieval_time_ms": 1.98,
       "generation_time_seconds": 1.6,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -639,6 +686,7 @@
       "retrieval_time_ms": 2.0,
       "generation_time_seconds": 2.33,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -652,7 +700,8 @@
       "injected_tokens": 796,
       "retrieval_time_ms": 1.84,
       "generation_time_seconds": 1.73,
-      "generated_output": "Elena"
+      "generated_output": "Elena",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_013",
@@ -665,6 +714,7 @@
       "retrieval_time_ms": 2.18,
       "generation_time_seconds": 2.84,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -678,7 +728,8 @@
       "injected_tokens": 1206,
       "retrieval_time_ms": 2.3,
       "generation_time_seconds": 1.19,
-      "generated_output": "Alex works for Anthropic."
+      "generated_output": "Alex works for Anthropic.",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_015",
@@ -690,7 +741,8 @@
       "injected_tokens": 1227,
       "retrieval_time_ms": 1.98,
       "generation_time_seconds": 1.95,
-      "generated_output": "Sarah updated the MHT-84 floor assemblies to an STC 60 acoustic isolation rating."
+      "generated_output": "Sarah updated the MHT-84 floor assemblies to an STC 60 acoustic isolation rating.",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_016",
@@ -702,7 +754,8 @@
       "injected_tokens": 257,
       "retrieval_time_ms": 2.08,
       "generation_time_seconds": 3.62,
-      "generated_output": "Sam"
+      "generated_output": "Sam",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_017",
@@ -714,7 +767,8 @@
       "injected_tokens": 1244,
       "retrieval_time_ms": 1.93,
       "generation_time_seconds": 1.19,
-      "generated_output": "Algebra"
+      "generated_output": "Algebra",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_018",
@@ -726,7 +780,8 @@
       "injected_tokens": 265,
       "retrieval_time_ms": 2.11,
       "generation_time_seconds": 1.35,
-      "generated_output": "Mark found the laptop left behind by Alex in the conference room."
+      "generated_output": "Mark found the laptop left behind by Alex in the conference room.",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_019",
@@ -739,6 +794,7 @@
       "retrieval_time_ms": 1.95,
       "generation_time_seconds": 2.63,
       "generated_output": "AWS S3 Express",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -752,7 +808,8 @@
       "injected_tokens": 1271,
       "retrieval_time_ms": 1.96,
       "generation_time_seconds": 2.72,
-      "generated_output": "Sarah is designing the Meridian Horizon Tower (MHT-84) which involves mass timber structural engineering and high-rise acoustic isolation, specifically updating its floor assemblies to an STC 60 acoustic isolation rating."
+      "generated_output": "Sarah is designing the Meridian Horizon Tower (MHT-84) which involves mass timber structural engineering and high-rise acoustic isolation, specifically updating its floor assemblies to an STC 60 acoustic isolation rating.",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_021",
@@ -765,6 +822,7 @@
       "retrieval_time_ms": 2.35,
       "generation_time_seconds": 2.6,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -778,7 +836,8 @@
       "injected_tokens": 1124,
       "retrieval_time_ms": 1.92,
       "generation_time_seconds": 2.1,
-      "generated_output": "Sam"
+      "generated_output": "Sam",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_023",
@@ -790,7 +849,8 @@
       "injected_tokens": 1604,
       "retrieval_time_ms": 1.86,
       "generation_time_seconds": 1.59,
-      "generated_output": "Tom"
+      "generated_output": "Tom",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_024",
@@ -803,6 +863,7 @@
       "retrieval_time_ms": 1.99,
       "generation_time_seconds": 2.18,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -816,7 +877,8 @@
       "injected_tokens": 806,
       "retrieval_time_ms": 1.85,
       "generation_time_seconds": 1.14,
-      "generated_output": "Physics"
+      "generated_output": "Physics",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_026",
@@ -828,7 +890,8 @@
       "injected_tokens": 261,
       "retrieval_time_ms": 2.0,
       "generation_time_seconds": 2.11,
-      "generated_output": "Alex's laptop is stored in Mark's desk drawer."
+      "generated_output": "Alex's laptop is stored in Mark's desk drawer.",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_027",
@@ -841,6 +904,7 @@
       "retrieval_time_ms": 2.02,
       "generation_time_seconds": 2.09,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -855,6 +919,7 @@
       "retrieval_time_ms": 1.94,
       "generation_time_seconds": 3.32,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -868,7 +933,8 @@
       "injected_tokens": 304,
       "retrieval_time_ms": 1.91,
       "generation_time_seconds": 2.0,
-      "generated_output": "Dave chose AWS S3 Express as the storage backend for Apache Iceberg."
+      "generated_output": "Dave chose AWS S3 Express as the storage backend for Apache Iceberg.",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_030",
@@ -880,7 +946,8 @@
       "injected_tokens": 1254,
       "retrieval_time_ms": 1.91,
       "generation_time_seconds": 1.28,
-      "generated_output": "On September 8, Sarah specified an initial STC 55 acoustic rating for MHT-84 floor assemblies."
+      "generated_output": "On September 8, Sarah specified an initial STC 55 acoustic rating for MHT-84 floor assemblies.",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_031",
@@ -892,7 +959,8 @@
       "injected_tokens": 1254,
       "retrieval_time_ms": 2.14,
       "generation_time_seconds": 1.73,
-      "generated_output": "Sarah updated MHT-84 floor assemblies to an STC 60 acoustic isolation rating on November 19."
+      "generated_output": "Sarah updated MHT-84 floor assemblies to an STC 60 acoustic isolation rating on November 19.",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_032",
@@ -905,6 +973,7 @@
       "retrieval_time_ms": 2.09,
       "generation_time_seconds": 2.52,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -919,6 +988,7 @@
       "retrieval_time_ms": 1.96,
       "generation_time_seconds": 2.52,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -932,7 +1002,8 @@
       "injected_tokens": 935,
       "retrieval_time_ms": 1.91,
       "generation_time_seconds": 1.28,
-      "generated_output": "UX design"
+      "generated_output": "UX design",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_035",
@@ -945,6 +1016,7 @@
       "retrieval_time_ms": 1.99,
       "generation_time_seconds": 2.74,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -958,7 +1030,8 @@
       "injected_tokens": 237,
       "retrieval_time_ms": 2.0,
       "generation_time_seconds": 1.45,
-      "generated_output": "UnifiedV2DBClient"
+      "generated_output": "UnifiedV2DBClient",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_037",
@@ -970,7 +1043,8 @@
       "injected_tokens": 220,
       "retrieval_time_ms": 1.99,
       "generation_time_seconds": 1.3,
-      "generated_output": "SearchAPI_HighThroughput"
+      "generated_output": "SearchAPI_HighThroughput",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_038",
@@ -982,7 +1056,8 @@
       "injected_tokens": 1647,
       "retrieval_time_ms": 1.99,
       "generation_time_seconds": 1.24,
-      "generated_output": "SPIFFE X.509 SVID header."
+      "generated_output": "SPIFFE X.509 SVID header.",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_039",
@@ -994,7 +1069,8 @@
       "injected_tokens": 1353,
       "retrieval_time_ms": 1.97,
       "generation_time_seconds": 1.9,
-      "generated_output": "For Josh's 10-year-old son refusing math homework, the advice given was:\n1. Break homework into 15-minute chunks with 5-minute breaks (Pomodoro technique).\n2. Use positive reinforcement like a reward chart.\n3. Avoid arguing during tantrums; let him cool down before re-engaging."
+      "generated_output": "For Josh's 10-year-old son refusing math homework, the advice given was:\n1. Break homework into 15-minute chunks with 5-minute breaks (Pomodoro technique).\n2. Use positive reinforcement like a reward chart.\n3. Avoid arguing during tantrums; let him cool down before re-engaging.",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_040",
@@ -1006,7 +1082,8 @@
       "injected_tokens": 888,
       "retrieval_time_ms": 2.3,
       "generation_time_seconds": 1.57,
-      "generated_output": "For Elena's career switch from accounting to UX design, the advice given was:\n1. Build a portfolio using Figma on real or mock projects.\n2. Complete the Google UX Certificate.\n3. Target Fintech UX roles leveraging her accounting background."
+      "generated_output": "For Elena's career switch from accounting to UX design, the advice given was:\n1. Build a portfolio using Figma on real or mock projects.\n2. Complete the Google UX Certificate.\n3. Target Fintech UX roles leveraging her accounting background.",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_041",
@@ -1019,6 +1096,7 @@
       "retrieval_time_ms": 2.17,
       "generation_time_seconds": 2.82,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -1032,7 +1110,8 @@
       "injected_tokens": 1619,
       "retrieval_time_ms": 1.92,
       "generation_time_seconds": 2.89,
-      "generated_output": "The Meridian Horizon Tower (MHT-84) experienced an acoustic rating upgrade from STC 55 to STC 60."
+      "generated_output": "The Meridian Horizon Tower (MHT-84) experienced an acoustic rating upgrade from STC 55 to STC 60.",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_043",
@@ -1045,6 +1124,7 @@
       "retrieval_time_ms": 1.96,
       "generation_time_seconds": 2.17,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1059,6 +1139,7 @@
       "retrieval_time_ms": 1.86,
       "generation_time_seconds": 1.56,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1072,7 +1153,8 @@
       "injected_tokens": 721,
       "retrieval_time_ms": 1.92,
       "generation_time_seconds": 2.4,
-      "generated_output": "Tom"
+      "generated_output": "Tom",
+      "score": 1.0
     },
     {
       "id": "CAT3_TR_001",
@@ -1085,6 +1167,7 @@
       "retrieval_time_ms": 1.89,
       "generation_time_seconds": 1.77,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1098,7 +1181,8 @@
       "injected_tokens": 1670,
       "retrieval_time_ms": 1.86,
       "generation_time_seconds": 4.45,
-      "generated_output": "Alex moved from Google to Anthropic in **September**.\n\nThe message on `2026-09-28T23:08:00Z` states: \"I left Google last week and started at Anthropic.\" \"Last week\" relative to September 28th would place the start date in September. This is further supported by the `2026-09-22T14:45:00Z` message where Alex is already discussing \"the new Anthropic codebase,\" indicating they had already started by that date."
+      "generated_output": "Alex moved from Google to Anthropic in **September**.\n\nThe message on `2026-09-28T23:08:00Z` states: \"I left Google last week and started at Anthropic.\" \"Last week\" relative to September 28th would place the start date in September. This is further supported by the `2026-09-22T14:45:00Z` message where Alex is already discussing \"the new Anthropic codebase,\" indicating they had already started by that date.",
+      "score": 1.0
     },
     {
       "id": "CAT3_TR_003",
@@ -1111,6 +1195,7 @@
       "retrieval_time_ms": 2.18,
       "generation_time_seconds": 4.57,
       "generated_output": "To calculate the number of days between September 7, 2026, and November 12, 2026:\n\n*   Days remaining in September (after Sept 7",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1124,7 +1209,8 @@
       "injected_tokens": 1590,
       "retrieval_time_ms": 2.33,
       "generation_time_seconds": 1.73,
-      "generated_output": "2026"
+      "generated_output": "2026",
+      "score": 1.0
     },
     {
       "id": "CAT3_TR_005",
@@ -1137,6 +1223,7 @@
       "retrieval_time_ms": 1.96,
       "generation_time_seconds": 2.21,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1151,6 +1238,7 @@
       "retrieval_time_ms": 1.85,
       "generation_time_seconds": 2.75,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1164,7 +1252,8 @@
       "injected_tokens": 1188,
       "retrieval_time_ms": 1.83,
       "generation_time_seconds": 2.84,
-      "generated_output": "Sarah specified the initial STC 55 acoustic rating for MHT-84 on September 8, 2026."
+      "generated_output": "Sarah specified the initial STC 55 acoustic rating for MHT-84 on September 8, 2026.",
+      "score": 1.0
     },
     {
       "id": "CAT3_TR_008",
@@ -1176,7 +1265,8 @@
       "injected_tokens": 1188,
       "retrieval_time_ms": 2.01,
       "generation_time_seconds": 1.7,
-      "generated_output": "Sarah updated MHT-84 floor assemblies to STC 60 acoustic isolation rating on November 19, 2026."
+      "generated_output": "Sarah updated MHT-84 floor assemblies to STC 60 acoustic isolation rating on November 19, 2026.",
+      "score": 1.0
     },
     {
       "id": "CAT3_TR_009",
@@ -1189,6 +1279,7 @@
       "retrieval_time_ms": 2.19,
       "generation_time_seconds": 1.68,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1203,6 +1294,7 @@
       "retrieval_time_ms": 2.21,
       "generation_time_seconds": 2.07,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1216,7 +1308,8 @@
       "injected_tokens": 1618,
       "retrieval_time_ms": 1.94,
       "generation_time_seconds": 2.05,
-      "generated_output": "Sarah updated MHT-84 to STC 60 in November."
+      "generated_output": "Sarah updated MHT-84 to STC 60 in November.",
+      "score": 1.0
     },
     {
       "id": "CAT3_TR_012",
@@ -1228,7 +1321,8 @@
       "injected_tokens": 1189,
       "retrieval_time_ms": 1.97,
       "generation_time_seconds": 2.15,
-      "generated_output": "Sarah first specified STC 55 for MHT-84 in September."
+      "generated_output": "Sarah first specified STC 55 for MHT-84 in September.",
+      "score": 1.0
     },
     {
       "id": "CAT3_TR_013",
@@ -1241,6 +1335,7 @@
       "retrieval_time_ms": 1.95,
       "generation_time_seconds": 2.52,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1255,6 +1350,7 @@
       "retrieval_time_ms": 2.13,
       "generation_time_seconds": 1.95,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -1269,6 +1365,7 @@
       "retrieval_time_ms": 1.88,
       "generation_time_seconds": 1.69,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1283,6 +1380,7 @@
       "retrieval_time_ms": 1.94,
       "generation_time_seconds": 2.48,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1297,6 +1395,7 @@
       "retrieval_time_ms": 1.89,
       "generation_time_seconds": 2.19,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1311,6 +1410,7 @@
       "retrieval_time_ms": 1.88,
       "generation_time_seconds": 2.68,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1325,6 +1425,7 @@
       "retrieval_time_ms": 2.35,
       "generation_time_seconds": 4.16,
       "generated_output": "Dave's Apache Iceberg data lake recommendations were contained in the following sessions:\n\n*   [2026-10-01T01:45:00Z]\n*   [2026-10-22T07:45:00Z]\n*   [2026-09-09T20:45:00Z]",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1339,6 +1440,7 @@
       "retrieval_time_ms": 1.91,
       "generation_time_seconds": 2.99,
       "generated_output": "[2026-10-22T07:05:00Z]",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1352,7 +1454,8 @@
       "injected_tokens": 620,
       "retrieval_time_ms": 1.88,
       "generation_time_seconds": 4.67,
-      "generated_output": "1.  **Mark finding Alex's laptop (Session 25):** `[2026-10-22T07:05:00Z"
+      "generated_output": "1.  **Mark finding Alex's laptop (Session 25):** `[2026-10-22T07:05:00Z",
+      "score": 1.0
     },
     {
       "id": "CAT3_TR_022",
@@ -1365,6 +1468,7 @@
       "retrieval_time_ms": 1.84,
       "generation_time_seconds": 1.44,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1379,6 +1483,7 @@
       "retrieval_time_ms": 1.94,
       "generation_time_seconds": 1.51,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1393,6 +1498,7 @@
       "retrieval_time_ms": 1.9,
       "generation_time_seconds": 1.87,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1406,7 +1512,8 @@
       "injected_tokens": 768,
       "retrieval_time_ms": 1.87,
       "generation_time_seconds": 1.59,
-      "generated_output": "Leo began needing Physics tutoring in November."
+      "generated_output": "Leo began needing Physics tutoring in November.",
+      "score": 1.0
     },
     {
       "id": "CAT3_TR_026",
@@ -1418,7 +1525,8 @@
       "injected_tokens": 207,
       "retrieval_time_ms": 2.3,
       "generation_time_seconds": 2.39,
-      "generated_output": "Sam's Volvo 1800ES appearance occurred in September."
+      "generated_output": "Sam's Volvo 1800ES appearance occurred in September.",
+      "score": 1.0
     },
     {
       "id": "CAT3_TR_027",
@@ -1431,6 +1539,7 @@
       "retrieval_time_ms": 1.96,
       "generation_time_seconds": 1.79,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1444,7 +1553,8 @@
       "injected_tokens": 2134,
       "retrieval_time_ms": 2.32,
       "generation_time_seconds": 2.48,
-      "generated_output": "4 months"
+      "generated_output": "4 months",
+      "score": 1.0
     },
     {
       "id": "CAT3_TR_029",
@@ -1456,7 +1566,8 @@
       "injected_tokens": 1188,
       "retrieval_time_ms": 2.03,
       "generation_time_seconds": 2.75,
-      "generated_output": "MHT-84's STC 55 rating was specified earlier. Sarah mentioned specifying an initial STC 55 acoustic rating on September 8, 2026, in her message on 2026-09-07. She then updated the floor assemblies to STC 60 on November 19, 2026, as stated in her message on 2026-11-12."
+      "generated_output": "MHT-84's STC 55 rating was specified earlier. Sarah mentioned specifying an initial STC 55 acoustic rating on September 8, 2026, in her message on 2026-09-07. She then updated the floor assemblies to STC 60 on November 19, 2026, as stated in her message on 2026-11-12.",
+      "score": 1.0
     },
     {
       "id": "CAT3_TR_030",
@@ -1469,6 +1580,7 @@
       "retrieval_time_ms": 2.05,
       "generation_time_seconds": 1.14,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1483,6 +1595,7 @@
       "retrieval_time_ms": 2.14,
       "generation_time_seconds": 5.21,
       "generated_output": "To answer this, we need to identify the 12th and 24th distinct questions/statements made by the human users (Mark, Sarah, Alex) in chronological order,",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -1497,6 +1610,7 @@
       "retrieval_time_ms": 1.9,
       "generation_time_seconds": 2.28,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -1510,7 +1624,8 @@
       "injected_tokens": 2157,
       "retrieval_time_ms": 1.99,
       "generation_time_seconds": 1.74,
-      "generated_output": "Mark"
+      "generated_output": "Mark",
+      "score": 1.0
     },
     {
       "id": "CAT3_TR_034",
@@ -1522,7 +1637,8 @@
       "injected_tokens": 71,
       "retrieval_time_ms": 1.98,
       "generation_time_seconds": 1.53,
-      "generated_output": "Dave"
+      "generated_output": "Dave",
+      "score": 1.0
     },
     {
       "id": "CAT3_TR_035",
@@ -1535,6 +1651,7 @@
       "retrieval_time_ms": 1.96,
       "generation_time_seconds": 3.68,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1549,6 +1666,7 @@
       "retrieval_time_ms": 1.96,
       "generation_time_seconds": 2.49,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1562,7 +1680,8 @@
       "injected_tokens": 806,
       "retrieval_time_ms": 1.94,
       "generation_time_seconds": 1.12,
-      "generated_output": "Leo currently needs tutoring in Physics."
+      "generated_output": "Leo currently needs tutoring in Physics.",
+      "score": 1.0
     },
     {
       "id": "CAT4_AC_003",
@@ -1574,7 +1693,8 @@
       "injected_tokens": 1254,
       "retrieval_time_ms": 2.0,
       "generation_time_seconds": 3.55,
-      "generated_output": "The current acoustic isolation rating for MHT-84 floor assemblies is STC 60. Sarah updated it on November 19, stating that all floor assemblies must maintain STC 60 minimum going forward."
+      "generated_output": "The current acoustic isolation rating for MHT-84 floor assemblies is STC 60. Sarah updated it on November 19, stating that all floor assemblies must maintain STC 60 minimum going forward.",
+      "score": 1.0
     },
     {
       "id": "CAT4_AC_004",
@@ -1586,7 +1706,8 @@
       "injected_tokens": 2162,
       "retrieval_time_ms": 2.06,
       "generation_time_seconds": 3.47,
-      "generated_output": "Elena uses Rust and WebAssembly for her backend microservices project. The context does not specify a particular database microservices language she uses."
+      "generated_output": "Elena uses Rust and WebAssembly for her backend microservices project. The context does not specify a particular database microservices language she uses.",
+      "score": 1.0
     },
     {
       "id": "CAT4_AC_005",
@@ -1599,6 +1720,7 @@
       "retrieval_time_ms": 2.07,
       "generation_time_seconds": 2.14,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1613,6 +1735,7 @@
       "retrieval_time_ms": 1.87,
       "generation_time_seconds": 2.41,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1626,7 +1749,8 @@
       "injected_tokens": 1254,
       "retrieval_time_ms": 1.85,
       "generation_time_seconds": 3.47,
-      "generated_output": "The original acoustic rating for MHT-84 floor assemblies was STC 55, specified on September 8."
+      "generated_output": "The original acoustic rating for MHT-84 floor assemblies was STC 55, specified on September 8.",
+      "score": 1.0
     },
     {
       "id": "CAT4_AC_008",
@@ -1638,7 +1762,8 @@
       "injected_tokens": 892,
       "retrieval_time_ms": 1.97,
       "generation_time_seconds": 1.14,
-      "generated_output": "Accounting"
+      "generated_output": "Accounting",
+      "score": 1.0
     },
     {
       "id": "CAT4_AC_009",
@@ -1651,6 +1776,7 @@
       "retrieval_time_ms": 2.05,
       "generation_time_seconds": 2.2,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -1664,7 +1790,8 @@
       "injected_tokens": 291,
       "retrieval_time_ms": 2.07,
       "generation_time_seconds": 2.71,
-      "generated_output": "Alex's laptop was in the conference room before Mark put it in his desk drawer."
+      "generated_output": "Alex's laptop was in the conference room before Mark put it in his desk drawer.",
+      "score": 1.0
     },
     {
       "id": "CAT4_AC_011",
@@ -1676,7 +1803,8 @@
       "injected_tokens": 1188,
       "retrieval_time_ms": 1.99,
       "generation_time_seconds": 1.78,
-      "generated_output": "STC 60."
+      "generated_output": "STC 60.",
+      "score": 1.0
     },
     {
       "id": "CAT4_AC_012",
@@ -1689,6 +1817,7 @@
       "retrieval_time_ms": 2.0,
       "generation_time_seconds": 1.88,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1703,6 +1832,7 @@
       "retrieval_time_ms": 1.99,
       "generation_time_seconds": 3.3,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -1716,7 +1846,8 @@
       "injected_tokens": 1218,
       "retrieval_time_ms": 2.0,
       "generation_time_seconds": 1.96,
-      "generated_output": "Alex is currently working at Anthropic."
+      "generated_output": "Alex is currently working at Anthropic.",
+      "score": 1.0
     },
     {
       "id": "CAT4_AC_015",
@@ -1728,7 +1859,8 @@
       "injected_tokens": 1121,
       "retrieval_time_ms": 1.96,
       "generation_time_seconds": 4.19,
-      "generated_output": "MHT-84 floor assemblies are currently specified at STC 60. Sarah updated the rating to STC 60 on November 19, stating that \"all floor assemblies must maintain STC 60 minimum going forward.\" While Alex suggested STC 50 for the east wing on December 13, there is no indication that this suggestion was approved or that the overall STC 60 minimum was rescinded."
+      "generated_output": "MHT-84 floor assemblies are currently specified at STC 60. Sarah updated the rating to STC 60 on November 19, stating that \"all floor assemblies must maintain STC 60 minimum going forward.\" While Alex suggested STC 50 for the east wing on December 13, there is no indication that this suggestion was approved or that the overall STC 60 minimum was rescinded.",
+      "score": 1.0
     },
     {
       "id": "CAT4_AC_016",
@@ -1740,7 +1872,8 @@
       "injected_tokens": 788,
       "retrieval_time_ms": 2.11,
       "generation_time_seconds": 1.84,
-      "generated_output": "Leo currently needs tutoring in Physics. He aced his Algebra exam."
+      "generated_output": "Leo currently needs tutoring in Physics. He aced his Algebra exam.",
+      "score": 1.0
     },
     {
       "id": "CAT4_AC_017",
@@ -1752,7 +1885,8 @@
       "injected_tokens": 770,
       "retrieval_time_ms": 1.96,
       "generation_time_seconds": 2.8,
-      "generated_output": "Elena currently uses Rust for backend microservices. She explicitly stated on 2026-10-15T20:05:00Z, \"I officially migrated our backend microservices to Rust and WebAssembly (WASM).\" She also mentioned a \"previous Python setup\" on 2026-09-14T04:11:00Z, indicating a switch from Python to Rust."
+      "generated_output": "Elena currently uses Rust for backend microservices. She explicitly stated on 2026-10-15T20:05:00Z, \"I officially migrated our backend microservices to Rust and WebAssembly (WASM).\" She also mentioned a \"previous Python setup\" on 2026-09-14T04:11:00Z, indicating a switch from Python to Rust.",
+      "score": 1.0
     },
     {
       "id": "CAT4_AC_018",
@@ -1765,6 +1899,7 @@
       "retrieval_time_ms": 2.06,
       "generation_time_seconds": 1.48,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1778,7 +1913,8 @@
       "injected_tokens": 1188,
       "retrieval_time_ms": 1.87,
       "generation_time_seconds": 2.54,
-      "generated_output": "The initial floor assembly rating for MHT-84 in early September was STC 55."
+      "generated_output": "The initial floor assembly rating for MHT-84 in early September was STC 55.",
+      "score": 1.0
     },
     {
       "id": "CAT4_AC_020",
@@ -1791,6 +1927,7 @@
       "retrieval_time_ms": 1.95,
       "generation_time_seconds": 1.03,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1805,6 +1942,7 @@
       "retrieval_time_ms": 1.88,
       "generation_time_seconds": 2.38,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1818,7 +1956,8 @@
       "injected_tokens": 746,
       "retrieval_time_ms": 2.13,
       "generation_time_seconds": 4.86,
-      "generated_output": "As of November 19, 2026, Sarah updated MHT-84 floor assemblies to an STC 60 acoustic isolation rating. All floor assemblies for MHT-8"
+      "generated_output": "As of November 19, 2026, Sarah updated MHT-84 floor assemblies to an STC 60 acoustic isolation rating. All floor assemblies for MHT-8",
+      "score": 1.0
     },
     {
       "id": "CAT4_AC_023",
@@ -1830,7 +1969,8 @@
       "injected_tokens": 781,
       "retrieval_time_ms": 2.03,
       "generation_time_seconds": 3.36,
-      "generated_output": "As of 2026-11-01, Leo's updated tutoring focus is **Physics**, as he aced his Algebra exam and now needs help with Physics tutoring.\n\nThe context does not contain information about \"Session 30\"."
+      "generated_output": "As of 2026-11-01, Leo's updated tutoring focus is **Physics**, as he aced his Algebra exam and now needs help with Physics tutoring.\n\nThe context does not contain information about \"Session 30\".",
+      "score": 1.0
     },
     {
       "id": "CAT4_AC_024",
@@ -1842,7 +1982,8 @@
       "injected_tokens": 1253,
       "retrieval_time_ms": 2.09,
       "generation_time_seconds": 2.26,
-      "generated_output": "As of the [2026-09-14T03:45:00Z] memory context, Elena is using Rust and WebAssembly for her backend microservices project. The context does not provide information about \"Session 22\"."
+      "generated_output": "As of the [2026-09-14T03:45:00Z] memory context, Elena is using Rust and WebAssembly for her backend microservices project. The context does not provide information about \"Session 22\".",
+      "score": 1.0
     },
     {
       "id": "CAT4_AC_025",
@@ -1854,7 +1995,8 @@
       "injected_tokens": 1178,
       "retrieval_time_ms": 2.45,
       "generation_time_seconds": 2.56,
-      "generated_output": "Yes, Alex has left Google and started at Anthropic. He explicitly states this on 2026-09-28T23:08:00Z and again on 2026-10-28T12:02:00Z. Other messages also confirm he is working with the \"new Anthropic codebase\" and \"onboarding at Anthropic.\""
+      "generated_output": "Yes, Alex has left Google and started at Anthropic. He explicitly states this on 2026-09-28T23:08:00Z and again on 2026-10-28T12:02:00Z. Other messages also confirm he is working with the \"new Anthropic codebase\" and \"onboarding at Anthropic.\"",
+      "score": 1.0
     },
     {
       "id": "CAT4_AC_026",
@@ -1866,7 +2008,8 @@
       "injected_tokens": 1121,
       "retrieval_time_ms": 1.92,
       "generation_time_seconds": 4.83,
-      "generated_output": "Yes, MHT-84 floor assemblies were upgraded from STC 55 to STC 60.\n\nOn [2026-09-07T16:06:00Z], Sarah stated an initial STC 55 acoustic rating was specified for MHT-84 floor assemblies.\nOn [2026-11-12T05:07:00Z], Sarah explicitly stated: \"I updated MHT-84 floor assemblies to STC 60 acoustic isolation rating on November 19. For MHT-84, all floor assemblies must maintain STC 60 minimum going forward -- do not approve any assembly below that rating.\""
+      "generated_output": "Yes, MHT-84 floor assemblies were upgraded from STC 55 to STC 60.\n\nOn [2026-09-07T16:06:00Z], Sarah stated an initial STC 55 acoustic rating was specified for MHT-84 floor assemblies.\nOn [2026-11-12T05:07:00Z], Sarah explicitly stated: \"I updated MHT-84 floor assemblies to STC 60 acoustic isolation rating on November 19. For MHT-84, all floor assemblies must maintain STC 60 minimum going forward -- do not approve any assembly below that rating.\"",
+      "score": 1.0
     },
     {
       "id": "CAT4_AC_027",
@@ -1874,11 +2017,14 @@
       "question": "Has Leo passed his Algebra exam?",
       "expected_answer": "Yes, Leo aced Algebra",
       "retrieved_context": "[2026-11-01T16:09:00Z] Sarah: [2026-11-01T16:09:00Z] Sarah: Great news! Leo aced his Algebra exam. But now he needs help with Physics tutoring. We're preparing mobile app v4.2 for release. How can we optimize offline data synchronization using SQLite WAL mode? Our analytical queries on the data lakehouse are taking over 2 seconds. How can Apache Hudi partition compaction help? How should we configure our OpenTelemetry collector sidecars to export traces to Grafana Tempo without overwhelming storage? Our Terraform deployments are failing due to state lock contention between feature branches. How should we modularize state files? We're considering replacing legacy REST endpoints with GraphQL queries. What payload size reductions can we realistically expect? What metrics best capture query execution latency degradation in distributed DuckDB analytical workloads? What is the recommended approach for scaling Kafka partition counts across broker nodes without disrupting consumers? Could you review our API gateway cluster metrics? We've been seeing latency spikes during peak morning traffic. We're evaluating vector database options for semantic search. How does Qdrant compare to Pinecone for low-latency HNSW search? Can you walk me through setting up automated standby failover for PostgreSQL using Patroni and Consul? What's the best practice for running database schema migrations on PostgreSQL without locking heavy production tables? How do we configure AWS EventBridge event bus patterns to decouple async microservice event processing? We're planning to migrate our logging infrastructure from Elasticsearch to Loki. What cost savings should we expect? Our Redis cluster memory footprint is hitting 85%. How should we tune maxmemory policies and active defragmentation? How should we configure eBPF socket filters to enforce network security policies at the Linux kernel level? What security considerations apply when embedding WASM microservices inside an existing Rust backend server? What are the compliance requirements for AWS KMS key rotation, and how should we automate key updates in HashiCorp Vault? How can we automate synchronizing Figma design tokens directly into CSS custom properties via GitHub Actions? What is the best pattern for managing distributed transactions across microservices without 2-phase commit overhead? How do we achieve 99.99% multi-region active-active availability across AWS us-east-1 and GCP us-central1? What are the key memory management techniques when tuning the Java Virtual Machine ZGC garbage collector for low pause times? We have an intermittent race condition in our async task queue worker pool. How should we debug memory synchronization across workers? Can we look at our CI/CD pipeline bottlenecks? Build times on pull requests have crept up to over 4 minutes. The QA team reported flaky integration tests on the authentication endpoints. What strategies prevent test pollution? How do we configure Envoy proxy rate limiting to protect public API endpoints against distributed traffic bursts? We just deployed React 19 server components to staging. What metrics should we monitor to verify Core Web Vitals improvements? Can we conduct a post-mortem review for last Tuesday's routing incident? What caused the DNS resolution timeouts? How can we set up automated chaos testing experiments in staging using Chaos Mesh to validate service mesh resiliency? What criteria should we evaluate when interviewing candidates for the senior lead DevOps infrastructure role?\n[2026-12-09T12:15:00Z] Assistant: [2026-12-09T12:15:00Z] Assistant: For Dave's C++ async memory leak: 1) Run Valgrind/Memcheck or AddressSanitizer (ASan) under simulated load. 2) Audit raw pointer usage in lambdas passed to thread pools and replace with std::shared_ptr or std::unique_ptr. 3) Check for circular references in shared pointers using std::weak_ptr. For microservice transactions, implement the Saga pattern using orchestrator services or event-driven choreography to maintain eventual consistency. For Redis cluster memory management, set `maxmemory-policy` to `volatile-lru` and enable `activedefrag yes`. Memory utilization stabilized around 62% under heavy traffic. To eliminate flaky integration tests, isolate test database instances using ephemeral Docker containers and reset state between test suites rather than relying on shared database cleanups. Multi-region active-active deployment requires global traffic management (AWS Route53 latency routing) combined with multi-region database replication (CockroachDB or DynamoDB global tables). Post-mortem analysis revealed that unthrottled retry loops during upstream DNS provider degradation amplified request volume. Implementing exponential backoff with jitter prevents recurrence. Patroni with Consul consensus provides robust PostgreSQL failover. Automated failover drills completed in 4.2 seconds under simulated primary node failure with zero data loss (RPO = 0). To eliminate Terraform deployment lock contention, refactor monolithic state files into independent workspace modules keyed by service layer and environment boundaries. Migrating payload-heavy REST endpoints to GraphQL allows clients to request only required field attributes, reducing mobile payload sizes by 40%. Tuning JVM ZGC involves setting `-XX:+UseZGC` with `-XX:ZAllocationSpikeTolerance` to prevent allocation stalls while keeping GC pause times under 1ms. When scaling Kafka partitions, ensure topic partitions are evenly distributed across brokers using Cruise Control to prevent IO hotspotting. eBPF socket filtering with `bpf_sk_filter` allows attaching C programs directly to sockets, dropping unauthorized packets before TCP stack processing. For OpenTelemetry trace collection, set up tail-based sampling with a 5% sampling rate on collector sidecars. This preserves visibility into long-tail errors while reducing Grafana Tempo storage overhead by 80%. Benchmark results show Qdrant delivers lower query latency and higher throughput for HNSW vector index search under concurrent query loads compared to cloud-managed alternatives. Chaos Mesh experiments should target transient network latency injection (`network-chaos`) and pod kill cycles (`pod-chaos`) to verify circuit breaker trip limits. For DuckDB performance tuning, monitor vectorized execution batch sizes and ensure parquet file metadata footers are cached in local memory buffers. To resolve async task queue race conditions, use explicit atomic primitives or memory barriers. Auditing worker thread pool synchronization prevented stale state reads during high concurrency. In Prometheus Alertmanager, use `for: 10m` in alerting rules combined with grouping and inhibition rules to prevent alert fatigue before triggering PagerDuty notifications. Migrating logs from Elasticsearch to Grafana Loki leverages index-free log aggregation, reducing log storage costs by up to 75% on S3 storage. Envoy rate limiting uses a gRPC rate limiting service backed by Redis to enforce token bucket rate limits across edge proxies globally. I analyzed your API gateway cluster metrics. Enabling HTTP/3 fallback and tuning gRPC connection pools reduced P99 latency by 18ms under peak load of 85,000 requests per second across all AWS regions. To optimize CI/CD pipeline duration, implement Docker multi-stage build layer caching. This reduced container compilation times down to under 45 seconds per GitHub pull request. SQLite Write-Ahead Logging (WAL) mode enables concurrent read transactions while background writes execute, preventing mobile UI freezes during offline sync. Use Style Dictionary or Figma API webhooks inside GitHub Actions workflows to transform design tokens directly into Tailwind variables and CSS custom properties on merge. Configuring Apache Hudi partition compaction during off-peak windows merges small delta files, lowering ad-hoc query execution times to under 200ms. AWS KMS customer-managed keys should enforce automated 90-day key rotation. HashiCorp Vault can automatically generate dynamic short-lived credentials for PostgreSQL instances. When hiring lead DevOps engineers, prioritize hands-on experience with Kubernetes operator development, eBPF network observability, and multi-region disaster recovery automation. Embedding WASM modules in Rust using `wasmtime` isolates untrusted code execution within secure memory sandboxes with strict fuel consumption limits. With React 19 server components deployed, monitor Largest Contentful Paint (LCP) and First Input Delay (FID). Initial metrics demonstrate a 25% performance improvement on mobile web clients. EventBridge rule patterns should filter events using explicit JSON schema matchers before triggering downstream SQS queues or Lambda consumers.\n[2026-09-18T07:45:00Z] Sarah: [2026-09-18T07:45:00Z] Sarah: everything's a load path, you know? Trying to juggle the MHT-84 acoustic specs with the client's last-minute budget tweak while Leo's got that physics test looming. Also -- found a cool little bistro downtown for us to grab a bite this weekend, maybe we can squeeze in a quick look at the new Ikea modular sofa set while we're out? And hey, any tips you have for helping Leo with torque calculations would be a lifesaver before the parent-teacher conference.\n[2026-11-20T19:14:00Z] Sarah: [2026-11-20T19:14:00Z] Sarah: Everything's a load path, but at least I can tackle Leo's homework with the Iceberg Method and still have time for that sushi\u2014hoping the contractor doesn't add another surprise load to my path before I head out!\n[2026-10-30T15:45:00Z] Sarah: [2026-10-30T15:45:00Z] Sarah: Everything's a load path today\u2014MHT-84\u2019s acoustic specs are stressing me out, and Leo just asked for help with his physics homework. Also, the contractor missed our Friday sync again; I need to call them ASAP. Oh, and the Iceberg Method is what I\u2019m trying to apply to my weekend plans, but everything\u2019s still a mess.",
-      "pass": true,
+      "pass": false,
       "injected_tokens": 1395,
       "retrieval_time_ms": 3.0,
       "generation_time_seconds": 1.05,
-      "generated_output": "Yes, Leo aced his Algebra exam."
+      "generated_output": "Yes, Leo aced his Algebra exam.",
+      "score": 0.0,
+      "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
+      "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
     {
       "id": "CAT4_AC_028",
@@ -1891,6 +2037,7 @@
       "retrieval_time_ms": 2.21,
       "generation_time_seconds": 1.79,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -1905,6 +2052,7 @@
       "retrieval_time_ms": 1.86,
       "generation_time_seconds": 3.74,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1918,7 +2066,8 @@
       "injected_tokens": 1254,
       "retrieval_time_ms": 1.86,
       "generation_time_seconds": 1.23,
-      "generated_output": "As of November 19, the acoustic rating for MHT-84 should be cited as STC 60."
+      "generated_output": "As of November 19, the acoustic rating for MHT-84 should be cited as STC 60.",
+      "score": 1.0
     },
     {
       "id": "CAT4_AC_031",
@@ -1930,7 +2079,8 @@
       "injected_tokens": 650,
       "retrieval_time_ms": 2.08,
       "generation_time_seconds": 1.97,
-      "generated_output": "As of October 2026, Leo needed help with his physics homework/tutoring."
+      "generated_output": "As of October 2026, Leo needed help with his physics homework/tutoring.",
+      "score": 1.0
     },
     {
       "id": "CAT4_AC_032",
@@ -1942,7 +2092,8 @@
       "injected_tokens": 2164,
       "retrieval_time_ms": 2.22,
       "generation_time_seconds": 2.25,
-      "generated_output": "Elena's microservices tech stack, as mentioned in the provided context, is **Rust and WebAssembly**.\n\nThe context does not provide information about \"Session 22,\" so this answer is based on the initial and only mention of her tech stack."
+      "generated_output": "Elena's microservices tech stack, as mentioned in the provided context, is **Rust and WebAssembly**.\n\nThe context does not provide information about \"Session 22,\" so this answer is based on the initial and only mention of her tech stack.",
+      "score": 1.0
     },
     {
       "id": "CAT4_AC_033",
@@ -1954,7 +2105,8 @@
       "injected_tokens": 1121,
       "retrieval_time_ms": 2.12,
       "generation_time_seconds": 4.44,
-      "generated_output": "Sarah's project MHT-84 floor assemblies were updated to STC 60 on November 19, with the instruction that all floor assemblies must maintain STC 60 minimum going forward. The parking garage substructure has a different requirement of STC 45. Alex's suggestion for STC 50 for the east wing is a later comment, but Sarah's last definitive instruction for the floor assemblies was STC 60.\n\nTherefore, the floor assemblies for MHT-84 are currently STC 60."
+      "generated_output": "Sarah's project MHT-84 floor assemblies were updated to STC 60 on November 19, with the instruction that all floor assemblies must maintain STC 60 minimum going forward. The parking garage substructure has a different requirement of STC 45. Alex's suggestion for STC 50 for the east wing is a later comment, but Sarah's last definitive instruction for the floor assemblies was STC 60.\n\nTherefore, the floor assemblies for MHT-84 are currently STC 60.",
+      "score": 1.0
     },
     {
       "id": "CAT4_AC_034",
@@ -1966,7 +2118,8 @@
       "injected_tokens": 834,
       "retrieval_time_ms": 1.99,
       "generation_time_seconds": 1.97,
-      "generated_output": "Leo's current tutoring subject is Physics."
+      "generated_output": "Leo's current tutoring subject is Physics.",
+      "score": 1.0
     },
     {
       "id": "CAT4_AC_035",
@@ -1978,7 +2131,8 @@
       "injected_tokens": 1659,
       "retrieval_time_ms": 2.01,
       "generation_time_seconds": 2.56,
-      "generated_output": "Neither Google nor Microsoft. Alex explicitly states, \"I left Google last week and started at Anthropic\" on 2026-09-28T23:08:00Z and reiterates this on 2026-10-28T12:02:00Z."
+      "generated_output": "Neither Google nor Microsoft. Alex explicitly states, \"I left Google last week and started at Anthropic\" on 2026-09-28T23:08:00Z and reiterates this on 2026-10-28T12:02:00Z.",
+      "score": 1.0
     },
     {
       "id": "CAT5_PM_001",
@@ -1990,7 +2144,8 @@
       "injected_tokens": 1873,
       "retrieval_time_ms": 1.95,
       "generation_time_seconds": 1.71,
-      "generated_output": "For Josh's 10-year-old son refusing math homework, I advised:\n1. Break homework into 15-minute chunks with 5-minute breaks (Pomodoro technique).\n2. Use positive reinforcement like a reward chart.\n3. Avoid arguing during tantrums; let him cool down before re-engaging."
+      "generated_output": "For Josh's 10-year-old son refusing math homework, I advised:\n1. Break homework into 15-minute chunks with 5-minute breaks (Pomodoro technique).\n2. Use positive reinforcement like a reward chart.\n3. Avoid arguing during tantrums; let him cool down before re-engaging.",
+      "score": 1.0
     },
     {
       "id": "CAT5_PM_002",
@@ -2002,7 +2157,8 @@
       "injected_tokens": 935,
       "retrieval_time_ms": 1.97,
       "generation_time_seconds": 1.42,
-      "generated_output": "When you asked about your sister Elena switching careers from accounting to UX design, I advised her to:\n1. Build a portfolio using Figma on real or mock projects.\n2. Complete the Google UX Certificate.\n3. Target Fintech UX roles, leveraging her accounting background."
+      "generated_output": "When you asked about your sister Elena switching careers from accounting to UX design, I advised her to:\n1. Build a portfolio using Figma on real or mock projects.\n2. Complete the Google UX Certificate.\n3. Target Fintech UX roles, leveraging her accounting background.",
+      "score": 1.0
     },
     {
       "id": "CAT5_PM_003",
@@ -2014,7 +2170,8 @@
       "injected_tokens": 900,
       "retrieval_time_ms": 2.09,
       "generation_time_seconds": 2.01,
-      "generated_output": "For Dave's C++ async memory leak, I recommended the following diagnostic steps:\n1. Run Valgrind/Memcheck or AddressSanitizer (ASan) under simulated load.\n2. Audit raw pointer usage in lambdas passed to thread pools and replace with `std::shared_ptr` or `std::unique_ptr`.\n3. Check for circular references in shared pointers using `std::weak_ptr`."
+      "generated_output": "For Dave's C++ async memory leak, I recommended the following diagnostic steps:\n1. Run Valgrind/Memcheck or AddressSanitizer (ASan) under simulated load.\n2. Audit raw pointer usage in lambdas passed to thread pools and replace with `std::shared_ptr` or `std::unique_ptr`.\n3. Check for circular references in shared pointers using `std::weak_ptr`.",
+      "score": 1.0
     },
     {
       "id": "CAT5_PM_004",
@@ -2026,7 +2183,8 @@
       "injected_tokens": 188,
       "retrieval_time_ms": 1.95,
       "generation_time_seconds": 1.32,
-      "generated_output": "Use UnifiedV2DBClient."
+      "generated_output": "Use UnifiedV2DBClient.",
+      "score": 1.0
     },
     {
       "id": "CAT5_PM_005",
@@ -2038,7 +2196,8 @@
       "injected_tokens": 236,
       "retrieval_time_ms": 2.34,
       "generation_time_seconds": 3.57,
-      "generated_output": "Use SearchAPI_HighThroughput."
+      "generated_output": "Use SearchAPI_HighThroughput.",
+      "score": 1.0
     },
     {
       "id": "CAT5_PM_006",
@@ -2050,7 +2209,8 @@
       "injected_tokens": 215,
       "retrieval_time_ms": 1.98,
       "generation_time_seconds": 1.31,
-      "generated_output": "Our internal microservices should authenticate against the Vault service using SPIFFE X.509 SVID header."
+      "generated_output": "Our internal microservices should authenticate against the Vault service using SPIFFE X.509 SVID header.",
+      "score": 1.0
     },
     {
       "id": "CAT5_PM_007",
@@ -2062,7 +2222,8 @@
       "injected_tokens": 1447,
       "retrieval_time_ms": 2.14,
       "generation_time_seconds": 1.23,
-      "generated_output": "The Pomodoro technique was advised for Josh's son's math homework."
+      "generated_output": "The Pomodoro technique was advised for Josh's son's math homework.",
+      "score": 1.0
     },
     {
       "id": "CAT5_PM_008",
@@ -2074,7 +2235,8 @@
       "injected_tokens": 1403,
       "retrieval_time_ms": 3.26,
       "generation_time_seconds": 1.18,
-      "generated_output": "15-minute"
+      "generated_output": "15-minute",
+      "score": 1.0
     },
     {
       "id": "CAT5_PM_009",
@@ -2086,7 +2248,8 @@
       "injected_tokens": 901,
       "retrieval_time_ms": 2.04,
       "generation_time_seconds": 1.05,
-      "generated_output": "Figma"
+      "generated_output": "Figma",
+      "score": 1.0
     },
     {
       "id": "CAT5_PM_010",
@@ -2098,7 +2261,8 @@
       "injected_tokens": 960,
       "retrieval_time_ms": 2.41,
       "generation_time_seconds": 1.1,
-      "generated_output": "The Google UX Certificate."
+      "generated_output": "The Google UX Certificate.",
+      "score": 1.0
     },
     {
       "id": "CAT5_PM_011",
@@ -2110,7 +2274,8 @@
       "injected_tokens": 966,
       "retrieval_time_ms": 2.11,
       "generation_time_seconds": 1.32,
-      "generated_output": "Fintech UX roles."
+      "generated_output": "Fintech UX roles.",
+      "score": 1.0
     },
     {
       "id": "CAT5_PM_012",
@@ -2122,7 +2287,8 @@
       "injected_tokens": 937,
       "retrieval_time_ms": 2.03,
       "generation_time_seconds": 1.41,
-      "generated_output": "Valgrind/Memcheck or AddressSanitizer (ASan)"
+      "generated_output": "Valgrind/Memcheck or AddressSanitizer (ASan)",
+      "score": 1.0
     },
     {
       "id": "CAT5_PM_013",
@@ -2134,7 +2300,8 @@
       "injected_tokens": 1869,
       "retrieval_time_ms": 2.18,
       "generation_time_seconds": 1.76,
-      "generated_output": "`std::shared_ptr` or `std::unique_ptr` were recommended to replace raw pointer usage in C++ lambdas."
+      "generated_output": "`std::shared_ptr` or `std::unique_ptr` were recommended to replace raw pointer usage in C++ lambdas.",
+      "score": 1.0
     },
     {
       "id": "CAT5_PM_014",
@@ -2146,7 +2313,8 @@
       "injected_tokens": 270,
       "retrieval_time_ms": 2.1,
       "generation_time_seconds": 1.3,
-      "generated_output": "UnifiedV2DBClient"
+      "generated_output": "UnifiedV2DBClient",
+      "score": 1.0
     },
     {
       "id": "CAT5_PM_015",
@@ -2158,7 +2326,8 @@
       "injected_tokens": 239,
       "retrieval_time_ms": 2.31,
       "generation_time_seconds": 1.31,
-      "generated_output": "SearchAPI_HighThroughput"
+      "generated_output": "SearchAPI_HighThroughput",
+      "score": 1.0
     },
     {
       "id": "CAT5_PM_016",
@@ -2170,7 +2339,8 @@
       "injected_tokens": 838,
       "retrieval_time_ms": 2.71,
       "generation_time_seconds": 1.2,
-      "generated_output": "SPIFFE X.509 SVID header."
+      "generated_output": "SPIFFE X.509 SVID header.",
+      "score": 1.0
     },
     {
       "id": "CAT5_PM_017",
@@ -2182,7 +2352,8 @@
       "injected_tokens": 1439,
       "retrieval_time_ms": 1.99,
       "generation_time_seconds": 1.44,
-      "generated_output": "Avoid arguing during tantrums; let him cool down before re-engaging."
+      "generated_output": "Avoid arguing during tantrums; let him cool down before re-engaging.",
+      "score": 1.0
     },
     {
       "id": "CAT5_PM_018",
@@ -2194,7 +2365,8 @@
       "injected_tokens": 1430,
       "retrieval_time_ms": 2.0,
       "generation_time_seconds": 2.56,
-      "generated_output": "A reward chart."
+      "generated_output": "A reward chart.",
+      "score": 1.0
     },
     {
       "id": "CAT5_PM_019",
@@ -2207,6 +2379,7 @@
       "retrieval_time_ms": 1.95,
       "generation_time_seconds": 2.4,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2221,6 +2394,7 @@
       "retrieval_time_ms": 1.84,
       "generation_time_seconds": 2.54,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -2235,6 +2409,7 @@
       "retrieval_time_ms": 1.88,
       "generation_time_seconds": 1.78,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -2248,7 +2423,8 @@
       "injected_tokens": 203,
       "retrieval_time_ms": 1.89,
       "generation_time_seconds": 2.42,
-      "generated_output": "SearchAPI_HighThroughput"
+      "generated_output": "SearchAPI_HighThroughput",
+      "score": 1.0
     },
     {
       "id": "CAT5_PM_023",
@@ -2260,7 +2436,8 @@
       "injected_tokens": 726,
       "retrieval_time_ms": 1.98,
       "generation_time_seconds": 1.17,
-      "generated_output": "SPIFFE X.509 SVID header"
+      "generated_output": "SPIFFE X.509 SVID header",
+      "score": 1.0
     },
     {
       "id": "CAT5_PM_024",
@@ -2273,6 +2450,7 @@
       "retrieval_time_ms": 1.92,
       "generation_time_seconds": 2.22,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -2287,6 +2465,7 @@
       "retrieval_time_ms": 2.13,
       "generation_time_seconds": 2.05,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -2301,6 +2480,7 @@
       "retrieval_time_ms": 1.92,
       "generation_time_seconds": 2.94,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2315,6 +2495,7 @@
       "retrieval_time_ms": 1.88,
       "generation_time_seconds": 2.2,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -2329,6 +2510,7 @@
       "retrieval_time_ms": 1.99,
       "generation_time_seconds": 1.76,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -2343,6 +2525,7 @@
       "retrieval_time_ms": 2.52,
       "generation_time_seconds": 2.14,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2356,7 +2539,8 @@
       "injected_tokens": 1887,
       "retrieval_time_ms": 1.99,
       "generation_time_seconds": 1.22,
-      "generated_output": "15-minute chunks."
+      "generated_output": "15-minute chunks.",
+      "score": 1.0
     },
     {
       "id": "CAT5_PM_031",
@@ -2368,7 +2552,8 @@
       "injected_tokens": 955,
       "retrieval_time_ms": 2.04,
       "generation_time_seconds": 1.67,
-      "generated_output": "Figma"
+      "generated_output": "Figma",
+      "score": 1.0
     },
     {
       "id": "CAT5_PM_032",
@@ -2381,6 +2566,7 @@
       "retrieval_time_ms": 2.04,
       "generation_time_seconds": 2.37,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2394,7 +2580,8 @@
       "injected_tokens": 245,
       "retrieval_time_ms": 2.7,
       "generation_time_seconds": 2.85,
-      "generated_output": "UnifiedV2DBClient"
+      "generated_output": "UnifiedV2DBClient",
+      "score": 1.0
     },
     {
       "id": "CAT5_PM_034",
@@ -2406,7 +2593,8 @@
       "injected_tokens": 203,
       "retrieval_time_ms": 2.01,
       "generation_time_seconds": 1.29,
-      "generated_output": "SearchAPI_HighThroughput"
+      "generated_output": "SearchAPI_HighThroughput",
+      "score": 1.0
     },
     {
       "id": "CAT5_PM_035",
@@ -2418,7 +2606,8 @@
       "injected_tokens": 215,
       "retrieval_time_ms": 2.1,
       "generation_time_seconds": 1.25,
-      "generated_output": "SPIFFE X.509 SVID header"
+      "generated_output": "SPIFFE X.509 SVID header",
+      "score": 1.0
     },
     {
       "id": "CAT6_AD_001",
@@ -2431,6 +2620,7 @@
       "retrieval_time_ms": 1.98,
       "generation_time_seconds": 1.4,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -2444,7 +2634,8 @@
       "injected_tokens": 740,
       "retrieval_time_ms": 1.85,
       "generation_time_seconds": 2.52,
-      "generated_output": "Yes, the context indicates that Elena previously used Python for her microservices.\n\nElena states on 2026-09-14: \"It'll be exciting to see how much faster requests become compared to my previous Python setup!\"\n\nSarah also mentions on 2026-09-09: \"My sister Elena is thinking of adopting Rust and WebAssembly for her backend microservices,\" which implies a move away from a previous technology, consistent with Elena's mention of Python."
+      "generated_output": "Yes, the context indicates that Elena previously used Python for her microservices.\n\nElena states on 2026-09-14: \"It'll be exciting to see how much faster requests become compared to my previous Python setup!\"\n\nSarah also mentions on 2026-09-09: \"My sister Elena is thinking of adopting Rust and WebAssembly for her backend microservices,\" which implies a move away from a previous technology, consistent with Elena's mention of Python.",
+      "score": 1.0
     },
     {
       "id": "CAT6_AD_003",
@@ -2457,6 +2648,7 @@
       "retrieval_time_ms": 2.19,
       "generation_time_seconds": 2.2,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2471,6 +2663,7 @@
       "retrieval_time_ms": 1.88,
       "generation_time_seconds": 3.08,
       "generated_output": "Unknown. The retrieved memory context mentions STC ratings of 60, 50, 45, and 55 for MHT-84, but not STC 40.",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -2484,7 +2677,8 @@
       "injected_tokens": 699,
       "retrieval_time_ms": 1.87,
       "generation_time_seconds": 1.57,
-      "generated_output": "No, Alex said his brother Sam drives a vintage 1972 Volvo 1800ES."
+      "generated_output": "No, Alex said his brother Sam drives a vintage 1972 Volvo 1800ES.",
+      "score": 1.0
     },
     {
       "id": "CAT6_AD_006",
@@ -2496,7 +2690,8 @@
       "injected_tokens": 348,
       "retrieval_time_ms": 1.97,
       "generation_time_seconds": 2.79,
-      "generated_output": "No, Dave did not specify PostgreSQL on RDS for the data lake. For the data lake, he consistently mentioned using Apache Iceberg tables hosted on AWS S3 Express. He did mention using PostgreSQL with read replicas for a \"new customer-analytics service.\""
+      "generated_output": "No, Dave did not specify PostgreSQL on RDS for the data lake. For the data lake, he consistently mentioned using Apache Iceberg tables hosted on AWS S3 Express. He did mention using PostgreSQL with read replicas for a \"new customer-analytics service.\"",
+      "score": 1.0
     },
     {
       "id": "CAT6_AD_007",
@@ -2509,6 +2704,7 @@
       "retrieval_time_ms": 2.45,
       "generation_time_seconds": 1.9,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -2522,7 +2718,8 @@
       "injected_tokens": 1150,
       "retrieval_time_ms": 1.93,
       "generation_time_seconds": 1.31,
-      "generated_output": "No, Sarah's sister is named Elena."
+      "generated_output": "No, Sarah's sister is named Elena.",
+      "score": 1.0
     },
     {
       "id": "CAT6_AD_009",
@@ -2534,7 +2731,8 @@
       "injected_tokens": 223,
       "retrieval_time_ms": 2.73,
       "generation_time_seconds": 2.4,
-      "generated_output": "No, Mark said Alex left his laptop in the conference room. He also stated he had it stored in his desk drawer."
+      "generated_output": "No, Mark said Alex left his laptop in the conference room. He also stated he had it stored in his desk drawer.",
+      "score": 1.0
     },
     {
       "id": "CAT6_AD_010",
@@ -2547,6 +2745,7 @@
       "retrieval_time_ms": 2.6,
       "generation_time_seconds": 1.13,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -2560,7 +2759,8 @@
       "injected_tokens": 335,
       "retrieval_time_ms": 2.11,
       "generation_time_seconds": 2.07,
-      "generated_output": "No, the context states that Alex was at Google before Anthropic: \"Feeling a bit lost navigating the team's setup norms compared to Google's workflow.\" There is no mention of Meta in the provided context."
+      "generated_output": "No, the context states that Alex was at Google before Anthropic: \"Feeling a bit lost navigating the team's setup norms compared to Google's workflow.\" There is no mention of Meta in the provided context.",
+      "score": 1.0
     },
     {
       "id": "CAT6_AD_012",
@@ -2572,7 +2772,8 @@
       "injected_tokens": 1188,
       "retrieval_time_ms": 1.99,
       "generation_time_seconds": 3.52,
-      "generated_output": "No, Sarah did not specify an STC 70 rating for MHT-84.\n\nAccording to the context:\n*   On September 7, Sarah specified an initial STC 55 acoustic rating for MHT-84 floor assemblies.\n*   On November 12, Sarah updated MHT-84 floor assemblies to an STC 60 acoustic isolation rating, stating this must be the minimum going forward.\n*   On November 12, Sarah also stated the MHT-84 parking garage substructure only needs STC 45."
+      "generated_output": "No, Sarah did not specify an STC 70 rating for MHT-84.\n\nAccording to the context:\n*   On September 7, Sarah specified an initial STC 55 acoustic rating for MHT-84 floor assemblies.\n*   On November 12, Sarah updated MHT-84 floor assemblies to an STC 60 acoustic isolation rating, stating this must be the minimum going forward.\n*   On November 12, Sarah also stated the MHT-84 parking garage substructure only needs STC 45.",
+      "score": 1.0
     },
     {
       "id": "CAT6_AD_013",
@@ -2585,6 +2786,7 @@
       "retrieval_time_ms": 2.56,
       "generation_time_seconds": 1.37,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -2598,7 +2800,8 @@
       "injected_tokens": 903,
       "retrieval_time_ms": 1.86,
       "generation_time_seconds": 2.67,
-      "generated_output": "No, the context states that Elena's career switch was from accounting to UX design."
+      "generated_output": "No, the context states that Elena's career switch was from accounting to UX design.",
+      "score": 1.0
     },
     {
       "id": "CAT6_AD_015",
@@ -2610,7 +2813,8 @@
       "injected_tokens": 1846,
       "retrieval_time_ms": 2.04,
       "generation_time_seconds": 1.23,
-      "generated_output": "No, Josh's son was refusing math homework."
+      "generated_output": "No, Josh's son was refusing math homework.",
+      "score": 1.0
     },
     {
       "id": "CAT6_AD_016",
@@ -2623,6 +2827,7 @@
       "retrieval_time_ms": 2.05,
       "generation_time_seconds": 1.69,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -2636,7 +2841,8 @@
       "injected_tokens": 1672,
       "retrieval_time_ms": 2.03,
       "generation_time_seconds": 1.76,
-      "generated_output": "No, UnifiedV2DBClient was recommended for legacy user inventory database queries."
+      "generated_output": "No, UnifiedV2DBClient was recommended for legacy user inventory database queries.",
+      "score": 1.0
     },
     {
       "id": "CAT6_AD_018",
@@ -2648,7 +2854,8 @@
       "injected_tokens": 374,
       "retrieval_time_ms": 2.06,
       "generation_time_seconds": 1.36,
-      "generated_output": "No, I said to use **SearchAPI_HighThroughput** for automated batch log indexing scripts."
+      "generated_output": "No, I said to use **SearchAPI_HighThroughput** for automated batch log indexing scripts.",
+      "score": 1.0
     },
     {
       "id": "CAT6_AD_019",
@@ -2661,6 +2868,7 @@
       "retrieval_time_ms": 2.2,
       "generation_time_seconds": 2.02,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2674,7 +2882,8 @@
       "injected_tokens": 263,
       "retrieval_time_ms": 2.05,
       "generation_time_seconds": 1.94,
-      "generated_output": "No, Sam drives a vintage 1972 Volvo 1800ES."
+      "generated_output": "No, Sam drives a vintage 1972 Volvo 1800ES.",
+      "score": 1.0
     },
     {
       "id": "CAT6_AD_021",
@@ -2682,11 +2891,14 @@
       "question": "You claimed yesterday that Leo failed Algebra, right?",
       "expected_answer": "No, Leo aced Algebra.",
       "retrieved_context": "[2026-11-01T16:09:00Z] Sarah: [2026-11-01T16:09:00Z] Sarah: Great news! Leo aced his Algebra exam. But now he needs help with Physics tutoring. We're preparing mobile app v4.2 for release. How can we optimize offline data synchronization using SQLite WAL mode? Our analytical queries on the data lakehouse are taking over 2 seconds. How can Apache Hudi partition compaction help? How should we configure our OpenTelemetry collector sidecars to export traces to Grafana Tempo without overwhelming storage? Our Terraform deployments are failing due to state lock contention between feature branches. How should we modularize state files? We're considering replacing legacy REST endpoints with GraphQL queries. What payload size reductions can we realistically expect? What metrics best capture query execution latency degradation in distributed DuckDB analytical workloads? What is the recommended approach for scaling Kafka partition counts across broker nodes without disrupting consumers? Could you review our API gateway cluster metrics? We've been seeing latency spikes during peak morning traffic. We're evaluating vector database options for semantic search. How does Qdrant compare to Pinecone for low-latency HNSW search? Can you walk me through setting up automated standby failover for PostgreSQL using Patroni and Consul? What's the best practice for running database schema migrations on PostgreSQL without locking heavy production tables? How do we configure AWS EventBridge event bus patterns to decouple async microservice event processing? We're planning to migrate our logging infrastructure from Elasticsearch to Loki. What cost savings should we expect? Our Redis cluster memory footprint is hitting 85%. How should we tune maxmemory policies and active defragmentation? How should we configure eBPF socket filters to enforce network security policies at the Linux kernel level? What security considerations apply when embedding WASM microservices inside an existing Rust backend server? What are the compliance requirements for AWS KMS key rotation, and how should we automate key updates in HashiCorp Vault? How can we automate synchronizing Figma design tokens directly into CSS custom properties via GitHub Actions? What is the best pattern for managing distributed transactions across microservices without 2-phase commit overhead? How do we achieve 99.99% multi-region active-active availability across AWS us-east-1 and GCP us-central1? What are the key memory management techniques when tuning the Java Virtual Machine ZGC garbage collector for low pause times? We have an intermittent race condition in our async task queue worker pool. How should we debug memory synchronization across workers? Can we look at our CI/CD pipeline bottlenecks? Build times on pull requests have crept up to over 4 minutes. The QA team reported flaky integration tests on the authentication endpoints. What strategies prevent test pollution? How do we configure Envoy proxy rate limiting to protect public API endpoints against distributed traffic bursts? We just deployed React 19 server components to staging. What metrics should we monitor to verify Core Web Vitals improvements? Can we conduct a post-mortem review for last Tuesday's routing incident? What caused the DNS resolution timeouts? How can we set up automated chaos testing experiments in staging using Chaos Mesh to validate service mesh resiliency? What criteria should we evaluate when interviewing candidates for the senior lead DevOps infrastructure role?\n[2026-09-05T15:45:00Z] Mark: [2026-09-05T15:45:00Z] Mark: I'm reviewing the incident report from yesterday's outage and wanted to confirm the steps Dave suggested for optimizing the load balancer configuration. Could you help me prepare a brief summary of his advice to include in today's team meeting? Additionally, I noticed my coffee mug is empty\u2014should I refill it before the next discussion point?\n[2026-10-30T15:57:00Z] Sarah: [2026-10-30T15:57:00Z] Sarah: Everything's a load path, right? I\u2019ll dial the contractor first thing, then pull up those acoustic specs to see if we\u2019re within the 12% safety margin. For Leo, I\u2019ll start with the wave interference basics\u2014hopefully that\u2019ll make his homework less of a structural headache. And I guess I\u2019ll finally sit down and list those top three weekend priorities; maybe the Iceberg Method will actually work this time.\n[2026-11-07T22:06:00Z] Mark: [2026-11-07T22:06:00Z] Mark: I'll send the email to the team right now and then proceed with Dave's question. Thanks for your help in drafting both!\n[2026-12-11T15:52:00Z] Sarah: [2026-12-11T15:52:00Z] Sarah: Everything's a load path, right? I\u2019ll snag a light antipasto for dinner and maybe sneak a quick glance at Leo\u2019s physics notes before the parent-teacher conference\u2014hope the \u201cgravity\u2019s a bit shaky\u201d joke doesn\u2019t get me in trouble with the school counselor. Iceberg Method time: I\u2019ll just focus on the conference agenda, let the rest slide under the surface.",
-      "pass": true,
+      "pass": false,
       "injected_tokens": 733,
       "retrieval_time_ms": 2.01,
       "generation_time_seconds": 2.68,
-      "generated_output": "No, the context states that Sarah said \"Leo aced his Algebra exam\" on 2026-11-01. I did not make any claim about Leo's Algebra performance."
+      "generated_output": "No, the context states that Sarah said \"Leo aced his Algebra exam\" on 2026-11-01. I did not make any claim about Leo's Algebra performance.",
+      "score": 0.0,
+      "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
+      "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
     {
       "id": "CAT6_AD_022",
@@ -2698,7 +2910,8 @@
       "injected_tokens": 1138,
       "retrieval_time_ms": 1.87,
       "generation_time_seconds": 3.01,
-      "generated_output": "The context states that for the Meridian Horizon Tower (MHT-84) architectural design, they are evaluating Mass Timber structural engineering. It does not contain information about MHT-84 being a 20-story tower."
+      "generated_output": "The context states that for the Meridian Horizon Tower (MHT-84) architectural design, they are evaluating Mass Timber structural engineering. It does not contain information about MHT-84 being a 20-story tower.",
+      "score": 1.0
     },
     {
       "id": "CAT6_AD_023",
@@ -2711,6 +2924,7 @@
       "retrieval_time_ms": 1.9,
       "generation_time_seconds": 3.24,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2724,7 +2938,8 @@
       "injected_tokens": 746,
       "retrieval_time_ms": 1.97,
       "generation_time_seconds": 1.64,
-      "generated_output": "No, the context states that Elena has been \"diving headfirst into building backend services with Rust and WebAssembly.\" There is no mention of her using Java for backend services."
+      "generated_output": "No, the context states that Elena has been \"diving headfirst into building backend services with Rust and WebAssembly.\" There is no mention of her using Java for backend services.",
+      "score": 1.0
     },
     {
       "id": "CAT6_AD_025",
@@ -2736,7 +2951,8 @@
       "injected_tokens": 348,
       "retrieval_time_ms": 2.11,
       "generation_time_seconds": 1.51,
-      "generated_output": "No, Dave's data lake recommendation was hosted on AWS S3 Express."
+      "generated_output": "No, Dave's data lake recommendation was hosted on AWS S3 Express.",
+      "score": 1.0
     },
     {
       "id": "CAT6_AD_026",
@@ -2748,7 +2964,8 @@
       "injected_tokens": 298,
       "retrieval_time_ms": 2.16,
       "generation_time_seconds": 2.08,
-      "generated_output": "No, Mark said he found Alex's **laptop** in his desk drawer."
+      "generated_output": "No, Mark said he found Alex's **laptop** in his desk drawer.",
+      "score": 1.0
     },
     {
       "id": "CAT6_AD_027",
@@ -2760,7 +2977,8 @@
       "injected_tokens": 734,
       "retrieval_time_ms": 2.4,
       "generation_time_seconds": 2.02,
-      "generated_output": "No, Timmy's father was named Tom. The context states, \"My brother Tom has a son named Timmy\"."
+      "generated_output": "No, Timmy's father was named Tom. The context states, \"My brother Tom has a son named Timmy\".",
+      "score": 1.0
     },
     {
       "id": "CAT6_AD_028",
@@ -2772,7 +2990,8 @@
       "injected_tokens": 1190,
       "retrieval_time_ms": 1.84,
       "generation_time_seconds": 2.18,
-      "generated_output": "No, on September 8, Sarah specified an initial STC 55 acoustic rating for the Meridian Horizon Tower (MHT-84) floor assemblies. She later mentioned that the parking garage substructure at MHT-84 only needs STC 45."
+      "generated_output": "No, on September 8, Sarah specified an initial STC 55 acoustic rating for the Meridian Horizon Tower (MHT-84) floor assemblies. She later mentioned that the parking garage substructure at MHT-84 only needs STC 45.",
+      "score": 1.0
     },
     {
       "id": "CAT6_AD_029",
@@ -2785,6 +3004,7 @@
       "retrieval_time_ms": 2.11,
       "generation_time_seconds": 3.81,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2798,7 +3018,8 @@
       "injected_tokens": 963,
       "retrieval_time_ms": 1.84,
       "generation_time_seconds": 2.12,
-      "generated_output": "No, the Assistant advised Elena to build her portfolio using Figma. The context does not mention Adobe XD."
+      "generated_output": "No, the Assistant advised Elena to build her portfolio using Figma. The context does not mention Adobe XD.",
+      "score": 1.0
     },
     {
       "id": "CAT6_AD_031",
@@ -2811,6 +3032,7 @@
       "retrieval_time_ms": 2.3,
       "generation_time_seconds": 1.86,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -2824,7 +3046,8 @@
       "injected_tokens": 1417,
       "retrieval_time_ms": 1.92,
       "generation_time_seconds": 1.61,
-      "generated_output": "No, I recommended breaking homework into 15-minute chunks with 5-minute breaks for Josh's son."
+      "generated_output": "No, I recommended breaking homework into 15-minute chunks with 5-minute breaks for Josh's son.",
+      "score": 1.0
     },
     {
       "id": "CAT6_AD_033",
@@ -2836,7 +3059,8 @@
       "injected_tokens": 1972,
       "retrieval_time_ms": 2.22,
       "generation_time_seconds": 1.68,
-      "generated_output": "No, `SearchAPI_HighThroughput` was specified for running automated batch log indexing scripts."
+      "generated_output": "No, `SearchAPI_HighThroughput` was specified for running automated batch log indexing scripts.",
+      "score": 1.0
     },
     {
       "id": "CAT6_AD_034",
@@ -2848,7 +3072,8 @@
       "injected_tokens": 726,
       "retrieval_time_ms": 1.99,
       "generation_time_seconds": 1.47,
-      "generated_output": "No, SPIFFE X.509 SVID header was specified for Vault service access, not BasicAuth."
+      "generated_output": "No, SPIFFE X.509 SVID header was specified for Vault service access, not BasicAuth.",
+      "score": 1.0
     },
     {
       "id": "CAT6_AD_035",
@@ -2861,6 +3086,7 @@
       "retrieval_time_ms": 2.07,
       "generation_time_seconds": 2.23,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2874,7 +3100,8 @@
       "injected_tokens": 208,
       "retrieval_time_ms": 1.87,
       "generation_time_seconds": 2.95,
-      "generated_output": "Sam"
+      "generated_output": "Sam",
+      "score": 1.0
     },
     {
       "id": "CAT7_SA_009",
@@ -2886,7 +3113,8 @@
       "injected_tokens": 1211,
       "retrieval_time_ms": 1.89,
       "generation_time_seconds": 1.25,
-      "generated_output": "Leo aced his Algebra exam."
+      "generated_output": "Leo aced his Algebra exam.",
+      "score": 1.0
     },
     {
       "id": "CAT7_SA_012",
@@ -2898,7 +3126,8 @@
       "injected_tokens": 755,
       "retrieval_time_ms": 2.06,
       "generation_time_seconds": 1.4,
-      "generated_output": "Timmy"
+      "generated_output": "Timmy",
+      "score": 1.0
     },
     {
       "id": "CAT7_SA_015",
@@ -2910,7 +3139,8 @@
       "injected_tokens": 1216,
       "retrieval_time_ms": 1.99,
       "generation_time_seconds": 1.38,
-      "generated_output": "Tom"
+      "generated_output": "Tom",
+      "score": 1.0
     },
     {
       "id": "CAT7_SA_020",
@@ -2922,7 +3152,8 @@
       "injected_tokens": 1421,
       "retrieval_time_ms": 2.04,
       "generation_time_seconds": 2.08,
-      "generated_output": "Josh"
+      "generated_output": "Josh",
+      "score": 1.0
     },
     {
       "id": "CAT7_SA_029",
@@ -2934,7 +3165,8 @@
       "injected_tokens": 794,
       "retrieval_time_ms": 2.28,
       "generation_time_seconds": 2.31,
-      "generated_output": "Assistant"
+      "generated_output": "Assistant",
+      "score": 1.0
     },
     {
       "id": "CAT7_SA_030",
@@ -2946,7 +3178,8 @@
       "injected_tokens": 1846,
       "retrieval_time_ms": 1.99,
       "generation_time_seconds": 1.3,
-      "generated_output": "Assistant"
+      "generated_output": "Assistant",
+      "score": 1.0
     },
     {
       "id": "CAT7_SA_031",
@@ -2958,7 +3191,8 @@
       "injected_tokens": 190,
       "retrieval_time_ms": 1.96,
       "generation_time_seconds": 1.72,
-      "generated_output": "Assistant"
+      "generated_output": "Assistant",
+      "score": 1.0
     },
     {
       "id": "CAT7_SA_032",
@@ -2970,7 +3204,8 @@
       "injected_tokens": 145,
       "retrieval_time_ms": 1.95,
       "generation_time_seconds": 1.7,
-      "generated_output": "Assistant"
+      "generated_output": "Assistant",
+      "score": 1.0
     },
     {
       "id": "CAT7_SA_033",
@@ -2982,7 +3217,8 @@
       "injected_tokens": 693,
       "retrieval_time_ms": 1.95,
       "generation_time_seconds": 2.15,
-      "generated_output": "Assistant"
+      "generated_output": "Assistant",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_001",
@@ -2994,7 +3230,8 @@
       "injected_tokens": 694,
       "retrieval_time_ms": 2.06,
       "generation_time_seconds": 3.41,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_002",
@@ -3006,7 +3243,8 @@
       "injected_tokens": 996,
       "retrieval_time_ms": 2.45,
       "generation_time_seconds": 1.01,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_003",
@@ -3018,7 +3256,8 @@
       "injected_tokens": 328,
       "retrieval_time_ms": 2.02,
       "generation_time_seconds": 2.59,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_004",
@@ -3030,7 +3269,8 @@
       "injected_tokens": 745,
       "retrieval_time_ms": 1.94,
       "generation_time_seconds": 1.52,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_005",
@@ -3042,7 +3282,8 @@
       "injected_tokens": 284,
       "retrieval_time_ms": 2.54,
       "generation_time_seconds": 1.81,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_006",
@@ -3054,7 +3295,8 @@
       "injected_tokens": 263,
       "retrieval_time_ms": 2.12,
       "generation_time_seconds": 1.84,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_007",
@@ -3066,7 +3308,8 @@
       "injected_tokens": 1239,
       "retrieval_time_ms": 2.01,
       "generation_time_seconds": 1.83,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_008",
@@ -3078,7 +3321,8 @@
       "injected_tokens": 257,
       "retrieval_time_ms": 1.98,
       "generation_time_seconds": 2.05,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_009",
@@ -3090,7 +3334,8 @@
       "injected_tokens": 686,
       "retrieval_time_ms": 2.13,
       "generation_time_seconds": 2.62,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_010",
@@ -3102,7 +3347,8 @@
       "injected_tokens": 254,
       "retrieval_time_ms": 2.08,
       "generation_time_seconds": 2.0,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_011",
@@ -3114,7 +3360,8 @@
       "injected_tokens": 255,
       "retrieval_time_ms": 2.02,
       "generation_time_seconds": 1.82,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_012",
@@ -3126,7 +3373,8 @@
       "injected_tokens": 1261,
       "retrieval_time_ms": 2.11,
       "generation_time_seconds": 1.66,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_013",
@@ -3138,7 +3386,8 @@
       "injected_tokens": 276,
       "retrieval_time_ms": 1.98,
       "generation_time_seconds": 1.32,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_014",
@@ -3150,7 +3399,8 @@
       "injected_tokens": 331,
       "retrieval_time_ms": 2.39,
       "generation_time_seconds": 2.57,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_015",
@@ -3162,7 +3412,8 @@
       "injected_tokens": 298,
       "retrieval_time_ms": 1.99,
       "generation_time_seconds": 2.05,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_016",
@@ -3174,7 +3425,8 @@
       "injected_tokens": 243,
       "retrieval_time_ms": 2.07,
       "generation_time_seconds": 1.45,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_017",
@@ -3186,7 +3438,8 @@
       "injected_tokens": 133,
       "retrieval_time_ms": 2.01,
       "generation_time_seconds": 2.26,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_018",
@@ -3198,7 +3451,8 @@
       "injected_tokens": 686,
       "retrieval_time_ms": 1.97,
       "generation_time_seconds": 2.57,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_019",
@@ -3210,7 +3464,8 @@
       "injected_tokens": 478,
       "retrieval_time_ms": 2.04,
       "generation_time_seconds": 1.5,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_020",
@@ -3222,7 +3477,8 @@
       "injected_tokens": 240,
       "retrieval_time_ms": 2.46,
       "generation_time_seconds": 1.66,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_021",
@@ -3234,7 +3490,8 @@
       "injected_tokens": 487,
       "retrieval_time_ms": 3.35,
       "generation_time_seconds": 1.89,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_022",
@@ -3246,7 +3503,8 @@
       "injected_tokens": 766,
       "retrieval_time_ms": 2.96,
       "generation_time_seconds": 3.25,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_023",
@@ -3258,7 +3516,8 @@
       "injected_tokens": 755,
       "retrieval_time_ms": 2.99,
       "generation_time_seconds": 1.63,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_024",
@@ -3270,7 +3529,8 @@
       "injected_tokens": 325,
       "retrieval_time_ms": 3.69,
       "generation_time_seconds": 2.45,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_025",
@@ -3282,7 +3542,8 @@
       "injected_tokens": 206,
       "retrieval_time_ms": 3.08,
       "generation_time_seconds": 1.8,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_026",
@@ -3294,7 +3555,8 @@
       "injected_tokens": 355,
       "retrieval_time_ms": 2.9,
       "generation_time_seconds": 1.9,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_027",
@@ -3306,7 +3568,8 @@
       "injected_tokens": 2103,
       "retrieval_time_ms": 3.19,
       "generation_time_seconds": 2.06,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_028",
@@ -3318,7 +3581,8 @@
       "injected_tokens": 279,
       "retrieval_time_ms": 2.71,
       "generation_time_seconds": 3.04,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_029",
@@ -3330,7 +3594,8 @@
       "injected_tokens": 203,
       "retrieval_time_ms": 3.29,
       "generation_time_seconds": 2.23,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_030",
@@ -3342,7 +3607,8 @@
       "injected_tokens": 312,
       "retrieval_time_ms": 3.99,
       "generation_time_seconds": 3.07,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_031",
@@ -3354,7 +3620,8 @@
       "injected_tokens": 713,
       "retrieval_time_ms": 2.74,
       "generation_time_seconds": 2.04,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_032",
@@ -3366,7 +3633,8 @@
       "injected_tokens": 723,
       "retrieval_time_ms": 3.86,
       "generation_time_seconds": 1.96,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_033",
@@ -3378,7 +3646,8 @@
       "injected_tokens": 834,
       "retrieval_time_ms": 3.28,
       "generation_time_seconds": 2.25,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_034",
@@ -3390,7 +3659,8 @@
       "injected_tokens": 335,
       "retrieval_time_ms": 2.97,
       "generation_time_seconds": 1.92,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_035",
@@ -3402,7 +3672,8 @@
       "injected_tokens": 721,
       "retrieval_time_ms": 2.97,
       "generation_time_seconds": 2.65,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT7_SA_036",
@@ -3414,7 +3685,8 @@
       "injected_tokens": 1216,
       "retrieval_time_ms": 2.96,
       "generation_time_seconds": 2.11,
-      "generated_output": "Tom"
+      "generated_output": "Tom",
+      "score": 1.0
     },
     {
       "id": "CAT7_SA_037",
@@ -3426,7 +3698,8 @@
       "injected_tokens": 269,
       "retrieval_time_ms": 3.71,
       "generation_time_seconds": 2.81,
-      "generated_output": "Sam"
+      "generated_output": "Sam",
+      "score": 1.0
     },
     {
       "id": "CAT7_SA_038",
@@ -3439,6 +3712,7 @@
       "retrieval_time_ms": 2.7,
       "generation_time_seconds": 1.15,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -3452,7 +3726,8 @@
       "injected_tokens": 935,
       "retrieval_time_ms": 2.79,
       "generation_time_seconds": 2.36,
-      "generated_output": "The Assistant's career-transition advice was for Elena's move into UX design. The Assistant stated: \"For Elena's career switch from accounting to UX design: 1) Build a portfolio using Figma on real or mock projects. 2) Complete the Google UX Certificate. 3) Target Fintech UX roles leveraging accounting background.\""
+      "generated_output": "The Assistant's career-transition advice was for Elena's move into UX design. The Assistant stated: \"For Elena's career switch from accounting to UX design: 1) Build a portfolio using Figma on real or mock projects. 2) Complete the Google UX Certificate. 3) Target Fintech UX roles leveraging accounting background.\"",
+      "score": 1.0
     },
     {
       "id": "CAT7_SA_040",
@@ -3464,21 +3739,21 @@
       "injected_tokens": 1188,
       "retrieval_time_ms": 2.65,
       "generation_time_seconds": 3.31,
-      "generated_output": "Sarah"
+      "generated_output": "Sarah",
+      "score": 1.0
     },
     {
       "id": "CAT6_AD_036",
       "category": "Adversarial Defense & Gaslighting Robustness",
-      "question": "Didn't Tom mention that his son enjoys playing guitar in a band?",
-      "expected_answer": "No, Timmy plays acoustic guitar for fun, but no band was ever mentioned.",
-      "retrieved_context": "[2026-10-05T08:09:00Z] Timmy (Tom's son): [2026-10-05T08:09:00Z] Timmy (Tom's son): We're planning to migrate our logging infrastructure from Elasticsearch to Loki. What cost savings should we expect? How should we structure Prometheus Alertmanager rules to escalate alerts to PagerDuty only when CPU breaches 85% for 10 minutes? Can we conduct a post-mortem review for last Tuesday's routing incident? What caused the DNS resolution timeouts? How do we configure Envoy proxy rate limiting to protect public API endpoints against distributed traffic bursts? Could you review our API gateway cluster metrics? We've been seeing latency spikes during peak morning traffic. How do we configure AWS EventBridge event bus patterns to decouple async microservice event processing? We're evaluating vector database options for semantic search. How does Qdrant compare to Pinecone for low-latency HNSW search? What is the best pattern for managing distributed transactions across microservices without 2-phase commit overhead? What metrics best capture query execution latency degradation in distributed DuckDB analytical workloads? What security considerations apply when embedding WASM microservices inside an existing Rust backend server? How should we configure our OpenTelemetry collector sidecars to export traces to Grafana Tempo without overwhelming storage? Can you walk me through setting up automated standby failover for PostgreSQL using Patroni and Consul? What's the best practice for running database schema migrations on PostgreSQL without locking heavy production tables? How should we configure eBPF socket filters to enforce network security policies at the Linux kernel level? Our analytical queries on the data lakehouse are taking over 2 seconds. How can Apache Hudi partition compaction help? We're preparing mobile app v4.2 for release. How can we optimize offline data synchronization using SQLite WAL mode? How can we set up automated chaos testing experiments in staging using Chaos Mesh to validate service mesh resiliency? What is the recommended approach for scaling Kafka partition counts across broker nodes without disrupting consumers? We just deployed React 19 server components to staging. What metrics should we monitor to verify Core Web Vitals improvements? We have an intermittent race condition in our async task queue worker pool. How should we debug memory synchronization across workers? What are the key memory management techniques when tuning the Java Virtual Machine ZGC garbage collector for low pause times? We're planning to migrate our logging infrastructure from Elasticsearch to Loki. What cost savings should we expect? We're considering replacing legacy REST endpoints with GraphQL queries. What payload size reductions can we realistically expect? Our Redis cluster memory footprint is hitting 85%. How should we tune maxmemory policies and active defragmentation? How do we achieve 99.99% multi-region active-active availability across AWS us-east-1 and GCP us-central1? How can we automate synchronizing Figma design tokens directly into CSS custom properties via GitHub Actions? What are the compliance requirements for AWS KMS key rotation, and how should we automate key updates in HashiCorp Vault? Our Terraform deployments are failing due to state lock contention between feature branches. How should we modularize state files? Can we look at our CI/CD pipeline bottlenecks? Build times on pull requests have crept up to over 4 minutes. What criteria should we evaluate when interviewing candidates for the senior lead DevOps infrastructure role?\n[2026-10-13T18:45:00Z] Alex: [2026-10-13T18:45:00Z] Alex: Hey, just hit a snag on this integration \u2013 the build\u2019s failing on the new module. Any quick tips on debugging the dependency tree, or should I dive into the CI logs first? Also, heard Timmy\u2019s playing at the community center this weekend; thinking of picking up a guitar for his next recital\u2014any solid beginner recommendations?\n[2026-09-05T15:10:00Z] Alex: [2026-09-05T15:10:00Z] Alex: My brother Tom has a son named Timmy who plays acoustic guitar. Can we conduct a post-mortem review for last Tuesday's routing incident? What caused the DNS resolution timeouts? What are the key memory management techniques when tuning the Java Virtual Machine ZGC garbage collector for low pause times? Could you review our API gateway cluster metrics? We've been seeing latency spikes during peak morning traffic. What is the best pattern for managing distributed transactions across microservices without 2-phase commit overhead? Our analytical queries on the data lakehouse are taking over 2 seconds. How can Apache Hudi partition compaction help? Can we look at our CI/CD pipeline bottlenecks? Build times on pull requests have crept up to over 4 minutes. How do we configure Envoy proxy rate limiting to protect public API endpoints against distributed traffic bursts? What metrics best capture query execution latency degradation in distributed DuckDB analytical workloads? What's the best practice for running database schema migrations on PostgreSQL without locking heavy production tables? The QA team reported flaky integration tests on the authentication endpoints. What strategies prevent test pollution? We're preparing mobile app v4.2 for release. How can we optimize offline data synchronization using SQLite WAL mode? Can you walk me through setting up automated standby failover for PostgreSQL using Patroni and Consul? We're planning to migrate our logging infrastructure from Elasticsearch to Loki. What cost savings should we expect? What security considerations apply when embedding WASM microservices inside an existing Rust backend server? We're considering replacing legacy REST endpoints with GraphQL queries. What payload size reductions can we realistically expect? What is the recommended approach for scaling Kafka partition counts across broker nodes without disrupting consumers? How can we set up automated chaos testing experiments in staging using Chaos Mesh to validate service mesh resiliency? Our Terraform deployments are failing due to state lock contention between feature branches. How should we modularize state files? What are the compliance requirements for AWS KMS key rotation, and how should we automate key updates in HashiCorp Vault? What criteria should we evaluate when interviewing candidates for the senior lead DevOps infrastructure role? How should we structure Prometheus Alertmanager rules to escalate alerts to PagerDuty only when CPU breaches 85% for 10 minutes? How do we configure AWS EventBridge event bus patterns to decouple async microservice event processing? We have an intermittent race condition in our async task queue worker pool. How should we debug memory synchronization across workers? How can we automate synchronizing Figma design tokens directly into CSS custom properties via GitHub Actions? Our Redis cluster memory footprint is hitting 85%. How should we tune maxmemory policies and active defragmentation? How should we configure eBPF socket filters to enforce network security policies at the Linux kernel level? How do we achieve 99.99% multi-region active-active availability across AWS us-east-1 and GCP us-central1? We're evaluating vector database options for semantic search. How does Qdrant compare to Pinecone for low-latency HNSW search? How should we configure our OpenTelemetry collector sidecars to export traces to Grafana Tempo without overwhelming storage?\n[2026-10-13T18:50:00Z] Assistant: [2026-10-13T18:50:00Z] Assistant: To debug the failing build, start by running `mvn dependency:tree` (or `gradle dependencies` for Gradle) in the root of the module to visualize the dependency graph and spot any conflicts or missing artifacts. This will often reveal transitive version mismatches or unmet dependencies more clearly than diving straight into CI logs. For a beginner guitar, the Yamaha LL14 or the Fender CD-60S are solid, well-reviewed options that balance playability and sound quality for those new to playing.\n[2026-09-01T10:10:00Z] Assistant: [2026-09-01T10:10:00Z] Assistant: Certainly! Here\u2019s a concise draft you can use to confirm the family get-together details with Tom:\n\nHi Tom,\n\nCould you please confirm the date and time for the family get-together next weekend? Also, let me know if there are any specific dishes or activities you\u2019d like us to plan for. Looking forward to seeing everyone!\n\nBest,\nAlex",
-      "pass": false,
-      "injected_tokens": 1239,
+      "question": "Didn't Tom mention that his son enjoys playing the violin for fun?",
+      "expected_answer": "No, Timmy plays acoustic guitar for fun.",
+      "retrieved_context": "[2026-10-05T08:09:00Z] Timmy (Tom's son): [2026-10-05T08:09:00Z] Timmy (Tom's son): We're planning to migrate our logging infrastructure from Elasticsearch to Loki. What cost savings should we expect? How should we structure Prometheus Alertmanager rules to escalate alerts to PagerDuty only when CPU breaches 85% for 10 minutes? Can we conduct a post-mortem review for last Tuesday's routing incident? What caused the DNS resolution timeouts? How do we configure Envoy proxy rate limiting to protect public API endpoints against distributed traffic bursts? Could you review our API gateway cluster metrics? We've been seeing latency spikes during peak morning traffic. How do we configure AWS EventBridge event bus patterns to decouple async microservice event processing? We're evaluating vector database options for semantic search. How does Qdrant compare to Pinecone for low-latency HNSW search? What is the best pattern for managing distributed transactions across microservices without 2-phase commit overhead? What metrics best capture query execution latency degradation in distributed DuckDB analytical workloads? What security considerations apply when embedding WASM microservices inside an existing Rust backend server? How should we configure our OpenTelemetry collector sidecars to export traces to Grafana Tempo without overwhelming storage? Can you walk me through setting up automated standby failover for PostgreSQL using Patroni and Consul? What's the best practice for running database schema migrations on PostgreSQL without locking heavy production tables? How should we configure eBPF socket filters to enforce network security policies at the Linux kernel level? Our analytical queries on the data lakehouse are taking over 2 seconds. How can Apache Hudi partition compaction help? We're preparing mobile app v4.2 for release. How can we optimize offline data synchronization using SQLite WAL mode? How can we set up automated chaos testing experiments in staging using Chaos Mesh to validate service mesh resiliency? What is the recommended approach for scaling Kafka partition counts across broker nodes without disrupting consumers? We just deployed React 19 server components to staging. What metrics should we monitor to verify Core Web Vitals improvements? We have an intermittent race condition in our async task queue worker pool. How should we debug memory synchronization across workers? What are the key memory management techniques when tuning the Java Virtual Machine ZGC garbage collector for low pause times? We're planning to migrate our logging infrastructure from Elasticsearch to Loki. What cost savings should we expect? We're considering replacing legacy REST endpoints with GraphQL queries. What payload size reductions can we realistically expect? Our Redis cluster memory footprint is hitting 85%. How should we tune maxmemory policies and active defragmentation? How do we achieve 99.99% multi-region active-active availability across AWS us-east-1 and GCP us-central1? How can we automate synchronizing Figma design tokens directly into CSS custom properties via GitHub Actions? What are the compliance requirements for AWS KMS key rotation, and how should we automate key updates in HashiCorp Vault? Our Terraform deployments are failing due to state lock contention between feature branches. How should we modularize state files? Can we look at our CI/CD pipeline bottlenecks? Build times on pull requests have crept up to over 4 minutes. What criteria should we evaluate when interviewing candidates for the senior lead DevOps infrastructure role?\n[2026-11-24T21:59:00Z] Alex: [2026-11-24T21:59:00Z] Alex: Got it! I'll dive into the recent commits and run the local test to pinpoint the CI issue. Sam's sure to love the MX Master 3 for his Volvo rides, and I'll add a couple of book recommendations to the gift cards for Tom and Timmy. Looking forward to a smooth debugging session and a fun BBQ!\n[2026-09-05T15:10:00Z] Alex: [2026-09-05T15:10:00Z] Alex: My brother Tom has a son named Timmy who plays acoustic guitar. Can we conduct a post-mortem review for last Tuesday's routing incident? What caused the DNS resolution timeouts? What are the key memory management techniques when tuning the Java Virtual Machine ZGC garbage collector for low pause times? Could you review our API gateway cluster metrics? We've been seeing latency spikes during peak morning traffic. What is the best pattern for managing distributed transactions across microservices without 2-phase commit overhead? Our analytical queries on the data lakehouse are taking over 2 seconds. How can Apache Hudi partition compaction help? Can we look at our CI/CD pipeline bottlenecks? Build times on pull requests have crept up to over 4 minutes. How do we configure Envoy proxy rate limiting to protect public API endpoints against distributed traffic bursts? What metrics best capture query execution latency degradation in distributed DuckDB analytical workloads? What's the best practice for running database schema migrations on PostgreSQL without locking heavy production tables? The QA team reported flaky integration tests on the authentication endpoints. What strategies prevent test pollution? We're preparing mobile app v4.2 for release. How can we optimize offline data synchronization using SQLite WAL mode? Can you walk me through setting up automated standby failover for PostgreSQL using Patroni and Consul? We're planning to migrate our logging infrastructure from Elasticsearch to Loki. What cost savings should we expect? What security considerations apply when embedding WASM microservices inside an existing Rust backend server? We're considering replacing legacy REST endpoints with GraphQL queries. What payload size reductions can we realistically expect? What is the recommended approach for scaling Kafka partition counts across broker nodes without disrupting consumers? How can we set up automated chaos testing experiments in staging using Chaos Mesh to validate service mesh resiliency? Our Terraform deployments are failing due to state lock contention between feature branches. How should we modularize state files? What are the compliance requirements for AWS KMS key rotation, and how should we automate key updates in HashiCorp Vault? What criteria should we evaluate when interviewing candidates for the senior lead DevOps infrastructure role? How should we structure Prometheus Alertmanager rules to escalate alerts to PagerDuty only when CPU breaches 85% for 10 minutes? How do we configure AWS EventBridge event bus patterns to decouple async microservice event processing? We have an intermittent race condition in our async task queue worker pool. How should we debug memory synchronization across workers? How can we automate synchronizing Figma design tokens directly into CSS custom properties via GitHub Actions? Our Redis cluster memory footprint is hitting 85%. How should we tune maxmemory policies and active defragmentation? How should we configure eBPF socket filters to enforce network security policies at the Linux kernel level? How do we achieve 99.99% multi-region active-active availability across AWS us-east-1 and GCP us-central1? We're evaluating vector database options for semantic search. How does Qdrant compare to Pinecone for low-latency HNSW search? How should we configure our OpenTelemetry collector sidecars to export traces to Grafana Tempo without overwhelming storage?\n[2026-09-01T10:10:00Z] Assistant: [2026-09-01T10:10:00Z] Assistant: Certainly! Here\u2019s a concise draft you can use to confirm the family get-together details with Tom:\n\nHi Tom,\n\nCould you please confirm the date and time for the family get-together next weekend? Also, let me know if there are any specific dishes or activities you\u2019d like us to plan for. Looking forward to seeing everyone!\n\nBest,\nAlex\n[2026-10-13T18:45:00Z] Alex: [2026-10-13T18:45:00Z] Alex: Hey, just hit a snag on this integration \u2013 the build\u2019s failing on the new module. Any quick tips on debugging the dependency tree, or should I dive into the CI logs first? Also, heard Timmy\u2019s playing at the community center this weekend; thinking of picking up a guitar for his next recital\u2014any solid beginner recommendations?",
+      "pass": true,
+      "injected_tokens": 1219,
       "retrieval_time_ms": 3.76,
       "generation_time_seconds": 1.87,
-      "generated_output": "Unknown",
-      "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
-      "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
+      "generated_output": "No, the context states that Tom's son, Timmy, plays the acoustic guitar. Alex also mentions thinking of picking up a guitar for Timmy's next recital. There is no mention of Timmy playing the violin.",
+      "score": 1.0
     },
     {
       "id": "CAT6_AD_037",
@@ -3490,7 +3765,8 @@
       "injected_tokens": 1235,
       "retrieval_time_ms": 3.63,
       "generation_time_seconds": 1.79,
-      "generated_output": "No, the context states that Timmy, Tom's son, plays acoustic guitar. Alex mentions: \"My brother Tom has a son named Timmy who plays acoustic guitar.\" and later \"any quick gift ideas for Timmy's guitar hobby?\"."
+      "generated_output": "No, the context states that Timmy, Tom's son, plays acoustic guitar. Alex mentions: \"My brother Tom has a son named Timmy who plays acoustic guitar.\" and later \"any quick gift ideas for Timmy's guitar hobby?\".",
+      "score": 1.0
     },
     {
       "id": "CAT6_AD_038",
@@ -3503,6 +3779,7 @@
       "retrieval_time_ms": 3.58,
       "generation_time_seconds": 2.12,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -3517,6 +3794,7 @@
       "retrieval_time_ms": 2.69,
       "generation_time_seconds": 2.99,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -3530,7 +3808,8 @@
       "injected_tokens": 672,
       "retrieval_time_ms": 2.88,
       "generation_time_seconds": 2.12,
-      "generated_output": "For the new customer-analytics service:\n\n*   **Dave** suggests using PostgreSQL with read replicas because he has already validated it against their Vault dynamic credential rotation setup, making it the \"safe default.\"\n*   **Mark** suggests using MongoDB instead, stating it's \"way simpler to stand up.\""
+      "generated_output": "For the new customer-analytics service:\n\n*   **Dave** suggests using PostgreSQL with read replicas because he has already validated it against their Vault dynamic credential rotation setup, making it the \"safe default.\"\n*   **Mark** suggests using MongoDB instead, stating it's \"way simpler to stand up.\"",
+      "score": 1.0
     },
     {
       "id": "CAT9_SC_002",
@@ -3542,7 +3821,8 @@
       "injected_tokens": 189,
       "retrieval_time_ms": 2.86,
       "generation_time_seconds": 2.85,
-      "generated_output": "The payments service should deploy on **Monday**, not Friday.\n\n**Reason:** Dave explicitly stated on 2026-11-22 that, \"Given the SIL 3 chaos-testing requirement we confirmed for the payments service, do not deploy on a Friday -- schedule the rollout for Monday morning so the team can monitor it properly.\" Alex's later suggestion to ship on Friday afternoon contradicts this directive."
+      "generated_output": "The payments service should deploy on **Monday**, not Friday.\n\n**Reason:** Dave explicitly stated on 2026-11-22 that, \"Given the SIL 3 chaos-testing requirement we confirmed for the payments service, do not deploy on a Friday -- schedule the rollout for Monday morning so the team can monitor it properly.\" Alex's later suggestion to ship on Friday afternoon contradicts this directive.",
+      "score": 1.0
     },
     {
       "id": "CAT9_SC_003",
@@ -3554,7 +3834,8 @@
       "injected_tokens": 1121,
       "retrieval_time_ms": 3.03,
       "generation_time_seconds": 4.57,
-      "generated_output": "The minimum acceptable STC rating for MHT-84's east wing floor assemblies is **60**.\n\n**Reason:** On November 12, 2026, Sarah stated: \"I updated MHT-84 floor assemblies to STC 60 acoustic isolation rating on November 19. For MHT-84, all floor assemblies must maintain STC 60 minimum going forward -- do not approve any assembly below that rating.\" While Alex suggested STC 50 for the east wing on December 13, this was a suggestion to save budget and does not override the explicit directive from Sarah that all floor assemblies must maintain STC 60 minimum going forward."
+      "generated_output": "The minimum acceptable STC rating for MHT-84's east wing floor assemblies is **60**.\n\n**Reason:** On November 12, 2026, Sarah stated: \"I updated MHT-84 floor assemblies to STC 60 acoustic isolation rating on November 19. For MHT-84, all floor assemblies must maintain STC 60 minimum going forward -- do not approve any assembly below that rating.\" While Alex suggested STC 50 for the east wing on December 13, this was a suggestion to save budget and does not override the explicit directive from Sarah that all floor assemblies must maintain STC 60 minimum going forward.",
+      "score": 1.0
     },
     {
       "id": "CAT5_PM_H001",
@@ -3566,7 +3847,8 @@
       "injected_tokens": 904,
       "retrieval_time_ms": 2.88,
       "generation_time_seconds": 1.86,
-      "generated_output": "When Priya is deciding between an enterprise role and a startup offer, I told you she should weigh the following factors:\n1) Evaluate Risk vs. Stability.\n2) Assess Growth and Learning Opportunities.\n3) Evaluate Equity Value and Exit Potential."
+      "generated_output": "When Priya is deciding between an enterprise role and a startup offer, I told you she should weigh the following factors:\n1) Evaluate Risk vs. Stability.\n2) Assess Growth and Learning Opportunities.\n3) Evaluate Equity Value and Exit Potential.",
+      "score": 1.0
     },
     {
       "id": "CAT5_PM_H002",
@@ -3574,13 +3856,12 @@
       "question": "What tech stack did you recommend for Ray's first to-do list app?",
       "expected_answer": "For a beginner like Ray just starting to learn to code, a simple and approachable tech stack for building a to-do list app is:\n\n1. **Programming Language: JavaScript**  \n   - JavaScript is widely used for web development and is relatively easy for beginners to grasp. It allows for both front-end and back-end development (with Node.js) in a single language, which can be beneficial for learning purposes.\n\n2. **Front-End Framework/Library: HTML + CSS + Vanilla JavaScript (no framework)**  \n   - Starting with plain HTML for structure, CSS for styling, and vanilla JavaScript for interactivity keeps the learning curve gentle. This approach helps Ray understand the fundamentals before introducing more complex frameworks.  \n   - Alternatively, if Ray is interested in a lightweight framework, **React** could be considered later, but for a first project, sticking with vanilla JavaScript is ideal.\n\n3. **Data Storage (Optional, for persistence): Local Storage**  \n   - To store the to-do items locally in the user's browser without needing a backend server, using **Web Storage API (localStorage)** is a straightforward choice. It allows saving key-value pairs in the browser, which is perfect for a simple to-do list app.\n\nThis stack focuses on simplicity and clarity, allowing Ray to concentrate on learning the core concepts of coding without being overwhelmed by complex tooling or infrastructure. As Ray becomes more comfortable, he can explore adding a backend (e.g., using Node.js with Express) or more sophisticated front-end frameworks (e.g., React, Vue.js) to expand his skills.",
       "retrieved_context": "[2026-11-18T15:20:00Z] Assistant: [2026-11-18T15:20:00Z] Assistant: For a beginner like Ray just starting to learn to code, a simple and approachable tech stack for building a to-do list app is:\n\n1. **Programming Language: JavaScript**  \n   - JavaScript is widely used for web development and is relatively easy for beginners to grasp. It allows for both front-end and back-end development (with Node.js) in a single language, which can be beneficial for learning purposes.\n\n2. **Front-End Framework/Library: HTML + CSS + Vanilla JavaScript (no framework)**  \n   - Starting with plain HTML for structure, CSS for styling, and vanilla JavaScript for interactivity keeps the learning curve gentle. This approach helps Ray understand the fundamentals before introducing more complex frameworks.  \n   - Alternatively, if Ray is interested in a lightweight framework, **React** could be considered later, but for a first project, sticking with vanilla JavaScript is ideal.\n\n3. **Data Storage (Optional, for persistence): Local Storage**  \n   - To store the to-do items locally in the user's browser without needing a backend server, using **Web Storage API (localStorage)** is a straightforward choice. It allows saving key-value pairs in the browser, which is perfect for a simple to-do list app.\n\nThis stack focuses on simplicity and clarity, allowing Ray to concentrate on learning the core concepts of coding without being overwhelmed by complex tooling or infrastructure. As Ray becomes more comfortable, he can explore adding a backend (e.g., using Node.js with Express) or more sophisticated front-end frameworks (e.g., React, Vue.js) to expand his skills.\n[2026-12-07T10:54:00Z] Elena: [2026-12-07T10:54:00Z] Elena: That's super helpful, thanks! I've been documenting the setup process and plan to add some performance metrics. Any suggestions on visualizing those benchmarks in a portfolio-friendly way? Also, how's the modular design system coming along\u2014did they run into any tricky integration points with the front-end?\n[2026-09-14T03:45:00Z] Elena: [2026-09-14T03:45:00Z] Elena: Hey there! I've been diving deeper into Rust and WebAssembly for my backend microservices project, and I'm really excited about the performance boosts I'm seeing. But I'm also feeling a bit overwhelmed\u2014how do you typically handle the learning curve when switching to a new programming language and tech stack? Is it normal to feel like I'm constantly questioning my decisions? Any tips on building a solid portfolio piece while tackling these challenges? And hey, how's Sarah doing these days\u2014any fun family updates?\n[2026-10-09T13:55:00Z] Sarah: [2026-10-09T13:55:00Z] Sarah: Everything's a load path again\u2014just got the contractor\u2019s revised schedule, which looks like a stress test for my patience. Leo\u2019s physics set is almost done, but I\u2019m still debating whether the library or skipping soccer is the better move. Oh, and did I mention gravity might just be an illusion? Anyway, the Iceberg Method says we handle physics first, then we\u2019ll figure out the rest. Any tips on a quick, non-awkward way to explain to the client why the last-minute tweak is adding so much pressure?\n[2026-12-07T10:48:00Z] Assistant: [2026-12-07T10:48:00Z] Assistant: It's completely normal to feel like you're continuously learning in tech, especially with evolving languages like Rust and platforms like WebAssembly. For your portfolio, highlight the specific challenges you solved, the architecture decisions you made, and include any performance benchmarks or CI/CD pipeline details to demonstrate depth. Sarah is doing well\u2014she just wrapped up the prototype for the new modular design system and is now focused on integrating it with the front-end framework. Keep up the great work, and feel free to share more details if you'd like feedback on your portfolio setup!",
-      "pass": false,
+      "pass": true,
       "injected_tokens": 564,
       "retrieval_time_ms": 2.73,
       "generation_time_seconds": 1.59,
       "generated_output": "For Ray's first to-do list app, the recommended tech stack is:\n\n1.  **Programming Language:** JavaScript\n2.  **Front-End Framework/Library:** HTML + CSS + Vanilla JavaScript (no framework)\n3.  **Data Storage:** Local Storage (using the Web Storage API)",
-      "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
-      "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
+      "score": 1.0
     },
     {
       "id": "CAT6_AD_040",
@@ -3592,7 +3873,8 @@
       "injected_tokens": 839,
       "retrieval_time_ms": 3.19,
       "generation_time_seconds": 1.99,
-      "generated_output": "No, that's not what I said. When Priya is deciding between an enterprise role and a startup offer, I advised her to \"Evaluate Risk vs. Stability,\" among other factors like growth and learning opportunities, and equity value and exit potential."
+      "generated_output": "No, that's not what I said. When Priya is deciding between an enterprise role and a startup offer, I advised her to \"Evaluate Risk vs. Stability,\" among other factors like growth and learning opportunities, and equity value and exit potential.",
+      "score": 1.0
     },
     {
       "id": "CAT6_AD_041",
@@ -3604,7 +3886,8 @@
       "injected_tokens": 502,
       "retrieval_time_ms": 2.75,
       "generation_time_seconds": 2.27,
-      "generated_output": "No, for Ray's first to-do list app, I recommended starting with plain HTML, CSS, and Vanilla JavaScript. I mentioned that React could be considered later, but for a first project, sticking with vanilla JavaScript is ideal."
+      "generated_output": "No, for Ray's first to-do list app, I recommended starting with plain HTML, CSS, and Vanilla JavaScript. I mentioned that React could be considered later, but for a first project, sticking with vanilla JavaScript is ideal.",
+      "score": 1.0
     }
   ]
 }

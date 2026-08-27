@@ -26,15 +26,102 @@ import os
 
 DEFAULT_OUTPUT_DIR = ROOT / "results"
 
-# Generic short acceptors ("no"/"yes") legitimately count toward a PASS -- a
-# bare correction/confirmation is an acceptable answer. But they are also
-# common enough in ordinary dialogue that treating them as "the fact is in
-# context" for failure-cause diagnosis produces false RETRIEVAL vs GENERATION
-# labels (verified: "no" alone made ~65% of Adversarial Defense misses look
-# like generation failures when the specific corrected fact was never
-# retrieved at all). Excluded only from that diagnostic check, not from
-# scoring.
+# Generic short acceptors ("no"/"yes") are common enough in ordinary dialogue
+# that they're unreliable as *the* signal of a correct answer on their own:
+# a model can say "No, I'm not sure" without ever supplying the corrected
+# fact and still trivially contain the word "no". Excluded from 'exact'-mode
+# scoring (a specific fact term is required there) and from the
+# fact-in-context diagnostic (verified: this alone made ~65% of Adversarial
+# Defense misses look like generation failures when the specific corrected
+# fact was never retrieved at all). Still honored under 'judgment' mode,
+# where a bare affirmative/negative genuinely is the expected answer.
 GENERIC_ACCEPTORS = {"no", "yes"}
+
+
+def _fmt_score(x: float) -> str:
+    """245 instead of 245.0 when there's no partial credit in the mix, 245.5 when there is."""
+    return str(int(x)) if float(x).is_integer() else f"{x:.1f}"
+
+
+def _term_hit(term: str, text_clean: str) -> bool:
+    """Word-boundary match for short terms (<=3 chars, to avoid substring noise
+    like 'no' inside 'know'), plain substring for longer ones."""
+    term_clean = term.lower().strip()
+    if not term_clean:
+        return False
+    if len(term_clean) <= 3:
+        return re.search(r"\b" + re.escape(term_clean) + r"\b", text_clean) is not None
+    return term_clean in text_clean
+
+
+def _diagnose_zero(specific_terms, context_clean: str, use_llm_generation: bool) -> dict:
+    fact_in_context = any(_term_hit(t, context_clean) for t in specific_terms if len(t.strip()) > 1)
+    if not fact_in_context:
+        return {"score": 0.0, "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
+                "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."}
+    if use_llm_generation:
+        return {"score": 0.0, "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
+                "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."}
+    return {"score": 0.0, "failure_cause": "FORMAT_OR_EXACT_KEYWORD_MISMATCH",
+            "failure_reason": "Fact was present in retrieved memory payload, but exact keyword matching criteria failed."}
+
+
+def score_item(item: dict, q: str, target_text: str, context: str, use_llm_generation: bool) -> dict:
+    """Per-question grading, dispatched by item['grading_mode']:
+      - 'exact' (default): a specific fact term must be present -- a bare
+        generic "no"/"yes" alone does not satisfy a fact-correction question.
+      - 'judgment': for deduction/reasoning-correction questions with no single
+        "real" fact term -- a general affirmative/negative is the actual answer.
+      - 'list': multi-part answers. Each list_items entry is a set of synonyms
+        for one required sub-fact; score is 1.0 if all are present, 0.5 if some
+        (but not all) are present, 0.0 if none are.
+    Returns {"score": 0.0/0.5/1.0, "failure_cause": str|None, "failure_reason": str|None}.
+    """
+    cat = item["category"]
+    accepted_list = item.get("accepted_answers", [item.get("ground_truth_answer", "")])
+    grading_mode = item.get("grading_mode", "exact")
+    target_clean = target_text.lower()
+    context_clean = context.lower()
+
+    if cat == "Unanswerable & Absent Memory Refusal":
+        if use_llm_generation:
+            match = any(w in target_clean for w in ["unknown", "not mentioned", "not stated", "no information", "never discussed"])
+        else:
+            fetched_distractor = False
+            if "tokyo" in q.lower() and "tokyo" in target_clean and "vacation" not in target_clean:
+                fetched_distractor = True
+            elif "electric car" in q.lower() and "electric car" in target_clean and "purchased" not in target_clean:
+                fetched_distractor = True
+            elif "dog" in q.lower() and "dog" in target_clean and "sarah" not in target_clean:
+                fetched_distractor = True
+            match = not fetched_distractor
+        if match:
+            return {"score": 1.0, "failure_cause": None, "failure_reason": None}
+        return {"score": 0.0, "failure_cause": "FALSE_RETRIEVAL_DISTRACTOR_TRAP",
+                "failure_reason": "Provider retrieved distractor memory payload for an unanswerable query."}
+
+    if grading_mode == "list" and item.get("list_items"):
+        list_items = item["list_items"]
+        satisfied = sum(1 for synonyms in list_items if any(_term_hit(s, target_clean) for s in synonyms))
+        n = len(list_items)
+        if satisfied == n:
+            return {"score": 1.0, "failure_cause": None, "failure_reason": None}
+        if satisfied > 0:
+            return {"score": 0.5, "failure_cause": "PARTIAL_LIST_MATCH",
+                    "failure_reason": f"Only {satisfied} of {n} required answer components were found."}
+        specific_terms = [s for synonyms in list_items for s in synonyms]
+        return _diagnose_zero(specific_terms, context_clean, use_llm_generation)
+
+    if grading_mode == "judgment":
+        if any(_term_hit(a, target_clean) for a in accepted_list):
+            return {"score": 1.0, "failure_cause": None, "failure_reason": None}
+        return _diagnose_zero(accepted_list, context_clean, use_llm_generation)
+
+    # exact mode (default)
+    specific_terms = [a for a in accepted_list if a.lower().strip() not in GENERIC_ACCEPTORS]
+    if any(_term_hit(a, target_clean) for a in specific_terms):
+        return {"score": 1.0, "failure_cause": None, "failure_reason": None}
+    return _diagnose_zero(specific_terms, context_clean, use_llm_generation)
 
 class FPAMBEvaluator:
     def __init__(
@@ -170,67 +257,18 @@ Answer accurately based on context above. If context does not contain informatio
                 target_text = context
                 gen_time = 0.0
 
-            # Step 3: Refusal-Aware & Distractor-Sensitive Evaluation
-            target_clean = target_text.lower()
-            
-            if cat == "Unanswerable & Absent Memory Refusal":
-                if self.use_llm_generation:
-                    match = any(word in target_clean for word in ["unknown", "not mentioned", "not stated", "no information", "never discussed"])
-                else:
-                    fetched_distractor = False
-                    if "tokyo" in q.lower() and "tokyo" in target_clean and "vacation" not in target_clean:
-                        fetched_distractor = True
-                    elif "electric car" in q.lower() and "electric car" in target_clean and "purchased" not in target_clean:
-                        fetched_distractor = True
-                    elif "dog" in q.lower() and "dog" in target_clean and "sarah" not in target_clean:
-                        fetched_distractor = True
-
-                    match = not fetched_distractor
-            else:
-                match = False
-                for ans in accepted_list:
-                    ans_clean = ans.lower().strip()
-                    if len(ans_clean) <= 3:
-                        pattern = r"\b" + re.escape(ans_clean) + r"\b"
-                        if re.search(pattern, target_clean):
-                            match = True
-                            break
-                    else:
-                        if ans_clean in target_clean:
-                            match = True
-                            break
+            # Step 3: Per-Question Graded Evaluation (exact / judgment / list)
+            result = score_item(item, q, target_text, context, self.use_llm_generation)
+            score = result["score"]
+            match = score >= 1.0
 
             category_scores[cat]["total"] += 1
-            failure_cause = None
-            failure_reason = None
-
-            if match:
-                category_scores[cat]["correct"] += 1
-                correct_count += 1
-            else:
-                if cat == "Unanswerable & Absent Memory Refusal":
-                    failure_cause = "FALSE_RETRIEVAL_DISTRACTOR_TRAP"
-                    failure_reason = "Provider retrieved distractor memory payload for an unanswerable query."
-                else:
-                    context_clean = context.lower()
-                    fact_in_context = any(
-                        ans.lower().strip() in context_clean
-                        for ans in accepted_list
-                        if len(ans.strip()) > 1 and ans.lower().strip() not in GENERIC_ACCEPTORS
-                    )
-                    if not fact_in_context:
-                        failure_cause = "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION"
-                        failure_reason = "Ground-truth answer fact never appeared in the retrieved memory context payload."
-                    else:
-                        if self.use_llm_generation:
-                            failure_cause = "GENERATION_FAILURE_LLM_OUTPUT_MISSED"
-                            failure_reason = "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
-                        else:
-                            failure_cause = "FORMAT_OR_EXACT_KEYWORD_MISMATCH"
-                            failure_reason = "Fact was present in retrieved memory payload, but exact keyword matching criteria failed."
+            category_scores[cat]["correct"] += score
+            correct_count += score
 
             if idx % 25 == 0 or idx == 1:
-                print(f"[{idx:03d}/{total_q}] [{cat[:18]:<18}] Q: '{q[:32]}...' -> {'[PASS]' if match else '[FAIL]'}", flush=True)
+                status = "[PASS]" if match else ("[PARTIAL]" if score > 0 else "[FAIL]")
+                print(f"[{idx:03d}/{total_q}] [{cat[:18]:<18}] Q: '{q[:32]}...' -> {status}", flush=True)
 
             log_entry = {
                 "id": q_id,
@@ -239,6 +277,7 @@ Answer accurately based on context above. If context does not contain informatio
                 "expected_answer": expected,
                 "retrieved_context": context,
                 "pass": match,
+                "score": score,
                 "injected_tokens": inj_tok,
                 "retrieval_time_ms": round(ret_time * 1000.0, 2),
                 "generation_time_seconds": round(gen_time, 2)
@@ -246,8 +285,8 @@ Answer accurately based on context above. If context does not contain informatio
             if self.use_llm_generation:
                 log_entry["generated_output"] = target_text
             if not match:
-                log_entry["failure_cause"] = failure_cause
-                log_entry["failure_reason"] = failure_reason
+                log_entry["failure_cause"] = result["failure_cause"]
+                log_entry["failure_reason"] = result["failure_reason"]
 
             item_logs.append(log_entry)
 
@@ -266,13 +305,13 @@ Answer accurately based on context above. If context does not contain informatio
         tok_eff_ratio = (accuracy_pct / (avg_inj_tok / 1000.0)) if avg_inj_tok > 0 else 0
 
         print("\n=========================================================================", flush=True)
-        print(f"   FP-AMB EXAM COMPLETE: {self.provider_name} ACCURACY: {accuracy_pct:.1f}% ({correct_count}/{total_q})", flush=True)
+        print(f"   FP-AMB EXAM COMPLETE: {self.provider_name} ACCURACY: {accuracy_pct:.1f}% ({_fmt_score(correct_count)}/{total_q})", flush=True)
         print("=========================================================================\n", flush=True)
 
         print("----------------------------------------------------------------------------------------------------", flush=True)
         print(f"                       FP-AMB PERFORMANCE REPORT: {self.provider_name}", flush=True)
         print("----------------------------------------------------------------------------------------------------", flush=True)
-        print(f"  - Overall Score:                        {accuracy_pct:.1f}% ({correct_count}/{total_q} items passed)")
+        print(f"  - Overall Score:                        {accuracy_pct:.1f}% ({_fmt_score(correct_count)}/{total_q} items passed)")
         print(f"  - Total Corpus Size:                    ~{self.corpus_token_est:,} tokens ({self.corpus_turn_count} turns across 60 sessions)")
         print(f"  - Ingestion Phase Time:                 {ingest_time:.2f} seconds")
         print(f"  - Total Exam Duration:                  {total_eval_time:.1f} seconds")
@@ -303,7 +342,7 @@ Answer accurately based on context above. If context does not contain informatio
             "total_corpus_tokens": self.corpus_token_est,
             "total_evaluated_questions": total_q,
             "overall_accuracy_pct": round(accuracy_pct, 1),
-            "passed_items": correct_count,
+            "passed_items": round(correct_count, 1),
             "ingestion_duration_seconds": round(ingest_time, 2),
             "eval_duration_seconds": round(total_eval_time, 2),
             "avg_retrieval_latency_ms": round(avg_ret_ms, 2),

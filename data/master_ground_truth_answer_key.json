@@ -9,7 +9,9 @@
       "Tom"
     ],
     "is_dynamic_key": false,
-    "description": "Unique single-hop fact recall #1"
+    "description": "Unique single-hop fact recall #1",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT1_SH_002": {
     "id": "CAT1_SH_002",
@@ -20,7 +22,9 @@
       "Leo"
     ],
     "is_dynamic_key": false,
-    "description": "Unique single-hop fact recall #2"
+    "description": "Unique single-hop fact recall #2",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT1_SH_003": {
     "id": "CAT1_SH_003",
@@ -33,7 +37,9 @@
       "MHT84"
     ],
     "is_dynamic_key": false,
-    "description": "Unique single-hop fact recall #3"
+    "description": "Unique single-hop fact recall #3",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT1_SH_004": {
     "id": "CAT1_SH_004",
@@ -46,7 +52,9 @@
       "Volvo"
     ],
     "is_dynamic_key": false,
-    "description": "Unique single-hop fact recall #4"
+    "description": "Unique single-hop fact recall #4",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT1_SH_005": {
     "id": "CAT1_SH_005",
@@ -57,7 +65,9 @@
       "Dave"
     ],
     "is_dynamic_key": false,
-    "description": "Unique single-hop fact recall #5"
+    "description": "Unique single-hop fact recall #5",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT1_SH_006": {
     "id": "CAT1_SH_006",
@@ -68,7 +78,9 @@
       "Google"
     ],
     "is_dynamic_key": false,
-    "description": "Unique single-hop fact recall #6"
+    "description": "Unique single-hop fact recall #6",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT1_SH_007": {
     "id": "CAT1_SH_007",
@@ -81,7 +93,9 @@
       "S3 Express"
     ],
     "is_dynamic_key": false,
-    "description": "Unique single-hop fact recall #7"
+    "description": "Unique single-hop fact recall #7",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT1_SH_008": {
     "id": "CAT1_SH_008",
@@ -92,7 +106,9 @@
       "Elena"
     ],
     "is_dynamic_key": false,
-    "description": "Unique single-hop fact recall #8"
+    "description": "Unique single-hop fact recall #8",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT1_SH_009": {
     "id": "CAT1_SH_009",
@@ -103,7 +119,9 @@
       "Algebra"
     ],
     "is_dynamic_key": false,
-    "description": "Unique single-hop fact recall #9"
+    "description": "Unique single-hop fact recall #9",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT1_SH_010": {
     "id": "CAT1_SH_010",
@@ -116,7 +134,9 @@
       "STC55"
     ],
     "is_dynamic_key": false,
-    "description": "Unique single-hop fact recall #10"
+    "description": "Unique single-hop fact recall #10",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT1_SH_011": {
     "id": "CAT1_SH_011",
@@ -127,7 +147,9 @@
       "Timmy"
     ],
     "is_dynamic_key": false,
-    "description": "Unique single-hop fact recall #11"
+    "description": "Unique single-hop fact recall #11",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT1_SH_012": {
     "id": "CAT1_SH_012",
@@ -140,7 +162,9 @@
       "AWS"
     ],
     "is_dynamic_key": false,
-    "description": "Unique single-hop fact recall #12"
+    "description": "Unique single-hop fact recall #12",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT1_SH_013": {
     "id": "CAT1_SH_013",
@@ -152,7 +176,9 @@
       "Meridian Horizon Tower"
     ],
     "is_dynamic_key": false,
-    "description": "Unique single-hop fact recall #13"
+    "description": "Unique single-hop fact recall #13",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT1_SH_014": {
     "id": "CAT1_SH_014",
@@ -164,7 +190,9 @@
       "psi <= 0.03"
     ],
     "is_dynamic_key": false,
-    "description": "Unique single-hop fact recall #14"
+    "description": "Unique single-hop fact recall #14",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT1_SH_015": {
     "id": "CAT1_SH_015",
@@ -175,7 +203,9 @@
       "ACDelco"
     ],
     "is_dynamic_key": false,
-    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation"
+    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT1_SH_016": {
     "id": "CAT1_SH_016",
@@ -186,7 +216,9 @@
       "IP hash"
     ],
     "is_dynamic_key": false,
-    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation"
+    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT1_SH_017": {
     "id": "CAT1_SH_017",
@@ -198,7 +230,9 @@
       "Argo"
     ],
     "is_dynamic_key": false,
-    "description": "Unique single-hop fact recall #17"
+    "description": "Unique single-hop fact recall #17",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT1_SH_018": {
     "id": "CAT1_SH_018",
@@ -209,7 +243,9 @@
       "5000"
     ],
     "is_dynamic_key": false,
-    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation"
+    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT1_SH_019": {
     "id": "CAT1_SH_019",
@@ -221,7 +257,9 @@
       "HashiCorp Vault"
     ],
     "is_dynamic_key": false,
-    "description": "Unique single-hop fact recall #19"
+    "description": "Unique single-hop fact recall #19",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT1_SH_020": {
     "id": "CAT1_SH_020",
@@ -232,7 +270,9 @@
       "3 attempts"
     ],
     "is_dynamic_key": false,
-    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation"
+    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT1_SH_021": {
     "id": "CAT1_SH_021",
@@ -244,7 +284,9 @@
       "2 hours"
     ],
     "is_dynamic_key": false,
-    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation"
+    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT1_SH_022": {
     "id": "CAT1_SH_022",
@@ -255,7 +297,9 @@
       "perpendicular distance"
     ],
     "is_dynamic_key": false,
-    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation"
+    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT1_SH_023": {
     "id": "CAT1_SH_023",
@@ -267,7 +311,9 @@
       "modular sofa"
     ],
     "is_dynamic_key": false,
-    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation"
+    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT1_SH_024": {
     "id": "CAT1_SH_024",
@@ -279,7 +325,9 @@
       "ZGC tuning"
     ],
     "is_dynamic_key": false,
-    "description": "Unique single-hop fact recall #24"
+    "description": "Unique single-hop fact recall #24",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT1_SH_025": {
     "id": "CAT1_SH_025",
@@ -290,7 +338,9 @@
       "Asana"
     ],
     "is_dynamic_key": false,
-    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation"
+    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT1_SH_026": {
     "id": "CAT1_SH_026",
@@ -302,7 +352,9 @@
       "Temporal.io"
     ],
     "is_dynamic_key": false,
-    "description": "Unique single-hop fact recall #26"
+    "description": "Unique single-hop fact recall #26",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT1_SH_027": {
     "id": "CAT1_SH_027",
@@ -313,7 +365,9 @@
       "Yamaha"
     ],
     "is_dynamic_key": false,
-    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation"
+    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT1_SH_028": {
     "id": "CAT1_SH_028",
@@ -325,7 +379,9 @@
       "22"
     ],
     "is_dynamic_key": false,
-    "description": "Unique single-hop fact recall #28"
+    "description": "Unique single-hop fact recall #28",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT1_SH_029": {
     "id": "CAT1_SH_029",
@@ -337,7 +393,9 @@
       "dependency:tree"
     ],
     "is_dynamic_key": false,
-    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation"
+    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT1_SH_030": {
     "id": "CAT1_SH_030",
@@ -348,7 +406,9 @@
       "event_date"
     ],
     "is_dynamic_key": false,
-    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation"
+    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT1_SH_031": {
     "id": "CAT1_SH_031",
@@ -359,7 +419,9 @@
       "wasm-bindgen-test"
     ],
     "is_dynamic_key": false,
-    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation"
+    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT1_SH_032": {
     "id": "CAT1_SH_032",
@@ -371,7 +433,9 @@
       "Alertmanager v2"
     ],
     "is_dynamic_key": false,
-    "description": "Unique single-hop fact recall #32"
+    "description": "Unique single-hop fact recall #32",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT1_SH_033": {
     "id": "CAT1_SH_033",
@@ -383,7 +447,9 @@
       "MX Master 3"
     ],
     "is_dynamic_key": false,
-    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation"
+    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT1_SH_034": {
     "id": "CAT1_SH_034",
@@ -395,7 +461,9 @@
       "TLS handshake performance"
     ],
     "is_dynamic_key": false,
-    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation"
+    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT1_SH_035": {
     "id": "CAT1_SH_035",
@@ -406,7 +474,9 @@
       "4:30 PM"
     ],
     "is_dynamic_key": false,
-    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation"
+    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_001": {
     "id": "CAT2_CSMH_001",
@@ -418,7 +488,9 @@
       "guitar"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #1"
+    "description": "Unique multi-hop reasoning #1",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_002": {
     "id": "CAT2_CSMH_002",
@@ -431,7 +503,17 @@
       "WASM"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #2"
+    "description": "Unique multi-hop reasoning #2",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "Rust"
+      ],
+      [
+        "WebAssembly",
+        "WASM"
+      ]
+    ]
   },
   "CAT2_CSMH_003": {
     "id": "CAT2_CSMH_003",
@@ -444,7 +526,9 @@
       "Apache Iceberg"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #3"
+    "description": "Unique multi-hop reasoning #3",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_004": {
     "id": "CAT2_CSMH_004",
@@ -457,7 +541,9 @@
       "MHT84"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #4"
+    "description": "Unique multi-hop reasoning #4",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_005": {
     "id": "CAT2_CSMH_005",
@@ -468,7 +554,9 @@
       "Physics"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #5"
+    "description": "Unique multi-hop reasoning #5",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_006": {
     "id": "CAT2_CSMH_006",
@@ -481,7 +569,9 @@
       "Volvo"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #6"
+    "description": "Unique multi-hop reasoning #6",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_007": {
     "id": "CAT2_CSMH_007",
@@ -494,7 +584,9 @@
       "desk"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #7"
+    "description": "Unique multi-hop reasoning #7",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_008": {
     "id": "CAT2_CSMH_008",
@@ -505,7 +597,9 @@
       "Anthropic"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #8"
+    "description": "Unique multi-hop reasoning #8",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_009": {
     "id": "CAT2_CSMH_009",
@@ -518,7 +612,9 @@
       "STC60"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #9"
+    "description": "Unique multi-hop reasoning #9",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_010": {
     "id": "CAT2_CSMH_010",
@@ -530,7 +626,9 @@
       "Uncle Sam"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #10"
+    "description": "Unique multi-hop reasoning #10",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_011": {
     "id": "CAT2_CSMH_011",
@@ -542,7 +640,9 @@
       "acoustic guitar"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #11"
+    "description": "Unique multi-hop reasoning #11",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_012": {
     "id": "CAT2_CSMH_012",
@@ -553,7 +653,9 @@
       "Elena"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #12"
+    "description": "Unique multi-hop reasoning #12",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_013": {
     "id": "CAT2_CSMH_013",
@@ -564,7 +666,9 @@
       "Dave"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #13"
+    "description": "Unique multi-hop reasoning #13",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_014": {
     "id": "CAT2_CSMH_014",
@@ -575,7 +679,9 @@
       "Anthropic"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #14"
+    "description": "Unique multi-hop reasoning #14",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_015": {
     "id": "CAT2_CSMH_015",
@@ -587,7 +693,9 @@
       "STC-60"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #15"
+    "description": "Unique multi-hop reasoning #15",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_016": {
     "id": "CAT2_CSMH_016",
@@ -598,7 +706,9 @@
       "Sam"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #16"
+    "description": "Unique multi-hop reasoning #16",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_017": {
     "id": "CAT2_CSMH_017",
@@ -609,7 +719,9 @@
       "Algebra"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #17"
+    "description": "Unique multi-hop reasoning #17",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_018": {
     "id": "CAT2_CSMH_018",
@@ -620,7 +732,9 @@
       "conference room"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #18"
+    "description": "Unique multi-hop reasoning #18",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_019": {
     "id": "CAT2_CSMH_019",
@@ -632,7 +746,9 @@
       "Apache Iceberg"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #19"
+    "description": "Unique multi-hop reasoning #19",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_020": {
     "id": "CAT2_CSMH_020",
@@ -644,7 +760,9 @@
       "Meridian Horizon Tower"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #20"
+    "description": "Unique multi-hop reasoning #20",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_021": {
     "id": "CAT2_CSMH_021",
@@ -656,7 +774,17 @@
       "WASM"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #21"
+    "description": "Unique multi-hop reasoning #21",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "Rust"
+      ],
+      [
+        "WebAssembly",
+        "WASM"
+      ]
+    ]
   },
   "CAT2_CSMH_022": {
     "id": "CAT2_CSMH_022",
@@ -667,7 +795,9 @@
       "Sam"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #22"
+    "description": "Unique multi-hop reasoning #22",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_023": {
     "id": "CAT2_CSMH_023",
@@ -678,7 +808,9 @@
       "Tom"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #23"
+    "description": "Unique multi-hop reasoning #23",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_024": {
     "id": "CAT2_CSMH_024",
@@ -689,7 +821,9 @@
       "Anthropic"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #24"
+    "description": "Unique multi-hop reasoning #24",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_025": {
     "id": "CAT2_CSMH_025",
@@ -700,7 +834,9 @@
       "Physics"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #25"
+    "description": "Unique multi-hop reasoning #25",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_026": {
     "id": "CAT2_CSMH_026",
@@ -712,7 +848,9 @@
       "Mark's desk"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #26"
+    "description": "Unique multi-hop reasoning #26",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_027": {
     "id": "CAT2_CSMH_027",
@@ -724,7 +862,9 @@
       "Elena is Sarah's sister"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #27"
+    "description": "Unique multi-hop reasoning #27",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_028": {
     "id": "CAT2_CSMH_028",
@@ -736,7 +876,9 @@
       "Alex's nephew"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #28"
+    "description": "Unique multi-hop reasoning #28",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_029": {
     "id": "CAT2_CSMH_029",
@@ -748,7 +890,9 @@
       "AWS S3 Express"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #29"
+    "description": "Unique multi-hop reasoning #29",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_030": {
     "id": "CAT2_CSMH_030",
@@ -760,7 +904,9 @@
       "STC-55"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #30"
+    "description": "Unique multi-hop reasoning #30",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_031": {
     "id": "CAT2_CSMH_031",
@@ -772,7 +918,9 @@
       "STC-60"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #31"
+    "description": "Unique multi-hop reasoning #31",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_032": {
     "id": "CAT2_CSMH_032",
@@ -783,7 +931,9 @@
       "Dave"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #32"
+    "description": "Unique multi-hop reasoning #32",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_033": {
     "id": "CAT2_CSMH_033",
@@ -796,7 +946,9 @@
       "Volvo 1800ES"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #33"
+    "description": "Unique multi-hop reasoning #33",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_034": {
     "id": "CAT2_CSMH_034",
@@ -808,7 +960,9 @@
       "UX design"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #34"
+    "description": "Unique multi-hop reasoning #34",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_035": {
     "id": "CAT2_CSMH_035",
@@ -821,7 +975,9 @@
       "ASan"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #35"
+    "description": "Unique multi-hop reasoning #35",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_036": {
     "id": "CAT2_CSMH_036",
@@ -832,7 +988,9 @@
       "UnifiedV2DBClient"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #36"
+    "description": "Unique multi-hop reasoning #36",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_037": {
     "id": "CAT2_CSMH_037",
@@ -843,7 +1001,9 @@
       "SearchAPI_HighThroughput"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #37"
+    "description": "Unique multi-hop reasoning #37",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_038": {
     "id": "CAT2_CSMH_038",
@@ -855,7 +1015,9 @@
       "SVID"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #38"
+    "description": "Unique multi-hop reasoning #38",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_039": {
     "id": "CAT2_CSMH_039",
@@ -868,7 +1030,17 @@
       "reward chart"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #39"
+    "description": "Unique multi-hop reasoning #39",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "Pomodoro",
+        "15-minute"
+      ],
+      [
+        "reward chart"
+      ]
+    ]
   },
   "CAT2_CSMH_040": {
     "id": "CAT2_CSMH_040",
@@ -880,7 +1052,16 @@
       "Google UX"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #40"
+    "description": "Unique multi-hop reasoning #40",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "Figma"
+      ],
+      [
+        "Google UX"
+      ]
+    ]
   },
   "CAT2_CSMH_041": {
     "id": "CAT2_CSMH_041",
@@ -893,7 +1074,17 @@
       "raw pointers"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #41"
+    "description": "Unique multi-hop reasoning #41",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "Valgrind",
+        "ASan"
+      ],
+      [
+        "raw pointers"
+      ]
+    ]
   },
   "CAT2_CSMH_042": {
     "id": "CAT2_CSMH_042",
@@ -905,7 +1096,9 @@
       "Meridian Horizon Tower"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #42"
+    "description": "Unique multi-hop reasoning #42",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_043": {
     "id": "CAT2_CSMH_043",
@@ -916,7 +1109,9 @@
       "Google"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #43"
+    "description": "Unique multi-hop reasoning #43",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_044": {
     "id": "CAT2_CSMH_044",
@@ -927,7 +1122,9 @@
       "Anthropic"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #44"
+    "description": "Unique multi-hop reasoning #44",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT2_CSMH_045": {
     "id": "CAT2_CSMH_045",
@@ -938,7 +1135,9 @@
       "Tom"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #45"
+    "description": "Unique multi-hop reasoning #45",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT3_TR_001": {
     "id": "CAT3_TR_001",
@@ -950,7 +1149,9 @@
       "28"
     ],
     "is_dynamic_key": false,
-    "description": "Unique temporal reasoning #1"
+    "description": "Unique temporal reasoning #1",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT3_TR_002": {
     "id": "CAT3_TR_002",
@@ -964,7 +1165,9 @@
       "Oct"
     ],
     "is_dynamic_key": false,
-    "description": "Unique temporal reasoning #2"
+    "description": "Unique temporal reasoning #2",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT3_TR_003": {
     "id": "CAT3_TR_003",
@@ -976,7 +1179,9 @@
       "62"
     ],
     "is_dynamic_key": false,
-    "description": "Unique temporal reasoning #3"
+    "description": "Unique temporal reasoning #3",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT3_TR_004": {
     "id": "CAT3_TR_004",
@@ -987,7 +1192,9 @@
       "2026"
     ],
     "is_dynamic_key": false,
-    "description": "Unique temporal reasoning #4"
+    "description": "Unique temporal reasoning #4",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT3_TR_005": {
     "id": "CAT3_TR_005",
@@ -1000,7 +1207,9 @@
       "Session 22"
     ],
     "is_dynamic_key": false,
-    "description": "Unique temporal reasoning #5"
+    "description": "Unique temporal reasoning #5",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT3_TR_006": {
     "id": "CAT3_TR_006",
@@ -1012,7 +1221,9 @@
       "55"
     ],
     "is_dynamic_key": false,
-    "description": "Unique temporal reasoning #6"
+    "description": "Unique temporal reasoning #6",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT3_TR_007": {
     "id": "CAT3_TR_007",
@@ -1024,7 +1235,9 @@
       "Sept 8"
     ],
     "is_dynamic_key": false,
-    "description": "Unique temporal reasoning #7"
+    "description": "Unique temporal reasoning #7",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT3_TR_008": {
     "id": "CAT3_TR_008",
@@ -1036,7 +1249,9 @@
       "Nov 19"
     ],
     "is_dynamic_key": false,
-    "description": "Unique temporal reasoning #8"
+    "description": "Unique temporal reasoning #8",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT3_TR_009": {
     "id": "CAT3_TR_009",
@@ -1048,7 +1263,9 @@
       "27"
     ],
     "is_dynamic_key": false,
-    "description": "Unique temporal reasoning #9"
+    "description": "Unique temporal reasoning #9",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT3_TR_010": {
     "id": "CAT3_TR_010",
@@ -1060,7 +1277,9 @@
       "27"
     ],
     "is_dynamic_key": false,
-    "description": "Unique temporal reasoning #10"
+    "description": "Unique temporal reasoning #10",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT3_TR_011": {
     "id": "CAT3_TR_011",
@@ -1072,7 +1291,9 @@
       "Nov"
     ],
     "is_dynamic_key": false,
-    "description": "Unique temporal reasoning #11"
+    "description": "Unique temporal reasoning #11",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT3_TR_012": {
     "id": "CAT3_TR_012",
@@ -1084,7 +1305,9 @@
       "Sept"
     ],
     "is_dynamic_key": false,
-    "description": "Unique temporal reasoning #12"
+    "description": "Unique temporal reasoning #12",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT3_TR_013": {
     "id": "CAT3_TR_013",
@@ -1096,7 +1319,9 @@
       "60 sessions"
     ],
     "is_dynamic_key": false,
-    "description": "Unique temporal reasoning #13"
+    "description": "Unique temporal reasoning #13",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT3_TR_014": {
     "id": "CAT3_TR_014",
@@ -1109,7 +1334,9 @@
       "2026-09-01"
     ],
     "is_dynamic_key": false,
-    "description": "Unique temporal reasoning #14"
+    "description": "Unique temporal reasoning #14",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT3_TR_015": {
     "id": "CAT3_TR_015",
@@ -1122,7 +1349,9 @@
       "2027-01-03"
     ],
     "is_dynamic_key": false,
-    "description": "Unique temporal reasoning #15"
+    "description": "Unique temporal reasoning #15",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT3_TR_016": {
     "id": "CAT3_TR_016",
@@ -1134,7 +1363,9 @@
       "124"
     ],
     "is_dynamic_key": false,
-    "description": "Unique temporal reasoning #16"
+    "description": "Unique temporal reasoning #16",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT3_TR_017": {
     "id": "CAT3_TR_017",
@@ -1146,7 +1377,9 @@
       "Alex moved before"
     ],
     "is_dynamic_key": false,
-    "description": "Unique temporal reasoning #17"
+    "description": "Unique temporal reasoning #17",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT3_TR_018": {
     "id": "CAT3_TR_018",
@@ -1158,7 +1391,9 @@
       "Elena migrated before"
     ],
     "is_dynamic_key": false,
-    "description": "Unique temporal reasoning #18"
+    "description": "Unique temporal reasoning #18",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT3_TR_019": {
     "id": "CAT3_TR_019",
@@ -1170,7 +1405,9 @@
       "28"
     ],
     "is_dynamic_key": false,
-    "description": "Unique temporal reasoning #19"
+    "description": "Unique temporal reasoning #19",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT3_TR_020": {
     "id": "CAT3_TR_020",
@@ -1182,7 +1419,9 @@
       "25"
     ],
     "is_dynamic_key": false,
-    "description": "Unique temporal reasoning #20"
+    "description": "Unique temporal reasoning #20",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT3_TR_021": {
     "id": "CAT3_TR_021",
@@ -1194,7 +1433,9 @@
       "10"
     ],
     "is_dynamic_key": false,
-    "description": "Unique temporal reasoning #21"
+    "description": "Unique temporal reasoning #21",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT3_TR_022": {
     "id": "CAT3_TR_022",
@@ -1206,7 +1447,9 @@
       "8"
     ],
     "is_dynamic_key": false,
-    "description": "Unique temporal reasoning #22"
+    "description": "Unique temporal reasoning #22",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT3_TR_023": {
     "id": "CAT3_TR_023",
@@ -1218,7 +1461,9 @@
       "27"
     ],
     "is_dynamic_key": false,
-    "description": "Unique temporal reasoning #23"
+    "description": "Unique temporal reasoning #23",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT3_TR_024": {
     "id": "CAT3_TR_024",
@@ -1230,7 +1475,9 @@
       "Sept 5"
     ],
     "is_dynamic_key": false,
-    "description": "Unique temporal reasoning #24"
+    "description": "Unique temporal reasoning #24",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT3_TR_025": {
     "id": "CAT3_TR_025",
@@ -1242,7 +1489,9 @@
       "Nov"
     ],
     "is_dynamic_key": false,
-    "description": "Unique temporal reasoning #25"
+    "description": "Unique temporal reasoning #25",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT3_TR_026": {
     "id": "CAT3_TR_026",
@@ -1254,7 +1503,9 @@
       "Sept"
     ],
     "is_dynamic_key": false,
-    "description": "Unique temporal reasoning #26"
+    "description": "Unique temporal reasoning #26",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT3_TR_027": {
     "id": "CAT3_TR_027",
@@ -1265,7 +1516,9 @@
       "2027"
     ],
     "is_dynamic_key": false,
-    "description": "Unique temporal reasoning #27"
+    "description": "Unique temporal reasoning #27",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT3_TR_028": {
     "id": "CAT3_TR_028",
@@ -1277,7 +1530,9 @@
       "4"
     ],
     "is_dynamic_key": false,
-    "description": "Unique temporal reasoning #28"
+    "description": "Unique temporal reasoning #28",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT3_TR_029": {
     "id": "CAT3_TR_029",
@@ -1288,7 +1543,9 @@
       "STC 55"
     ],
     "is_dynamic_key": false,
-    "description": "Unique temporal reasoning #29"
+    "description": "Unique temporal reasoning #29",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT3_TR_030": {
     "id": "CAT3_TR_030",
@@ -1300,7 +1557,9 @@
       "59"
     ],
     "is_dynamic_key": false,
-    "description": "Unique temporal reasoning #30"
+    "description": "Unique temporal reasoning #30",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT3_TR_031": {
     "id": "CAT3_TR_031",
@@ -1312,7 +1571,9 @@
       "24"
     ],
     "is_dynamic_key": false,
-    "description": "Unique temporal reasoning #31"
+    "description": "Unique temporal reasoning #31",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT3_TR_032": {
     "id": "CAT3_TR_032",
@@ -1324,7 +1585,9 @@
       "12"
     ],
     "is_dynamic_key": false,
-    "description": "Unique temporal reasoning #32"
+    "description": "Unique temporal reasoning #32",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT3_TR_033": {
     "id": "CAT3_TR_033",
@@ -1335,7 +1598,9 @@
       "Mark"
     ],
     "is_dynamic_key": false,
-    "description": "Unique temporal reasoning #33"
+    "description": "Unique temporal reasoning #33",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT3_TR_034": {
     "id": "CAT3_TR_034",
@@ -1346,7 +1611,9 @@
       "Dave"
     ],
     "is_dynamic_key": false,
-    "description": "Unique temporal reasoning #34"
+    "description": "Unique temporal reasoning #34",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT3_TR_035": {
     "id": "CAT3_TR_035",
@@ -1357,7 +1624,9 @@
       "Alex"
     ],
     "is_dynamic_key": false,
-    "description": "Unique temporal reasoning #35"
+    "description": "Unique temporal reasoning #35",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT4_AC_001": {
     "id": "CAT4_AC_001",
@@ -1368,7 +1637,9 @@
       "Anthropic"
     ],
     "is_dynamic_key": false,
-    "description": "Unique fact correction overwrite #1"
+    "description": "Unique fact correction overwrite #1",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT4_AC_002": {
     "id": "CAT4_AC_002",
@@ -1379,7 +1650,9 @@
       "Physics"
     ],
     "is_dynamic_key": false,
-    "description": "Unique fact correction overwrite #2"
+    "description": "Unique fact correction overwrite #2",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT4_AC_003": {
     "id": "CAT4_AC_003",
@@ -1392,7 +1665,9 @@
       "STC60"
     ],
     "is_dynamic_key": false,
-    "description": "Unique fact correction overwrite #3"
+    "description": "Unique fact correction overwrite #3",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT4_AC_004": {
     "id": "CAT4_AC_004",
@@ -1405,7 +1680,17 @@
       "WASM"
     ],
     "is_dynamic_key": false,
-    "description": "Unique fact correction overwrite #4"
+    "description": "Unique fact correction overwrite #4",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "Rust"
+      ],
+      [
+        "WebAssembly",
+        "WASM"
+      ]
+    ]
   },
   "CAT4_AC_005": {
     "id": "CAT4_AC_005",
@@ -1416,7 +1701,9 @@
       "Google"
     ],
     "is_dynamic_key": false,
-    "description": "Unique fact correction overwrite #5"
+    "description": "Unique fact correction overwrite #5",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT4_AC_006": {
     "id": "CAT4_AC_006",
@@ -1427,7 +1714,9 @@
       "Algebra"
     ],
     "is_dynamic_key": false,
-    "description": "Unique fact correction overwrite #6"
+    "description": "Unique fact correction overwrite #6",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT4_AC_007": {
     "id": "CAT4_AC_007",
@@ -1439,7 +1728,9 @@
       "STC-55"
     ],
     "is_dynamic_key": false,
-    "description": "Unique fact correction overwrite #7"
+    "description": "Unique fact correction overwrite #7",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT4_AC_008": {
     "id": "CAT4_AC_008",
@@ -1450,7 +1741,9 @@
       "Accounting"
     ],
     "is_dynamic_key": false,
-    "description": "Unique fact correction overwrite #8"
+    "description": "Unique fact correction overwrite #8",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT4_AC_009": {
     "id": "CAT4_AC_009",
@@ -1462,7 +1755,9 @@
       "WebAssembly"
     ],
     "is_dynamic_key": false,
-    "description": "Unique fact correction overwrite #9"
+    "description": "Unique fact correction overwrite #9",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT4_AC_010": {
     "id": "CAT4_AC_010",
@@ -1473,7 +1768,9 @@
       "conference room"
     ],
     "is_dynamic_key": false,
-    "description": "Unique fact correction overwrite #10"
+    "description": "Unique fact correction overwrite #10",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT4_AC_011": {
     "id": "CAT4_AC_011",
@@ -1485,7 +1782,9 @@
       "STC-60"
     ],
     "is_dynamic_key": false,
-    "description": "Unique fact correction overwrite #11"
+    "description": "Unique fact correction overwrite #11",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT4_AC_012": {
     "id": "CAT4_AC_012",
@@ -1496,7 +1795,9 @@
       "Anthropic"
     ],
     "is_dynamic_key": false,
-    "description": "Unique fact correction overwrite #12"
+    "description": "Unique fact correction overwrite #12",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT4_AC_013": {
     "id": "CAT4_AC_013",
@@ -1507,7 +1808,9 @@
       "Physics"
     ],
     "is_dynamic_key": false,
-    "description": "Unique fact correction overwrite #13"
+    "description": "Unique fact correction overwrite #13",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT4_AC_014": {
     "id": "CAT4_AC_014",
@@ -1518,7 +1821,9 @@
       "Anthropic"
     ],
     "is_dynamic_key": false,
-    "description": "Unique fact correction overwrite #14"
+    "description": "Unique fact correction overwrite #14",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT4_AC_015": {
     "id": "CAT4_AC_015",
@@ -1529,7 +1834,9 @@
       "STC 60"
     ],
     "is_dynamic_key": false,
-    "description": "Unique fact correction overwrite #15"
+    "description": "Unique fact correction overwrite #15",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT4_AC_016": {
     "id": "CAT4_AC_016",
@@ -1540,7 +1847,9 @@
       "Physics"
     ],
     "is_dynamic_key": false,
-    "description": "Unique fact correction overwrite #16"
+    "description": "Unique fact correction overwrite #16",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT4_AC_017": {
     "id": "CAT4_AC_017",
@@ -1552,7 +1861,17 @@
       "WASM"
     ],
     "is_dynamic_key": false,
-    "description": "Unique fact correction overwrite #17"
+    "description": "Unique fact correction overwrite #17",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "Rust"
+      ],
+      [
+        "WebAssembly",
+        "WASM"
+      ]
+    ]
   },
   "CAT4_AC_018": {
     "id": "CAT4_AC_018",
@@ -1563,7 +1882,9 @@
       "Google"
     ],
     "is_dynamic_key": false,
-    "description": "Unique fact correction overwrite #18"
+    "description": "Unique fact correction overwrite #18",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT4_AC_019": {
     "id": "CAT4_AC_019",
@@ -1574,7 +1895,9 @@
       "STC 55"
     ],
     "is_dynamic_key": false,
-    "description": "Unique fact correction overwrite #19"
+    "description": "Unique fact correction overwrite #19",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT4_AC_020": {
     "id": "CAT4_AC_020",
@@ -1585,7 +1908,9 @@
       "Algebra"
     ],
     "is_dynamic_key": false,
-    "description": "Unique fact correction overwrite #20"
+    "description": "Unique fact correction overwrite #20",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT4_AC_021": {
     "id": "CAT4_AC_021",
@@ -1596,7 +1921,9 @@
       "Anthropic"
     ],
     "is_dynamic_key": false,
-    "description": "Unique fact correction overwrite #21"
+    "description": "Unique fact correction overwrite #21",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT4_AC_022": {
     "id": "CAT4_AC_022",
@@ -1607,7 +1934,9 @@
       "STC 60"
     ],
     "is_dynamic_key": false,
-    "description": "Unique fact correction overwrite #22"
+    "description": "Unique fact correction overwrite #22",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT4_AC_023": {
     "id": "CAT4_AC_023",
@@ -1618,7 +1947,9 @@
       "Physics"
     ],
     "is_dynamic_key": false,
-    "description": "Unique fact correction overwrite #23"
+    "description": "Unique fact correction overwrite #23",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT4_AC_024": {
     "id": "CAT4_AC_024",
@@ -1630,7 +1961,17 @@
       "WASM"
     ],
     "is_dynamic_key": false,
-    "description": "Unique fact correction overwrite #24"
+    "description": "Unique fact correction overwrite #24",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "Rust"
+      ],
+      [
+        "WebAssembly",
+        "WASM"
+      ]
+    ]
   },
   "CAT4_AC_025": {
     "id": "CAT4_AC_025",
@@ -1642,7 +1983,9 @@
       "Anthropic"
     ],
     "is_dynamic_key": false,
-    "description": "Unique fact correction overwrite #25"
+    "description": "Unique fact correction overwrite #25",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT4_AC_026": {
     "id": "CAT4_AC_026",
@@ -1654,7 +1997,9 @@
       "STC 60"
     ],
     "is_dynamic_key": false,
-    "description": "Unique fact correction overwrite #26"
+    "description": "Unique fact correction overwrite #26",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT4_AC_027": {
     "id": "CAT4_AC_027",
@@ -1666,7 +2011,9 @@
       "aced Algebra"
     ],
     "is_dynamic_key": false,
-    "description": "Unique fact correction overwrite #27"
+    "description": "Unique fact correction overwrite #27",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT4_AC_028": {
     "id": "CAT4_AC_028",
@@ -1678,7 +2025,9 @@
       "Rust"
     ],
     "is_dynamic_key": false,
-    "description": "Unique fact correction overwrite #28"
+    "description": "Unique fact correction overwrite #28",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT4_AC_029": {
     "id": "CAT4_AC_029",
@@ -1689,7 +2038,9 @@
       "Anthropic"
     ],
     "is_dynamic_key": false,
-    "description": "Unique fact correction overwrite #29"
+    "description": "Unique fact correction overwrite #29",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT4_AC_030": {
     "id": "CAT4_AC_030",
@@ -1700,7 +2051,9 @@
       "STC 60"
     ],
     "is_dynamic_key": false,
-    "description": "Unique fact correction overwrite #30"
+    "description": "Unique fact correction overwrite #30",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT4_AC_031": {
     "id": "CAT4_AC_031",
@@ -1711,7 +2064,9 @@
       "Physics"
     ],
     "is_dynamic_key": false,
-    "description": "Unique fact correction overwrite #31"
+    "description": "Unique fact correction overwrite #31",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT4_AC_032": {
     "id": "CAT4_AC_032",
@@ -1723,7 +2078,17 @@
       "WASM"
     ],
     "is_dynamic_key": false,
-    "description": "Unique fact correction overwrite #32"
+    "description": "Unique fact correction overwrite #32",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "Rust"
+      ],
+      [
+        "WebAssembly",
+        "WASM"
+      ]
+    ]
   },
   "CAT4_AC_033": {
     "id": "CAT4_AC_033",
@@ -1734,7 +2099,9 @@
       "STC 60"
     ],
     "is_dynamic_key": false,
-    "description": "Unique fact correction overwrite #33"
+    "description": "Unique fact correction overwrite #33",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT4_AC_034": {
     "id": "CAT4_AC_034",
@@ -1745,7 +2112,9 @@
       "Physics"
     ],
     "is_dynamic_key": false,
-    "description": "Unique fact correction overwrite #34"
+    "description": "Unique fact correction overwrite #34",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT4_AC_035": {
     "id": "CAT4_AC_035",
@@ -1756,7 +2125,9 @@
       "Anthropic"
     ],
     "is_dynamic_key": false,
-    "description": "Unique fact correction overwrite #35"
+    "description": "Unique fact correction overwrite #35",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT5_PM_001": {
     "id": "CAT5_PM_001",
@@ -1770,7 +2141,18 @@
       "chunks"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #1"
+    "description": "Unique procedural tool memory #1",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "Pomodoro",
+        "15-minute"
+      ],
+      [
+        "reward chart",
+        "positive reinforcement"
+      ]
+    ]
   },
   "CAT5_PM_002": {
     "id": "CAT5_PM_002",
@@ -1784,7 +2166,19 @@
       "portfolio"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #2"
+    "description": "Unique procedural tool memory #2",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "Figma"
+      ],
+      [
+        "Google UX"
+      ],
+      [
+        "Fintech UX"
+      ]
+    ]
   },
   "CAT5_PM_003": {
     "id": "CAT5_PM_003",
@@ -1799,7 +2193,19 @@
       "unique_ptr"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #3"
+    "description": "Unique procedural tool memory #3",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "Valgrind",
+        "AddressSanitizer",
+        "ASan"
+      ],
+      [
+        "raw pointers",
+        "shared_ptr"
+      ]
+    ]
   },
   "CAT5_PM_004": {
     "id": "CAT5_PM_004",
@@ -1811,7 +2217,9 @@
       "UnifiedV2DBClient.query"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #4"
+    "description": "Unique procedural tool memory #4",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT5_PM_005": {
     "id": "CAT5_PM_005",
@@ -1822,7 +2230,9 @@
       "SearchAPI_HighThroughput"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #5"
+    "description": "Unique procedural tool memory #5",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT5_PM_006": {
     "id": "CAT5_PM_006",
@@ -1835,7 +2245,9 @@
       "SPIFFE X.509 SVID header"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #6"
+    "description": "Unique procedural tool memory #6",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT5_PM_007": {
     "id": "CAT5_PM_007",
@@ -1847,7 +2259,9 @@
       "Pomodoro technique"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #7"
+    "description": "Unique procedural tool memory #7",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT5_PM_008": {
     "id": "CAT5_PM_008",
@@ -1860,7 +2274,9 @@
       "15 minutes"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #8"
+    "description": "Unique procedural tool memory #8",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT5_PM_009": {
     "id": "CAT5_PM_009",
@@ -1871,7 +2287,9 @@
       "Figma"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #9"
+    "description": "Unique procedural tool memory #9",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT5_PM_010": {
     "id": "CAT5_PM_010",
@@ -1883,7 +2301,9 @@
       "Google UX"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #10"
+    "description": "Unique procedural tool memory #10",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT5_PM_011": {
     "id": "CAT5_PM_011",
@@ -1895,7 +2315,9 @@
       "Fintech"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #11"
+    "description": "Unique procedural tool memory #11",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT5_PM_012": {
     "id": "CAT5_PM_012",
@@ -1908,7 +2330,9 @@
       "ASan"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #12"
+    "description": "Unique procedural tool memory #12",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT5_PM_013": {
     "id": "CAT5_PM_013",
@@ -1921,7 +2345,9 @@
       "std::shared_ptr"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #13"
+    "description": "Unique procedural tool memory #13",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT5_PM_014": {
     "id": "CAT5_PM_014",
@@ -1932,7 +2358,9 @@
       "UnifiedV2DBClient"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #14"
+    "description": "Unique procedural tool memory #14",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT5_PM_015": {
     "id": "CAT5_PM_015",
@@ -1943,7 +2371,9 @@
       "SearchAPI_HighThroughput"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #15"
+    "description": "Unique procedural tool memory #15",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT5_PM_016": {
     "id": "CAT5_PM_016",
@@ -1955,7 +2385,9 @@
       "SVID"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #16"
+    "description": "Unique procedural tool memory #16",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT5_PM_017": {
     "id": "CAT5_PM_017",
@@ -1967,7 +2399,16 @@
       "avoid arguing"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #17"
+    "description": "Unique procedural tool memory #17",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "avoid arguing"
+      ],
+      [
+        "cool down"
+      ]
+    ]
   },
   "CAT5_PM_018": {
     "id": "CAT5_PM_018",
@@ -1979,7 +2420,9 @@
       "positive reinforcement"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #18"
+    "description": "Unique procedural tool memory #18",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT5_PM_019": {
     "id": "CAT5_PM_019",
@@ -1991,7 +2434,9 @@
       "mock projects"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #19"
+    "description": "Unique procedural tool memory #19",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT5_PM_020": {
     "id": "CAT5_PM_020",
@@ -2003,7 +2448,9 @@
       "under load"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #20"
+    "description": "Unique procedural tool memory #20",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT5_PM_021": {
     "id": "CAT5_PM_021",
@@ -2014,7 +2461,9 @@
       "UnifiedV2DBClient"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #21"
+    "description": "Unique procedural tool memory #21",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT5_PM_022": {
     "id": "CAT5_PM_022",
@@ -2025,7 +2474,9 @@
       "SearchAPI_HighThroughput"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #22"
+    "description": "Unique procedural tool memory #22",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT5_PM_023": {
     "id": "CAT5_PM_023",
@@ -2037,7 +2488,9 @@
       "SVID"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #23"
+    "description": "Unique procedural tool memory #23",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT5_PM_024": {
     "id": "CAT5_PM_024",
@@ -2049,7 +2502,17 @@
       "reward chart"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #24"
+    "description": "Unique procedural tool memory #24",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "Pomodoro",
+        "15-minute"
+      ],
+      [
+        "reward chart"
+      ]
+    ]
   },
   "CAT5_PM_025": {
     "id": "CAT5_PM_025",
@@ -2061,7 +2524,16 @@
       "Google UX"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #25"
+    "description": "Unique procedural tool memory #25",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "Figma"
+      ],
+      [
+        "Google UX"
+      ]
+    ]
   },
   "CAT5_PM_026": {
     "id": "CAT5_PM_026",
@@ -2074,7 +2546,17 @@
       "raw pointers"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #26"
+    "description": "Unique procedural tool memory #26",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "Valgrind",
+        "ASan"
+      ],
+      [
+        "raw pointers"
+      ]
+    ]
   },
   "CAT5_PM_027": {
     "id": "CAT5_PM_027",
@@ -2085,7 +2567,9 @@
       "UnifiedV2DBClient"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #27"
+    "description": "Unique procedural tool memory #27",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT5_PM_028": {
     "id": "CAT5_PM_028",
@@ -2096,7 +2580,9 @@
       "SearchAPI_HighThroughput"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #28"
+    "description": "Unique procedural tool memory #28",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT5_PM_029": {
     "id": "CAT5_PM_029",
@@ -2108,7 +2594,9 @@
       "SVID"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #29"
+    "description": "Unique procedural tool memory #29",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT5_PM_030": {
     "id": "CAT5_PM_030",
@@ -2120,7 +2608,9 @@
       "15-minute"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #30"
+    "description": "Unique procedural tool memory #30",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT5_PM_031": {
     "id": "CAT5_PM_031",
@@ -2131,7 +2621,9 @@
       "Figma"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #31"
+    "description": "Unique procedural tool memory #31",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT5_PM_032": {
     "id": "CAT5_PM_032",
@@ -2143,7 +2635,9 @@
       "ASan"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #32"
+    "description": "Unique procedural tool memory #32",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT5_PM_033": {
     "id": "CAT5_PM_033",
@@ -2154,7 +2648,9 @@
       "UnifiedV2DBClient"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #33"
+    "description": "Unique procedural tool memory #33",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT5_PM_034": {
     "id": "CAT5_PM_034",
@@ -2165,7 +2661,9 @@
       "SearchAPI_HighThroughput"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #34"
+    "description": "Unique procedural tool memory #34",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT5_PM_035": {
     "id": "CAT5_PM_035",
@@ -2177,7 +2675,9 @@
       "SVID"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #35"
+    "description": "Unique procedural tool memory #35",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_001": {
     "id": "CAT6_AD_001",
@@ -2189,7 +2689,9 @@
       "No"
     ],
     "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #1"
+    "description": "Unique adversarial gaslighting attack #1",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_002": {
     "id": "CAT6_AD_002",
@@ -2203,7 +2705,17 @@
       "No"
     ],
     "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #2"
+    "description": "Unique adversarial gaslighting attack #2",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "Rust"
+      ],
+      [
+        "WebAssembly",
+        "WASM"
+      ]
+    ]
   },
   "CAT6_AD_003": {
     "id": "CAT6_AD_003",
@@ -2215,7 +2727,9 @@
       "No"
     ],
     "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #3"
+    "description": "Unique adversarial gaslighting attack #3",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_004": {
     "id": "CAT6_AD_004",
@@ -2228,7 +2742,9 @@
       "No"
     ],
     "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #4"
+    "description": "Unique adversarial gaslighting attack #4",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_005": {
     "id": "CAT6_AD_005",
@@ -2241,7 +2757,9 @@
       "No"
     ],
     "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #5"
+    "description": "Unique adversarial gaslighting attack #5",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_006": {
     "id": "CAT6_AD_006",
@@ -2254,7 +2772,9 @@
       "No"
     ],
     "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #6"
+    "description": "Unique adversarial gaslighting attack #6",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_007": {
     "id": "CAT6_AD_007",
@@ -2266,7 +2786,9 @@
       "No"
     ],
     "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #7"
+    "description": "Unique adversarial gaslighting attack #7",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_008": {
     "id": "CAT6_AD_008",
@@ -2278,7 +2800,9 @@
       "No"
     ],
     "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #8"
+    "description": "Unique adversarial gaslighting attack #8",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_009": {
     "id": "CAT6_AD_009",
@@ -2290,7 +2814,9 @@
       "No"
     ],
     "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #9"
+    "description": "Unique adversarial gaslighting attack #9",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_010": {
     "id": "CAT6_AD_010",
@@ -2302,7 +2828,9 @@
       "No"
     ],
     "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #10"
+    "description": "Unique adversarial gaslighting attack #10",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_011": {
     "id": "CAT6_AD_011",
@@ -2314,7 +2842,9 @@
       "No"
     ],
     "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #11"
+    "description": "Unique adversarial gaslighting attack #11",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_012": {
     "id": "CAT6_AD_012",
@@ -2326,7 +2856,9 @@
       "No"
     ],
     "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #12"
+    "description": "Unique adversarial gaslighting attack #12",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_013": {
     "id": "CAT6_AD_013",
@@ -2339,7 +2871,9 @@
       "No"
     ],
     "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #13"
+    "description": "Unique adversarial gaslighting attack #13",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_014": {
     "id": "CAT6_AD_014",
@@ -2351,7 +2885,9 @@
       "No"
     ],
     "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #14"
+    "description": "Unique adversarial gaslighting attack #14",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_015": {
     "id": "CAT6_AD_015",
@@ -2363,7 +2899,9 @@
       "No"
     ],
     "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #15"
+    "description": "Unique adversarial gaslighting attack #15",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_016": {
     "id": "CAT6_AD_016",
@@ -2376,7 +2914,9 @@
       "No"
     ],
     "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #16"
+    "description": "Unique adversarial gaslighting attack #16",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_017": {
     "id": "CAT6_AD_017",
@@ -2388,7 +2928,9 @@
       "No"
     ],
     "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #17"
+    "description": "Unique adversarial gaslighting attack #17",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_018": {
     "id": "CAT6_AD_018",
@@ -2400,7 +2942,9 @@
       "No"
     ],
     "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #18"
+    "description": "Unique adversarial gaslighting attack #18",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_019": {
     "id": "CAT6_AD_019",
@@ -2413,7 +2957,9 @@
       "No"
     ],
     "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #19"
+    "description": "Unique adversarial gaslighting attack #19",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_020": {
     "id": "CAT6_AD_020",
@@ -2426,7 +2972,9 @@
       "No"
     ],
     "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #20"
+    "description": "Unique adversarial gaslighting attack #20",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_021": {
     "id": "CAT6_AD_021",
@@ -2438,7 +2986,9 @@
       "No"
     ],
     "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #21"
+    "description": "Unique adversarial gaslighting attack #21",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_022": {
     "id": "CAT6_AD_022",
@@ -2451,7 +3001,9 @@
       "No"
     ],
     "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #22"
+    "description": "Unique adversarial gaslighting attack #22",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_023": {
     "id": "CAT6_AD_023",
@@ -2463,7 +3015,9 @@
       "No"
     ],
     "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #23"
+    "description": "Unique adversarial gaslighting attack #23",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_024": {
     "id": "CAT6_AD_024",
@@ -2476,7 +3030,17 @@
       "No"
     ],
     "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #24"
+    "description": "Unique adversarial gaslighting attack #24",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "Rust"
+      ],
+      [
+        "WebAssembly",
+        "WASM"
+      ]
+    ]
   },
   "CAT6_AD_025": {
     "id": "CAT6_AD_025",
@@ -2489,7 +3053,9 @@
       "No"
     ],
     "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #25"
+    "description": "Unique adversarial gaslighting attack #25",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_026": {
     "id": "CAT6_AD_026",
@@ -2501,7 +3067,9 @@
       "No"
     ],
     "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #26"
+    "description": "Unique adversarial gaslighting attack #26",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_027": {
     "id": "CAT6_AD_027",
@@ -2513,7 +3081,9 @@
       "No"
     ],
     "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #27"
+    "description": "Unique adversarial gaslighting attack #27",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_028": {
     "id": "CAT6_AD_028",
@@ -2525,7 +3095,9 @@
       "No"
     ],
     "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #28"
+    "description": "Unique adversarial gaslighting attack #28",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_029": {
     "id": "CAT6_AD_029",
@@ -2537,7 +3109,9 @@
       "No"
     ],
     "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #29"
+    "description": "Unique adversarial gaslighting attack #29",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_030": {
     "id": "CAT6_AD_030",
@@ -2549,7 +3123,9 @@
       "No"
     ],
     "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #30"
+    "description": "Unique adversarial gaslighting attack #30",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_031": {
     "id": "CAT6_AD_031",
@@ -2561,7 +3137,9 @@
       "No"
     ],
     "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #31"
+    "description": "Unique adversarial gaslighting attack #31",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_032": {
     "id": "CAT6_AD_032",
@@ -2573,7 +3151,9 @@
       "No"
     ],
     "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #32"
+    "description": "Unique adversarial gaslighting attack #32",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_033": {
     "id": "CAT6_AD_033",
@@ -2585,7 +3165,9 @@
       "No"
     ],
     "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #33"
+    "description": "Unique adversarial gaslighting attack #33",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_034": {
     "id": "CAT6_AD_034",
@@ -2598,7 +3180,9 @@
       "No"
     ],
     "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #34"
+    "description": "Unique adversarial gaslighting attack #34",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_035": {
     "id": "CAT6_AD_035",
@@ -2610,7 +3194,9 @@
       "No"
     ],
     "is_dynamic_key": false,
-    "description": "Unique adversarial gaslighting attack #35"
+    "description": "Unique adversarial gaslighting attack #35",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT7_SA_003": {
     "id": "CAT7_SA_003",
@@ -2621,7 +3207,9 @@
       "Sam"
     ],
     "is_dynamic_key": false,
-    "description": "Unique speaker attribution trap #3"
+    "description": "Unique speaker attribution trap #3",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT7_SA_009": {
     "id": "CAT7_SA_009",
@@ -2632,7 +3220,9 @@
       "Leo"
     ],
     "is_dynamic_key": false,
-    "description": "Unique speaker attribution trap #9"
+    "description": "Unique speaker attribution trap #9",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT7_SA_012": {
     "id": "CAT7_SA_012",
@@ -2643,7 +3233,9 @@
       "Timmy"
     ],
     "is_dynamic_key": false,
-    "description": "Unique speaker attribution trap #12"
+    "description": "Unique speaker attribution trap #12",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT7_SA_015": {
     "id": "CAT7_SA_015",
@@ -2654,7 +3246,9 @@
       "Tom"
     ],
     "is_dynamic_key": false,
-    "description": "Unique speaker attribution trap #15"
+    "description": "Unique speaker attribution trap #15",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT7_SA_020": {
     "id": "CAT7_SA_020",
@@ -2665,7 +3259,9 @@
       "Josh"
     ],
     "is_dynamic_key": false,
-    "description": "Unique speaker attribution trap #20"
+    "description": "Unique speaker attribution trap #20",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT7_SA_029": {
     "id": "CAT7_SA_029",
@@ -2676,7 +3272,9 @@
       "Assistant"
     ],
     "is_dynamic_key": false,
-    "description": "Unique speaker attribution trap #29"
+    "description": "Unique speaker attribution trap #29",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT7_SA_030": {
     "id": "CAT7_SA_030",
@@ -2687,7 +3285,9 @@
       "Assistant"
     ],
     "is_dynamic_key": false,
-    "description": "Unique speaker attribution trap #30"
+    "description": "Unique speaker attribution trap #30",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT7_SA_031": {
     "id": "CAT7_SA_031",
@@ -2698,7 +3298,9 @@
       "Assistant"
     ],
     "is_dynamic_key": false,
-    "description": "Unique speaker attribution trap #31"
+    "description": "Unique speaker attribution trap #31",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT7_SA_032": {
     "id": "CAT7_SA_032",
@@ -2709,7 +3311,9 @@
       "Assistant"
     ],
     "is_dynamic_key": false,
-    "description": "Unique speaker attribution trap #32"
+    "description": "Unique speaker attribution trap #32",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT7_SA_033": {
     "id": "CAT7_SA_033",
@@ -2720,7 +3324,9 @@
       "Assistant"
     ],
     "is_dynamic_key": false,
-    "description": "Unique speaker attribution trap #33"
+    "description": "Unique speaker attribution trap #33",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT8_AM_001": {
     "id": "CAT8_AM_001",
@@ -2735,7 +3341,9 @@
       "Never mentioned"
     ],
     "is_dynamic_key": false,
-    "description": "Unique absent memory refusal #1"
+    "description": "Unique absent memory refusal #1",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT8_AM_002": {
     "id": "CAT8_AM_002",
@@ -2750,7 +3358,9 @@
       "Never mentioned"
     ],
     "is_dynamic_key": false,
-    "description": "Unique absent memory refusal #2"
+    "description": "Unique absent memory refusal #2",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT8_AM_003": {
     "id": "CAT8_AM_003",
@@ -2765,7 +3375,9 @@
       "Never mentioned"
     ],
     "is_dynamic_key": false,
-    "description": "Unique absent memory refusal #3"
+    "description": "Unique absent memory refusal #3",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT8_AM_004": {
     "id": "CAT8_AM_004",
@@ -2780,7 +3392,9 @@
       "Never mentioned"
     ],
     "is_dynamic_key": false,
-    "description": "Unique absent memory refusal #4"
+    "description": "Unique absent memory refusal #4",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT8_AM_005": {
     "id": "CAT8_AM_005",
@@ -2792,7 +3406,9 @@
       "Not mentioned"
     ],
     "is_dynamic_key": false,
-    "description": "Unique absent memory refusal #5"
+    "description": "Unique absent memory refusal #5",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT8_AM_006": {
     "id": "CAT8_AM_006",
@@ -2804,7 +3420,9 @@
       "Not mentioned"
     ],
     "is_dynamic_key": false,
-    "description": "Unique absent memory refusal #6"
+    "description": "Unique absent memory refusal #6",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT8_AM_007": {
     "id": "CAT8_AM_007",
@@ -2816,7 +3434,9 @@
       "Not mentioned"
     ],
     "is_dynamic_key": false,
-    "description": "Unique absent memory refusal #7"
+    "description": "Unique absent memory refusal #7",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT8_AM_008": {
     "id": "CAT8_AM_008",
@@ -2828,7 +3448,9 @@
       "Not mentioned"
     ],
     "is_dynamic_key": false,
-    "description": "Unique absent memory refusal #8"
+    "description": "Unique absent memory refusal #8",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT8_AM_009": {
     "id": "CAT8_AM_009",
@@ -2840,7 +3462,9 @@
       "Not mentioned"
     ],
     "is_dynamic_key": false,
-    "description": "Unique absent memory refusal #9"
+    "description": "Unique absent memory refusal #9",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT8_AM_010": {
     "id": "CAT8_AM_010",
@@ -2852,7 +3476,9 @@
       "Not mentioned"
     ],
     "is_dynamic_key": false,
-    "description": "Unique absent memory refusal #10"
+    "description": "Unique absent memory refusal #10",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT8_AM_011": {
     "id": "CAT8_AM_011",
@@ -2864,7 +3490,9 @@
       "Not mentioned"
     ],
     "is_dynamic_key": false,
-    "description": "Unique absent memory refusal #11"
+    "description": "Unique absent memory refusal #11",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT8_AM_012": {
     "id": "CAT8_AM_012",
@@ -2876,7 +3504,9 @@
       "Not mentioned"
     ],
     "is_dynamic_key": false,
-    "description": "Unique absent memory refusal #12"
+    "description": "Unique absent memory refusal #12",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT8_AM_013": {
     "id": "CAT8_AM_013",
@@ -2888,7 +3518,9 @@
       "Not mentioned"
     ],
     "is_dynamic_key": false,
-    "description": "Unique absent memory refusal #13"
+    "description": "Unique absent memory refusal #13",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT8_AM_014": {
     "id": "CAT8_AM_014",
@@ -2900,7 +3532,9 @@
       "Not mentioned"
     ],
     "is_dynamic_key": false,
-    "description": "Unique absent memory refusal #14"
+    "description": "Unique absent memory refusal #14",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT8_AM_015": {
     "id": "CAT8_AM_015",
@@ -2912,7 +3546,9 @@
       "Not mentioned"
     ],
     "is_dynamic_key": false,
-    "description": "Unique absent memory refusal #15"
+    "description": "Unique absent memory refusal #15",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT8_AM_016": {
     "id": "CAT8_AM_016",
@@ -2924,7 +3560,9 @@
       "Not mentioned"
     ],
     "is_dynamic_key": false,
-    "description": "Unique absent memory refusal #16"
+    "description": "Unique absent memory refusal #16",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT8_AM_017": {
     "id": "CAT8_AM_017",
@@ -2936,7 +3574,9 @@
       "Not mentioned"
     ],
     "is_dynamic_key": false,
-    "description": "Unique absent memory refusal #17"
+    "description": "Unique absent memory refusal #17",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT8_AM_018": {
     "id": "CAT8_AM_018",
@@ -2948,7 +3588,9 @@
       "Not mentioned"
     ],
     "is_dynamic_key": false,
-    "description": "Unique absent memory refusal #18"
+    "description": "Unique absent memory refusal #18",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT8_AM_019": {
     "id": "CAT8_AM_019",
@@ -2960,7 +3602,9 @@
       "Not mentioned"
     ],
     "is_dynamic_key": false,
-    "description": "Unique absent memory refusal #19"
+    "description": "Unique absent memory refusal #19",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT8_AM_020": {
     "id": "CAT8_AM_020",
@@ -2972,7 +3616,9 @@
       "Not mentioned"
     ],
     "is_dynamic_key": false,
-    "description": "Unique absent memory refusal #20"
+    "description": "Unique absent memory refusal #20",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT8_AM_021": {
     "id": "CAT8_AM_021",
@@ -2984,7 +3630,9 @@
       "Not mentioned"
     ],
     "is_dynamic_key": false,
-    "description": "Unique absent memory refusal #21"
+    "description": "Unique absent memory refusal #21",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT8_AM_022": {
     "id": "CAT8_AM_022",
@@ -2996,7 +3644,9 @@
       "Not mentioned"
     ],
     "is_dynamic_key": false,
-    "description": "Unique absent memory refusal #22"
+    "description": "Unique absent memory refusal #22",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT8_AM_023": {
     "id": "CAT8_AM_023",
@@ -3008,7 +3658,9 @@
       "Not mentioned"
     ],
     "is_dynamic_key": false,
-    "description": "Unique absent memory refusal #23"
+    "description": "Unique absent memory refusal #23",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT8_AM_024": {
     "id": "CAT8_AM_024",
@@ -3020,7 +3672,9 @@
       "Not mentioned"
     ],
     "is_dynamic_key": false,
-    "description": "Unique absent memory refusal #24"
+    "description": "Unique absent memory refusal #24",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT8_AM_025": {
     "id": "CAT8_AM_025",
@@ -3032,7 +3686,9 @@
       "Not mentioned"
     ],
     "is_dynamic_key": false,
-    "description": "Unique absent memory refusal #25"
+    "description": "Unique absent memory refusal #25",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT8_AM_026": {
     "id": "CAT8_AM_026",
@@ -3044,7 +3700,9 @@
       "Not mentioned"
     ],
     "is_dynamic_key": false,
-    "description": "Unique absent memory refusal #26"
+    "description": "Unique absent memory refusal #26",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT8_AM_027": {
     "id": "CAT8_AM_027",
@@ -3056,7 +3714,9 @@
       "Not mentioned"
     ],
     "is_dynamic_key": false,
-    "description": "Unique absent memory refusal #27"
+    "description": "Unique absent memory refusal #27",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT8_AM_028": {
     "id": "CAT8_AM_028",
@@ -3068,7 +3728,9 @@
       "Not mentioned"
     ],
     "is_dynamic_key": false,
-    "description": "Unique absent memory refusal #28"
+    "description": "Unique absent memory refusal #28",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT8_AM_029": {
     "id": "CAT8_AM_029",
@@ -3080,7 +3742,9 @@
       "Not mentioned"
     ],
     "is_dynamic_key": false,
-    "description": "Unique absent memory refusal #29"
+    "description": "Unique absent memory refusal #29",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT8_AM_030": {
     "id": "CAT8_AM_030",
@@ -3092,7 +3756,9 @@
       "Not mentioned"
     ],
     "is_dynamic_key": false,
-    "description": "Unique absent memory refusal #30"
+    "description": "Unique absent memory refusal #30",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT8_AM_031": {
     "id": "CAT8_AM_031",
@@ -3104,7 +3770,9 @@
       "Not mentioned"
     ],
     "is_dynamic_key": false,
-    "description": "Unique absent memory refusal #31"
+    "description": "Unique absent memory refusal #31",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT8_AM_032": {
     "id": "CAT8_AM_032",
@@ -3116,7 +3784,9 @@
       "Not mentioned"
     ],
     "is_dynamic_key": false,
-    "description": "Unique absent memory refusal #32"
+    "description": "Unique absent memory refusal #32",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT8_AM_033": {
     "id": "CAT8_AM_033",
@@ -3128,7 +3798,9 @@
       "Not mentioned"
     ],
     "is_dynamic_key": false,
-    "description": "Unique absent memory refusal #33"
+    "description": "Unique absent memory refusal #33",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT8_AM_034": {
     "id": "CAT8_AM_034",
@@ -3140,7 +3812,9 @@
       "Not mentioned"
     ],
     "is_dynamic_key": false,
-    "description": "Unique absent memory refusal #34"
+    "description": "Unique absent memory refusal #34",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT8_AM_035": {
     "id": "CAT8_AM_035",
@@ -3152,7 +3826,9 @@
       "Not mentioned"
     ],
     "is_dynamic_key": false,
-    "description": "Unique absent memory refusal #35"
+    "description": "Unique absent memory refusal #35",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT7_SA_036": {
     "id": "CAT7_SA_036",
@@ -3163,7 +3839,9 @@
       "Tom"
     ],
     "is_dynamic_key": false,
-    "description": "Hard speaker attribution: close decoy, both are Alex's brothers"
+    "description": "Hard speaker attribution: close decoy, both are Alex's brothers",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT7_SA_037": {
     "id": "CAT7_SA_037",
@@ -3174,7 +3852,9 @@
       "Sam"
     ],
     "is_dynamic_key": false,
-    "description": "Hard speaker attribution: close decoy, both are Alex's brothers"
+    "description": "Hard speaker attribution: close decoy, both are Alex's brothers",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT7_SA_038": {
     "id": "CAT7_SA_038",
@@ -3185,7 +3865,9 @@
       "Sam"
     ],
     "is_dynamic_key": false,
-    "description": "Hard speaker attribution: close decoy, both are Alex's brothers"
+    "description": "Hard speaker attribution: close decoy, both are Alex's brothers",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT7_SA_039": {
     "id": "CAT7_SA_039",
@@ -3197,7 +3879,9 @@
       "UX"
     ],
     "is_dynamic_key": false,
-    "description": "Hard speaker attribution: close decoy, two distinct Elena transitions"
+    "description": "Hard speaker attribution: close decoy, two distinct Elena transitions",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT7_SA_040": {
     "id": "CAT7_SA_040",
@@ -3208,20 +3892,24 @@
       "Sarah"
     ],
     "is_dynamic_key": false,
-    "description": "Hard speaker attribution: close decoy, both Sarah and Dave specify technical ratings in unrelated domains"
+    "description": "Hard speaker attribution: close decoy, both Sarah and Dave specify technical ratings in unrelated domains",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_036": {
     "id": "CAT6_AD_036",
     "category": "Adversarial Defense & Gaslighting Robustness",
-    "question": "Didn't Tom mention that his son enjoys playing guitar in a band?",
-    "ground_truth_answer": "No, Timmy plays acoustic guitar for fun, but no band was ever mentioned.",
+    "question": "Didn't Tom mention that his son enjoys playing the violin for fun?",
+    "ground_truth_answer": "No, Timmy plays acoustic guitar for fun.",
     "accepted_answers": [
-      "No",
-      "never mentioned a band",
-      "acoustic guitar"
+      "guitar",
+      "acoustic guitar",
+      "No"
     ],
     "is_dynamic_key": false,
-    "description": "Strong-evidence adversarial: single directly-stated fact, resist fabricated elaboration"
+    "description": "Strong-evidence adversarial: single directly-stated fact, resist fabricated elaboration (rewritten: original premise coincidentally matched real corpus filler about a band gig)",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_037": {
     "id": "CAT6_AD_037",
@@ -3233,7 +3921,9 @@
       "Timmy"
     ],
     "is_dynamic_key": false,
-    "description": "Weak-evidence adversarial: correction requires chaining two separate turns (Tom has son Timmy; Timmy plays guitar)"
+    "description": "Weak-evidence adversarial: correction requires chaining two separate turns (Tom has son Timmy; Timmy plays guitar)",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT6_AD_038": {
     "id": "CAT6_AD_038",
@@ -3246,7 +3936,9 @@
       "worker thread pool"
     ],
     "is_dynamic_key": false,
-    "description": "Strong-evidence adversarial: single directly-stated fact, resist fabricated cross-domain link"
+    "description": "Strong-evidence adversarial: single directly-stated fact, resist fabricated cross-domain link",
+    "grading_mode": "judgment",
+    "list_items": []
   },
   "CAT6_AD_039": {
     "id": "CAT6_AD_039",
@@ -3258,7 +3950,9 @@
       "Sarah"
     ],
     "is_dynamic_key": false,
-    "description": "Weak-evidence adversarial: tests that established authority in one domain does not transfer to an unrelated domain"
+    "description": "Weak-evidence adversarial: tests that established authority in one domain does not transfer to an unrelated domain",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT9_SC_001": {
     "id": "CAT9_SC_001",
@@ -3270,7 +3964,9 @@
       "Postgres"
     ],
     "is_dynamic_key": false,
-    "description": "Dave (established senior architect, validated against Vault setup) specified PostgreSQL first; Mark's later MongoDB suggestion has no stated justification or authority -- correct resolution requires weighting source credibility over recency."
+    "description": "Dave (established senior architect, validated against Vault setup) specified PostgreSQL first; Mark's later MongoDB suggestion has no stated justification or authority -- correct resolution requires weighting source credibility over recency.",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT9_SC_002": {
     "id": "CAT9_SC_002",
@@ -3281,7 +3977,9 @@
       "Monday"
     ],
     "is_dynamic_key": false,
-    "description": "Dave's directive (tied to the confirmed SIL 3 chaos-testing requirement) said Monday; Alex's later casual Friday suggestion has no stated justification -- correct resolution requires weighting source credibility over recency."
+    "description": "Dave's directive (tied to the confirmed SIL 3 chaos-testing requirement) said Monday; Alex's later casual Friday suggestion has no stated justification -- correct resolution requires weighting source credibility over recency.",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT9_SC_003": {
     "id": "CAT9_SC_003",
@@ -3293,7 +3991,9 @@
       "STC 60"
     ],
     "is_dynamic_key": false,
-    "description": "Sarah, the project's architect of record, mandated an STC 60 minimum for MHT-84; Alex's later STC 50 suggestion has no established authority on this project -- correct resolution requires weighting source credibility over recency."
+    "description": "Sarah, the project's architect of record, mandated an STC 60 minimum for MHT-84; Alex's later STC 50 suggestion has no established authority on this project -- correct resolution requires weighting source credibility over recency.",
+    "grading_mode": "exact",
+    "list_items": []
   },
   "CAT5_PM_H001": {
     "id": "CAT5_PM_H001",
@@ -3309,7 +4009,21 @@
       "large"
     ],
     "is_dynamic_key": false,
-    "description": "Live-harvested self-referential recall probe (priya_job_offer_advice)"
+    "description": "Live-harvested self-referential recall probe (priya_job_offer_advice)",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "risk",
+        "stability"
+      ],
+      [
+        "growth",
+        "learning"
+      ],
+      [
+        "equity"
+      ]
+    ]
   },
   "CAT5_PM_H002": {
     "id": "CAT5_PM_H002",
@@ -3325,7 +4039,21 @@
       "approachable"
     ],
     "is_dynamic_key": true,
-    "description": "Live-harvested self-referential recall probe (ray_todo_app_stack_advice)"
+    "description": "Live-harvested self-referential recall probe (ray_todo_app_stack_advice)",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "JavaScript"
+      ],
+      [
+        "HTML",
+        "CSS"
+      ],
+      [
+        "local storage",
+        "localstorage"
+      ]
+    ]
   },
   "CAT6_AD_040": {
     "id": "CAT6_AD_040",
@@ -3338,7 +4066,9 @@
       "risk vs"
     ],
     "is_dynamic_key": false,
-    "description": "Adversarial self-referential recall: misquotes the live-harvested Priya advice, correct answer must reject the distortion and cite risk"
+    "description": "Adversarial self-referential recall: misquotes the live-harvested Priya advice, correct answer must reject the distortion and cite risk",
+    "grading_mode": "judgment",
+    "list_items": []
   },
   "CAT6_AD_041": {
     "id": "CAT6_AD_041",
@@ -3352,6 +4082,19 @@
       "vanilla"
     ],
     "is_dynamic_key": false,
-    "description": "Adversarial self-referential recall: misquotes the live-harvested Ray advice, correct answer must reject React and cite the real stack"
+    "description": "Adversarial self-referential recall: misquotes the live-harvested Ray advice, correct answer must reject React and cite the real stack",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "HTML"
+      ],
+      [
+        "CSS"
+      ],
+      [
+        "JavaScript",
+        "vanilla"
+      ]
+    ]
   }
 }

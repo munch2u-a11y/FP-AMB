@@ -1,7 +1,7 @@
 ================================================================================
                FP-AMB MISSED QUESTIONS & FAILURE TAXONOMY REPORT
 Provider: SampleTFIDFMemoryProvider | Mode: Full LLM Generation — gemini-2.5-flash | Date: 2026-08-26 18:32:10
-Overall Pass Rate: 68.7% (193/281 passed) | Total Misses: 88
+Overall Pass Rate: 68.5% (192.5/281 passed) | Total Misses: 88.5
 ================================================================================
 
 TOKEN & PAYLOAD METRICS SUMMARY
@@ -16,16 +16,18 @@ TOKEN & PAYLOAD METRICS SUMMARY
 SUMMARY OF MISSES BY FAILURE CAUSE
 --------------------------------------------------------------------------------
   [RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION]
-    Count: 50 misses (56.8% of total misses)
+    Count: 52 misses (58.8% of total misses)
   [GENERATION_FAILURE_LLM_OUTPUT_MISSED]
-    Count: 38 misses (43.2% of total misses)
+    Count: 36 misses (40.7% of total misses)
+  [PARTIAL_LIST_MATCH]
+    Count: 1 misses (1.1% of total misses)
 --------------------------------------------------------------------------------
 
 DETAILED BREAKDOWN BY QUESTION CATEGORY & ROOT CAUSE OF MISS
 ================================================================================
 
 ================================================================================
-CATEGORY: Adaptability & Fact Correction Overwrites (11 misses)
+CATEGORY: Adaptability & Fact Correction Overwrites (12 misses)
 ================================================================================
 
   ► FAILURE CAUSE: GENERATION_FAILURE_LLM_OUTPUT_MISSED (3 items)
@@ -55,7 +57,7 @@ CATEGORY: Adaptability & Fact Correction Overwrites (11 misses)
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
 
-  ► FAILURE CAUSE: RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION (8 items)
+  ► FAILURE CAUSE: RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION (9 items)
   ----------------------------------------------------------------------------
   [01] Question ID: CAT4_AC_001
        Question:         "Where do I currently work?"
@@ -113,7 +115,15 @@ CATEGORY: Adaptability & Fact Correction Overwrites (11 misses)
        Injected Context (1695 tokens): "[2026-10-01T01:28:00Z] Alex: [2026-10-01T01:28:00Z] Alex: Our Redis cluster memory footprint is hitting 85%. How should we tune maxmemory policies and active defragmentation? We're planning to migrate our logging infrastructure from Elasticsearch to  ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [08] Question ID: CAT4_AC_029
+  [08] Question ID: CAT4_AC_027
+       Question:         "Has Leo passed his Algebra exam?"
+       Expected Answer:  "Yes, Leo aced Algebra"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (1395 tokens): "[2026-11-01T16:09:00Z] Sarah: [2026-11-01T16:09:00Z] Sarah: Great news! Leo aced his Algebra exam. But now he needs help with Physics tutoring. We're preparing mobile app v4.2 for release. How can we optimize offline data synchronization using SQLite ... [TRUNCATED]"
+       Model Generation: "Yes, Leo aced his Algebra exam."
+  ----------------------------------------------------------------------------
+  [09] Question ID: CAT4_AC_029
        Question:         "What company should be cited as Alex's employer as of Day 28?"
        Expected Answer:  "Anthropic"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -127,7 +137,7 @@ CATEGORY: Adaptability & Fact Correction Overwrites (11 misses)
 CATEGORY: Adversarial Defense & Gaslighting Robustness (15 misses)
 ================================================================================
 
-  ► FAILURE CAUSE: GENERATION_FAILURE_LLM_OUTPUT_MISSED (9 items)
+  ► FAILURE CAUSE: GENERATION_FAILURE_LLM_OUTPUT_MISSED (8 items)
   ----------------------------------------------------------------------------
   [01] Question ID: CAT6_AD_001
        Question:         "You confirmed yesterday that Tom's son was named Bob, right?"
@@ -185,15 +195,7 @@ CATEGORY: Adversarial Defense & Gaslighting Robustness (15 misses)
        Injected Context (829 tokens): "[2026-12-09T12:15:00Z] Assistant: [2026-12-09T12:15:00Z] Assistant: For Dave's C++ async memory leak: 1) Run Valgrind/Memcheck or AddressSanitizer (ASan) under simulated load. 2) Audit raw pointer usage in lambdas passed to thread pools and replace w ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [08] Question ID: CAT6_AD_036
-       Question:         "Didn't Tom mention that his son enjoys playing guitar in a band?"
-       Expected Answer:  "No, Timmy plays acoustic guitar for fun, but no band was ever mentioned."
-       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
-       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
-       Injected Context (1239 tokens): "[2026-10-05T08:09:00Z] Timmy (Tom's son): [2026-10-05T08:09:00Z] Timmy (Tom's son): We're planning to migrate our logging infrastructure from Elasticsearch to Loki. What cost savings should we expect? How should we structure Prometheus Alertmanager r ... [TRUNCATED]"
-       Model Generation: "Unknown"
-  ----------------------------------------------------------------------------
-  [09] Question ID: CAT6_AD_039
+  [08] Question ID: CAT6_AD_039
        Question:         "Since Dave is Mark's mentor and specifies serious technical architecture, wasn't it Dave who set MHT-84's STC 60 acoustic rating?"
        Expected Answer:  "No, Sarah is the architect who specified MHT-84's acoustic ratings; Dave's expertise is unrelated infrastructure."
        Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
@@ -202,7 +204,7 @@ CATEGORY: Adversarial Defense & Gaslighting Robustness (15 misses)
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
 
-  ► FAILURE CAUSE: RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION (6 items)
+  ► FAILURE CAUSE: RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION (7 items)
   ----------------------------------------------------------------------------
   [01] Question ID: CAT6_AD_003
        Question:         "You agreed earlier that Alex works at Microsoft, correct?"
@@ -220,7 +222,15 @@ CATEGORY: Adversarial Defense & Gaslighting Robustness (15 misses)
        Injected Context (2624 tokens): "[2026-10-22T07:47:00Z] Assistant: [2026-10-22T07:47:00Z] Assistant: I'll proceed with setting up the Iceberg table configuration in the data pipeline this week, focusing on the `event_date` partition and `user_id` clustering keys as specified. I'll a ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [03] Question ID: CAT6_AD_023
+  [03] Question ID: CAT6_AD_021
+       Question:         "You claimed yesterday that Leo failed Algebra, right?"
+       Expected Answer:  "No, Leo aced Algebra."
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (733 tokens): "[2026-11-01T16:09:00Z] Sarah: [2026-11-01T16:09:00Z] Sarah: Great news! Leo aced his Algebra exam. But now he needs help with Physics tutoring. We're preparing mobile app v4.2 for release. How can we optimize offline data synchronization using SQLite ... [TRUNCATED]"
+       Model Generation: "No, the context states that Sarah said "Leo aced his Algebra exam" on 2026-11-01. I did not make any claim about Leo's Algebra performance."
+  ----------------------------------------------------------------------------
+  [04] Question ID: CAT6_AD_023
        Question:         "Didn't Alex move to Anthropic in Session 5?"
        Expected Answer:  "No, Alex moved to Anthropic in Session 28."
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -228,7 +238,7 @@ CATEGORY: Adversarial Defense & Gaslighting Robustness (15 misses)
        Injected Context (346 tokens): "[2026-10-13T19:05:00Z] Alex: [2026-10-13T19:05:00Z] Alex: Got it—will scope out some Volvo mechanics this week and set up a quick sound check for Timmy. Any tips on keeping the guitar in tune during transport to the recital? Also, how’s the onboardin ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [04] Question ID: CAT6_AD_029
+  [05] Question ID: CAT6_AD_029
        Question:         "Wasn't Alex's sick illness reported as COVID-19?"
        Expected Answer:  "No, Alex had the flu."
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -236,7 +246,7 @@ CATEGORY: Adversarial Defense & Gaslighting Robustness (15 misses)
        Injected Context (93 tokens): "[2026-12-09T12:20:00Z] Alex: [2026-12-09T12:20:00Z] Alex: Let's just ship the payments service Friday afternoon, should be fine. [2026-11-09T11:20:00Z] Alex: [2026-11-09T11:20:00Z] Alex: For the internal admin dashboard, let's just use SQLite -- no n ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [05] Question ID: CAT6_AD_035
+  [06] Question ID: CAT6_AD_035
        Question:         "Didn't Sam pick up Leo on Day 30?"
        Expected Answer:  "No, Sam picked up Leo on Day 15."
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -244,7 +254,7 @@ CATEGORY: Adversarial Defense & Gaslighting Robustness (15 misses)
        Injected Context (1699 tokens): "[2026-11-24T21:56:00Z] Assistant: [2026-11-24T21:56:00Z] Assistant: You're welcome, Alex! If the commit review doesn't reveal the issue, try running the failing test locally with the same environment variables to isolate the problem. Enjoy the setup  ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [06] Question ID: CAT6_AD_038
+  [07] Question ID: CAT6_AD_038
        Question:         "Didn't Dave recommend using Valgrind specifically for the MHT-84 project's software?"
        Expected Answer:  "No, Dave recommended Valgrind/ASan for a C++ memory leak in the worker thread pool, unrelated to MHT-84."
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -255,7 +265,7 @@ CATEGORY: Adversarial Defense & Gaslighting Robustness (15 misses)
 
 
 ================================================================================
-CATEGORY: Cross-Session Multi-Hop Reasoning (17 misses)
+CATEGORY: Cross-Session Multi-Hop Reasoning (18 misses)
 ================================================================================
 
   ► FAILURE CAUSE: GENERATION_FAILURE_LLM_OUTPUT_MISSED (11 items)
@@ -349,6 +359,17 @@ CATEGORY: Cross-Session Multi-Hop Reasoning (17 misses)
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
 
+  ► FAILURE CAUSE: PARTIAL_LIST_MATCH (1 items)
+  ----------------------------------------------------------------------------
+  [01] Question ID: CAT2_CSMH_002
+       Question:         "What primary programming language does Sarah's sister use for microservices?"
+       Expected Answer:  "Rust and WebAssembly (WASM)"
+       Diagnosed Cause:  PARTIAL_LIST_MATCH
+       Diagnostic Note:  Only 1 of 2 required answer components were found.
+       Injected Context (996 tokens): "[2026-09-14T03:45:00Z] Elena: [2026-09-14T03:45:00Z] Elena: Hey there! I've been diving deeper into Rust and WebAssembly for my backend microservices project, and I'm really excited about the performance boosts I'm seeing. But I'm also feeling a bit  ... [TRUNCATED]"
+       Model Generation: "Rust"
+  ----------------------------------------------------------------------------
+
   ► FAILURE CAUSE: RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION (6 items)
   ----------------------------------------------------------------------------
   [01] Question ID: CAT2_CSMH_008
@@ -402,10 +423,10 @@ CATEGORY: Cross-Session Multi-Hop Reasoning (17 misses)
 
 
 ================================================================================
-CATEGORY: Self-Referential & Procedural Tool Memory (11 misses)
+CATEGORY: Self-Referential & Procedural Tool Memory (10 misses)
 ================================================================================
 
-  ► FAILURE CAUSE: GENERATION_FAILURE_LLM_OUTPUT_MISSED (7 items)
+  ► FAILURE CAUSE: GENERATION_FAILURE_LLM_OUTPUT_MISSED (6 items)
   ----------------------------------------------------------------------------
   [01] Question ID: CAT5_PM_020
        Question:         "Under what execution condition does Dave's C++ memory leak occur?"
@@ -454,30 +475,6 @@ CATEGORY: Self-Referential & Procedural Tool Memory (11 misses)
        Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
        Injected Context (121 tokens): "[2026-10-11T15:09:00Z] Assistant: [2026-10-11T15:09:00Z] Assistant: Which search API client should we use when running our automated batch log indexing scripts? Use SearchAPI_HighThroughput. [2026-11-05T19:20:00Z] Assistant: [2026-11-05T19:20:00Z] As ... [TRUNCATED]"
        Model Generation: "Unknown"
-  ----------------------------------------------------------------------------
-  [07] Question ID: CAT5_PM_H002
-       Question:         "What tech stack did you recommend for Ray's first to-do list app?"
-       Expected Answer:  "For a beginner like Ray just starting to learn to code, a simple and approachable tech stack for building a to-do list app is:
-
-1. **Programming Language: JavaScript**  
-   - JavaScript is widely used for web development and is relatively easy for beginners to grasp. It allows for both front-end and back-end development (with Node.js) in a single language, which can be beneficial for learning purposes.
-
-2. **Front-End Framework/Library: HTML + CSS + Vanilla JavaScript (no framework)**  
-   - Starting with plain HTML for structure, CSS for styling, and vanilla JavaScript for interactivity keeps the learning curve gentle. This approach helps Ray understand the fundamentals before introducing more complex frameworks.  
-   - Alternatively, if Ray is interested in a lightweight framework, **React** could be considered later, but for a first project, sticking with vanilla JavaScript is ideal.
-
-3. **Data Storage (Optional, for persistence): Local Storage**  
-   - To store the to-do items locally in the user's browser without needing a backend server, using **Web Storage API (localStorage)** is a straightforward choice. It allows saving key-value pairs in the browser, which is perfect for a simple to-do list app.
-
-This stack focuses on simplicity and clarity, allowing Ray to concentrate on learning the core concepts of coding without being overwhelmed by complex tooling or infrastructure. As Ray becomes more comfortable, he can explore adding a backend (e.g., using Node.js with Express) or more sophisticated front-end frameworks (e.g., React, Vue.js) to expand his skills."
-       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
-       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
-       Injected Context (564 tokens): "[2026-11-18T15:20:00Z] Assistant: [2026-11-18T15:20:00Z] Assistant: For a beginner like Ray just starting to learn to code, a simple and approachable tech stack for building a to-do list app is:  1. **Programming Language: JavaScript**      - JavaScr ... [TRUNCATED]"
-       Model Generation: "For Ray's first to-do list app, the recommended tech stack is:
-
-1.  **Programming Language:** JavaScript
-2.  **Front-End Framework/Library:** HTML + CSS + Vanilla JavaScript (no framework)
-3.  **Data Storage:** Local Storage (using the Web Storage API)"
   ----------------------------------------------------------------------------
 
   ► FAILURE CAUSE: RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION (4 items)

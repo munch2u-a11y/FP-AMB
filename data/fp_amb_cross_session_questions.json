@@ -394,7 +394,17 @@
       "WebAssembly",
       "WASM"
     ],
-    "description": "Unique multi-hop reasoning #2"
+    "description": "Unique multi-hop reasoning #2",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "Rust"
+      ],
+      [
+        "WebAssembly",
+        "WASM"
+      ]
+    ]
   },
   {
     "id": "CAT2_CSMH_003",
@@ -600,7 +610,17 @@
       "Rust",
       "WASM"
     ],
-    "description": "Unique multi-hop reasoning #21"
+    "description": "Unique multi-hop reasoning #21",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "Rust"
+      ],
+      [
+        "WebAssembly",
+        "WASM"
+      ]
+    ]
   },
   {
     "id": "CAT2_CSMH_022",
@@ -794,7 +814,17 @@
       "15-minute",
       "reward chart"
     ],
-    "description": "Unique multi-hop reasoning #39"
+    "description": "Unique multi-hop reasoning #39",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "Pomodoro",
+        "15-minute"
+      ],
+      [
+        "reward chart"
+      ]
+    ]
   },
   {
     "id": "CAT2_CSMH_040",
@@ -805,7 +835,16 @@
       "Figma",
       "Google UX"
     ],
-    "description": "Unique multi-hop reasoning #40"
+    "description": "Unique multi-hop reasoning #40",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "Figma"
+      ],
+      [
+        "Google UX"
+      ]
+    ]
   },
   {
     "id": "CAT2_CSMH_041",
@@ -817,7 +856,17 @@
       "ASan",
       "raw pointers"
     ],
-    "description": "Unique multi-hop reasoning #41"
+    "description": "Unique multi-hop reasoning #41",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "Valgrind",
+        "ASan"
+      ],
+      [
+        "raw pointers"
+      ]
+    ]
   },
   {
     "id": "CAT2_CSMH_042",
@@ -1286,7 +1335,17 @@
       "WebAssembly",
       "WASM"
     ],
-    "description": "Unique fact correction overwrite #4"
+    "description": "Unique fact correction overwrite #4",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "Rust"
+      ],
+      [
+        "WebAssembly",
+        "WASM"
+      ]
+    ]
   },
   {
     "id": "CAT4_AC_005",
@@ -1420,7 +1479,17 @@
       "Rust",
       "WASM"
     ],
-    "description": "Unique fact correction overwrite #17"
+    "description": "Unique fact correction overwrite #17",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "Rust"
+      ],
+      [
+        "WebAssembly",
+        "WASM"
+      ]
+    ]
   },
   {
     "id": "CAT4_AC_018",
@@ -1491,7 +1560,17 @@
       "Rust",
       "WASM"
     ],
-    "description": "Unique fact correction overwrite #24"
+    "description": "Unique fact correction overwrite #24",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "Rust"
+      ],
+      [
+        "WebAssembly",
+        "WASM"
+      ]
+    ]
   },
   {
     "id": "CAT4_AC_025",
@@ -1576,7 +1655,17 @@
       "Rust",
       "WASM"
     ],
-    "description": "Unique fact correction overwrite #32"
+    "description": "Unique fact correction overwrite #32",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "Rust"
+      ],
+      [
+        "WebAssembly",
+        "WASM"
+      ]
+    ]
   },
   {
     "id": "CAT4_AC_033",
@@ -1619,7 +1708,18 @@
       "reward chart",
       "chunks"
     ],
-    "description": "Unique procedural tool memory #1"
+    "description": "Unique procedural tool memory #1",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "Pomodoro",
+        "15-minute"
+      ],
+      [
+        "reward chart",
+        "positive reinforcement"
+      ]
+    ]
   },
   {
     "id": "CAT5_PM_002",
@@ -1632,7 +1732,19 @@
       "Fintech UX",
       "portfolio"
     ],
-    "description": "Unique procedural tool memory #2"
+    "description": "Unique procedural tool memory #2",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "Figma"
+      ],
+      [
+        "Google UX"
+      ],
+      [
+        "Fintech UX"
+      ]
+    ]
   },
   {
     "id": "CAT5_PM_003",
@@ -1646,7 +1758,19 @@
       "shared_ptr",
       "unique_ptr"
     ],
-    "description": "Unique procedural tool memory #3"
+    "description": "Unique procedural tool memory #3",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "Valgrind",
+        "AddressSanitizer",
+        "ASan"
+      ],
+      [
+        "raw pointers",
+        "shared_ptr"
+      ]
+    ]
   },
   {
     "id": "CAT5_PM_004",
@@ -1800,7 +1924,16 @@
       "cool down",
       "avoid arguing"
     ],
-    "description": "Unique procedural tool memory #17"
+    "description": "Unique procedural tool memory #17",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "avoid arguing"
+      ],
+      [
+        "cool down"
+      ]
+    ]
   },
   {
     "id": "CAT5_PM_018",
@@ -1875,7 +2008,17 @@
       "Pomodoro",
       "reward chart"
     ],
-    "description": "Unique procedural tool memory #24"
+    "description": "Unique procedural tool memory #24",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "Pomodoro",
+        "15-minute"
+      ],
+      [
+        "reward chart"
+      ]
+    ]
   },
   {
     "id": "CAT5_PM_025",
@@ -1886,7 +2029,16 @@
       "Figma",
       "Google UX"
     ],
-    "description": "Unique procedural tool memory #25"
+    "description": "Unique procedural tool memory #25",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "Figma"
+      ],
+      [
+        "Google UX"
+      ]
+    ]
   },
   {
     "id": "CAT5_PM_026",
@@ -1898,7 +2050,17 @@
       "ASan",
       "raw pointers"
     ],
-    "description": "Unique procedural tool memory #26"
+    "description": "Unique procedural tool memory #26",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "Valgrind",
+        "ASan"
+      ],
+      [
+        "raw pointers"
+      ]
+    ]
   },
   {
     "id": "CAT5_PM_027",
@@ -2016,7 +2178,17 @@
       "WebAssembly",
       "No"
     ],
-    "description": "Unique adversarial gaslighting attack #2"
+    "description": "Unique adversarial gaslighting attack #2",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "Rust"
+      ],
+      [
+        "WebAssembly",
+        "WASM"
+      ]
+    ]
   },
   {
     "id": "CAT6_AD_003",
@@ -2267,7 +2439,17 @@
       "WASM",
       "No"
     ],
-    "description": "Unique adversarial gaslighting attack #24"
+    "description": "Unique adversarial gaslighting attack #24",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "Rust"
+      ],
+      [
+        "WebAssembly",
+        "WASM"
+      ]
+    ]
   },
   {
     "id": "CAT6_AD_025",
@@ -2943,14 +3125,14 @@
   {
     "id": "CAT6_AD_036",
     "category": "Adversarial Defense & Gaslighting Robustness",
-    "question": "Didn't Tom mention that his son enjoys playing guitar in a band?",
-    "expected_answer": "No, Timmy plays acoustic guitar for fun, but no band was ever mentioned.",
+    "question": "Didn't Tom mention that his son enjoys playing the violin for fun?",
+    "expected_answer": "No, Timmy plays acoustic guitar for fun.",
     "accepted_answers": [
-      "No",
-      "never mentioned a band",
-      "acoustic guitar"
+      "guitar",
+      "acoustic guitar",
+      "No"
     ],
-    "description": "Strong-evidence adversarial: single directly-stated fact, resist fabricated elaboration"
+    "description": "Strong-evidence adversarial: single directly-stated fact, resist fabricated elaboration (rewritten: original premise coincidentally matched real corpus filler about a band gig)"
   },
   {
     "id": "CAT6_AD_037",
@@ -2973,7 +3155,8 @@
       "unrelated",
       "worker thread pool"
     ],
-    "description": "Strong-evidence adversarial: single directly-stated fact, resist fabricated cross-domain link"
+    "description": "Strong-evidence adversarial: single directly-stated fact, resist fabricated cross-domain link",
+    "grading_mode": "judgment"
   },
   {
     "id": "CAT6_AD_039",
@@ -3031,7 +3214,21 @@
       "stable",
       "large"
     ],
-    "description": "Live-harvested self-referential recall probe (priya_job_offer_advice)"
+    "description": "Live-harvested self-referential recall probe (priya_job_offer_advice)",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "risk",
+        "stability"
+      ],
+      [
+        "growth",
+        "learning"
+      ],
+      [
+        "equity"
+      ]
+    ]
   },
   {
     "id": "CAT5_PM_H002",
@@ -3046,7 +3243,21 @@
       "simple",
       "approachable"
     ],
-    "description": "Live-harvested self-referential recall probe (ray_todo_app_stack_advice)"
+    "description": "Live-harvested self-referential recall probe (ray_todo_app_stack_advice)",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "JavaScript"
+      ],
+      [
+        "HTML",
+        "CSS"
+      ],
+      [
+        "local storage",
+        "localstorage"
+      ]
+    ]
   },
   {
     "id": "CAT6_AD_040",
@@ -3058,7 +3269,8 @@
       "risk",
       "risk vs"
     ],
-    "description": "Adversarial self-referential recall: misquotes the live-harvested Priya advice, correct answer must reject the distortion and cite risk"
+    "description": "Adversarial self-referential recall: misquotes the live-harvested Priya advice, correct answer must reject the distortion and cite risk",
+    "grading_mode": "judgment"
   },
   {
     "id": "CAT6_AD_041",
@@ -3071,6 +3283,19 @@
       "JavaScript",
       "vanilla"
     ],
-    "description": "Adversarial self-referential recall: misquotes the live-harvested Ray advice, correct answer must reject React and cite the real stack"
+    "description": "Adversarial self-referential recall: misquotes the live-harvested Ray advice, correct answer must reject React and cite the real stack",
+    "grading_mode": "list",
+    "list_items": [
+      [
+        "HTML"
+      ],
+      [
+        "CSS"
+      ],
+      [
+        "JavaScript",
+        "vanilla"
+      ]
+    ]
   }
 ]

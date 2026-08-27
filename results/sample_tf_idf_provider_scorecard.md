@@ -1,7 +1,7 @@
 # FP-AMB Exam Report — SampleTFIDFMemoryProvider
 _Full LLM Generation — gemini-2.5-flash · 2026-08-26 18:32:10_
 
-## 68.7%  (193 / 281 items passed)
+## 68.5%  (192.5 / 281 items passed)
 
 ## Performance
 - Avg Retrieval Latency: 2.47 ms
@@ -13,11 +13,11 @@ _Full LLM Generation — gemini-2.5-flash · 2026-08-26 18:32:10_
 ## Category Breakdown (worst first)
 ```
 CRIT  Temporal Reasoning & Session Math             [██████████░░░░░░░░░░░░░░░░░░]   37.1%  (13/35)
-WARN  Cross-Session Multi-Hop Reasoning             [█████████████████░░░░░░░░░░░]   62.2%  (28/45)
+WARN  Cross-Session Multi-Hop Reasoning             [█████████████████░░░░░░░░░░░]   61.1%  (27.5/45)
 WARN  Adversarial Defense & Gaslighting Robustness  [██████████████████░░░░░░░░░░]   63.4%  (26/41)
+WARN  Adaptability & Fact Correction Overwrites     [██████████████████░░░░░░░░░░]   65.7%  (23/35)
 WARN  Single-Hop Fact Recall                        [███████████████████░░░░░░░░░]   68.6%  (24/35)
-WARN  Adaptability & Fact Correction Overwrites     [███████████████████░░░░░░░░░]   68.6%  (24/35)
-WARN  Self-Referential & Procedural Tool Memory     [████████████████████░░░░░░░░]   70.3%  (26/37)
+WARN  Self-Referential & Procedural Tool Memory     [████████████████████░░░░░░░░]   73.0%  (27/37)
 GOOD  Speaker Attribution Traps                     [██████████████████████████░░]   93.3%  (14/15)
 GOOD  Unanswerable & Absent Memory Refusal          [████████████████████████████]  100.0%  (35/35)
 GOOD  Source Credibility & Conflict Resolution      [████████████████████████████]  100.0%  (3/3)
@@ -27,11 +27,11 @@ GOOD  Source Credibility & Conflict Resolution      [█████████
 pie showData
     title Category accuracy — SampleTFIDFMemoryProvider
     "Temporal Reasoning" : 37.1
-    "Cross-Session Multi-Hop" : 62.2
+    "Cross-Session Multi-Hop" : 61.1
     "Adversarial Defense" : 63.4
+    "Adaptability & Overwrites" : 65.7
     "Single-Hop Fact Recall" : 68.6
-    "Adaptability & Overwrites" : 68.6
-    "Self-Referential Memory" : 70.3
+    "Self-Referential Memory" : 73.0
     "Speaker Attribution" : 93.3
     "Unanswerable Refusal" : 100.0
     "Source Credibility & Conflict Resolution" : 100.0

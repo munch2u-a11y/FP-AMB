@@ -1,7 +1,7 @@
 # FP-AMB Exam Report — RealMRAGProvider
 _Full LLM Generation — gemini-2.5-flash · 2026-08-26 18:22:03_
 
-## 58.0%  (163 / 281 items passed)
+## 58.2%  (163.5 / 281 items passed)
 
 ## Performance
 - Avg Retrieval Latency: 2730.77 ms
@@ -13,9 +13,9 @@ _Full LLM Generation — gemini-2.5-flash · 2026-08-26 18:22:03_
 ## Category Breakdown (worst first)
 ```
 CRIT  Temporal Reasoning & Session Math             [████████░░░░░░░░░░░░░░░░░░░░]   28.6%  (10/35)
-CRIT  Cross-Session Multi-Hop Reasoning             [██████████████░░░░░░░░░░░░░░]   48.9%  (22/45)
+CRIT  Cross-Session Multi-Hop Reasoning             [█████████████░░░░░░░░░░░░░░░]   47.8%  (21.5/45)
 WARN  Adversarial Defense & Gaslighting Robustness  [███████████████░░░░░░░░░░░░░]   53.7%  (22/41)
-WARN  Self-Referential & Procedural Tool Memory     [███████████████░░░░░░░░░░░░░]   54.1%  (20/37)
+WARN  Self-Referential & Procedural Tool Memory     [████████████████░░░░░░░░░░░░]   56.8%  (21/37)
 WARN  Adaptability & Fact Correction Overwrites     [████████████████░░░░░░░░░░░░]   57.1%  (20/35)
 WARN  Single-Hop Fact Recall                        [█████████████████░░░░░░░░░░░]   60.0%  (21/35)
 WARN  Speaker Attribution Traps                     [███████████████████░░░░░░░░░]   66.7%  (10/15)
@@ -27,9 +27,9 @@ GOOD  Source Credibility & Conflict Resolution      [█████████
 pie showData
     title Category accuracy — RealMRAGProvider
     "Temporal Reasoning" : 28.6
-    "Cross-Session Multi-Hop" : 48.9
+    "Cross-Session Multi-Hop" : 47.8
     "Adversarial Defense" : 53.7
-    "Self-Referential Memory" : 54.1
+    "Self-Referential Memory" : 56.8
     "Adaptability & Overwrites" : 57.1
     "Single-Hop Fact Recall" : 60.0
     "Speaker Attribution" : 66.7

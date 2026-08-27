@@ -60,6 +60,8 @@ def compile_master_key():
             "accepted_answers": accepted_list,
             "is_dynamic_key": is_dyn,
             "description": item.get("description", ""),
+            "grading_mode": item.get("grading_mode", "exact"),
+            "list_items": item.get("list_items", []),
         }
 
     with open(MASTER_KEY_OUTPUT, "w") as f:

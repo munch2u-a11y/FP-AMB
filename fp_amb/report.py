@@ -11,6 +11,12 @@ import html
 import json
 from pathlib import Path
 
+
+def _fmt_num(x) -> str:
+    """245 instead of 245.0 when there's no partial credit in the mix, 245.5 when there is."""
+    x = float(x)
+    return str(int(x)) if x.is_integer() else f"{x:.1f}"
+
 # Reference palette (dataviz skill default) — unchanged values.
 BLUE_LIGHT = "#2a78d6"
 BLUE_DARK = "#3987e5"
@@ -162,13 +168,13 @@ def _bar_chart_svg(category_breakdown: dict) -> str:
         parts.append(
             f'<rect x="{label_w}" y="{bar_y}" width="{bar_w:.1f}" height="{bar_h}" '
             f'rx="4" fill="{color}">'
-            f'<title>{html.escape(label)}: {correct}/{total} ({pct:.1f}%)</title>'
+            f'<title>{html.escape(label)}: {_fmt_num(correct)}/{total} ({pct:.1f}%)</title>'
             f'</rect>'
         )
         # value label
         parts.append(
             f'<text x="{label_w + track_w + 10}" y="{bar_y + bar_h/2 + 4}" '
-            f'class="val-label">{pct:.1f}% <tspan class="val-sub">({correct}/{total})</tspan></text>'
+            f'class="val-label">{pct:.1f}% <tspan class="val-sub">({_fmt_num(correct)}/{total})</tspan></text>'
         )
         parts.append('</g>')
 
@@ -228,7 +234,7 @@ def generate_html_report(scorecard: dict) -> str:
 
   <div class="card hero">
     <div class="hero-value">{overall:.1f}%</div>
-    <div class="hero-sub">{passed} / {total} items passed</div>
+    <div class="hero-sub">{_fmt_num(passed)} / {total} items passed</div>
   </div>
 
   <div class="card">
@@ -396,7 +402,7 @@ def generate_text_report(scorecard: dict) -> str:
     lines.append(f"# FP-AMB Exam Report — {provider}")
     lines.append(f"_{mode_label} · {timestamp}_")
     lines.append("")
-    lines.append(f"## {overall:.1f}%  ({passed} / {total} items passed)")
+    lines.append(f"## {overall:.1f}%  ({_fmt_num(passed)} / {total} items passed)")
     lines.append("")
     lines.append("## Performance")
     lines.append(f"- Avg Retrieval Latency: {scorecard.get('avg_retrieval_latency_ms', 0):.2f} ms")
@@ -410,7 +416,7 @@ def generate_text_report(scorecard: dict) -> str:
     for cat, correct, total_c, pct in rows:
         tag = _status_tag(pct)
         bar = _ascii_bar(pct)
-        lines.append(f"{tag:4}  {cat:<{name_w}}  [{bar}]  {pct:5.1f}%  ({correct}/{total_c})")
+        lines.append(f"{tag:4}  {cat:<{name_w}}  [{bar}]  {pct:5.1f}%  ({_fmt_num(correct)}/{total_c})")
     lines.append("```")
     lines.append("")
     lines.append("```mermaid")
@@ -518,7 +524,7 @@ def generate_misses_report(scorecard: dict) -> str:
     lines.append("================================================================================")
     lines.append("               FP-AMB MISSED QUESTIONS & FAILURE TAXONOMY REPORT")
     lines.append(f"Provider: {provider} | Mode: {mode_label} | Date: {timestamp}")
-    lines.append(f"Overall Pass Rate: {overall:.1f}% ({passed}/{total} passed) | Total Misses: {total_misses}")
+    lines.append(f"Overall Pass Rate: {overall:.1f}% ({_fmt_num(passed)}/{total} passed) | Total Misses: {total_misses}")
     lines.append("================================================================================\n")
 
     lines.append("TOKEN & PAYLOAD METRICS SUMMARY")

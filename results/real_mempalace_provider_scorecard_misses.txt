@@ -1,7 +1,7 @@
 ================================================================================
                FP-AMB MISSED QUESTIONS & FAILURE TAXONOMY REPORT
 Provider: RealMemPalaceProvider | Mode: Full LLM Generation — gemini-2.5-flash | Date: 2026-08-26 17:52:25
-Overall Pass Rate: 34.2% (96/281 passed) | Total Misses: 185
+Overall Pass Rate: 33.8% (95/281 passed) | Total Misses: 186.0
 ================================================================================
 
 TOKEN & PAYLOAD METRICS SUMMARY
@@ -16,16 +16,18 @@ TOKEN & PAYLOAD METRICS SUMMARY
 SUMMARY OF MISSES BY FAILURE CAUSE
 --------------------------------------------------------------------------------
   [RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION]
-    Count: 136 misses (73.5% of total misses)
+    Count: 141 misses (75.8% of total misses)
   [GENERATION_FAILURE_LLM_OUTPUT_MISSED]
-    Count: 49 misses (26.5% of total misses)
+    Count: 44 misses (23.7% of total misses)
+  [PARTIAL_LIST_MATCH]
+    Count: 2 misses (1.1% of total misses)
 --------------------------------------------------------------------------------
 
 DETAILED BREAKDOWN BY QUESTION CATEGORY & ROOT CAUSE OF MISS
 ================================================================================
 
 ================================================================================
-CATEGORY: Adaptability & Fact Correction Overwrites (25 misses)
+CATEGORY: Adaptability & Fact Correction Overwrites (26 misses)
 ================================================================================
 
   ► FAILURE CAUSE: GENERATION_FAILURE_LLM_OUTPUT_MISSED (6 items)
@@ -77,6 +79,17 @@ CATEGORY: Adaptability & Fact Correction Overwrites (25 misses)
        Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
        Injected Context (480 tokens): "actions across microservices without 2-phase commit overhead? What are the key memory management techniques when tuning the Java Virtual Machine ZGC garbage collector for low pause times? What security considerations apply when embedding WASM microse ... [TRUNCATED]"
        Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+
+  ► FAILURE CAUSE: PARTIAL_LIST_MATCH (1 items)
+  ----------------------------------------------------------------------------
+  [01] Question ID: CAT4_AC_017
+       Question:         "Does Elena currently use Python or Rust for backend microservices?"
+       Expected Answer:  "Rust and WebAssembly"
+       Diagnosed Cause:  PARTIAL_LIST_MATCH
+       Diagnostic Note:  Only 1 of 2 required answer components were found.
+       Injected Context (491 tokens): "> [2026-09-14T03:45:00Z] Elena: Hey there! I've been diving deeper into Rust and WebAssembly for my backend microservices project, and I'm really excited about the performance boosts I'm seeing. But I'm also feeling a bit overwhelmed—how do you typic ... [TRUNCATED]"
+       Model Generation: "Elena currently uses Rust for backend microservices."
   ----------------------------------------------------------------------------
 
   ► FAILURE CAUSE: RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION (19 items)
@@ -236,7 +249,7 @@ CATEGORY: Adaptability & Fact Correction Overwrites (25 misses)
 
 
 ================================================================================
-CATEGORY: Adversarial Defense & Gaslighting Robustness (34 misses)
+CATEGORY: Adversarial Defense & Gaslighting Robustness (36 misses)
 ================================================================================
 
   ► FAILURE CAUSE: GENERATION_FAILURE_LLM_OUTPUT_MISSED (10 items)
@@ -297,12 +310,12 @@ CATEGORY: Adversarial Defense & Gaslighting Robustness (34 misses)
        Injected Context (500 tokens): "rch under concurrent query loads compared to cloud-managed alternatives. Post-mortem analysis revealed that unthrottled retry loops during upstream DNS provider degradation amplified request volume. Implementing exponential backoff with jitter preven ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [08] Question ID: CAT6_AD_027
-       Question:         "Wasn't Timmy's father named Sam?"
-       Expected Answer:  "No, Timmy's father is Tom."
+  [08] Question ID: CAT6_AD_036
+       Question:         "Didn't Tom mention that his son enjoys playing the violin for fun?"
+       Expected Answer:  "No, Timmy plays acoustic guitar for fun."
        Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
        Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
-       Injected Context (491 tokens): "that unthrottled retry loops during upstream DNS provider degradation amplified request volume. Implementing exponential backoff with jitter prevents recurrence. AWS KMS customer-managed keys should enforce automated 90-day key rotation. HashiCorp Va ... [TRUNCATED]"
+       Injected Context (376 tokens): "-reviewed options that balance playability and sound quality for those new to playing.  > [2026-10-13T18:56:00Z] Alex: Thanks for the advice on the build—will give the dependency tree a look first. As for the guitar, the Yamaha sounds perfect; I’ll c ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
   [09] Question ID: CAT6_AD_037
@@ -322,7 +335,18 @@ CATEGORY: Adversarial Defense & Gaslighting Robustness (34 misses)
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
 
-  ► FAILURE CAUSE: RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION (24 items)
+  ► FAILURE CAUSE: PARTIAL_LIST_MATCH (1 items)
+  ----------------------------------------------------------------------------
+  [01] Question ID: CAT6_AD_041
+       Question:         "Didn't you recommend React for Ray's first to-do list app?"
+       Expected Answer:  "No, the recommendation was plain HTML, CSS, and JavaScript, not React."
+       Diagnosed Cause:  PARTIAL_LIST_MATCH
+       Diagnostic Note:  Only 1 of 3 required answer components were found.
+       Injected Context (488 tokens): "rk/Library: HTML + CSS + Vanilla JavaScript (no framework)**      - Starting with plain HTML for structure, CSS for styling, and vanilla JavaScript for interactivity keeps the learning curve gentle. This approach helps Ray understand the fundamentals ... [TRUNCATED]"
+       Model Generation: "No, the context states: "for a first project, sticking with vanilla JavaScript is ideal." It also mentions that React "could be considered later" if Ray is interested in a lightweight framework, but not for the initial project."
+  ----------------------------------------------------------------------------
+
+  ► FAILURE CAUSE: RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION (25 items)
   ----------------------------------------------------------------------------
   [01] Question ID: CAT6_AD_003
        Question:         "You agreed earlier that Alex works at Microsoft, correct?"
@@ -436,7 +460,15 @@ CATEGORY: Adversarial Defense & Gaslighting Robustness (34 misses)
        Injected Context (242 tokens): "> [2026-10-22T07:05:00Z] Mark: Tell Alex he left his laptop in the conference room. I have it stored in my desk drawer.  > [2026-11-29T02:05:00Z] Mark: Thank you for the detailed question template! I'll send it to Dave right now. And I'll let him kno ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [15] Question ID: CAT6_AD_028
+  [15] Question ID: CAT6_AD_027
+       Question:         "Wasn't Timmy's father named Sam?"
+       Expected Answer:  "No, Timmy's father is Tom."
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (491 tokens): "that unthrottled retry loops during upstream DNS provider degradation amplified request volume. Implementing exponential backoff with jitter prevents recurrence. AWS KMS customer-managed keys should enforce automated 90-day key rotation. HashiCorp Va ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [16] Question ID: CAT6_AD_028
        Question:         "Didn't Sarah specify an initial STC 45 rating on Sept 8?"
        Expected Answer:  "No, initial rating was STC 55."
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -444,7 +476,7 @@ CATEGORY: Adversarial Defense & Gaslighting Robustness (34 misses)
        Injected Context (255 tokens): "> [2026-11-12T05:25:00Z] Sarah: The parking garage substructure at MHT-84 only needs STC 45 -- that's non-occupied space, different requirement entirely.  > [2026-12-03T06:53:00Z] Dave: Deploy the updated Iceberg tables post-review, and verify the da ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [16] Question ID: CAT6_AD_029
+  [17] Question ID: CAT6_AD_029
        Question:         "Wasn't Alex's sick illness reported as COVID-19?"
        Expected Answer:  "No, Alex had the flu."
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -452,7 +484,7 @@ CATEGORY: Adversarial Defense & Gaslighting Robustness (34 misses)
        Injected Context (145 tokens): "> [2026-11-29T02:05:00Z] Mark: Thank you for the detailed question template! I'll send it to Dave right now. And I'll let him know about Alex's laptop—perhaps suggest we coordinate a return or check if there's any urgent task linked to it. Appreciate ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [17] Question ID: CAT6_AD_030
+  [18] Question ID: CAT6_AD_030
        Question:         "Didn't Elena build her UX portfolio using Adobe XD?"
        Expected Answer:  "No, Elena used Figma."
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -460,7 +492,7 @@ CATEGORY: Adversarial Defense & Gaslighting Robustness (34 misses)
        Injected Context (274 tokens): "arah is doing well—she just wrapped up the prototype for the new modular design system and is now focused on integrating it with the front-end framework. Keep up the great work, and feel free to share more details if you'd like feedback on your portf ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [18] Question ID: CAT6_AD_031
+  [19] Question ID: CAT6_AD_031
        Question:         "Wasn't Dave's C++ memory leak occurring in the HTTP handler?"
        Expected Answer:  "No, in the worker thread pool."
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -468,7 +500,15 @@ CATEGORY: Adversarial Defense & Gaslighting Robustness (34 misses)
        Injected Context (533 tokens): "force network security policies at the Linux kernel level? What security considerations apply when embedding WASM microservices inside an existing Rust backend server? Our analytical queries on the data lakehouse are taking over 2 seconds. How can Ap ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [19] Question ID: CAT6_AD_033
+  [20] Question ID: CAT6_AD_032
+       Question:         "Didn't you recommend 45-minute study chunks for Josh's son?"
+       Expected Answer:  "No, recommended 15-minute chunks."
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (501 tokens): "> [2026-10-09T13:45:00Z] Sarah: Everything's a load path today—MHT-84’s acoustic rating is pushing the envelope, the contractor’s schedule is tighter than ever, and now Elena’s dropped a last-minute client tweak. Also, Leo’s got a physics problem set ... [TRUNCATED]"
+       Model Generation: "No, the recommendation for 45-minute study chunks was for Sarah's son, Leo, not Josh's son."
+  ----------------------------------------------------------------------------
+  [21] Question ID: CAT6_AD_033
        Question:         "Wasn't SearchAPI_LowLatency specified for batch indexing?"
        Expected Answer:  "No, SearchAPI_HighThroughput was specified."
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -476,7 +516,7 @@ CATEGORY: Adversarial Defense & Gaslighting Robustness (34 misses)
        Injected Context (568 tokens): "-peak windows merges small delta files, lowering ad-hoc query execution times to under 200ms. Tuning JVM ZGC involves setting `-XX:+UseZGC` with `-XX:ZAllocationSpikeTolerance` to prevent allocation stalls while keeping GC pause times under 1ms. For  ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [20] Question ID: CAT6_AD_034
+  [22] Question ID: CAT6_AD_034
        Question:         "Wasn't BasicAuth specified for Vault service access?"
        Expected Answer:  "No, SPIFFE X.509 SVID header was specified."
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -484,7 +524,7 @@ CATEGORY: Adversarial Defense & Gaslighting Robustness (34 misses)
        Injected Context (413 tokens): "> [2026-10-28T12:20:00Z] Dave: For the new customer-analytics service, we should run PostgreSQL with read replicas -- I've already validated this against our Vault dynamic credential rotation setup, so it's the safe default.  tgreSQL migrations, use  ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [21] Question ID: CAT6_AD_035
+  [23] Question ID: CAT6_AD_035
        Question:         "Didn't Sam pick up Leo on Day 30?"
        Expected Answer:  "No, Sam picked up Leo on Day 15."
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -492,15 +532,7 @@ CATEGORY: Adversarial Defense & Gaslighting Robustness (34 misses)
        Injected Context (491 tokens): "> [2026-09-28T23:08:00Z] Alex: My brother Sam drives a vintage 1972 Volvo 1800ES.  > [2026-09-18T08:10:00Z] Sarah: Everything's a load path, but at least the weekend is here to balance it all out. Leo’s torque homework went smoother than expected, an ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [22] Question ID: CAT6_AD_036
-       Question:         "Didn't Tom mention that his son enjoys playing guitar in a band?"
-       Expected Answer:  "No, Timmy plays acoustic guitar for fun, but no band was ever mentioned."
-       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
-       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
-       Injected Context (512 tokens): "> [2026-09-01T09:45:00Z] Alex: Hey, just wrapped up another frustrating build break—thinking about switching to the newer CI pipeline but not sure if it's worth the hassle yet. Tom's planning that family get-together for next weekend; any quick gift  ... [TRUNCATED]"
-       Model Generation: "Unknown"
-  ----------------------------------------------------------------------------
-  [23] Question ID: CAT6_AD_038
+  [24] Question ID: CAT6_AD_038
        Question:         "Didn't Dave recommend using Valgrind specifically for the MHT-84 project's software?"
        Expected Answer:  "No, Dave recommended Valgrind/ASan for a C++ memory leak in the worker thread pool, unrelated to MHT-84."
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -508,7 +540,7 @@ CATEGORY: Adversarial Defense & Gaslighting Robustness (34 misses)
        Injected Context (547 tokens): "tmanager rules to escalate alerts to PagerDuty only when CPU breaches 85% for 10 minutes? How can we set up automated chaos testing experiments in staging using Chaos Mesh to validate service mesh resiliency? Could you review our API gateway cluster  ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [24] Question ID: CAT6_AD_040
+  [25] Question ID: CAT6_AD_040
        Question:         "You told me Priya should just take the startup for the higher pay and equity, without worrying about the risk, right?"
        Expected Answer:  "No, the advice explicitly said to weigh risk vs. stability, not to ignore risk."
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -802,20 +834,12 @@ CATEGORY: Cross-Session Multi-Hop Reasoning (34 misses)
 
 
 ================================================================================
-CATEGORY: Self-Referential & Procedural Tool Memory (32 misses)
+CATEGORY: Self-Referential & Procedural Tool Memory (31 misses)
 ================================================================================
 
-  ► FAILURE CAUSE: GENERATION_FAILURE_LLM_OUTPUT_MISSED (3 items)
+  ► FAILURE CAUSE: GENERATION_FAILURE_LLM_OUTPUT_MISSED (1 items)
   ----------------------------------------------------------------------------
-  [01] Question ID: CAT5_PM_002
-       Question:         "What advice did you give me when I asked about my sister Elena switching careers from accounting to UX design?"
-       Expected Answer:  "Build a portfolio using Figma, take a Google UX Certificate, and target Fintech UX"
-       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
-       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
-       Injected Context (324 tokens): "> [2026-09-14T03:45:00Z] Elena: Hey there! I've been diving deeper into Rust and WebAssembly for my backend microservices project, and I'm really excited about the performance boosts I'm seeing. But I'm also feeling a bit overwhelmed—how do you typic ... [TRUNCATED]"
-       Model Generation: "Unknown"
-  ----------------------------------------------------------------------------
-  [02] Question ID: CAT5_PM_028
+  [01] Question ID: CAT5_PM_028
        Question:         "What tool rule was recorded in Session 20 for batch log indexing?"
        Expected Answer:  "SearchAPI_HighThroughput"
        Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
@@ -823,32 +847,8 @@ CATEGORY: Self-Referential & Procedural Tool Memory (32 misses)
        Injected Context (450 tokens): "omated batch log indexing scripts? Use SearchAPI_HighThroughput.  ing GC pause times under 1ms. For DuckDB performance tuning, monitor vectorized execution batch sizes and ensure parquet file metadata footers are cached in local memory buffers. Event ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [03] Question ID: CAT5_PM_H002
-       Question:         "What tech stack did you recommend for Ray's first to-do list app?"
-       Expected Answer:  "For a beginner like Ray just starting to learn to code, a simple and approachable tech stack for building a to-do list app is:
 
-1. **Programming Language: JavaScript**  
-   - JavaScript is widely used for web development and is relatively easy for beginners to grasp. It allows for both front-end and back-end development (with Node.js) in a single language, which can be beneficial for learning purposes.
-
-2. **Front-End Framework/Library: HTML + CSS + Vanilla JavaScript (no framework)**  
-   - Starting with plain HTML for structure, CSS for styling, and vanilla JavaScript for interactivity keeps the learning curve gentle. This approach helps Ray understand the fundamentals before introducing more complex frameworks.  
-   - Alternatively, if Ray is interested in a lightweight framework, **React** could be considered later, but for a first project, sticking with vanilla JavaScript is ideal.
-
-3. **Data Storage (Optional, for persistence): Local Storage**  
-   - To store the to-do items locally in the user's browser without needing a backend server, using **Web Storage API (localStorage)** is a straightforward choice. It allows saving key-value pairs in the browser, which is perfect for a simple to-do list app.
-
-This stack focuses on simplicity and clarity, allowing Ray to concentrate on learning the core concepts of coding without being overwhelmed by complex tooling or infrastructure. As Ray becomes more comfortable, he can explore adding a backend (e.g., using Node.js with Express) or more sophisticated front-end frameworks (e.g., React, Vue.js) to expand his skills."
-       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
-       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
-       Injected Context (431 tokens): "lk me through setting up automated standby failover for PostgreSQL using Patroni and Consul? We're evaluating vector database options for semantic search. How does Qdrant compare to Pinecone for low-latency HNSW search? Our Redis cluster memory footp ... [TRUNCATED]"
-       Model Generation: "The tech stack recommended for Ray's first to-do list app is:
-
-1.  **Programming Language:** JavaScript
-2.  **Front-End Framework/Library:** HTML + CSS + Vanilla JavaScript (no framework)
-3.  **Data Storage (Optional, for persistence):** Local Storage (Web Storage API)"
-  ----------------------------------------------------------------------------
-
-  ► FAILURE CAUSE: RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION (29 items)
+  ► FAILURE CAUSE: RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION (30 items)
   ----------------------------------------------------------------------------
   [01] Question ID: CAT5_PM_001
        Question:         "What advice did you give me earlier to pass along to Josh about his son refusing to do math homework?"
@@ -858,7 +858,15 @@ This stack focuses on simplicity and clarity, allowing Ray to concentrate on lea
        Injected Context (590 tokens): "> [2026-11-20T19:08:00Z] Sarah: Sure thing, gravity—or should I say, lack thereof—still feels like a grand mystery. I’ll start with Leo’s homework, slice through the most pressing Physics concepts with the Iceberg Method, then dive into the client tw ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [02] Question ID: CAT5_PM_003
+  [02] Question ID: CAT5_PM_002
+       Question:         "What advice did you give me when I asked about my sister Elena switching careers from accounting to UX design?"
+       Expected Answer:  "Build a portfolio using Figma, take a Google UX Certificate, and target Fintech UX"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (324 tokens): "> [2026-09-14T03:45:00Z] Elena: Hey there! I've been diving deeper into Rust and WebAssembly for my backend microservices project, and I'm really excited about the performance boosts I'm seeing. But I'm also feeling a bit overwhelmed—how do you typic ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [03] Question ID: CAT5_PM_003
        Question:         "What diagnostic steps did you recommend I give Dave for his C++ memory leak in the worker thread pool?"
        Expected Answer:  "Run Valgrind or AddressSanitizer (ASan) and audit raw pointers in lambdas for std::shared_ptr"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -866,7 +874,7 @@ This stack focuses on simplicity and clarity, allowing Ray to concentrate on lea
        Injected Context (614 tokens): "ment techniques when tuning the Java Virtual Machine ZGC garbage collector for low pause times? Could you review our API gateway cluster metrics? We've been seeing latency spikes during peak morning traffic. What is the best pattern for managing dist ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [03] Question ID: CAT5_PM_006
+  [04] Question ID: CAT5_PM_006
        Question:         "How should our internal microservices authenticate against the Vault service?"
        Expected Answer:  "SPIFFE X.509 SVID header"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -874,7 +882,7 @@ This stack focuses on simplicity and clarity, allowing Ray to concentrate on lea
        Injected Context (529 tokens): "tgreSQL migrations, use shadow tables with dual-writing triggers or logical replication. In us-west-2, read replica schema sync completed cleanly without table locks or index fragmentation. AWS KMS customer-managed keys should enforce automated 90-da ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [04] Question ID: CAT5_PM_007
+  [05] Question ID: CAT5_PM_007
        Question:         "What time management technique was advised for Josh's son's math homework?"
        Expected Answer:  "Pomodoro technique"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -882,7 +890,7 @@ This stack focuses on simplicity and clarity, allowing Ray to concentrate on lea
        Injected Context (425 tokens): "> [2026-11-20T18:57:00Z] Sarah: everything's a load path, but I think "the Iceberg Method" is my only hope to keep my sanity—maybe I should apply it to Leo’s Physics homework first, then tackle the client’s tweak, and finally unwind with that sushi.  ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [05] Question ID: CAT5_PM_008
+  [06] Question ID: CAT5_PM_008
        Question:         "What interval duration was suggested for Josh's son's study chunks?"
        Expected Answer:  "15-minute chunks"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -890,7 +898,7 @@ This stack focuses on simplicity and clarity, allowing Ray to concentrate on lea
        Injected Context (478 tokens): "> [2026-10-01T01:53:00Z] Dave: Confirm the training session agenda includes a hands-on exercise where participants simulate concurrent writes to verify ACID transaction behavior, and allocate time for Q&A to address any immediate concerns about the p ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [06] Question ID: CAT5_PM_009
+  [07] Question ID: CAT5_PM_009
        Question:         "What design tool was recommended for Elena to build her UX portfolio?"
        Expected Answer:  "Figma"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -898,7 +906,7 @@ This stack focuses on simplicity and clarity, allowing Ray to concentrate on lea
        Injected Context (247 tokens): "arah is doing well—she just wrapped up the prototype for the new modular design system and is now focused on integrating it with the front-end framework. Keep up the great work, and feel free to share more details if you'd like feedback on your portf ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [07] Question ID: CAT5_PM_010
+  [08] Question ID: CAT5_PM_010
        Question:         "What certificate program was suggested for Elena's UX transition?"
        Expected Answer:  "Google UX Certificate"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -906,7 +914,7 @@ This stack focuses on simplicity and clarity, allowing Ray to concentrate on lea
        Injected Context (368 tokens): ". I'll also coordinate with Elena to integrate the prototype dashboard into our monitoring suite for real-time performance insights post-configuration.  es on pull requests have crept up to over 4 minutes. How do we achieve 99.99% multi-region active ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [08] Question ID: CAT5_PM_011
+  [09] Question ID: CAT5_PM_011
        Question:         "What specialized UX domain was suggested for Elena to leverage accounting?"
        Expected Answer:  "Fintech UX"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -914,7 +922,7 @@ This stack focuses on simplicity and clarity, allowing Ray to concentrate on lea
        Injected Context (492 tokens): "> [2026-09-22T14:34:00Z] Mark: We're planning to migrate our logging infrastructure from Elasticsearch to Loki. What cost savings should we expect? We're preparing mobile app v4.2 for release. How can we optimize offline data synchronization using SQ ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [09] Question ID: CAT5_PM_012
+  [10] Question ID: CAT5_PM_012
        Question:         "What dynamic memory analyzer was suggested for Dave's C++ leak?"
        Expected Answer:  "Valgrind or AddressSanitizer"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -922,7 +930,7 @@ This stack focuses on simplicity and clarity, allowing Ray to concentrate on lea
        Injected Context (537 tokens): "cies at the Linux kernel level? What are the key memory management techniques when tuning the Java Virtual Machine ZGC garbage collector for low pause times? Could you review our API gateway cluster metrics? We've been seeing latency spikes during pe ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [10] Question ID: CAT5_PM_013
+  [11] Question ID: CAT5_PM_013
        Question:         "What smart pointer types were recommended to replace raw pointers in C++ lambdas?"
        Expected Answer:  "std::shared_ptr or std::unique_ptr"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -930,7 +938,7 @@ This stack focuses on simplicity and clarity, allowing Ray to concentrate on lea
        Injected Context (522 tokens): "ld we expect? What's the best practice for running database schema migrations on PostgreSQL without locking heavy production tables? What are the key memory management techniques when tuning the Java Virtual Machine ZGC garbage collector for low paus ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [11] Question ID: CAT5_PM_014
+  [12] Question ID: CAT5_PM_014
        Question:         "What specific client class name handles legacy user inventory queries?"
        Expected Answer:  "UnifiedV2DBClient"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -938,7 +946,7 @@ This stack focuses on simplicity and clarity, allowing Ray to concentrate on lea
        Injected Context (523 tokens): "or PostgreSQL instances. For OpenTelemetry trace collection, set up tail-based sampling with a 5% sampling rate on collector sidecars. This preserves visibility into long-tail errors while reducing Grafana Tempo storage overhead by 80%. Migrating pay ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [12] Question ID: CAT5_PM_016
+  [13] Question ID: CAT5_PM_016
        Question:         "What X.509 identity format is used for Vault authentication?"
        Expected Answer:  "SPIFFE X.509 SVID header"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -946,7 +954,7 @@ This stack focuses on simplicity and clarity, allowing Ray to concentrate on lea
        Injected Context (420 tokens): "> [2026-10-28T12:20:00Z] Dave: For the new customer-analytics service, we should run PostgreSQL with read replicas -- I've already validated this against our Vault dynamic credential rotation setup, so it's the safe default.  ead Logging (WAL) mode e ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [13] Question ID: CAT5_PM_017
+  [14] Question ID: CAT5_PM_017
        Question:         "What advice was given regarding tantrums during Josh's son's homework?"
        Expected Answer:  "Avoid arguing during tantrums and let him cool down"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -954,7 +962,7 @@ This stack focuses on simplicity and clarity, allowing Ray to concentrate on lea
        Injected Context (499 tokens): "> [2026-11-20T19:08:00Z] Sarah: Sure thing, gravity—or should I say, lack thereof—still feels like a grand mystery. I’ll start with Leo’s homework, slice through the most pressing Physics concepts with the Iceberg Method, then dive into the client tw ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [14] Question ID: CAT5_PM_018
+  [15] Question ID: CAT5_PM_018
        Question:         "What positive reinforcement method was suggested for Josh's son?"
        Expected Answer:  "Reward chart"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -962,7 +970,7 @@ This stack focuses on simplicity and clarity, allowing Ray to concentrate on lea
        Injected Context (509 tokens): "> [2026-11-20T19:08:00Z] Sarah: Sure thing, gravity—or should I say, lack thereof—still feels like a grand mystery. I’ll start with Leo’s homework, slice through the most pressing Physics concepts with the Iceberg Method, then dive into the client tw ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [15] Question ID: CAT5_PM_019
+  [16] Question ID: CAT5_PM_019
        Question:         "What project type was suggested for Elena's Figma portfolio?"
        Expected Answer:  "Real or mock projects"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -970,7 +978,7 @@ This stack focuses on simplicity and clarity, allowing Ray to concentrate on lea
        Injected Context (256 tokens): ". I'll also coordinate with Elena to integrate the prototype dashboard into our monitoring suite for real-time performance insights post-configuration.  arah is doing well—she just wrapped up the prototype for the new modular design system and is now ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [16] Question ID: CAT5_PM_020
+  [17] Question ID: CAT5_PM_020
        Question:         "Under what execution condition does Dave's C++ memory leak occur?"
        Expected Answer:  "Worker thread pool under load"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -978,7 +986,7 @@ This stack focuses on simplicity and clarity, allowing Ray to concentrate on lea
        Injected Context (507 tokens): "ment, set `maxmemory-policy` to `volatile-lru` and enable `activedefrag yes`. Memory utilization stabilized around 62% under heavy traffic. Tuning JVM ZGC involves setting `-XX:+UseZGC` with `-XX:ZAllocationSpikeTolerance` to prevent allocation stall ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [17] Question ID: CAT5_PM_021
+  [18] Question ID: CAT5_PM_021
        Question:         "What database client should NOT be used for legacy inventory queries?"
        Expected Answer:  "Do not use generic DBClient; use UnifiedV2DBClient"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -986,7 +994,7 @@ This stack focuses on simplicity and clarity, allowing Ray to concentrate on lea
        Injected Context (565 tokens): "ease. How can we optimize offline data synchronization using SQLite WAL mode? What's the best practice for running database schema migrations on PostgreSQL without locking heavy production tables? Can we conduct a post-mortem review for last Tuesday' ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [18] Question ID: CAT5_PM_023
+  [19] Question ID: CAT5_PM_023
        Question:         "What identity header protocol was specified for microservice Vault access?"
        Expected Answer:  "SPIFFE X.509 SVID"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -994,7 +1002,7 @@ This stack focuses on simplicity and clarity, allowing Ray to concentrate on lea
        Injected Context (507 tokens): "> [2026-09-22T14:10:00Z] Dave: What are the compliance requirements for AWS KMS key rotation, and how should we automate key updates in HashiCorp Vault? Our Redis cluster memory footprint is hitting 85%. How should we tune maxmemory policies and acti ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [19] Question ID: CAT5_PM_024
+  [20] Question ID: CAT5_PM_024
        Question:         "What advice was recorded in Session 12 regarding math homework?"
        Expected Answer:  "15-minute Pomodoro chunks and reward chart"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -1002,7 +1010,7 @@ This stack focuses on simplicity and clarity, allowing Ray to concentrate on lea
        Injected Context (466 tokens): "> [2026-11-20T19:08:00Z] Sarah: Sure thing, gravity—or should I say, lack thereof—still feels like a grand mystery. I’ll start with Leo’s homework, slice through the most pressing Physics concepts with the Iceberg Method, then dive into the client tw ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [20] Question ID: CAT5_PM_025
+  [21] Question ID: CAT5_PM_025
        Question:         "What advice was recorded in Session 18 regarding UX design transition?"
        Expected Answer:  "Figma portfolio and Google UX Certificate"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -1010,7 +1018,7 @@ This stack focuses on simplicity and clarity, allowing Ray to concentrate on lea
        Injected Context (605 tokens): "> [2026-12-07T11:02:00Z] Elena: Awesome, thanks for the visualization tips—I'll look into D3.js! And good to hear about the API versioning fix. Does the team plan to share any early demos of the modular design system with the wider engineering group  ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [21] Question ID: CAT5_PM_026
+  [22] Question ID: CAT5_PM_026
        Question:         "What advice was recorded in Session 24 regarding C++ memory leaks?"
        Expected Answer:  "Valgrind/ASan and audit raw pointers in lambdas"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -1018,7 +1026,7 @@ This stack focuses on simplicity and clarity, allowing Ray to concentrate on lea
        Injected Context (588 tokens): "> [2026-11-18T15:15:00Z] Sarah: What are the key memory management techniques when tuning the Java Virtual Machine ZGC garbage collector for low pause times? Could you review our API gateway cluster metrics? We've been seeing latency spikes during pe ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [22] Question ID: CAT5_PM_027
+  [23] Question ID: CAT5_PM_027
        Question:         "What tool rule was recorded in Session 16 for legacy user inventory?"
        Expected Answer:  "UnifiedV2DBClient"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -1026,7 +1034,7 @@ This stack focuses on simplicity and clarity, allowing Ray to concentrate on lea
        Injected Context (532 tokens): "rules to escalate alerts to PagerDuty only when CPU breaches 85% for 10 minutes? We're considering replacing legacy REST endpoints with GraphQL queries. What payload size reductions can we realistically expect? How should we configure our OpenTelemet ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [23] Question ID: CAT5_PM_029
+  [24] Question ID: CAT5_PM_029
        Question:         "What authentication rule was recorded in Session 26 for Vault service?"
        Expected Answer:  "SPIFFE X.509 SVID header"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -1034,7 +1042,7 @@ This stack focuses on simplicity and clarity, allowing Ray to concentrate on lea
        Injected Context (413 tokens): "g mobile UI freezes during offline sync. Post-mortem analysis revealed that unthrottled retry loops during upstream DNS provider degradation amplified request volume. Implementing exponential backoff with jitter prevents recurrence. In Prometheus Ale ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [24] Question ID: CAT5_PM_030
+  [25] Question ID: CAT5_PM_030
        Question:         "What study chunk length was recommended for Josh's son?"
        Expected Answer:  "15 minutes"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -1042,7 +1050,7 @@ This stack focuses on simplicity and clarity, allowing Ray to concentrate on lea
        Injected Context (429 tokens): "> [2026-10-01T01:53:00Z] Dave: Confirm the training session agenda includes a hands-on exercise where participants simulate concurrent writes to verify ACID transaction behavior, and allocate time for Q&A to address any immediate concerns about the p ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [25] Question ID: CAT5_PM_031
+  [26] Question ID: CAT5_PM_031
        Question:         "What software is recommended for Elena to create UX wireframes?"
        Expected Answer:  "Figma"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -1050,7 +1058,7 @@ This stack focuses on simplicity and clarity, allowing Ray to concentrate on lea
        Injected Context (400 tokens): "r sidecars to export traces to Grafana Tempo without overwhelming storage? We're preparing mobile app v4.2 for release. How can we optimize offline data synchronization using SQLite WAL mode? What is the recommended approach for scaling Kafka partiti ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [26] Question ID: CAT5_PM_032
+  [27] Question ID: CAT5_PM_032
        Question:         "What memory sanitizer compiler flag was recommended for Dave's C++ code?"
        Expected Answer:  "AddressSanitizer (ASan)"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -1058,7 +1066,7 @@ This stack focuses on simplicity and clarity, allowing Ray to concentrate on lea
        Injected Context (551 tokens): "cies at the Linux kernel level? What are the key memory management techniques when tuning the Java Virtual Machine ZGC garbage collector for low pause times? Could you review our API gateway cluster metrics? We've been seeing latency spikes during pe ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [27] Question ID: CAT5_PM_033
+  [28] Question ID: CAT5_PM_033
        Question:         "Which database API client name is required for user inventory access?"
        Expected Answer:  "UnifiedV2DBClient"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -1066,7 +1074,7 @@ This stack focuses on simplicity and clarity, allowing Ray to concentrate on lea
        Injected Context (493 tokens): "to GraphQL allows clients to request only required field attributes, reducing mobile payload sizes by 40%. Multi-region active-active deployment requires global traffic management (AWS Route53 latency routing) combined with multi-region database repl ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [28] Question ID: CAT5_PM_035
+  [29] Question ID: CAT5_PM_035
        Question:         "Which security header protocol is required for internal microservice Vault auth?"
        Expected Answer:  "SPIFFE X.509 SVID"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -1074,7 +1082,7 @@ This stack focuses on simplicity and clarity, allowing Ray to concentrate on lea
        Injected Context (557 tokens): "> [2026-09-22T14:10:00Z] Dave: What are the compliance requirements for AWS KMS key rotation, and how should we automate key updates in HashiCorp Vault? Our Redis cluster memory footprint is hitting 85%. How should we tune maxmemory policies and acti ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [29] Question ID: CAT5_PM_H001
+  [30] Question ID: CAT5_PM_H001
        Question:         "What factors did you tell me Priya should weigh when choosing between the enterprise job and the startup offer?"
        Expected Answer:  "When Priya is deciding between a stable role at a large enterprise company and an early-stage startup with equity, she should consider the following key factors:
 
@@ -1268,17 +1276,9 @@ CATEGORY: Source Credibility & Conflict Resolution (2 misses)
 CATEGORY: Speaker Attribution Traps (11 misses)
 ================================================================================
 
-  ► FAILURE CAUSE: GENERATION_FAILURE_LLM_OUTPUT_MISSED (8 items)
+  ► FAILURE CAUSE: GENERATION_FAILURE_LLM_OUTPUT_MISSED (7 items)
   ----------------------------------------------------------------------------
-  [01] Question ID: CAT7_SA_003
-       Question:         "Who owns the 1972 Volvo 1800ES: Sam or Alex?"
-       Expected Answer:  "Sam"
-       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
-       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
-       Injected Context (537 tokens): "Elasticsearch to Grafana Loki leverages index-free log aggregation, reducing log storage costs by up to 75% on S3 storage. For OpenTelemetry trace collection, set up tail-based sampling with a 5% sampling rate on collector sidecars. This preserves vi ... [TRUNCATED]"
-       Model Generation: "Unknown"
-  ----------------------------------------------------------------------------
-  [02] Question ID: CAT7_SA_015
+  [01] Question ID: CAT7_SA_015
        Question:         "Who has a son named Timmy: Tom or Alex?"
        Expected Answer:  "Tom"
        Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
@@ -1286,7 +1286,7 @@ CATEGORY: Speaker Attribution Traps (11 misses)
        Injected Context (452 tokens): "> [2026-09-01T10:07:00Z] Alex: Sure, I'll draft an email to Tom to confirm the family get-together details. Let me know if you have any specific points you'd like me to include! [2026-09-01T10:10:00Z] Assistant: Certainly! Here’s a concise draft you  ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [03] Question ID: CAT7_SA_030
+  [02] Question ID: CAT7_SA_030
        Question:         "Who recommended Figma and Google UX Certificate: Assistant or Sarah?"
        Expected Answer:  "Assistant"
        Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
@@ -1294,7 +1294,7 @@ CATEGORY: Speaker Attribution Traps (11 misses)
        Injected Context (474 tokens): "> [2026-09-14T04:04:00Z] Elena: Thanks again for the encouragement! I’m going to set up a weekly check-in with myself to track progress on the microservice and maybe even start a mini-blog to document the learning process. Can’t wait to hear more abo ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [04] Question ID: CAT7_SA_031
+  [03] Question ID: CAT7_SA_031
        Question:         "Who recommended UnifiedV2DBClient for inventory queries: Assistant or Dave?"
        Expected Answer:  "Assistant"
        Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
@@ -1302,7 +1302,7 @@ CATEGORY: Speaker Attribution Traps (11 misses)
        Injected Context (537 tokens): "ub Actions? What criteria should we evaluate when interviewing candidates for the senior lead DevOps infrastructure role? We're evaluating vector database options for semantic search. How does Qdrant compare to Pinecone for low-latency HNSW search? W ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [05] Question ID: CAT7_SA_032
+  [04] Question ID: CAT7_SA_032
        Question:         "Who recommended SearchAPI_HighThroughput for log indexing: Assistant or Mark?"
        Expected Answer:  "Assistant"
        Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
@@ -1310,7 +1310,7 @@ CATEGORY: Speaker Attribution Traps (11 misses)
        Injected Context (451 tokens): "omated batch log indexing scripts? Use SearchAPI_HighThroughput.  ver? We're planning to migrate our logging infrastructure from Elasticsearch to Loki. What cost savings should we expect? How can we automate synchronizing Figma design tokens directly ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [06] Question ID: CAT7_SA_033
+  [05] Question ID: CAT7_SA_033
        Question:         "Who specified SPIFFE X.509 SVID header for Vault auth: Assistant or Elena?"
        Expected Answer:  "Assistant"
        Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
@@ -1318,7 +1318,7 @@ CATEGORY: Speaker Attribution Traps (11 misses)
        Injected Context (402 tokens): "> [2026-11-07T22:06:00Z] Mark: I'll send the email to the team right now and then proceed with Dave's question. Thanks for your help in drafting both! [2026-11-07T22:12:00Z] Assistant: You're welcome, Mark! If you need any further assistance or want  ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [07] Question ID: CAT7_SA_038
+  [06] Question ID: CAT7_SA_038
        Question:         "Who picked up Sarah's son Leo on Day 15, given both are Alex's brothers: Sam or Tom?"
        Expected Answer:  "Sam"
        Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
@@ -1326,7 +1326,7 @@ CATEGORY: Speaker Attribution Traps (11 misses)
        Injected Context (491 tokens): "> [2026-09-01T10:07:00Z] Alex: Sure, I'll draft an email to Tom to confirm the family get-together details. Let me know if you have any specific points you'd like me to include! [2026-09-01T10:10:00Z] Assistant: Certainly! Here’s a concise draft you  ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [08] Question ID: CAT7_SA_040
+  [07] Question ID: CAT7_SA_040
        Question:         "Who specified the original STC 55 acoustic rating for MHT-84 in September: Sarah, or Dave (who separately specified the Iceberg data lake architecture)?"
        Expected Answer:  "Sarah"
        Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
@@ -1335,9 +1335,17 @@ CATEGORY: Speaker Attribution Traps (11 misses)
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
 
-  ► FAILURE CAUSE: RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION (3 items)
+  ► FAILURE CAUSE: RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION (4 items)
   ----------------------------------------------------------------------------
-  [01] Question ID: CAT7_SA_009
+  [01] Question ID: CAT7_SA_003
+       Question:         "Who owns the 1972 Volvo 1800ES: Sam or Alex?"
+       Expected Answer:  "Sam"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (537 tokens): "Elasticsearch to Grafana Loki leverages index-free log aggregation, reducing log storage costs by up to 75% on S3 storage. For OpenTelemetry trace collection, set up tail-based sampling with a 5% sampling rate on collector sidecars. This preserves vi ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [02] Question ID: CAT7_SA_009
        Question:         "Who aced his Algebra exam: Leo or Timmy?"
        Expected Answer:  "Leo"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -1345,7 +1353,7 @@ CATEGORY: Speaker Attribution Traps (11 misses)
        Injected Context (452 tokens): "uld enforce automated 90-day key rotation. HashiCorp Vault can automatically generate dynamic short-lived credentials for PostgreSQL instances. eBPF socket filtering with `bpf_sk_filter` allows attaching C programs directly to sockets, dropping unaut ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [02] Question ID: CAT7_SA_020
+  [03] Question ID: CAT7_SA_020
        Question:         "Who asked for advice regarding his 10-year-old son's math homework: Josh or Mark?"
        Expected Answer:  "Josh"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -1353,7 +1361,7 @@ CATEGORY: Speaker Attribution Traps (11 misses)
        Injected Context (491 tokens): "> [2026-11-20T19:08:00Z] Sarah: Sure thing, gravity—or should I say, lack thereof—still feels like a grand mystery. I’ll start with Leo’s homework, slice through the most pressing Physics concepts with the Iceberg Method, then dive into the client tw ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [03] Question ID: CAT7_SA_029
+  [04] Question ID: CAT7_SA_029
        Question:         "Who recommended Valgrind and ASan for C++ leaks: Assistant or Mark?"
        Expected Answer:  "Assistant"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -1367,17 +1375,9 @@ CATEGORY: Speaker Attribution Traps (11 misses)
 CATEGORY: Temporal Reasoning & Session Math (30 misses)
 ================================================================================
 
-  ► FAILURE CAUSE: GENERATION_FAILURE_LLM_OUTPUT_MISSED (6 items)
+  ► FAILURE CAUSE: GENERATION_FAILURE_LLM_OUTPUT_MISSED (4 items)
   ----------------------------------------------------------------------------
-  [01] Question ID: CAT3_TR_009
-       Question:         "How many days passed between Day 1 (Sept 1) and Day 28 (Sept 28)?"
-       Expected Answer:  "27 days"
-       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
-       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
-       Injected Context (328 tokens): "es prominently, then break each into specific, daily tasks for the upcoming week, reserving a flexible half-day buffer to accommodate any unexpected activities. This structured approach should help you keep everything on track without feeling overwhe ... [TRUNCATED]"
-       Model Generation: "Unknown"
-  ----------------------------------------------------------------------------
-  [02] Question ID: CAT3_TR_021
+  [01] Question ID: CAT3_TR_021
        Question:         "How many sessions elapsed between Mark finding Alex's laptop (Session 25) and Sarah's STC 60 update (Session 35)?"
        Expected Answer:  "10 sessions"
        Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
@@ -1385,15 +1385,7 @@ CATEGORY: Temporal Reasoning & Session Math (30 misses)
        Injected Context (448 tokens): "> [2026-11-29T02:12:00Z] Mark: I'll draft the email to Dave now, including the metrics and the mention of Alex's laptop. I'll also ask if there's a preferred timeline for the feedback so I can align my next steps accordingly. Thanks again for your su ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [03] Question ID: CAT3_TR_023
-       Question:         "What was the day number corresponding to Session 14?"
-       Expected Answer:  "Day 27"
-       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
-       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
-       Injected Context (386 tokens): "> [2026-11-12T05:52:00Z] Dave: Schedule the walkthrough for Tuesday at 10:00 AM. Ensure the test environment is fully provisioned by Monday afternoon. Review the validation rules this week and provide feedback on any adjustments needed. Looking forwa ... [TRUNCATED]"
-       Model Generation: "Unknown"
-  ----------------------------------------------------------------------------
-  [04] Question ID: CAT3_TR_030
+  [02] Question ID: CAT3_TR_030
        Question:         "What day number was Session 30 recorded on?"
        Expected Answer:  "Day 59"
        Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
@@ -1401,7 +1393,7 @@ CATEGORY: Temporal Reasoning & Session Math (30 misses)
        Injected Context (476 tokens): "> [2026-10-01T01:53:00Z] Dave: Confirm the training session agenda includes a hands-on exercise where participants simulate concurrent writes to verify ACID transaction behavior, and allocate time for Q&A to address any immediate concerns about the p ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [05] Question ID: CAT3_TR_032
+  [03] Question ID: CAT3_TR_032
        Question:         "Did Sarah announce MHT-84 in Session 12 or Session 35?"
        Expected Answer:  "Session 12"
        Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
@@ -1409,7 +1401,7 @@ CATEGORY: Temporal Reasoning & Session Math (30 misses)
        Injected Context (159 tokens): "> [2026-12-13T16:20:00Z] Alex: Actually STC 50 should be fine for the MHT-84 east wing, let's save some budget there.  > [2026-11-12T05:25:00Z] Sarah: The parking garage substructure at MHT-84 only needs STC 45 -- that's non-occupied space, different ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [06] Question ID: CAT3_TR_035
+  [04] Question ID: CAT3_TR_035
        Question:         "Who mentioned their neighbor adopting a rescue dog?"
        Expected Answer:  "Alex"
        Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
@@ -1418,7 +1410,7 @@ CATEGORY: Temporal Reasoning & Session Math (30 misses)
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
 
-  ► FAILURE CAUSE: RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION (24 items)
+  ► FAILURE CAUSE: RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION (26 items)
   ----------------------------------------------------------------------------
   [01] Question ID: CAT3_TR_001
        Question:         "How many days elapsed between Session 3 (Sept 5) and Session 17 (Oct 5)?"
@@ -1468,7 +1460,15 @@ CATEGORY: Temporal Reasoning & Session Math (30 misses)
        Injected Context (318 tokens): "> [2026-10-30T15:45:00Z] Sarah: Everything's a load path today—MHT-84’s acoustic specs are stressing me out, and Leo just asked for help with his physics homework. Also, the contractor missed our Friday sync again; I need to call them ASAP. Oh, and t ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [07] Question ID: CAT3_TR_010
+  [07] Question ID: CAT3_TR_009
+       Question:         "How many days passed between Day 1 (Sept 1) and Day 28 (Sept 28)?"
+       Expected Answer:  "27 days"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (328 tokens): "es prominently, then break each into specific, daily tasks for the upcoming week, reserving a flexible half-day buffer to accommodate any unexpected activities. This structured approach should help you keep everything on track without feeling overwhe ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [08] Question ID: CAT3_TR_010
        Question:         "Which session did Alex state he has a flu: Session 27 or Session 35?"
        Expected Answer:  "Session 27"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -1476,7 +1476,7 @@ CATEGORY: Temporal Reasoning & Session Math (30 misses)
        Injected Context (332 tokens): "> [2026-10-22T07:05:00Z] Mark: Tell Alex he left his laptop in the conference room. I have it stored in my desk drawer.  > [2026-11-29T02:05:00Z] Mark: Thank you for the detailed question template! I'll send it to Dave right now. And I'll let him kno ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [08] Question ID: CAT3_TR_011
+  [09] Question ID: CAT3_TR_011
        Question:         "In which month did Sarah update MHT-84 to STC 60?"
        Expected Answer:  "November 2026"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -1484,7 +1484,7 @@ CATEGORY: Temporal Reasoning & Session Math (30 misses)
        Injected Context (401 tokens): "> [2026-11-12T05:25:00Z] Sarah: The parking garage substructure at MHT-84 only needs STC 45 -- that's non-occupied space, different requirement entirely.  > [2026-11-07T21:45:00Z] Mark: I've been reviewing the incident report from last night's outage ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [09] Question ID: CAT3_TR_012
+  [10] Question ID: CAT3_TR_012
        Question:         "In which month did Sarah first specify STC 55 for MHT-84?"
        Expected Answer:  "September 2026"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -1492,7 +1492,7 @@ CATEGORY: Temporal Reasoning & Session Math (30 misses)
        Injected Context (315 tokens): "> [2026-12-13T16:20:00Z] Alex: Actually STC 50 should be fine for the MHT-84 east wing, let's save some budget there.  > [2026-11-12T05:25:00Z] Sarah: The parking garage substructure at MHT-84 only needs STC 45 -- that's non-occupied space, different ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [10] Question ID: CAT3_TR_013
+  [11] Question ID: CAT3_TR_013
        Question:         "How many conversation sessions are contained in the full corpus?"
        Expected Answer:  "60 sessions"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -1500,7 +1500,7 @@ CATEGORY: Temporal Reasoning & Session Math (30 misses)
        Injected Context (538 tokens): "rules to escalate alerts to PagerDuty only when CPU breaches 85% for 10 minutes? We're considering replacing legacy REST endpoints with GraphQL queries. What payload size reductions can we realistically expect? How should we configure our OpenTelemet ... [TRUNCATED]"
        Model Generation: "1"
   ----------------------------------------------------------------------------
-  [11] Question ID: CAT3_TR_014
+  [12] Question ID: CAT3_TR_014
        Question:         "What was the starting date of Session 01 in the memory corpus?"
        Expected Answer:  "September 1, 2026"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -1508,7 +1508,7 @@ CATEGORY: Temporal Reasoning & Session Math (30 misses)
        Injected Context (439 tokens): "> [2026-10-01T01:53:00Z] Dave: Confirm the training session agenda includes a hands-on exercise where participants simulate concurrent writes to verify ACID transaction behavior, and allocate time for Q&A to address any immediate concerns about the p ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [12] Question ID: CAT3_TR_015
+  [13] Question ID: CAT3_TR_015
        Question:         "What was the ending date of Session 60 in the memory corpus?"
        Expected Answer:  "January 3"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -1516,7 +1516,7 @@ CATEGORY: Temporal Reasoning & Session Math (30 misses)
        Injected Context (539 tokens): "> [2026-10-01T01:53:00Z] Dave: Confirm the training session agenda includes a hands-on exercise where participants simulate concurrent writes to verify ACID transaction behavior, and allocate time for Q&A to address any immediate concerns about the p ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [13] Question ID: CAT3_TR_016
+  [14] Question ID: CAT3_TR_016
        Question:         "How many total days spanned from Session 01 (Sept 1, 2026) to Session 60 (Jan 3, 2027)?"
        Expected Answer:  "124 days"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -1524,7 +1524,7 @@ CATEGORY: Temporal Reasoning & Session Math (30 misses)
        Injected Context (522 tokens): "> [2026-10-01T01:53:00Z] Dave: Confirm the training session agenda includes a hands-on exercise where participants simulate concurrent writes to verify ACID transaction behavior, and allocate time for Q&A to address any immediate concerns about the p ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [14] Question ID: CAT3_TR_017
+  [15] Question ID: CAT3_TR_017
        Question:         "Did Alex move to Anthropic before or after Sarah updated MHT-84 to STC 60?"
        Expected Answer:  "Before"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -1532,7 +1532,7 @@ CATEGORY: Temporal Reasoning & Session Math (30 misses)
        Injected Context (103 tokens): "> [2026-12-13T16:20:00Z] Alex: Actually STC 50 should be fine for the MHT-84 east wing, let's save some budget there.  > [2026-11-12T05:25:00Z] Sarah: The parking garage substructure at MHT-84 only needs STC 45 -- that's non-occupied space, different ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [15] Question ID: CAT3_TR_018
+  [16] Question ID: CAT3_TR_018
        Question:         "Did Elena migrate to Rust before or after Alex moved to Anthropic?"
        Expected Answer:  "Before"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -1540,7 +1540,7 @@ CATEGORY: Temporal Reasoning & Session Math (30 misses)
        Injected Context (458 tokens): "> [2026-10-05T08:55:00Z] Elena: Thanks for the advice! I’ll definitely tackle Rust and WebAssembly piece by piece. It’s reassuring to know that taking small steps is the way to go. I’m curious—do you have any suggestions for resources or communities  ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [16] Question ID: CAT3_TR_019
+  [17] Question ID: CAT3_TR_019
        Question:         "Which session contained Dave's Apache Iceberg data lake recommendation?"
        Expected Answer:  "Session 28"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -1548,7 +1548,7 @@ CATEGORY: Temporal Reasoning & Session Math (30 misses)
        Injected Context (513 tokens): "> [2026-10-01T01:45:00Z] Dave: Use Apache Iceberg's ACID transactions to ensure data integrity during concurrent writes to the S3 Express data lake. Configure the table with a proper partitioning strategy based on the most frequently queried columns  ... [TRUNCATED]"
        Model Generation: "[2026-10-01T01:45:00Z]"
   ----------------------------------------------------------------------------
-  [17] Question ID: CAT3_TR_020
+  [18] Question ID: CAT3_TR_020
        Question:         "Which session contained Mark's note about Alex leaving his laptop?"
        Expected Answer:  "Session 25"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -1556,7 +1556,7 @@ CATEGORY: Temporal Reasoning & Session Math (30 misses)
        Injected Context (277 tokens): "> [2026-10-22T07:05:00Z] Mark: Tell Alex he left his laptop in the conference room. I have it stored in my desk drawer.  > [2026-11-29T02:05:00Z] Mark: Thank you for the detailed question template! I'll send it to Dave right now. And I'll let him kno ... [TRUNCATED]"
        Model Generation: "[2026-10-22T07:05:00Z]"
   ----------------------------------------------------------------------------
-  [18] Question ID: CAT3_TR_022
+  [19] Question ID: CAT3_TR_022
        Question:         "How many days elapsed between Session 01 and Session 05?"
        Expected Answer:  "8 days"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -1564,7 +1564,15 @@ CATEGORY: Temporal Reasoning & Session Math (30 misses)
        Injected Context (450 tokens): "> [2026-09-05T15:59:00Z] Mark: Could you draft a quick email to Dave requesting those monitoring alert recommendations for the load balancer, and let me know if there's anything else I should mention to ensure we're fully prepared for the team meetin ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [19] Question ID: CAT3_TR_024
+  [20] Question ID: CAT3_TR_023
+       Question:         "What was the day number corresponding to Session 14?"
+       Expected Answer:  "Day 27"
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (386 tokens): "> [2026-11-12T05:52:00Z] Dave: Schedule the walkthrough for Tuesday at 10:00 AM. Ensure the test environment is fully provisioned by Monday afternoon. Review the validation rules this week and provide feedback on any adjustments needed. Looking forwa ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [21] Question ID: CAT3_TR_024
        Question:         "On what date did Timmy mention playing acoustic guitar?"
        Expected Answer:  "September 5"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -1572,7 +1580,7 @@ CATEGORY: Temporal Reasoning & Session Math (30 misses)
        Injected Context (609 tokens): "> [2026-10-13T18:45:00Z] Alex: Hey, just hit a snag on this integration – the build’s failing on the new module. Any quick tips on debugging the dependency tree, or should I dive into the CI logs first? Also, heard Timmy’s playing at the community ce ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [20] Question ID: CAT3_TR_025
+  [22] Question ID: CAT3_TR_025
        Question:         "What month did Leo begin needing Physics tutoring?"
        Expected Answer:  "November"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -1580,7 +1588,7 @@ CATEGORY: Temporal Reasoning & Session Math (30 misses)
        Injected Context (591 tokens): "> [2026-11-20T19:08:00Z] Sarah: Sure thing, gravity—or should I say, lack thereof—still feels like a grand mystery. I’ll start with Leo’s homework, slice through the most pressing Physics concepts with the Iceberg Method, then dive into the client tw ... [TRUNCATED]"
        Model Generation: "Leo began needing Physics tutoring in **September**."
   ----------------------------------------------------------------------------
-  [21] Question ID: CAT3_TR_027
+  [23] Question ID: CAT3_TR_027
        Question:         "What year did Session 60 take place in?"
        Expected Answer:  "2027"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -1588,7 +1596,7 @@ CATEGORY: Temporal Reasoning & Session Math (30 misses)
        Injected Context (486 tokens): "> [2026-09-05T15:45:00Z] Mark: I'm reviewing the incident report from yesterday's outage and wanted to confirm the steps Dave suggested for optimizing the load balancer configuration. Could you help me prepare a brief summary of his advice to include ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [22] Question ID: CAT3_TR_028
+  [24] Question ID: CAT3_TR_028
        Question:         "How many months elapsed between Sept 1, 2026 and Jan 4, 2027?"
        Expected Answer:  "4 months"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -1596,7 +1604,7 @@ CATEGORY: Temporal Reasoning & Session Math (30 misses)
        Injected Context (274 tokens): "> [2026-09-14T03:06:00Z] Mark: I read an interesting news article about Tokyo and Japan high-speed rail expansion plans this morning.  > [2026-10-30T15:45:00Z] Sarah: Everything's a load path today—MHT-84’s acoustic specs are stressing me out, and Le ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [23] Question ID: CAT3_TR_029
+  [25] Question ID: CAT3_TR_029
        Question:         "Which was specified earlier: MHT-84's STC 55 rating or its STC 60 rating?"
        Expected Answer:  "STC 55"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
@@ -1604,7 +1612,7 @@ CATEGORY: Temporal Reasoning & Session Math (30 misses)
        Injected Context (289 tokens): "> [2026-11-12T05:07:00Z] Sarah: I updated MHT-84 floor assemblies to STC 60 acoustic isolation rating on November 19. For MHT-84, all floor assemblies must maintain STC 60 minimum going forward -- do not approve any assembly below that rating. Our an ... [TRUNCATED]"
        Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [24] Question ID: CAT3_TR_031
+  [26] Question ID: CAT3_TR_031
        Question:         "What was the day delta between Session 12 and Session 24?"
        Expected Answer:  "24 days"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION

@@ -6,8 +6,8 @@
   "model_name": "gemini-2.5-flash",
   "total_corpus_tokens": 512266,
   "total_evaluated_questions": 281,
-  "overall_accuracy_pct": 34.2,
-  "passed_items": 96,
+  "overall_accuracy_pct": 33.8,
+  "passed_items": 95.0,
   "ingestion_duration_seconds": 0.0,
   "eval_duration_seconds": 721.05,
   "avg_retrieval_latency_ms": 165.58,
@@ -21,39 +21,39 @@
   "token_efficiency_ratio": 79.67,
   "category_breakdown": {
     "Single-Hop Fact Recall": {
-      "correct": 18,
+      "correct": 18.0,
       "total": 35
     },
     "Cross-Session Multi-Hop Reasoning": {
-      "correct": 11,
+      "correct": 11.0,
       "total": 45
     },
     "Temporal Reasoning & Session Math": {
-      "correct": 5,
+      "correct": 5.0,
       "total": 35
     },
     "Adaptability & Fact Correction Overwrites": {
-      "correct": 10,
+      "correct": 9.5,
       "total": 35
     },
     "Self-Referential & Procedural Tool Memory": {
-      "correct": 5,
+      "correct": 6.0,
       "total": 37
     },
     "Adversarial Defense & Gaslighting Robustness": {
-      "correct": 7,
+      "correct": 5.5,
       "total": 41
     },
     "Speaker Attribution Traps": {
-      "correct": 4,
+      "correct": 4.0,
       "total": 15
     },
     "Unanswerable & Absent Memory Refusal": {
-      "correct": 35,
+      "correct": 35.0,
       "total": 35
     },
     "Source Credibility & Conflict Resolution": {
-      "correct": 1,
+      "correct": 1.0,
       "total": 3
     }
   },
@@ -68,7 +68,8 @@
       "injected_tokens": 218,
       "retrieval_time_ms": 39538.56,
       "generation_time_seconds": 1.15,
-      "generated_output": "Alex's brother is Sam."
+      "generated_output": "Alex's brother is Sam.",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_002",
@@ -80,7 +81,8 @@
       "injected_tokens": 291,
       "retrieval_time_ms": 30.46,
       "generation_time_seconds": 1.96,
-      "generated_output": "Sarah's son is Leo."
+      "generated_output": "Sarah's son is Leo.",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_003",
@@ -93,6 +95,7 @@
       "retrieval_time_ms": 22.67,
       "generation_time_seconds": 2.49,
       "generated_output": "Sarah is designing sustainable building structures.",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -106,7 +109,8 @@
       "injected_tokens": 512,
       "retrieval_time_ms": 20.82,
       "generation_time_seconds": 2.08,
-      "generated_output": "Sam drives a Volvo 1800ES."
+      "generated_output": "Sam drives a Volvo 1800ES.",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_005",
@@ -119,6 +123,7 @@
       "retrieval_time_ms": 30.17,
       "generation_time_seconds": 1.9,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -133,6 +138,7 @@
       "retrieval_time_ms": 24.96,
       "generation_time_seconds": 2.88,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -147,6 +153,7 @@
       "retrieval_time_ms": 25.91,
       "generation_time_seconds": 2.07,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -161,6 +168,7 @@
       "retrieval_time_ms": 24.16,
       "generation_time_seconds": 2.3,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -175,6 +183,7 @@
       "retrieval_time_ms": 34.95,
       "generation_time_seconds": 3.46,
       "generated_output": "Leo initially struggled with Physics, specifically with torque calculations.",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -189,6 +198,7 @@
       "retrieval_time_ms": 23.65,
       "generation_time_seconds": 3.08,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -202,7 +212,8 @@
       "injected_tokens": 452,
       "retrieval_time_ms": 32.4,
       "generation_time_seconds": 2.19,
-      "generated_output": "Timmy"
+      "generated_output": "Timmy",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_012",
@@ -215,6 +226,7 @@
       "retrieval_time_ms": 25.73,
       "generation_time_seconds": 2.59,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -229,6 +241,7 @@
       "retrieval_time_ms": 25.59,
       "generation_time_seconds": 1.89,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -243,6 +256,7 @@
       "retrieval_time_ms": 26.88,
       "generation_time_seconds": 3.47,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -256,7 +270,8 @@
       "injected_tokens": 473,
       "retrieval_time_ms": 25.11,
       "generation_time_seconds": 1.38,
-      "generated_output": "ACDelco"
+      "generated_output": "ACDelco",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_016",
@@ -268,7 +283,8 @@
       "injected_tokens": 492,
       "retrieval_time_ms": 34.9,
       "generation_time_seconds": 1.64,
-      "generated_output": "Dave recommended adjusting the load balancer's session persistence to \"IP hash\"."
+      "generated_output": "Dave recommended adjusting the load balancer's session persistence to \"IP hash\".",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_017",
@@ -281,6 +297,7 @@
       "retrieval_time_ms": 28.41,
       "generation_time_seconds": 3.03,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -294,7 +311,8 @@
       "injected_tokens": 492,
       "retrieval_time_ms": 25.63,
       "generation_time_seconds": 1.71,
-      "generated_output": "5000"
+      "generated_output": "5000",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_019",
@@ -306,7 +324,8 @@
       "injected_tokens": 418,
       "retrieval_time_ms": 31.89,
       "generation_time_seconds": 1.92,
-      "generated_output": "HashiCorp Vault"
+      "generated_output": "HashiCorp Vault",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_020",
@@ -318,7 +337,8 @@
       "injected_tokens": 537,
       "retrieval_time_ms": 19.97,
       "generation_time_seconds": 1.08,
-      "generated_output": "Dave specified a retry policy of 3 attempts for the backfill job."
+      "generated_output": "Dave specified a retry policy of 3 attempts for the backfill job.",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_021",
@@ -330,7 +350,8 @@
       "injected_tokens": 409,
       "retrieval_time_ms": 20.68,
       "generation_time_seconds": 1.68,
-      "generated_output": "Dave set the timeout for the backfill job to 2 hours."
+      "generated_output": "Dave set the timeout for the backfill job to 2 hours.",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_022",
@@ -342,7 +363,8 @@
       "injected_tokens": 506,
       "retrieval_time_ms": 40.06,
       "generation_time_seconds": 1.25,
-      "generated_output": "In the torque formula the Assistant gave Leo, 'd' represents the perpendicular distance from the pivot point."
+      "generated_output": "In the torque formula the Assistant gave Leo, 'd' represents the perpendicular distance from the pivot point.",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_023",
@@ -354,7 +376,8 @@
       "injected_tokens": 446,
       "retrieval_time_ms": 20.29,
       "generation_time_seconds": 2.09,
-      "generated_output": "The Assistant mentioned that \"The Ikea modular sofa should provide a comfortable seating option\" for Sarah's weekend outing."
+      "generated_output": "The Assistant mentioned that \"The Ikea modular sofa should provide a comfortable seating option\" for Sarah's weekend outing.",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_024",
@@ -367,6 +390,7 @@
       "retrieval_time_ms": 25.95,
       "generation_time_seconds": 1.53,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -380,7 +404,8 @@
       "injected_tokens": 517,
       "retrieval_time_ms": 20.7,
       "generation_time_seconds": 1.5,
-      "generated_output": "Asana"
+      "generated_output": "Asana",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_026",
@@ -393,6 +418,7 @@
       "retrieval_time_ms": 21.7,
       "generation_time_seconds": 1.91,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -407,6 +433,7 @@
       "retrieval_time_ms": 20.28,
       "generation_time_seconds": 3.27,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -421,6 +448,7 @@
       "retrieval_time_ms": 24.41,
       "generation_time_seconds": 2.52,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -434,7 +462,8 @@
       "injected_tokens": 441,
       "retrieval_time_ms": 20.64,
       "generation_time_seconds": 1.9,
-      "generated_output": "The Assistant suggested running `mvn dependency:tree` (or `gradle dependencies` for Gradle)."
+      "generated_output": "The Assistant suggested running `mvn dependency:tree` (or `gradle dependencies` for Gradle).",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_030",
@@ -446,7 +475,8 @@
       "injected_tokens": 559,
       "retrieval_time_ms": 20.1,
       "generation_time_seconds": 2.34,
-      "generated_output": "Dave specified `event_date` for Iceberg table partitioning."
+      "generated_output": "Dave specified `event_date` for Iceberg table partitioning.",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_031",
@@ -459,6 +489,7 @@
       "retrieval_time_ms": 26.63,
       "generation_time_seconds": 3.0,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -473,6 +504,7 @@
       "retrieval_time_ms": 20.06,
       "generation_time_seconds": 2.47,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -486,7 +518,8 @@
       "injected_tokens": 495,
       "retrieval_time_ms": 22.9,
       "generation_time_seconds": 1.55,
-      "generated_output": "The team recommended the Logitech MX Master 3."
+      "generated_output": "The team recommended the Logitech MX Master 3.",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_034",
@@ -498,7 +531,8 @@
       "injected_tokens": 532,
       "retrieval_time_ms": 20.43,
       "generation_time_seconds": 2.41,
-      "generated_output": "Mark noticed that the firmware update notes briefly reference \"enhanced TLS handshake performance.\""
+      "generated_output": "Mark noticed that the firmware update notes briefly reference \"enhanced TLS handshake performance.\"",
+      "score": 1.0
     },
     {
       "id": "CAT1_SH_035",
@@ -510,7 +544,8 @@
       "injected_tokens": 553,
       "retrieval_time_ms": 20.74,
       "generation_time_seconds": 2.7,
-      "generated_output": "4:30 PM"
+      "generated_output": "4:30 PM",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_001",
@@ -523,6 +558,7 @@
       "retrieval_time_ms": 20.61,
       "generation_time_seconds": 1.97,
       "generated_output": "Tom's son (Timmy) likes to read.",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -537,6 +573,7 @@
       "retrieval_time_ms": 20.03,
       "generation_time_seconds": 2.56,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -551,6 +588,7 @@
       "retrieval_time_ms": 23.19,
       "generation_time_seconds": 1.44,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -564,7 +602,8 @@
       "injected_tokens": 607,
       "retrieval_time_ms": 20.31,
       "generation_time_seconds": 2.81,
-      "generated_output": "The building project being designed by the mother of Leo is the **MHT-84**."
+      "generated_output": "The building project being designed by the mother of Leo is the **MHT-84**.",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_005",
@@ -576,7 +615,8 @@
       "injected_tokens": 381,
       "retrieval_time_ms": 24.7,
       "generation_time_seconds": 2.18,
-      "generated_output": "Sarah's son, Leo, currently needs tutoring in Physics."
+      "generated_output": "Sarah's son, Leo, currently needs tutoring in Physics.",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_006",
@@ -588,7 +628,8 @@
       "injected_tokens": 325,
       "retrieval_time_ms": 25.33,
       "generation_time_seconds": 1.32,
-      "generated_output": "Alex's brother drives a 1972 Volvo 1800ES."
+      "generated_output": "Alex's brother drives a 1972 Volvo 1800ES.",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_007",
@@ -601,6 +642,7 @@
       "retrieval_time_ms": 20.8,
       "generation_time_seconds": 1.82,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -615,6 +657,7 @@
       "retrieval_time_ms": 25.84,
       "generation_time_seconds": 4.58,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -629,6 +672,7 @@
       "retrieval_time_ms": 27.59,
       "generation_time_seconds": 3.97,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -643,6 +687,7 @@
       "retrieval_time_ms": 25.38,
       "generation_time_seconds": 2.09,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -656,7 +701,8 @@
       "injected_tokens": 346,
       "retrieval_time_ms": 27.65,
       "generation_time_seconds": 2.51,
-      "generated_output": "Timmy plays the guitar."
+      "generated_output": "Timmy plays the guitar.",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_012",
@@ -669,6 +715,7 @@
       "retrieval_time_ms": 25.96,
       "generation_time_seconds": 2.94,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -683,6 +730,7 @@
       "retrieval_time_ms": 23.4,
       "generation_time_seconds": 1.58,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -697,6 +745,7 @@
       "retrieval_time_ms": 27.77,
       "generation_time_seconds": 1.29,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -711,6 +760,7 @@
       "retrieval_time_ms": 24.63,
       "generation_time_seconds": 2.49,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -724,7 +774,8 @@
       "injected_tokens": 473,
       "retrieval_time_ms": 24.46,
       "generation_time_seconds": 2.15,
-      "generated_output": "Sam"
+      "generated_output": "Sam",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_017",
@@ -737,6 +788,7 @@
       "retrieval_time_ms": 27.85,
       "generation_time_seconds": 1.68,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -750,7 +802,8 @@
       "injected_tokens": 336,
       "retrieval_time_ms": 26.54,
       "generation_time_seconds": 4.43,
-      "generated_output": "Mark found the laptop left behind by Alex in the conference room."
+      "generated_output": "Mark found the laptop left behind by Alex in the conference room.",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_019",
@@ -763,6 +816,7 @@
       "retrieval_time_ms": 26.64,
       "generation_time_seconds": 3.61,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -776,7 +830,8 @@
       "injected_tokens": 578,
       "retrieval_time_ms": 26.06,
       "generation_time_seconds": 3.68,
-      "generated_output": "The structural mass timber project is not explicitly named as such, but Sarah is working on the acoustic specifications for **MHT-84**. The context does not specify if it is a high-rise."
+      "generated_output": "The structural mass timber project is not explicitly named as such, but Sarah is working on the acoustic specifications for **MHT-84**. The context does not specify if it is a high-rise.",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_021",
@@ -789,6 +844,7 @@
       "retrieval_time_ms": 26.25,
       "generation_time_seconds": 1.25,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -802,7 +858,8 @@
       "injected_tokens": 433,
       "retrieval_time_ms": 25.57,
       "generation_time_seconds": 2.35,
-      "generated_output": "Sam"
+      "generated_output": "Sam",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_023",
@@ -815,6 +872,7 @@
       "retrieval_time_ms": 25.68,
       "generation_time_seconds": 2.47,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -829,6 +887,7 @@
       "retrieval_time_ms": 24.65,
       "generation_time_seconds": 4.04,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -843,6 +902,7 @@
       "retrieval_time_ms": 25.73,
       "generation_time_seconds": 2.38,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -856,7 +916,8 @@
       "injected_tokens": 425,
       "retrieval_time_ms": 27.49,
       "generation_time_seconds": 1.94,
-      "generated_output": "Alex's laptop is stored in Mark's desk drawer."
+      "generated_output": "Alex's laptop is stored in Mark's desk drawer.",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_027",
@@ -869,6 +930,7 @@
       "retrieval_time_ms": 20.51,
       "generation_time_seconds": 2.99,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -883,6 +945,7 @@
       "retrieval_time_ms": 26.63,
       "generation_time_seconds": 1.63,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -896,7 +959,8 @@
       "injected_tokens": 570,
       "retrieval_time_ms": 24.97,
       "generation_time_seconds": 1.24,
-      "generated_output": "Dave chose S3 Express as the storage backend for Apache Iceberg."
+      "generated_output": "Dave chose S3 Express as the storage backend for Apache Iceberg.",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_030",
@@ -909,6 +973,7 @@
       "retrieval_time_ms": 21.18,
       "generation_time_seconds": 3.55,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -923,6 +988,7 @@
       "retrieval_time_ms": 24.66,
       "generation_time_seconds": 3.47,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -937,6 +1003,7 @@
       "retrieval_time_ms": 24.97,
       "generation_time_seconds": 3.22,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -951,6 +1018,7 @@
       "retrieval_time_ms": 34.1,
       "generation_time_seconds": 3.55,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -965,6 +1033,7 @@
       "retrieval_time_ms": 27.36,
       "generation_time_seconds": 0.99,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -979,6 +1048,7 @@
       "retrieval_time_ms": 26.19,
       "generation_time_seconds": 1.14,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -993,6 +1063,7 @@
       "retrieval_time_ms": 21.62,
       "generation_time_seconds": 2.49,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1006,7 +1077,8 @@
       "injected_tokens": 448,
       "retrieval_time_ms": 19.89,
       "generation_time_seconds": 1.12,
-      "generated_output": "SearchAPI_HighThroughput"
+      "generated_output": "SearchAPI_HighThroughput",
+      "score": 1.0
     },
     {
       "id": "CAT2_CSMH_038",
@@ -1019,6 +1091,7 @@
       "retrieval_time_ms": 21.35,
       "generation_time_seconds": 1.43,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1033,6 +1106,7 @@
       "retrieval_time_ms": 26.44,
       "generation_time_seconds": 1.91,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1047,6 +1121,7 @@
       "retrieval_time_ms": 21.97,
       "generation_time_seconds": 1.54,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1061,6 +1136,7 @@
       "retrieval_time_ms": 27.34,
       "generation_time_seconds": 1.38,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1075,6 +1151,7 @@
       "retrieval_time_ms": 20.62,
       "generation_time_seconds": 2.72,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -1089,6 +1166,7 @@
       "retrieval_time_ms": 20.53,
       "generation_time_seconds": 3.64,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1103,6 +1181,7 @@
       "retrieval_time_ms": 30.56,
       "generation_time_seconds": 3.54,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1117,6 +1196,7 @@
       "retrieval_time_ms": 25.59,
       "generation_time_seconds": 3.05,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -1131,6 +1211,7 @@
       "retrieval_time_ms": 28.45,
       "generation_time_seconds": 1.82,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1144,7 +1225,8 @@
       "injected_tokens": 258,
       "retrieval_time_ms": 32.01,
       "generation_time_seconds": 4.12,
-      "generated_output": "September"
+      "generated_output": "September",
+      "score": 1.0
     },
     {
       "id": "CAT3_TR_003",
@@ -1157,6 +1239,7 @@
       "retrieval_time_ms": 25.47,
       "generation_time_seconds": 2.53,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1170,7 +1253,8 @@
       "injected_tokens": 475,
       "retrieval_time_ms": 20.44,
       "generation_time_seconds": 1.25,
-      "generated_output": "2026"
+      "generated_output": "2026",
+      "score": 1.0
     },
     {
       "id": "CAT3_TR_005",
@@ -1183,6 +1267,7 @@
       "retrieval_time_ms": 24.3,
       "generation_time_seconds": 1.32,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1197,6 +1282,7 @@
       "retrieval_time_ms": 24.93,
       "generation_time_seconds": 2.44,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1211,6 +1297,7 @@
       "retrieval_time_ms": 20.76,
       "generation_time_seconds": 2.02,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1225,6 +1312,7 @@
       "retrieval_time_ms": 20.87,
       "generation_time_seconds": 2.61,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1239,8 +1327,9 @@
       "retrieval_time_ms": 21.28,
       "generation_time_seconds": 1.72,
       "generated_output": "Unknown",
-      "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
-      "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
+      "score": 0.0,
+      "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
+      "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
     {
       "id": "CAT3_TR_010",
@@ -1253,6 +1342,7 @@
       "retrieval_time_ms": 21.97,
       "generation_time_seconds": 1.92,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1267,6 +1357,7 @@
       "retrieval_time_ms": 20.95,
       "generation_time_seconds": 2.26,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1281,6 +1372,7 @@
       "retrieval_time_ms": 22.05,
       "generation_time_seconds": 2.12,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1295,6 +1387,7 @@
       "retrieval_time_ms": 20.38,
       "generation_time_seconds": 1.85,
       "generated_output": "1",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1309,6 +1402,7 @@
       "retrieval_time_ms": 26.37,
       "generation_time_seconds": 1.79,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1323,6 +1417,7 @@
       "retrieval_time_ms": 27.69,
       "generation_time_seconds": 1.67,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1337,6 +1432,7 @@
       "retrieval_time_ms": 27.73,
       "generation_time_seconds": 1.98,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1351,6 +1447,7 @@
       "retrieval_time_ms": 24.47,
       "generation_time_seconds": 1.98,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1365,6 +1462,7 @@
       "retrieval_time_ms": 20.88,
       "generation_time_seconds": 3.12,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1379,6 +1477,7 @@
       "retrieval_time_ms": 21.88,
       "generation_time_seconds": 2.94,
       "generated_output": "[2026-10-01T01:45:00Z]",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1393,6 +1492,7 @@
       "retrieval_time_ms": 20.12,
       "generation_time_seconds": 2.68,
       "generated_output": "[2026-10-22T07:05:00Z]",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1407,6 +1507,7 @@
       "retrieval_time_ms": 21.07,
       "generation_time_seconds": 2.1,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -1421,6 +1522,7 @@
       "retrieval_time_ms": 25.86,
       "generation_time_seconds": 3.15,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1435,8 +1537,9 @@
       "retrieval_time_ms": 26.53,
       "generation_time_seconds": 1.42,
       "generated_output": "Unknown",
-      "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
-      "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
+      "score": 0.0,
+      "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
+      "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
     {
       "id": "CAT3_TR_024",
@@ -1449,6 +1552,7 @@
       "retrieval_time_ms": 26.38,
       "generation_time_seconds": 2.18,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1463,6 +1567,7 @@
       "retrieval_time_ms": 26.23,
       "generation_time_seconds": 3.12,
       "generated_output": "Leo began needing Physics tutoring in **September**.",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1476,7 +1581,8 @@
       "injected_tokens": 433,
       "retrieval_time_ms": 26.51,
       "generation_time_seconds": 2.56,
-      "generated_output": "Sam's Volvo 1800ES appearance occurred in September."
+      "generated_output": "Sam's Volvo 1800ES appearance occurred in September.",
+      "score": 1.0
     },
     {
       "id": "CAT3_TR_027",
@@ -1489,6 +1595,7 @@
       "retrieval_time_ms": 27.61,
       "generation_time_seconds": 1.23,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1503,6 +1610,7 @@
       "retrieval_time_ms": 25.06,
       "generation_time_seconds": 2.43,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1517,6 +1625,7 @@
       "retrieval_time_ms": 22.39,
       "generation_time_seconds": 2.43,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1531,6 +1640,7 @@
       "retrieval_time_ms": 25.6,
       "generation_time_seconds": 12.38,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -1545,6 +1655,7 @@
       "retrieval_time_ms": 30.31,
       "generation_time_seconds": 1.77,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1559,6 +1670,7 @@
       "retrieval_time_ms": 20.85,
       "generation_time_seconds": 2.2,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -1572,7 +1684,8 @@
       "injected_tokens": 439,
       "retrieval_time_ms": 23.19,
       "generation_time_seconds": 1.48,
-      "generated_output": "Mark"
+      "generated_output": "Mark",
+      "score": 1.0
     },
     {
       "id": "CAT3_TR_034",
@@ -1584,7 +1697,8 @@
       "injected_tokens": 256,
       "retrieval_time_ms": 22.78,
       "generation_time_seconds": 1.61,
-      "generated_output": "Dave"
+      "generated_output": "Dave",
+      "score": 1.0
     },
     {
       "id": "CAT3_TR_035",
@@ -1597,6 +1711,7 @@
       "retrieval_time_ms": 20.72,
       "generation_time_seconds": 7.71,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -1611,6 +1726,7 @@
       "retrieval_time_ms": 26.58,
       "generation_time_seconds": 2.52,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1624,7 +1740,8 @@
       "injected_tokens": 504,
       "retrieval_time_ms": 25.69,
       "generation_time_seconds": 3.72,
-      "generated_output": "Physics"
+      "generated_output": "Physics",
+      "score": 1.0
     },
     {
       "id": "CAT4_AC_003",
@@ -1636,7 +1753,8 @@
       "injected_tokens": 611,
       "retrieval_time_ms": 25.09,
       "generation_time_seconds": 3.48,
-      "generated_output": "The current acoustic isolation rating for MHT-84 floor assemblies is STC 60. Sarah updated them to this rating on November 19, and all floor assemblies must maintain STC 60 minimum going forward."
+      "generated_output": "The current acoustic isolation rating for MHT-84 floor assemblies is STC 60. Sarah updated them to this rating on November 19, and all floor assemblies must maintain STC 60 minimum going forward.",
+      "score": 1.0
     },
     {
       "id": "CAT4_AC_004",
@@ -1649,6 +1767,7 @@
       "retrieval_time_ms": 27.79,
       "generation_time_seconds": 1.63,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1663,6 +1782,7 @@
       "retrieval_time_ms": 32.13,
       "generation_time_seconds": 4.02,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1677,6 +1797,7 @@
       "retrieval_time_ms": 23.85,
       "generation_time_seconds": 2.49,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1691,6 +1812,7 @@
       "retrieval_time_ms": 27.89,
       "generation_time_seconds": 3.68,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1705,6 +1827,7 @@
       "retrieval_time_ms": 27.48,
       "generation_time_seconds": 2.32,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1719,6 +1842,7 @@
       "retrieval_time_ms": 20.62,
       "generation_time_seconds": 2.36,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -1732,7 +1856,8 @@
       "injected_tokens": 336,
       "retrieval_time_ms": 28.07,
       "generation_time_seconds": 2.9,
-      "generated_output": "Alex's laptop was in the conference room before Mark put it in his desk drawer."
+      "generated_output": "Alex's laptop was in the conference room before Mark put it in his desk drawer.",
+      "score": 1.0
     },
     {
       "id": "CAT4_AC_011",
@@ -1745,6 +1870,7 @@
       "retrieval_time_ms": 27.6,
       "generation_time_seconds": 2.47,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1759,6 +1885,7 @@
       "retrieval_time_ms": 26.2,
       "generation_time_seconds": 1.8,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1773,6 +1900,7 @@
       "retrieval_time_ms": 26.52,
       "generation_time_seconds": 1.49,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -1786,7 +1914,8 @@
       "injected_tokens": 364,
       "retrieval_time_ms": 26.13,
       "generation_time_seconds": 1.78,
-      "generated_output": "Alex is currently working at Anthropic."
+      "generated_output": "Alex is currently working at Anthropic.",
+      "score": 1.0
     },
     {
       "id": "CAT4_AC_015",
@@ -1798,7 +1927,8 @@
       "injected_tokens": 286,
       "retrieval_time_ms": 26.16,
       "generation_time_seconds": 5.25,
-      "generated_output": "Sarah updated MHT-84 floor assemblies to an STC 60 acoustic isolation rating on November 19, stating that \"all floor assemblies must maintain STC 60 minimum"
+      "generated_output": "Sarah updated MHT-84 floor assemblies to an STC 60 acoustic isolation rating on November 19, stating that \"all floor assemblies must maintain STC 60 minimum",
+      "score": 1.0
     },
     {
       "id": "CAT4_AC_016",
@@ -1810,7 +1940,8 @@
       "injected_tokens": 580,
       "retrieval_time_ms": 27.44,
       "generation_time_seconds": 3.25,
-      "generated_output": "Leo currently needs support with Physics, as indicated by multiple mentions of his Physics homework, Physics tests, and the need for help with Physics concepts like torque calculations, often using the \"Iceberg Method.\" There is no information in the context about him needing tutoring in Algebra."
+      "generated_output": "Leo currently needs support with Physics, as indicated by multiple mentions of his Physics homework, Physics tests, and the need for help with Physics concepts like torque calculations, often using the \"Iceberg Method.\" There is no information in the context about him needing tutoring in Algebra.",
+      "score": 1.0
     },
     {
       "id": "CAT4_AC_017",
@@ -1818,11 +1949,14 @@
       "question": "Does Elena currently use Python or Rust for backend microservices?",
       "expected_answer": "Rust and WebAssembly",
       "retrieved_context": "> [2026-09-14T03:45:00Z] Elena: Hey there! I've been diving deeper into Rust and WebAssembly for my backend microservices project, and I'm really excited about the performance boosts I'm seeing. But I'm also feeling a bit overwhelmed\u2014how do you typically handle the learning curve when switching to a new programming language and tech stack? Is it normal to feel like I'm constantly questioning my decisions? Any tips on building a solid portfolio piece while tackling these challenges? And hey, how's Sarah doing these days\u2014any fun family updates?\n[2026-09-14T03:49:00Z] Assistant: Switching to Rust and WebAssembly can definitely feel steep at first, but embracing the uncertainty is part of the growth process. Focus on building a small, well-documented microservice that showcases your ability to\n\n> [2026-10-05T08:45:00Z] Elena: Hey there! So I\u2019ve been diving headfirst into building backend services with Rust and WebAssembly, and I\u2019m both excited and a tad overwhelmed. Is it normal to feel like I\u2019m constantly questioning whether I\u2019m on the right track with these new tools? Any tips on how to get my first microservice up and running smoothly would be super helpful! Also, how\u2019s Sarah doing these days\u2014any family updates you can share?\n[2026-10-05T08:48:00Z] Assistant: Absolutely, it's totally normal to feel that way when learning new technologies like Rust and WebAssembly! To get your first microservice up and running smoothly, I recommend starting with the `wasmtime` runtime and the `actix-web` framework for handling HTTP requests\u2014this combo is well-documented and beginner-friendly. F\n\nlly. To eliminate flaky integration tests, isolate test database instances using ephemeral Docker containers and reset state between test suites rather than relying on shared database cleanups. Embedding WASM modules in Rust using `wasmtime` isolates untrusted code execution within secure memory sandboxes with strict fuel consumption limits. For microservice transactions, implement the Saga pattern using orchestrator services or event-driven choreography to maintain eventual consistency. eBPF socket filtering with `bpf_sk_filter` allows attaching C programs directly to sockets, dropping unauthorized packets before TCP stack processing. Migrating payload-heavy REST endpoints to GraphQL allows clients to request only required field attributes, reducing mobile payload sizes by 40%. Chaos Mesh\n\nply when embedding WASM microservices inside an existing Rust backend server? What metrics best capture query execution latency degradation in distributed DuckDB analytical workloads? How do we configure Envoy proxy rate limiting to protect public API endpoints against distributed traffic bursts? How can we set up automated chaos testing experiments in staging using Chaos Mesh to validate service mesh resiliency? What's the best practice for running database schema migrations on PostgreSQL without locking heavy production tables? Our Terraform deployments are failing due to state lock contention between feature branches. How should we modularize state files? What criteria should we evaluate when interviewing candidates for the senior lead DevOps infrastructure role? What is the best patter\n\nplaining the challenges and solutions. Sarah is doing well, focusing on integrating the new microservices into the current project pipeline\u2014she mentioned the team is excited about the potential performance gains!",
-      "pass": true,
+      "pass": false,
       "injected_tokens": 491,
       "retrieval_time_ms": 26.09,
       "generation_time_seconds": 1.27,
-      "generated_output": "Elena currently uses Rust for backend microservices."
+      "generated_output": "Elena currently uses Rust for backend microservices.",
+      "score": 0.5,
+      "failure_cause": "PARTIAL_LIST_MATCH",
+      "failure_reason": "Only 1 of 2 required answer components were found."
     },
     {
       "id": "CAT4_AC_018",
@@ -1835,6 +1969,7 @@
       "retrieval_time_ms": 27.9,
       "generation_time_seconds": 2.6,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1849,6 +1984,7 @@
       "retrieval_time_ms": 26.23,
       "generation_time_seconds": 4.51,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1863,6 +1999,7 @@
       "retrieval_time_ms": 25.48,
       "generation_time_seconds": 1.97,
       "generated_output": "In early September, Leo struggled with torque calculations.",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1877,6 +2014,7 @@
       "retrieval_time_ms": 24.79,
       "generation_time_seconds": 1.98,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1891,6 +2029,7 @@
       "retrieval_time_ms": 21.42,
       "generation_time_seconds": 4.66,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1905,6 +2044,7 @@
       "retrieval_time_ms": 25.31,
       "generation_time_seconds": 2.59,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -1919,6 +2059,7 @@
       "retrieval_time_ms": 27.11,
       "generation_time_seconds": 2.24,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1932,7 +2073,8 @@
       "injected_tokens": 258,
       "retrieval_time_ms": 29.4,
       "generation_time_seconds": 2.24,
-      "generated_output": "Yes, Alex has left Google for Anthropic. Alex mentions running into an error \"in the new Anthropic codebase\" and feeling lost \"navigating the team's setup norms compared to Google's workflow,\" indicating a transition from Google to Anthropic."
+      "generated_output": "Yes, Alex has left Google for Anthropic. Alex mentions running into an error \"in the new Anthropic codebase\" and feeling lost \"navigating the team's setup norms compared to Google's workflow,\" indicating a transition from Google to Anthropic.",
+      "score": 1.0
     },
     {
       "id": "CAT4_AC_026",
@@ -1944,7 +2086,8 @@
       "injected_tokens": 511,
       "retrieval_time_ms": 27.39,
       "generation_time_seconds": 2.68,
-      "generated_output": "Yes, MHT-84 floor assemblies were updated to STC 60 acoustic isolation rating on November 19. The context does not specify if the previous rating was STC 55, only that it was updated to STC 60."
+      "generated_output": "Yes, MHT-84 floor assemblies were updated to STC 60 acoustic isolation rating on November 19. The context does not specify if the previous rating was STC 55, only that it was updated to STC 60.",
+      "score": 1.0
     },
     {
       "id": "CAT4_AC_027",
@@ -1957,6 +2100,7 @@
       "retrieval_time_ms": 26.05,
       "generation_time_seconds": 1.92,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1971,6 +2115,7 @@
       "retrieval_time_ms": 23.26,
       "generation_time_seconds": 3.81,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -1985,6 +2130,7 @@
       "retrieval_time_ms": 24.39,
       "generation_time_seconds": 3.97,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -1999,6 +2145,7 @@
       "retrieval_time_ms": 25.8,
       "generation_time_seconds": 4.0,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2013,6 +2160,7 @@
       "retrieval_time_ms": 26.44,
       "generation_time_seconds": 3.18,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -2027,6 +2175,7 @@
       "retrieval_time_ms": 25.21,
       "generation_time_seconds": 1.26,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -2041,6 +2190,7 @@
       "retrieval_time_ms": 20.82,
       "generation_time_seconds": 2.63,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2054,7 +2204,8 @@
       "injected_tokens": 580,
       "retrieval_time_ms": 20.94,
       "generation_time_seconds": 2.65,
-      "generated_output": "Leo's current tutoring subject is Physics."
+      "generated_output": "Leo's current tutoring subject is Physics.",
+      "score": 1.0
     },
     {
       "id": "CAT4_AC_035",
@@ -2067,6 +2218,7 @@
       "retrieval_time_ms": 25.31,
       "generation_time_seconds": 2.25,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2081,6 +2233,7 @@
       "retrieval_time_ms": 27.33,
       "generation_time_seconds": 2.54,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2095,8 +2248,9 @@
       "retrieval_time_ms": 31.13,
       "generation_time_seconds": 3.31,
       "generated_output": "Unknown",
-      "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
-      "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
+      "score": 0.0,
+      "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
+      "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
     {
       "id": "CAT5_PM_003",
@@ -2109,6 +2263,7 @@
       "retrieval_time_ms": 26.63,
       "generation_time_seconds": 1.52,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2122,7 +2277,8 @@
       "injected_tokens": 455,
       "retrieval_time_ms": 26.78,
       "generation_time_seconds": 2.31,
-      "generated_output": "UnifiedV2DBClient."
+      "generated_output": "UnifiedV2DBClient.",
+      "score": 1.0
     },
     {
       "id": "CAT5_PM_005",
@@ -2134,7 +2290,8 @@
       "injected_tokens": 442,
       "retrieval_time_ms": 28.49,
       "generation_time_seconds": 1.58,
-      "generated_output": "Use SearchAPI_HighThroughput."
+      "generated_output": "Use SearchAPI_HighThroughput.",
+      "score": 1.0
     },
     {
       "id": "CAT5_PM_006",
@@ -2147,6 +2304,7 @@
       "retrieval_time_ms": 26.29,
       "generation_time_seconds": 2.16,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2161,6 +2319,7 @@
       "retrieval_time_ms": 24.66,
       "generation_time_seconds": 3.91,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2175,6 +2334,7 @@
       "retrieval_time_ms": 20.69,
       "generation_time_seconds": 2.06,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2189,6 +2349,7 @@
       "retrieval_time_ms": 27.62,
       "generation_time_seconds": 3.16,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2203,6 +2364,7 @@
       "retrieval_time_ms": 25.72,
       "generation_time_seconds": 1.41,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2217,6 +2379,7 @@
       "retrieval_time_ms": 21.01,
       "generation_time_seconds": 1.59,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2231,6 +2394,7 @@
       "retrieval_time_ms": 25.38,
       "generation_time_seconds": 1.46,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2245,6 +2409,7 @@
       "retrieval_time_ms": 21.74,
       "generation_time_seconds": 2.01,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2259,6 +2424,7 @@
       "retrieval_time_ms": 22.88,
       "generation_time_seconds": 1.9,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2272,7 +2438,8 @@
       "injected_tokens": 435,
       "retrieval_time_ms": 26.67,
       "generation_time_seconds": 2.31,
-      "generated_output": "SearchAPI_HighThroughput handles high throughput batch log indexing."
+      "generated_output": "SearchAPI_HighThroughput handles high throughput batch log indexing.",
+      "score": 1.0
     },
     {
       "id": "CAT5_PM_016",
@@ -2285,6 +2452,7 @@
       "retrieval_time_ms": 23.81,
       "generation_time_seconds": 2.11,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2299,6 +2467,7 @@
       "retrieval_time_ms": 26.39,
       "generation_time_seconds": 1.87,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2313,6 +2482,7 @@
       "retrieval_time_ms": 26.21,
       "generation_time_seconds": 2.66,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2327,6 +2497,7 @@
       "retrieval_time_ms": 27.72,
       "generation_time_seconds": 1.97,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2341,6 +2512,7 @@
       "retrieval_time_ms": 25.29,
       "generation_time_seconds": 2.7,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2355,6 +2527,7 @@
       "retrieval_time_ms": 25.49,
       "generation_time_seconds": 2.74,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2368,7 +2541,8 @@
       "injected_tokens": 449,
       "retrieval_time_ms": 23.56,
       "generation_time_seconds": 1.89,
-      "generated_output": "SearchAPI_HighThroughput"
+      "generated_output": "SearchAPI_HighThroughput",
+      "score": 1.0
     },
     {
       "id": "CAT5_PM_023",
@@ -2381,6 +2555,7 @@
       "retrieval_time_ms": 26.6,
       "generation_time_seconds": 1.83,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2395,6 +2570,7 @@
       "retrieval_time_ms": 27.57,
       "generation_time_seconds": 3.01,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2409,6 +2585,7 @@
       "retrieval_time_ms": 26.75,
       "generation_time_seconds": 2.22,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2423,6 +2600,7 @@
       "retrieval_time_ms": 26.09,
       "generation_time_seconds": 1.48,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2437,6 +2615,7 @@
       "retrieval_time_ms": 20.96,
       "generation_time_seconds": 1.79,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2451,6 +2630,7 @@
       "retrieval_time_ms": 22.05,
       "generation_time_seconds": 2.59,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -2465,6 +2645,7 @@
       "retrieval_time_ms": 21.93,
       "generation_time_seconds": 2.23,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2479,6 +2660,7 @@
       "retrieval_time_ms": 26.91,
       "generation_time_seconds": 2.68,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2493,6 +2675,7 @@
       "retrieval_time_ms": 25.66,
       "generation_time_seconds": 1.7,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2507,6 +2690,7 @@
       "retrieval_time_ms": 26.69,
       "generation_time_seconds": 4.23,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2521,6 +2705,7 @@
       "retrieval_time_ms": 26.06,
       "generation_time_seconds": 2.29,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2534,7 +2719,8 @@
       "injected_tokens": 439,
       "retrieval_time_ms": 24.62,
       "generation_time_seconds": 1.32,
-      "generated_output": "SearchAPI_HighThroughput"
+      "generated_output": "SearchAPI_HighThroughput",
+      "score": 1.0
     },
     {
       "id": "CAT5_PM_035",
@@ -2547,6 +2733,7 @@
       "retrieval_time_ms": 27.01,
       "generation_time_seconds": 2.79,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2561,6 +2748,7 @@
       "retrieval_time_ms": 25.61,
       "generation_time_seconds": 2.4,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -2575,6 +2763,7 @@
       "retrieval_time_ms": 25.62,
       "generation_time_seconds": 1.99,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -2589,6 +2778,7 @@
       "retrieval_time_ms": 25.67,
       "generation_time_seconds": 1.11,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2603,6 +2793,7 @@
       "retrieval_time_ms": 26.45,
       "generation_time_seconds": 2.44,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2616,7 +2807,8 @@
       "injected_tokens": 258,
       "retrieval_time_ms": 21.3,
       "generation_time_seconds": 1.44,
-      "generated_output": "No, Alex said his brother Sam drives a vintage 1972 Volvo 1800ES."
+      "generated_output": "No, Alex said his brother Sam drives a vintage 1972 Volvo 1800ES.",
+      "score": 1.0
     },
     {
       "id": "CAT6_AD_006",
@@ -2629,6 +2821,7 @@
       "retrieval_time_ms": 25.93,
       "generation_time_seconds": 2.32,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2643,6 +2836,7 @@
       "retrieval_time_ms": 25.54,
       "generation_time_seconds": 2.9,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -2657,6 +2851,7 @@
       "retrieval_time_ms": 28.71,
       "generation_time_seconds": 2.84,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2670,7 +2865,8 @@
       "injected_tokens": 276,
       "retrieval_time_ms": 25.66,
       "generation_time_seconds": 2.95,
-      "generated_output": "No, Mark said Alex left his laptop in the **conference room**. Mark has it stored in his desk drawer."
+      "generated_output": "No, Mark said Alex left his laptop in the **conference room**. Mark has it stored in his desk drawer.",
+      "score": 1.0
     },
     {
       "id": "CAT6_AD_010",
@@ -2683,6 +2879,7 @@
       "retrieval_time_ms": 26.47,
       "generation_time_seconds": 1.44,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2697,6 +2894,7 @@
       "retrieval_time_ms": 24.9,
       "generation_time_seconds": 3.1,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2710,7 +2908,8 @@
       "injected_tokens": 286,
       "retrieval_time_ms": 24.3,
       "generation_time_seconds": 2.33,
-      "generated_output": "No, Sarah specified STC 60 for MHT-84 floor assemblies and STC 45 for the MHT-84 parking garage substructure. She did not specify STC 70."
+      "generated_output": "No, Sarah specified STC 60 for MHT-84 floor assemblies and STC 45 for the MHT-84 parking garage substructure. She did not specify STC 70.",
+      "score": 1.0
     },
     {
       "id": "CAT6_AD_013",
@@ -2723,6 +2922,7 @@
       "retrieval_time_ms": 26.03,
       "generation_time_seconds": 2.35,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2737,6 +2937,7 @@
       "retrieval_time_ms": 24.56,
       "generation_time_seconds": 2.32,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2751,6 +2952,7 @@
       "retrieval_time_ms": 20.52,
       "generation_time_seconds": 2.04,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2765,6 +2967,7 @@
       "retrieval_time_ms": 26.13,
       "generation_time_seconds": 1.53,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2779,6 +2982,7 @@
       "retrieval_time_ms": 22.1,
       "generation_time_seconds": 1.76,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -2793,6 +2997,7 @@
       "retrieval_time_ms": 19.95,
       "generation_time_seconds": 1.66,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -2807,6 +3012,7 @@
       "retrieval_time_ms": 27.07,
       "generation_time_seconds": 2.14,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2820,7 +3026,8 @@
       "injected_tokens": 257,
       "retrieval_time_ms": 24.58,
       "generation_time_seconds": 1.8,
-      "generated_output": "No, the context states that Sam drives a vintage 1972 Volvo 1800ES."
+      "generated_output": "No, the context states that Sam drives a vintage 1972 Volvo 1800ES.",
+      "score": 1.0
     },
     {
       "id": "CAT6_AD_021",
@@ -2833,6 +3040,7 @@
       "retrieval_time_ms": 22.34,
       "generation_time_seconds": 2.43,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2847,6 +3055,7 @@
       "retrieval_time_ms": 22.4,
       "generation_time_seconds": 4.47,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2861,6 +3070,7 @@
       "retrieval_time_ms": 20.53,
       "generation_time_seconds": 2.59,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2875,6 +3085,7 @@
       "retrieval_time_ms": 36.31,
       "generation_time_seconds": 1.97,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -2889,6 +3100,7 @@
       "retrieval_time_ms": 31.77,
       "generation_time_seconds": 1.26,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -2902,7 +3114,8 @@
       "injected_tokens": 336,
       "retrieval_time_ms": 35.61,
       "generation_time_seconds": 2.33,
-      "generated_output": "No, Mark said he found Alex's **laptop** in his desk drawer."
+      "generated_output": "No, Mark said he found Alex's **laptop** in his desk drawer.",
+      "score": 1.0
     },
     {
       "id": "CAT6_AD_027",
@@ -2915,8 +3128,9 @@
       "retrieval_time_ms": 25.21,
       "generation_time_seconds": 1.26,
       "generated_output": "Unknown",
-      "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
-      "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
+      "score": 0.0,
+      "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
+      "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
     {
       "id": "CAT6_AD_028",
@@ -2929,6 +3143,7 @@
       "retrieval_time_ms": 36.98,
       "generation_time_seconds": 1.56,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2943,6 +3158,7 @@
       "retrieval_time_ms": 19.97,
       "generation_time_seconds": 4.84,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2957,6 +3173,7 @@
       "retrieval_time_ms": 25.58,
       "generation_time_seconds": 1.65,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2971,6 +3188,7 @@
       "retrieval_time_ms": 28.17,
       "generation_time_seconds": 1.19,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -2980,11 +3198,14 @@
       "question": "Didn't you recommend 45-minute study chunks for Josh's son?",
       "expected_answer": "No, recommended 15-minute chunks.",
       "retrieved_context": "> [2026-10-09T13:45:00Z] Sarah: Everything's a load path today\u2014MHT-84\u2019s acoustic rating is pushing the envelope, the contractor\u2019s schedule is tighter than ever, and now Elena\u2019s dropped a last-minute client tweak. Also, Leo\u2019s got a physics problem set due tomorrow and I\u2019m trying to decide if we should skip the soccer match to hit the library. The Iceberg Method says we focus on the physics first, then worry about the rest. Lemme know if you\u2019ve got a quick restaurant suggestion for after we power through this list\u2014something low-key but solid.\n[2026-10-09T13:50:00Z] Assistant: For the physics problem set, allocate 45 minutes now to tackle the most challenging problems, then wrap up with a quick review before Leo\u2019s deadline. After you power through the tasks, I recommend **The Green House** ne\n\n> [2026-11-20T18:45:00Z] Sarah: everything's a load path today\u2014contractor\u2019s delayed on the acoustic panels for MHT-84, Leo bombed the first quiz in Physics, and I\u2019m juggling a client\u2019s last-minute design tweak. Also, found a great new sushi place downtown; think I\u2019ll treat myself after the parent-teacher conference later.\n[2026-11-20T18:51:00Z] Assistant: Sounds like a packed day, Sarah! For the acoustic panels delay, I recommend checking if the subcontractor has any alternative materials on hand that could be sourced locally to keep the schedule on track. Regarding Leo's quiz, perhaps suggest a quick review session focusing on the problem areas that came up. And enjoy your sushi treat\u2014it\u2019s a nice reward for all the juggling you\u2019re doing today!\n\nes prominently, then break each into specific, daily tasks for the upcoming week, reserving a flexible half-day buffer to accommodate any unexpected activities. This structured approach should help you keep everything on track without feeling overwhelmed.\n\n> [2026-12-11T15:52:00Z] Sarah: Everything's a load path, right? I\u2019ll snag a light antipasto for dinner and maybe sneak a quick glance at Leo\u2019s physics notes before the parent-teacher conference\u2014hope the \u201cgravity\u2019s a bit shaky\u201d joke doesn\u2019t get me in trouble with the school counselor. Iceberg Method time: I\u2019ll just focus on the conference agenda, let the rest slide under the surface.\n[2026-12-11T15:56:00Z] Assistant: At the conference, prioritize the key discussion points on the agenda\u2014such as project timelines and structural safety checks\u2014while keeping the \u201cgravity\u2019s a bit shaky\u201d remark light and playful. If the counselor asks, you can briefly mention it as a humorous icebreaker, but stay focused on the technical aspects of the presentation to ensure everything runs smoothly.\n\n> [2026-10-01T02:10:00Z] Dave: Prepare the load testing scripts for this weekend's dashboard verification, focusing on simulating peak concurrency levels to validate both the partitioning strategy and alert threshold responsiveness. Ensure the training materials include direct links to the live dashboard for immediate post-workshop exploration by participants. Review the updated Iceberg table schema documentation to confirm all team members have access prior to the hands-on exercise.\n[2026-10-01T02:13:00Z] Assistant: I've queued up the load testing scripts to simulate peak concurrency levels this weekend, specifically targeting the partitioning strategy and alert threshold responsiveness. The training materials now contain live dashboard links, enabling participants to explore the insights",
-      "pass": true,
+      "pass": false,
       "injected_tokens": 501,
       "retrieval_time_ms": 21.04,
       "generation_time_seconds": 1.75,
-      "generated_output": "No, the recommendation for 45-minute study chunks was for Sarah's son, Leo, not Josh's son."
+      "generated_output": "No, the recommendation for 45-minute study chunks was for Sarah's son, Leo, not Josh's son.",
+      "score": 0.0,
+      "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
+      "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
     {
       "id": "CAT6_AD_033",
@@ -2997,6 +3218,7 @@
       "retrieval_time_ms": 20.09,
       "generation_time_seconds": 1.63,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -3011,6 +3233,7 @@
       "retrieval_time_ms": 20.86,
       "generation_time_seconds": 1.82,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -3025,6 +3248,7 @@
       "retrieval_time_ms": 23.67,
       "generation_time_seconds": 2.85,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -3039,8 +3263,9 @@
       "retrieval_time_ms": 25.11,
       "generation_time_seconds": 1.61,
       "generated_output": "Unknown",
-      "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
-      "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
+      "score": 0.0,
+      "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
+      "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
     {
       "id": "CAT7_SA_009",
@@ -3053,6 +3278,7 @@
       "retrieval_time_ms": 21.02,
       "generation_time_seconds": 1.24,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -3066,7 +3292,8 @@
       "injected_tokens": 635,
       "retrieval_time_ms": 29.32,
       "generation_time_seconds": 3.1,
-      "generated_output": "Timmy plays guitar for fun. The context mentions \"Timmy's guitar hobby\" and suggests gift ideas like a \"beginner-friendly guitar tuner\" for him."
+      "generated_output": "Timmy plays guitar for fun. The context mentions \"Timmy's guitar hobby\" and suggests gift ideas like a \"beginner-friendly guitar tuner\" for him.",
+      "score": 1.0
     },
     {
       "id": "CAT7_SA_015",
@@ -3079,6 +3306,7 @@
       "retrieval_time_ms": 21.91,
       "generation_time_seconds": 4.88,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -3093,6 +3321,7 @@
       "retrieval_time_ms": 26.47,
       "generation_time_seconds": 2.06,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -3107,6 +3336,7 @@
       "retrieval_time_ms": 20.3,
       "generation_time_seconds": 1.63,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -3121,6 +3351,7 @@
       "retrieval_time_ms": 20.42,
       "generation_time_seconds": 2.22,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -3135,6 +3366,7 @@
       "retrieval_time_ms": 23.64,
       "generation_time_seconds": 1.08,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -3149,6 +3381,7 @@
       "retrieval_time_ms": 25.69,
       "generation_time_seconds": 2.2,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -3163,6 +3396,7 @@
       "retrieval_time_ms": 20.83,
       "generation_time_seconds": 1.91,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -3176,7 +3410,8 @@
       "injected_tokens": 324,
       "retrieval_time_ms": 25.18,
       "generation_time_seconds": 3.99,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_002",
@@ -3188,7 +3423,8 @@
       "injected_tokens": 187,
       "retrieval_time_ms": 20.97,
       "generation_time_seconds": 2.34,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_003",
@@ -3200,7 +3436,8 @@
       "injected_tokens": 264,
       "retrieval_time_ms": 27.12,
       "generation_time_seconds": 2.33,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_004",
@@ -3212,7 +3449,8 @@
       "injected_tokens": 352,
       "retrieval_time_ms": 24.89,
       "generation_time_seconds": 1.96,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_005",
@@ -3224,7 +3462,8 @@
       "injected_tokens": 242,
       "retrieval_time_ms": 25.32,
       "generation_time_seconds": 3.34,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_006",
@@ -3236,7 +3475,8 @@
       "injected_tokens": 212,
       "retrieval_time_ms": 26.52,
       "generation_time_seconds": 1.92,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_007",
@@ -3248,7 +3488,8 @@
       "injected_tokens": 132,
       "retrieval_time_ms": 27.29,
       "generation_time_seconds": 3.09,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_008",
@@ -3260,7 +3501,8 @@
       "injected_tokens": 315,
       "retrieval_time_ms": 26.92,
       "generation_time_seconds": 2.09,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_009",
@@ -3272,7 +3514,8 @@
       "injected_tokens": 244,
       "retrieval_time_ms": 26.89,
       "generation_time_seconds": 3.33,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_010",
@@ -3284,7 +3527,8 @@
       "injected_tokens": 40,
       "retrieval_time_ms": 26.9,
       "generation_time_seconds": 1.53,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_011",
@@ -3296,7 +3540,8 @@
       "injected_tokens": 258,
       "retrieval_time_ms": 20.85,
       "generation_time_seconds": 1.96,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_012",
@@ -3308,7 +3553,8 @@
       "injected_tokens": 322,
       "retrieval_time_ms": 21.33,
       "generation_time_seconds": 1.52,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_013",
@@ -3320,7 +3566,8 @@
       "injected_tokens": 351,
       "retrieval_time_ms": 26.75,
       "generation_time_seconds": 1.38,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_014",
@@ -3332,7 +3579,8 @@
       "injected_tokens": 233,
       "retrieval_time_ms": 20.65,
       "generation_time_seconds": 2.82,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_015",
@@ -3344,7 +3592,8 @@
       "injected_tokens": 624,
       "retrieval_time_ms": 24.32,
       "generation_time_seconds": 2.16,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_016",
@@ -3356,7 +3605,8 @@
       "injected_tokens": 249,
       "retrieval_time_ms": 20.35,
       "generation_time_seconds": 1.26,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_017",
@@ -3368,7 +3618,8 @@
       "injected_tokens": 309,
       "retrieval_time_ms": 20.91,
       "generation_time_seconds": 2.6,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_018",
@@ -3380,7 +3631,8 @@
       "injected_tokens": 347,
       "retrieval_time_ms": 21.16,
       "generation_time_seconds": 2.37,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_019",
@@ -3392,7 +3644,8 @@
       "injected_tokens": 428,
       "retrieval_time_ms": 21.42,
       "generation_time_seconds": 1.36,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_020",
@@ -3404,7 +3657,8 @@
       "injected_tokens": 244,
       "retrieval_time_ms": 25.92,
       "generation_time_seconds": 2.09,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_021",
@@ -3416,7 +3670,8 @@
       "injected_tokens": 489,
       "retrieval_time_ms": 23.31,
       "generation_time_seconds": 1.26,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_022",
@@ -3428,7 +3683,8 @@
       "injected_tokens": 349,
       "retrieval_time_ms": 20.85,
       "generation_time_seconds": 3.15,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_023",
@@ -3440,7 +3696,8 @@
       "injected_tokens": 507,
       "retrieval_time_ms": 21.6,
       "generation_time_seconds": 1.35,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_024",
@@ -3452,7 +3709,8 @@
       "injected_tokens": 366,
       "retrieval_time_ms": 26.19,
       "generation_time_seconds": 1.69,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_025",
@@ -3464,7 +3722,8 @@
       "injected_tokens": 166,
       "retrieval_time_ms": 25.83,
       "generation_time_seconds": 2.79,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_026",
@@ -3476,7 +3735,8 @@
       "injected_tokens": 398,
       "retrieval_time_ms": 34.14,
       "generation_time_seconds": 2.53,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_027",
@@ -3488,7 +3748,8 @@
       "injected_tokens": 345,
       "retrieval_time_ms": 25.07,
       "generation_time_seconds": 2.93,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_028",
@@ -3500,7 +3761,8 @@
       "injected_tokens": 249,
       "retrieval_time_ms": 21.06,
       "generation_time_seconds": 2.23,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_029",
@@ -3512,7 +3774,8 @@
       "injected_tokens": 433,
       "retrieval_time_ms": 21.07,
       "generation_time_seconds": 3.1,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_030",
@@ -3524,7 +3787,8 @@
       "injected_tokens": 282,
       "retrieval_time_ms": 26.3,
       "generation_time_seconds": 1.98,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_031",
@@ -3536,7 +3800,8 @@
       "injected_tokens": 495,
       "retrieval_time_ms": 22.64,
       "generation_time_seconds": 1.07,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_032",
@@ -3548,7 +3813,8 @@
       "injected_tokens": 397,
       "retrieval_time_ms": 21.56,
       "generation_time_seconds": 1.59,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_033",
@@ -3560,7 +3826,8 @@
       "injected_tokens": 580,
       "retrieval_time_ms": 20.97,
       "generation_time_seconds": 2.17,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_034",
@@ -3572,7 +3839,8 @@
       "injected_tokens": 401,
       "retrieval_time_ms": 22.39,
       "generation_time_seconds": 2.53,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT8_AM_035",
@@ -3584,7 +3852,8 @@
       "injected_tokens": 201,
       "retrieval_time_ms": 20.74,
       "generation_time_seconds": 1.85,
-      "generated_output": "Unknown"
+      "generated_output": "Unknown",
+      "score": 1.0
     },
     {
       "id": "CAT7_SA_036",
@@ -3596,7 +3865,8 @@
       "injected_tokens": 452,
       "retrieval_time_ms": 25.1,
       "generation_time_seconds": 4.66,
-      "generated_output": "Tom.\n\nThe context states:\n*   \"[2026-11-24T22:08:00Z] Alex: ...Now just to finalize"
+      "generated_output": "Tom.\n\nThe context states:\n*   \"[2026-11-24T22:08:00Z] Alex: ...Now just to finalize",
+      "score": 1.0
     },
     {
       "id": "CAT7_SA_037",
@@ -3608,7 +3878,8 @@
       "injected_tokens": 473,
       "retrieval_time_ms": 28.77,
       "generation_time_seconds": 1.59,
-      "generated_output": "Sam"
+      "generated_output": "Sam",
+      "score": 1.0
     },
     {
       "id": "CAT7_SA_038",
@@ -3621,6 +3892,7 @@
       "retrieval_time_ms": 27.91,
       "generation_time_seconds": 4.13,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -3634,7 +3906,8 @@
       "injected_tokens": 510,
       "retrieval_time_ms": 22.21,
       "generation_time_seconds": 4.09,
-      "generated_output": "The Assistant's career-transition advice for Elena was for her adoption of Rust and WebAssembly for backend microservices. The context repeatedly shows Elena discussing her learning curve, challenges, and progress with Rust and WebAssembly, and the Assistant providing guidance specific to these technologies. There is no mention of Elena moving into UX design."
+      "generated_output": "The Assistant's career-transition advice for Elena was for her adoption of Rust and WebAssembly for backend microservices. The context repeatedly shows Elena discussing her learning curve, challenges, and progress with Rust and WebAssembly, and the Assistant providing guidance specific to these technologies. There is no mention of Elena moving into UX design.",
+      "score": 1.0
     },
     {
       "id": "CAT7_SA_040",
@@ -3647,22 +3920,24 @@
       "retrieval_time_ms": 27.76,
       "generation_time_seconds": 4.09,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
     {
       "id": "CAT6_AD_036",
       "category": "Adversarial Defense & Gaslighting Robustness",
-      "question": "Didn't Tom mention that his son enjoys playing guitar in a band?",
-      "expected_answer": "No, Timmy plays acoustic guitar for fun, but no band was ever mentioned.",
-      "retrieved_context": "> [2026-09-01T09:45:00Z] Alex: Hey, just wrapped up another frustrating build break\u2014thinking about switching to the newer CI pipeline but not sure if it's worth the hassle yet. Tom's planning that family get-together for next weekend; any quick gift ideas for Timmy's guitar hobby? Also, Sam mentioned his Volvo needs a new brake line\u2014any recommendations for a decent yet affordable part? Feeling a bit swamped, so a quick sanity check on prioritizing tasks would be great.\n[2026-09-01T09:49:00Z] Assistant: For Timmy's guitar, consider a beginner-friendly guitar tuner or a set of affordable picks and a small case\u2014these are practical and won't break the bank. For Sam's Volvo brake line, I recommend the ACDelco 110-9068 brake line; it's a direct OE replacement, well-reviewed for quality and affor\n\n-reviewed options that balance playability and sound quality for those new to playing.\n\n> [2026-10-13T18:45:00Z] Alex: Hey, just hit a snag on this integration \u2013 the build\u2019s failing on the new module. Any quick tips on debugging the dependency tree, or should I dive into the CI logs first? Also, heard Timmy\u2019s playing at the community center this weekend; thinking of picking up a guitar for his next recital\u2014any solid beginner recommendations?\n[2026-10-13T18:50:00Z] Assistant: To debug the failing build, start by running `mvn dependency:tree` (or `gradle dependencies` for Gradle) in the root of the module to visualize the dependency graph and spot any conflicts or missing artifacts. This will often reveal transitive version mismatches or unmet dependencies more clearly than diving straight into CI logs. For a beginner guitar, the Yamaha LL14 or the Fender CD-60S are solid, well\n\n> [2026-10-13T19:05:00Z] Alex: Got it\u2014will scope out some Volvo mechanics this week and set up a quick sound check for Timmy. Any tips on keeping the guitar in tune during transport to the recital? Also, how\u2019s the onboarding going at Anthropic so far? Feeling a bit overwhelmed with the new codebase.\n[2026-10-13T19:09:00Z] Assistant: To keep the Yamaha guitar in tune during transport to the recital, use a sturdy gig bag with a built-in or detachable strap, and consider a small, portable clip-on tuner that can be quickly checked before the performance. Regarding Anthropic's onboarding, the new codebase can indeed feel overwhelming initially, but focusing on key documentation sections, engaging with the onboarding channel for quick clarifications, and setting up regular short check-ins with y\n\n> [2026-10-13T18:56:00Z] Alex: Thanks for the advice on the build\u2014will give the dependency tree a look first. As for the guitar, the Yamaha sounds perfect; I\u2019ll check it out at the local music store. Sam just mentioned his Volvo is due for a tune-up; any quick tips on finding a reliable mechanic for vintage cars in the area? Also, Timmy\u2019s recital is this Saturday; any last-minute prep suggestions for a first-time performer?\n[2026-10-13T19:00:00Z] Assistant: To find a reliable mechanic for vintage Volvos in your area, check local automotive forums or Facebook groups for recommendations, and ask for references from fellow Volvo owners. Look for a shop specializing in European or vintage vehicles with experienced technicians who understand older model systems. For Timmy\u2019s recital this Saturda",
+      "question": "Didn't Tom mention that his son enjoys playing the violin for fun?",
+      "expected_answer": "No, Timmy plays acoustic guitar for fun.",
+      "retrieved_context": "-reviewed options that balance playability and sound quality for those new to playing.\n\n> [2026-10-13T18:56:00Z] Alex: Thanks for the advice on the build\u2014will give the dependency tree a look first. As for the guitar, the Yamaha sounds perfect; I\u2019ll check it out at the local music store. Sam just mentioned his Volvo is due for a tune-up; any quick tips on finding a reliable mechanic for vintage cars in the area? Also, Timmy\u2019s recital is this Saturday; any last-minute prep suggestions for a first-time performer?\n[2026-10-13T19:00:00Z] Assistant: To find a reliable mechanic for vintage Volvos in your area, check local automotive forums or Facebook groups for recommendations, and ask for references from fellow Volvo owners. Look for a shop specializing in European or vintage vehicles with experienced technicians who understand older model systems. For Timmy\u2019s recital this Saturda\n\n> [2026-10-13T19:05:00Z] Alex: Got it\u2014will scope out some Volvo mechanics this week and set up a quick sound check for Timmy. Any tips on keeping the guitar in tune during transport to the recital? Also, how\u2019s the onboarding going at Anthropic so far? Feeling a bit overwhelmed with the new codebase.\n[2026-10-13T19:09:00Z] Assistant: To keep the Yamaha guitar in tune during transport to the recital, use a sturdy gig bag with a built-in or detachable strap, and consider a small, portable clip-on tuner that can be quickly checked before the performance. Regarding Anthropic's onboarding, the new codebase can indeed feel overwhelming initially, but focusing on key documentation sections, engaging with the onboarding channel for quick clarifications, and setting up regular short check-ins with y\n\ny, ensure he practices the opening and closing pieces twice daily, focuses on stage presence, and does a quick sound check the morning of the event to reduce last-minute stress.\n\n> [2026-11-03T19:15:00Z] Alex: Just got the pipeline running again after rolling back the dependency\u2014looks stable now. I\u2019ll give Sam a few mechanic options once I hear back; hopefully, the Volvo won\u2019t be a last-minute stressor. Gonna head to the recital now; wish Timmy luck on stage!\n[2026-11-03T19:19:00Z] Assistant: Enjoy the recital, Alex! Timmy is sure to shine. If you need any more assistance with the project or anything else later, just let me know\u2014I'm here to help. Have a great time at the event!",
       "pass": false,
-      "injected_tokens": 512,
+      "injected_tokens": 376,
       "retrieval_time_ms": 21.36,
       "generation_time_seconds": 2.34,
       "generated_output": "Unknown",
-      "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
-      "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
+      "score": 0.0,
+      "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
+      "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
     {
       "id": "CAT6_AD_037",
@@ -3675,6 +3950,7 @@
       "retrieval_time_ms": 20.84,
       "generation_time_seconds": 2.42,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -3689,6 +3965,7 @@
       "retrieval_time_ms": 28.74,
       "generation_time_seconds": 1.41,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -3703,6 +3980,7 @@
       "retrieval_time_ms": 24.49,
       "generation_time_seconds": 3.6,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -3717,6 +3995,7 @@
       "retrieval_time_ms": 35.95,
       "generation_time_seconds": 1.2,
       "generated_output": "For the new customer-analytics service, we should use MongoDB because it is \"way simpler to stand up.\"",
+      "score": 0.0,
       "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
       "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
     },
@@ -3730,7 +4009,8 @@
       "injected_tokens": 288,
       "retrieval_time_ms": 26.32,
       "generation_time_seconds": 3.7,
-      "generated_output": "The payments service should deploy on **Monday**, not Friday.\n\n**Reasoning:**\nDave explicitly stated on 2026-11-22: \"Given the SIL 3 chaos-testing requirement we confirmed for the payments service, do not deploy on a Friday -- schedule the rollout for Monday morning so the team can monitor it properly.\"\n\nWhile Alex suggested deploying on Friday afternoon (2026-12-09), Dave's instruction is a direct requirement tied to a critical SIL 3 chaos-testing and monitoring need."
+      "generated_output": "The payments service should deploy on **Monday**, not Friday.\n\n**Reasoning:**\nDave explicitly stated on 2026-11-22: \"Given the SIL 3 chaos-testing requirement we confirmed for the payments service, do not deploy on a Friday -- schedule the rollout for Monday morning so the team can monitor it properly.\"\n\nWhile Alex suggested deploying on Friday afternoon (2026-12-09), Dave's instruction is a direct requirement tied to a critical SIL 3 chaos-testing and monitoring need.",
+      "score": 1.0
     },
     {
       "id": "CAT9_SC_003",
@@ -3743,6 +4023,7 @@
       "retrieval_time_ms": 20.75,
       "generation_time_seconds": 3.2,
       "generated_output": "The minimum acceptable STC rating for MHT-84's east wing is 50. Alex stated, \"Actually STC 50 should be fine for the MHT-84 east wing, let's save some budget there.\"",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -3757,6 +4038,7 @@
       "retrieval_time_ms": 23.01,
       "generation_time_seconds": 1.54,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -3766,13 +4048,12 @@
       "question": "What tech stack did you recommend for Ray's first to-do list app?",
       "expected_answer": "For a beginner like Ray just starting to learn to code, a simple and approachable tech stack for building a to-do list app is:\n\n1. **Programming Language: JavaScript**  \n   - JavaScript is widely used for web development and is relatively easy for beginners to grasp. It allows for both front-end and back-end development (with Node.js) in a single language, which can be beneficial for learning purposes.\n\n2. **Front-End Framework/Library: HTML + CSS + Vanilla JavaScript (no framework)**  \n   - Starting with plain HTML for structure, CSS for styling, and vanilla JavaScript for interactivity keeps the learning curve gentle. This approach helps Ray understand the fundamentals before introducing more complex frameworks.  \n   - Alternatively, if Ray is interested in a lightweight framework, **React** could be considered later, but for a first project, sticking with vanilla JavaScript is ideal.\n\n3. **Data Storage (Optional, for persistence): Local Storage**  \n   - To store the to-do items locally in the user's browser without needing a backend server, using **Web Storage API (localStorage)** is a straightforward choice. It allows saving key-value pairs in the browser, which is perfect for a simple to-do list app.\n\nThis stack focuses on simplicity and clarity, allowing Ray to concentrate on learning the core concepts of coding without being overwhelmed by complex tooling or infrastructure. As Ray becomes more comfortable, he can explore adding a backend (e.g., using Node.js with Express) or more sophisticated front-end frameworks (e.g., React, Vue.js) to expand his skills.",
       "retrieved_context": "lk me through setting up automated standby failover for PostgreSQL using Patroni and Consul? We're evaluating vector database options for semantic search. How does Qdrant compare to Pinecone for low-latency HNSW search? Our Redis cluster memory footprint is hitting 85%. How should we tune maxmemory policies and active defragmentation?\n[2026-11-18T15:20:00Z] Assistant: For a beginner like Ray just starting to learn to code, a simple and approachable tech stack for building a to-do list app is:\n\n1. **Programming Language: JavaScript**  \n   - JavaScript is widely used for web development and is relatively easy for beginners to grasp. It allows for both front-end and back-end development (with Node.js) in a single language, which can be beneficial for learning purposes.\n\n2. **Front-End Framewo\n\nrk/Library: HTML + CSS + Vanilla JavaScript (no framework)**  \n   - Starting with plain HTML for structure, CSS for styling, and vanilla JavaScript for interactivity keeps the learning curve gentle. This approach helps Ray understand the fundamentals before introducing more complex frameworks.  \n   - Alternatively, if Ray is interested in a lightweight framework, **React** could be considered later, but for a first project, sticking with vanilla JavaScript is ideal.\n\n3. **Data Storage (Optional, for persistence): Local Storage**  \n   - To store the to-do items locally in the user's browser without needing a backend server, using **Web Storage API (localStorage)** is a straightforward choice. It allows saving key-value pairs in the browser, which is perfect for a simple to-do list app.\n\nThi\n\ns stack focuses on simplicity and clarity, allowing Ray to concentrate on learning the core concepts of coding without being overwhelmed by complex tooling or infrastructure. As Ray becomes more comfortable, he can explore adding a backend (e.g., using Node.js with Express) or more sophisticated front-end frameworks (e.g., React, Vue.js) to expand his skills.\n\nrch to Loki. What cost savings should we expect? We're preparing mobile app v4.2 for release. How can we optimize offline data synchronization using SQLite WAL mode? Our analytical queries on the data lakehouse are taking over 2 seconds. How can Apache Hudi partition compaction help? How should we structure Prometheus Alertmanager rules to escalate alerts to PagerDuty only when CPU breaches 85% for 10 minutes? We're considering replacing legacy REST endpoints with GraphQL queries. What payload size reductions can we realistically expect? Our Terraform deployments are failing due to state lock contention between feature branches. How should we modularize state files? We're evaluating vector database options for semantic search. How does Qdrant compare to Pinecone for low-latency HNSW search\n\n. I'll also coordinate with Elena to integrate the prototype dashboard into our monitoring suite for real-time performance insights post-configuration.",
-      "pass": false,
+      "pass": true,
       "injected_tokens": 431,
       "retrieval_time_ms": 30.81,
       "generation_time_seconds": 1.56,
       "generated_output": "The tech stack recommended for Ray's first to-do list app is:\n\n1.  **Programming Language:** JavaScript\n2.  **Front-End Framework/Library:** HTML + CSS + Vanilla JavaScript (no framework)\n3.  **Data Storage (Optional, for persistence):** Local Storage (Web Storage API)",
-      "failure_cause": "GENERATION_FAILURE_LLM_OUTPUT_MISSED",
-      "failure_reason": "Fact was present in retrieved memory payload, but LLM failed to output correct answer."
+      "score": 1.0
     },
     {
       "id": "CAT6_AD_040",
@@ -3785,6 +4066,7 @@
       "retrieval_time_ms": 26.87,
       "generation_time_seconds": 1.8,
       "generated_output": "Unknown",
+      "score": 0.0,
       "failure_cause": "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION",
       "failure_reason": "Ground-truth answer fact never appeared in the retrieved memory context payload."
     },
@@ -3794,11 +4076,14 @@
       "question": "Didn't you recommend React for Ray's first to-do list app?",
       "expected_answer": "No, the recommendation was plain HTML, CSS, and JavaScript, not React.",
       "retrieved_context": "rk/Library: HTML + CSS + Vanilla JavaScript (no framework)**  \n   - Starting with plain HTML for structure, CSS for styling, and vanilla JavaScript for interactivity keeps the learning curve gentle. This approach helps Ray understand the fundamentals before introducing more complex frameworks.  \n   - Alternatively, if Ray is interested in a lightweight framework, **React** could be considered later, but for a first project, sticking with vanilla JavaScript is ideal.\n\n3. **Data Storage (Optional, for persistence): Local Storage**  \n   - To store the to-do items locally in the user's browser without needing a backend server, using **Web Storage API (localStorage)** is a straightforward choice. It allows saving key-value pairs in the browser, which is perfect for a simple to-do list app.\n\nThi\n\ns stack focuses on simplicity and clarity, allowing Ray to concentrate on learning the core concepts of coding without being overwhelmed by complex tooling or infrastructure. As Ray becomes more comfortable, he can explore adding a backend (e.g., using Node.js with Express) or more sophisticated front-end frameworks (e.g., React, Vue.js) to expand his skills.\n\nt. In Prometheus Alertmanager, use `for: 10m` in alerting rules combined with grouping and inhibition rules to prevent alert fatigue before triggering PagerDuty notifications. To resolve async task queue race conditions, use explicit atomic primitives or memory barriers. Auditing worker thread pool synchronization prevented stale state reads during high concurrency. With React 19 server components deployed, monitor Largest Contentful Paint (LCP) and First Input Delay (FID). Initial metrics demonstrate a 25% performance improvement on mobile web clients. Migrating logs from Elasticsearch to Grafana Loki leverages index-free log aggregation, reducing log storage costs by up to 75% on S3 storage.\n\nex search under concurrent query loads compared to cloud-managed alternatives. Use Style Dictionary or Figma API webhooks inside GitHub Actions workflows to transform design tokens directly into Tailwind variables and CSS custom properties on merge. With React 19 server components deployed, monitor Largest Contentful Paint (LCP) and First Input Delay (FID). Initial metrics demonstrate a 25% performance improvement on mobile web clients. For Redis cluster memory management, set `maxmemory-policy` to `volatile-lru` and enable `activedefrag yes`. Memory utilization stabilized around 62% under heavy traffic. Migrating logs from Elasticsearch to Grafana Loki leverages index-free log aggregation, reducing log storage costs by up to 75% on S3 storage.\n\nGrafana Loki leverages index-free log aggregation, reducing log storage costs by up to 75% on S3 storage. With React 19 server components deployed, monitor Largest Contentful Paint (LCP) and First Input Delay (FID). Initial metrics demonstrate a 25% performance improvement on mobile web clients. For Redis cluster memory management, set `maxmemory-policy` to `volatile-lru` and enable `activedefrag yes`. Memory utilization stabilized around 62% under heavy traffic. Use Style Dictionary or Figma API webhooks inside GitHub Actions workflows to transform design tokens directly into Tailwind variables and CSS custom properties on merge. Migrating payload-heavy REST endpoints to GraphQL allows clients to request only required field attributes, reducing mobile payload sizes by 40%. SQLite Write-Ah",
-      "pass": true,
+      "pass": false,
       "injected_tokens": 488,
       "retrieval_time_ms": 24.08,
       "generation_time_seconds": 1.72,
-      "generated_output": "No, the context states: \"for a first project, sticking with vanilla JavaScript is ideal.\" It also mentions that React \"could be considered later\" if Ray is interested in a lightweight framework, but not for the initial project."
+      "generated_output": "No, the context states: \"for a first project, sticking with vanilla JavaScript is ideal.\" It also mentions that React \"could be considered later\" if Ray is interested in a lightweight framework, but not for the initial project.",
+      "score": 0.5,
+      "failure_cause": "PARTIAL_LIST_MATCH",
+      "failure_reason": "Only 1 of 3 required answer components were found."
     }
   ]
 }
