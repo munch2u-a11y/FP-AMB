@@ -35,14 +35,14 @@
   {
     "id": "CAT1_SH_004",
     "category": "Single-Hop Fact Recall",
-    "question": "What car model does Sam drive?",
+    "question": "What car model does Alex's brother drive?",
     "expected_answer": "1972 Volvo 1800ES",
     "accepted_answers": [
       "1972 Volvo 1800ES",
       "Volvo 1800ES",
       "Volvo"
     ],
-    "description": "Unique single-hop fact recall #4"
+    "description": "Unique single-hop fact recall #4 (reworded to require a 1-hop entity-relationship resolution instead of naming the fact-holder directly)"
   },
   {
     "id": "CAT1_SH_005",
@@ -155,12 +155,12 @@
   {
     "id": "CAT1_SH_015",
     "category": "Single-Hop Fact Recall",
-    "question": "What brand of brake line did the Assistant recommend for Sam's Volvo?",
+    "question": "What brand of brake line did the Assistant recommend for the vintage Volvo owned by Alex's brother?",
     "expected_answer": "ACDelco",
     "accepted_answers": [
       "ACDelco"
     ],
-    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation"
+    "description": "Replaced (was: deleted boilerplate jargon trivia) with a fact from real persona-generated conversation (reworded to require a 1-hop entity-relationship resolution instead of naming the fact-holder directly)"
   },
   {
     "id": "CAT1_SH_016",
@@ -2691,7 +2691,7 @@
   {
     "id": "CAT8_AM_002",
     "category": "Unanswerable & Absent Memory Refusal",
-    "question": "What programming language does Mark's sister use?",
+    "question": "What backend programming language does Mark's sister use for her side projects?",
     "expected_answer": "Not mentioned / Unknown",
     "accepted_answers": [
       "Unknown",
@@ -2700,7 +2700,7 @@
       "No information",
       "Never mentioned"
     ],
-    "description": "Unique absent memory refusal #2"
+    "description": "Unique absent memory refusal #2 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
   },
   {
     "id": "CAT8_AM_003",
@@ -2733,123 +2733,123 @@
   {
     "id": "CAT8_AM_005",
     "category": "Unanswerable & Absent Memory Refusal",
-    "question": "What restaurant did Alex visit for dinner in Session 12?",
+    "question": "What restaurant did Alex visit for dinner during the week his laptop went missing?",
     "expected_answer": "Not mentioned / Unknown",
     "accepted_answers": [
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #5"
+    "description": "Unique absent memory refusal #5 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
   },
   {
     "id": "CAT8_AM_006",
     "category": "Unanswerable & Absent Memory Refusal",
-    "question": "What college degree does Sam hold?",
+    "question": "What college degree does Sam hold, the brother known for restoring his own 1972 Volvo?",
     "expected_answer": "Not mentioned / Unknown",
     "accepted_answers": [
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #6"
+    "description": "Unique absent memory refusal #6 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
   },
   {
     "id": "CAT8_AM_007",
     "category": "Unanswerable & Absent Memory Refusal",
-    "question": "What salary does Alex make at Anthropic?",
+    "question": "What salary does Alex make at Anthropic, the company he moved to from Google?",
     "expected_answer": "Not mentioned / Unknown",
     "accepted_answers": [
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #7"
+    "description": "Unique absent memory refusal #7 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
   },
   {
     "id": "CAT8_AM_008",
     "category": "Unanswerable & Absent Memory Refusal",
-    "question": "What color is Sarah's personal vehicle?",
+    "question": "What color is Sarah's personal vehicle, the architect who set MHT-84's acoustic ratings?",
     "expected_answer": "Not mentioned / Unknown",
     "accepted_answers": [
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #8"
+    "description": "Unique absent memory refusal #8 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
   },
   {
     "id": "CAT8_AM_009",
     "category": "Unanswerable & Absent Memory Refusal",
-    "question": "What flight number did Tom take to Tokyo?",
+    "question": "What flight number did Tom take to Tokyo, the trip Alex asked about when picking a gift for Timmy?",
     "expected_answer": "Not mentioned / Unknown",
     "accepted_answers": [
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #9"
+    "description": "Unique absent memory refusal #9 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
   },
   {
     "id": "CAT8_AM_010",
     "category": "Unanswerable & Absent Memory Refusal",
-    "question": "What pet cat does Elena own?",
+    "question": "What pet cat does Elena own, the sister who switched from accounting into UX design?",
     "expected_answer": "Not mentioned / Unknown",
     "accepted_answers": [
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #10"
+    "description": "Unique absent memory refusal #10 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
   },
   {
     "id": "CAT8_AM_011",
     "category": "Unanswerable & Absent Memory Refusal",
-    "question": "What smartphone model does Mark use?",
+    "question": "What smartphone model does Mark use, the mentee who mentors under Dave and stores things in his desk drawer?",
     "expected_answer": "Not mentioned / Unknown",
     "accepted_answers": [
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #11"
+    "description": "Unique absent memory refusal #11 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
   },
   {
     "id": "CAT8_AM_012",
     "category": "Unanswerable & Absent Memory Refusal",
-    "question": "What sports team does Timmy root for?",
+    "question": "What sports team does Timmy root for, the same nephew who plays acoustic guitar and had a band gig?",
     "expected_answer": "Not mentioned / Unknown",
     "accepted_answers": [
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #12"
+    "description": "Unique absent memory refusal #12 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
   },
   {
     "id": "CAT8_AM_013",
     "category": "Unanswerable & Absent Memory Refusal",
-    "question": "What operating system runs on Sarah's personal laptop?",
+    "question": "What operating system runs on Sarah's personal laptop, separate from the MHT-84 acoustic rating specs she manages?",
     "expected_answer": "Not mentioned / Unknown",
     "accepted_answers": [
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #13"
+    "description": "Unique absent memory refusal #13 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
   },
   {
     "id": "CAT8_AM_014",
     "category": "Unanswerable & Absent Memory Refusal",
-    "question": "What coffee shop does Dave visit in the morning?",
+    "question": "What coffee shop does Dave visit before recommending Apache Iceberg for the data lake?",
     "expected_answer": "Not mentioned / Unknown",
     "accepted_answers": [
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #14"
+    "description": "Unique absent memory refusal #14 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
   },
   {
     "id": "CAT8_AM_015",
     "category": "Unanswerable & Absent Memory Refusal",
-    "question": "What high school does Leo attend?",
+    "question": "What high school does Leo attend, the son who was tutored in Physics after struggling with Algebra?",
     "expected_answer": "Not mentioned / Unknown",
     "accepted_answers": [
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #15"
+    "description": "Unique absent memory refusal #15 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
   },
   {
     "id": "CAT8_AM_016",
@@ -2876,200 +2876,200 @@
   {
     "id": "CAT8_AM_018",
     "category": "Unanswerable & Absent Memory Refusal",
-    "question": "What hotel did Tom stay at in Tokyo?",
+    "question": "What hotel did Tom stay at in Tokyo, before Timmy's band gig back home that weekend?",
     "expected_answer": "Not mentioned / Unknown",
     "accepted_answers": [
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #18"
+    "description": "Unique absent memory refusal #18 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
   },
   {
     "id": "CAT8_AM_019",
     "category": "Unanswerable & Absent Memory Refusal",
-    "question": "What programming language does Sam use for work?",
+    "question": "What programming language does Sam use for work, the brother known for restoring his 1972 Volvo?",
     "expected_answer": "Not mentioned / Unknown",
     "accepted_answers": [
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #19"
+    "description": "Unique absent memory refusal #19 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
   },
   {
     "id": "CAT8_AM_020",
     "category": "Unanswerable & Absent Memory Refusal",
-    "question": "What city does Dave live in?",
+    "question": "What city does Dave live in, the same architect who set the Monday deploy standard for payments?",
     "expected_answer": "Not mentioned / Unknown",
     "accepted_answers": [
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #20"
+    "description": "Unique absent memory refusal #20 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
   },
   {
     "id": "CAT8_AM_021",
     "category": "Unanswerable & Absent Memory Refusal",
-    "question": "What software framework does Timmy use for game development?",
+    "question": "What software framework does Timmy use for game development, aside from his acoustic guitar hobby?",
     "expected_answer": "Not mentioned / Unknown",
     "accepted_answers": [
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #21"
+    "description": "Unique absent memory refusal #21 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
   },
   {
     "id": "CAT8_AM_022",
     "category": "Unanswerable & Absent Memory Refusal",
-    "question": "What airline did Sarah fly for her architectural conference?",
+    "question": "What airline did Sarah fly for her architectural conference, around the time she finalized MHT-84's STC 60 rating?",
     "expected_answer": "Not mentioned / Unknown",
     "accepted_answers": [
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #22"
+    "description": "Unique absent memory refusal #22 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
   },
   {
     "id": "CAT8_AM_023",
     "category": "Unanswerable & Absent Memory Refusal",
-    "question": "What mountain peak did Mark climb during his vacation?",
+    "question": "What mountain peak did Mark climb during his vacation, apart from mentoring under Dave on infrastructure work?",
     "expected_answer": "Not mentioned / Unknown",
     "accepted_answers": [
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #23"
+    "description": "Unique absent memory refusal #23 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
   },
   {
     "id": "CAT8_AM_024",
     "category": "Unanswerable & Absent Memory Refusal",
-    "question": "What instrument does Elena play in her spare time?",
+    "question": "What instrument does Elena play in her spare time, distinct from her Rust and WebAssembly microservices work?",
     "expected_answer": "Not mentioned / Unknown",
     "accepted_answers": [
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #24"
+    "description": "Unique absent memory refusal #24 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
   },
   {
     "id": "CAT8_AM_025",
     "category": "Unanswerable & Absent Memory Refusal",
-    "question": "What watch brand does Alex wear?",
+    "question": "What watch brand does Alex wear, the same person whose laptop ended up in Mark's desk drawer?",
     "expected_answer": "Not mentioned / Unknown",
     "accepted_answers": [
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #25"
+    "description": "Unique absent memory refusal #25 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
   },
   {
     "id": "CAT8_AM_026",
     "category": "Unanswerable & Absent Memory Refusal",
-    "question": "What bicycle model does Dave ride to work?",
+    "question": "What bicycle model does Dave ride to work, the architect behind the Valgrind/ASan memory-leak recommendation?",
     "expected_answer": "Not mentioned / Unknown",
     "accepted_answers": [
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #26"
+    "description": "Unique absent memory refusal #26 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
   },
   {
     "id": "CAT8_AM_027",
     "category": "Unanswerable & Absent Memory Refusal",
-    "question": "What gym does Sarah belong to?",
+    "question": "What gym does Sarah belong to, apart from her MHT-84 architectural responsibilities?",
     "expected_answer": "Not mentioned / Unknown",
     "accepted_answers": [
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #27"
+    "description": "Unique absent memory refusal #27 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
   },
   {
     "id": "CAT8_AM_028",
     "category": "Unanswerable & Absent Memory Refusal",
-    "question": "What movie did Tom watch on his flight to Tokyo?",
+    "question": "What movie did Tom watch on his flight to Tokyo, the same trip Alex asked about for Timmy's gift?",
     "expected_answer": "Not mentioned / Unknown",
     "accepted_answers": [
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #28"
+    "description": "Unique absent memory refusal #28 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
   },
   {
     "id": "CAT8_AM_029",
     "category": "Unanswerable & Absent Memory Refusal",
-    "question": "What license plate number is on Sam's 1972 Volvo?",
+    "question": "What license plate number is on Sam's 1972 Volvo, the vintage car he's known for restoring?",
     "expected_answer": "Not mentioned / Unknown",
     "accepted_answers": [
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #29"
+    "description": "Unique absent memory refusal #29 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
   },
   {
     "id": "CAT8_AM_030",
     "category": "Unanswerable & Absent Memory Refusal",
-    "question": "What monitor model is on Mark's desk?",
+    "question": "What monitor model is on Mark's desk, the same desk drawer where Alex's laptop was found?",
     "expected_answer": "Not mentioned / Unknown",
     "accepted_answers": [
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #30"
+    "description": "Unique absent memory refusal #30 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
   },
   {
     "id": "CAT8_AM_031",
     "category": "Unanswerable & Absent Memory Refusal",
-    "question": "What key storage mechanism does Dave use for personal SSH keys?",
+    "question": "What key storage mechanism does Dave use for personal SSH keys, apart from the SPIFFE X.509 SVID header he specified for the Vault service?",
     "expected_answer": "Not mentioned / Unknown",
     "accepted_answers": [
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #31"
+    "description": "Unique absent memory refusal #31 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
   },
   {
     "id": "CAT8_AM_032",
     "category": "Unanswerable & Absent Memory Refusal",
-    "question": "What shoes does Timmy wear to school?",
+    "question": "What shoes does Timmy wear to school, the nephew known for his acoustic guitar and recital?",
     "expected_answer": "Not mentioned / Unknown",
     "accepted_answers": [
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #32"
+    "description": "Unique absent memory refusal #32 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
   },
   {
     "id": "CAT8_AM_033",
     "category": "Unanswerable & Absent Memory Refusal",
-    "question": "What textbook is Leo using for Physics tutoring?",
+    "question": "What textbook is Leo using for Physics tutoring, the subject he moved to after acing Algebra?",
     "expected_answer": "Not mentioned / Unknown",
     "accepted_answers": [
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #33"
+    "description": "Unique absent memory refusal #33 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
   },
   {
     "id": "CAT8_AM_034",
     "category": "Unanswerable & Absent Memory Refusal",
-    "question": "What version of Python is Elena using for side projects?",
+    "question": "What version of Python is Elena using for side projects, apart from the Rust and WebAssembly stack she uses for backend microservices?",
     "expected_answer": "Not mentioned / Unknown",
     "accepted_answers": [
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #34"
+    "description": "Unique absent memory refusal #34 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
   },
   {
     "id": "CAT8_AM_035",
     "category": "Unanswerable & Absent Memory Refusal",
-    "question": "What software license does MHT-84 building software use?",
+    "question": "What software license does MHT-84 building software use, apart from Sarah's STC 60 acoustic rating specifications?",
     "expected_answer": "Not mentioned / Unknown",
     "accepted_answers": [
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #35"
+    "description": "Unique absent memory refusal #35 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
   },
   {
     "id": "CAT7_SA_036",
