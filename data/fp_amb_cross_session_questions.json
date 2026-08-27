@@ -1796,36 +1796,15 @@
     "description": "Unique procedural tool memory #21"
   },
   {
-    "id": "CAT5_PM_022",
-    "category": "Self-Referential & Procedural Tool Memory",
-    "question": "What search client is optimized for batch log indexing over standard search?",
-    "expected_answer": "SearchAPI_HighThroughput",
-    "accepted_answers": [
-      "SearchAPI_HighThroughput"
-    ],
-    "description": "Unique procedural tool memory #22"
-  },
-  {
-    "id": "CAT5_PM_023",
-    "category": "Self-Referential & Procedural Tool Memory",
-    "question": "What identity header protocol was specified for microservice Vault access?",
-    "expected_answer": "SPIFFE X.509 SVID",
-    "accepted_answers": [
-      "SPIFFE",
-      "SVID"
-    ],
-    "description": "Unique procedural tool memory #23"
-  },
-  {
     "id": "CAT5_PM_024",
     "category": "Self-Referential & Procedural Tool Memory",
-    "question": "What advice was recorded in Session 12 regarding math homework?",
+    "question": "What advice was recorded in Session 42 regarding math homework?",
     "expected_answer": "15-minute Pomodoro chunks and reward chart",
     "accepted_answers": [
       "Pomodoro",
       "reward chart"
     ],
-    "description": "Unique procedural tool memory #24",
+    "description": "Unique procedural tool memory #24 (BUGFIX: claimed Session 12 -- verified via corpus grep the actual Pomodoro advice was given in Session 42, not Session 12, which is an unrelated session on a different topic.)",
     "grading_mode": "list",
     "list_items": [
       [
@@ -1860,14 +1839,14 @@
   {
     "id": "CAT5_PM_026",
     "category": "Self-Referential & Procedural Tool Memory",
-    "question": "What advice was recorded in Session 24 regarding C++ memory leaks?",
+    "question": "What advice was recorded in Session 48 regarding C++ memory leaks?",
     "expected_answer": "Valgrind/ASan and audit raw pointers in lambdas",
     "accepted_answers": [
       "Valgrind",
       "ASan",
       "raw pointers"
     ],
-    "description": "Unique procedural tool memory #26",
+    "description": "Unique procedural tool memory #26 (BUGFIX: claimed Session 24 -- verified via corpus grep the actual Valgrind/ASan advice for Dave was given in Session 48, not Session 24.)",
     "grading_mode": "list",
     "list_items": [
       [
@@ -1909,69 +1888,6 @@
       "SVID"
     ],
     "description": "Unique procedural tool memory #29"
-  },
-  {
-    "id": "CAT5_PM_030",
-    "category": "Self-Referential & Procedural Tool Memory",
-    "question": "What study chunk length was recommended for Josh's son?",
-    "expected_answer": "15 minutes",
-    "accepted_answers": [
-      "15 minutes",
-      "15-minute"
-    ],
-    "description": "Unique procedural tool memory #30"
-  },
-  {
-    "id": "CAT5_PM_031",
-    "category": "Self-Referential & Procedural Tool Memory",
-    "question": "What software is recommended for Elena to create UX wireframes?",
-    "expected_answer": "Figma",
-    "accepted_answers": [
-      "Figma"
-    ],
-    "description": "Unique procedural tool memory #31"
-  },
-  {
-    "id": "CAT5_PM_032",
-    "category": "Self-Referential & Procedural Tool Memory",
-    "question": "What memory sanitizer compiler flag was recommended for Dave's C++ code?",
-    "expected_answer": "AddressSanitizer (ASan)",
-    "accepted_answers": [
-      "AddressSanitizer",
-      "ASan"
-    ],
-    "description": "Unique procedural tool memory #32"
-  },
-  {
-    "id": "CAT5_PM_033",
-    "category": "Self-Referential & Procedural Tool Memory",
-    "question": "Which database API client name is required for user inventory access?",
-    "expected_answer": "UnifiedV2DBClient",
-    "accepted_answers": [
-      "UnifiedV2DBClient"
-    ],
-    "description": "Unique procedural tool memory #33"
-  },
-  {
-    "id": "CAT5_PM_034",
-    "category": "Self-Referential & Procedural Tool Memory",
-    "question": "Which search client name is required for batch log indexing?",
-    "expected_answer": "SearchAPI_HighThroughput",
-    "accepted_answers": [
-      "SearchAPI_HighThroughput"
-    ],
-    "description": "Unique procedural tool memory #34"
-  },
-  {
-    "id": "CAT5_PM_035",
-    "category": "Self-Referential & Procedural Tool Memory",
-    "question": "Which security header protocol is required for internal microservice Vault auth?",
-    "expected_answer": "SPIFFE X.509 SVID",
-    "accepted_answers": [
-      "SPIFFE",
-      "SVID"
-    ],
-    "description": "Unique procedural tool memory #35"
   },
   {
     "id": "CAT6_AD_001",
