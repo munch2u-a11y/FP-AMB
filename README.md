@@ -150,18 +150,15 @@ python -m fp_amb evaluate --provider examples/sample_memory_provider.py
 
 FP-AMB automatically exports interactive HTML dashboards, terminal-ready Markdown scorecards, and a dedicated **Misses & Failure Taxonomy Text Report** (`*_misses.txt`) after every evaluation run:
 
-These are real, unedited full-LLM-generation runs (retrieval + answer generation, not retrieval alone) against the real integrations shipped in `examples/` and packaged in `results/` — four genuinely different retrieval architectures, scored by the same 262-item exam:
+These are real, unedited full-LLM-generation runs (retrieval + answer generation, not retrieval alone) against the real integrations shipped in `examples/` and packaged in `results/` — genuinely different retrieval architectures, scored by the same 262-item exam:
 
 | Provider | Accuracy | Avg Retrieval Latency | Token Efficiency |
 |---|---|---|---|
 | [TF-IDF baseline](examples/sample_tf_idf_provider.py) | 69.7% | 3.1 ms | 85.0 pts/1k tok |
 | [real mRAG](examples/real_mrag_provider.py) | 66.6% | 4,534 ms | 93.9 pts/1k tok |
-| [real Fractal Memory](examples/real_fractal_memory_provider.py) | 50.2%* | 37,930 ms* | 116.8 pts/1k tok* |
 | [real MemPalace](examples/real_mempalace_provider.py) | 36.1% | 178 ms | 84.7 pts/1k tok |
 
-\* Fractal Memory's row is still from the prior 281-item question set — its ~3.2-hour runtime (driven by its own multi-hop/multi-head/rerank retrieval pipeline, not this benchmark) means it's queued for a v7.0 refresh in a follow-up run rather than blocking this one.
-
-Same corpus, same 262 questions (for the three refreshed rows), very different scores and cost profiles depending on the actual retrieval architecture under test — not a flat hit/miss regardless of what's being evaluated. mRAG's real embedding-based retrieval remains far slower per query than TF-IDF's lexical lookup or MemPalace's hybrid search, and MemPalace's chunked storage (established earlier via its own analysis) continues to show up as the weakest of the three on categories requiring cross-turn continuity — a real architecture-driven tradeoff the benchmark surfaces rather than obscures.
+Same corpus, same 262 questions, very different scores and cost profiles depending on the actual retrieval architecture under test — not a flat hit/miss regardless of what's being evaluated. mRAG's real embedding-based retrieval remains far slower per query than TF-IDF's lexical lookup or MemPalace's hybrid search, and MemPalace's chunked storage (established earlier via its own analysis) continues to show up as the weakest of the three on categories requiring cross-turn continuity — a real architecture-driven tradeoff the benchmark surfaces rather than obscures.
 
 ### 1. Interactive Visual HTML Dashboard
 ![FP-AMB Visual HTML Exam Report — real mRAG](assets/html_report_sample_mrag.png)
@@ -212,9 +209,7 @@ fp-amb-benchmark/
 │   ├── sample_tf_idf_provider.py         # TF-IDF cosine-similarity baseline
 │   ├── real_mempalace_provider.py        # Real MemPalace integration (ChromaDB + BM25 hybrid)
 │   ├── real_mrag_provider.py             # Real mRAG integration (ChromaDB embeddings)
-│   ├── real_mem0_provider.py             # Real Mem0 integration (local Ollama LLM + embedder)
-│   ├── real_fractal_memory_provider.py   # Real Fractal Memory integration (graph vault crystallization)
-│   └── _vendor/fractal_memory_task695/   # Pinned Fractal Memory snapshot -- see its PROVENANCE.md
+│   └── real_mem0_provider.py             # Real Mem0 integration (local Ollama LLM + embedder)
 ├── personas/                              # Identity files for multi-persona conversation generation
 │   ├── ai_agent.md                       # The AI Agent persona (system under test)
 │   └── sarah.md, alex.md, mark.md, dave.md, elena.md  # Human personas with distinct voices/quirks
