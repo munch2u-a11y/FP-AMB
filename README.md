@@ -1,4 +1,4 @@
-# FP-AMB: First-Person Agent Memory Benchmark (v6.0)
+# FP-AMB: First-Person Agent Memory Benchmark (v7.0)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
@@ -150,16 +150,18 @@ python -m fp_amb evaluate --provider examples/sample_memory_provider.py
 
 FP-AMB automatically exports interactive HTML dashboards, terminal-ready Markdown scorecards, and a dedicated **Misses & Failure Taxonomy Text Report** (`*_misses.txt`) after every evaluation run:
 
-These are real, unedited full-LLM-generation runs (retrieval + answer generation, not retrieval alone) against the real integrations shipped in `examples/` and packaged in `results/` — four genuinely different retrieval architectures, scored by the same 281-item exam. (The question set has since been revised — see [Evaluation Categories](#-evaluation-categories-10-categories--dynamic-key-portion) for current counts — so these specific numbers reflect that prior 281-item version; the packaged `results/` scorecards will be refreshed against the current set in a follow-up run.)
+These are real, unedited full-LLM-generation runs (retrieval + answer generation, not retrieval alone) against the real integrations shipped in `examples/` and packaged in `results/` — four genuinely different retrieval architectures, scored by the same 262-item exam:
 
 | Provider | Accuracy | Avg Retrieval Latency | Token Efficiency |
 |---|---|---|---|
-| [TF-IDF baseline](examples/sample_tf_idf_provider.py) | 68.5% | 2.5 ms | 82.0 pts/1k tok |
-| [real mRAG](examples/real_mrag_provider.py) | 58.2% | 2,731 ms | 83.2 pts/1k tok |
-| [real Fractal Memory](examples/real_fractal_memory_provider.py) | 50.2% | 37,930 ms | 116.8 pts/1k tok |
-| [real MemPalace](examples/real_mempalace_provider.py) | 33.8% | 166 ms | 79.7 pts/1k tok |
+| [TF-IDF baseline](examples/sample_tf_idf_provider.py) | 69.7% | 3.1 ms | 85.0 pts/1k tok |
+| [real mRAG](examples/real_mrag_provider.py) | 66.6% | 4,534 ms | 93.9 pts/1k tok |
+| [real Fractal Memory](examples/real_fractal_memory_provider.py) | 50.2%* | 37,930 ms* | 116.8 pts/1k tok* |
+| [real MemPalace](examples/real_mempalace_provider.py) | 36.1% | 178 ms | 84.7 pts/1k tok |
 
-Same corpus, same 281 questions, four very different scores and cost profiles depending on the actual retrieval architecture under test — not a flat hit/miss regardless of what's being evaluated. Fractal Memory's graph-crystallization design (topics promote from lightweight routing nodes to full vault nodes as they accumulate hits, then get retrieved via multi-hop traversal + multi-head cross-search + reranking) lands mid-pack on accuracy but is the most token-efficient of the four and by far the slowest per query (~14x mRAG, ~230x MemPalace) — a real architecture-driven tradeoff the benchmark surfaces rather than obscures.
+\* Fractal Memory's row is still from the prior 281-item question set — its ~3.2-hour runtime (driven by its own multi-hop/multi-head/rerank retrieval pipeline, not this benchmark) means it's queued for a v7.0 refresh in a follow-up run rather than blocking this one.
+
+Same corpus, same 262 questions (for the three refreshed rows), very different scores and cost profiles depending on the actual retrieval architecture under test — not a flat hit/miss regardless of what's being evaluated. mRAG's real embedding-based retrieval remains far slower per query than TF-IDF's lexical lookup or MemPalace's hybrid search, and MemPalace's chunked storage (established earlier via its own analysis) continues to show up as the weakest of the three on categories requiring cross-turn continuity — a real architecture-driven tradeoff the benchmark surfaces rather than obscures.
 
 ### 1. Interactive Visual HTML Dashboard
 ![FP-AMB Visual HTML Exam Report — real mRAG](assets/html_report_sample_mrag.png)
@@ -195,8 +197,8 @@ FP-AMB tracks detailed context payload efficiency to prevent memory providers fr
 ```
 fp-amb-benchmark/
 ├── assets/                               # Sample report screenshots for documentation
-│   ├── html_report_sample_mrag.png       # HTML dashboard, real mRAG run (58.2%)
-│   ├── html_report_sample_mempalace.png  # HTML dashboard, real MemPalace run (33.8%)
+│   ├── html_report_sample_mrag.png       # HTML dashboard, real mRAG run (screenshot predates the v7.0 rescore; run itself is current)
+│   ├── html_report_sample_mempalace.png  # HTML dashboard, real MemPalace run (screenshot predates the v7.0 rescore; run itself is current)
 │   ├── markdown_report_sample_mrag.png   # Markdown/ASCII scorecard, real mRAG run
 │   ├── markdown_report_sample_mempalace.png # Markdown/ASCII scorecard, real MemPalace run
 │   └── misses_report_sample.png          # Misses & failure-taxonomy report, real MemPalace run

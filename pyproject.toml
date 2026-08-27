@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "fp-amb"
-version = "6.0.0"
+version = "7.0.0"
 description = "First-Person Agent Memory Benchmark: Framework-agnostic evaluation suite for long-term AI agent memory systems."
 readme = "README.md"
 authors = [
