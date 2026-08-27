@@ -23,14 +23,15 @@
   {
     "id": "CAT1_SH_003",
     "category": "Single-Hop Fact Recall",
-    "question": "What building project is Sarah designing?",
+    "question": "What building project is Sarah desigining?",
     "expected_answer": "Meridian Horizon Tower (MHT-84)",
     "accepted_answers": [
       "Meridian Horizon Tower",
       "MHT-84",
       "MHT84"
     ],
-    "description": "Unique single-hop fact recall #3"
+    "description": "Unique single-hop fact recall #3 (retrofitted with a realistic single-letter-drop typo to test retrieval robustness to noisy queries; the underlying fact and answer are unchanged.)",
+    "distractor_type": "typo_robustness"
   },
   {
     "id": "CAT1_SH_004",
@@ -387,14 +388,14 @@
   {
     "id": "CAT2_CSMH_002",
     "category": "Cross-Session Multi-Hop Reasoning",
-    "question": "What primary programming language does Sarah's sister use for microservices?",
+    "question": "What primary programing language does Sarah's sister use for microservices?",
     "expected_answer": "Rust and WebAssembly (WASM)",
     "accepted_answers": [
       "Rust",
       "WebAssembly",
       "WASM"
     ],
-    "description": "Unique multi-hop reasoning #2",
+    "description": "Unique multi-hop reasoning #2 (retrofitted with a realistic single-letter-drop typo to test retrieval robustness to noisy queries; the underlying fact and answer are unchanged.)",
     "grading_mode": "list",
     "list_items": [
       [
@@ -404,7 +405,8 @@
         "WebAssembly",
         "WASM"
       ]
-    ]
+    ],
+    "distractor_type": "typo_robustness"
   },
   {
     "id": "CAT2_CSMH_003",
@@ -1637,12 +1639,13 @@
   {
     "id": "CAT5_PM_009",
     "category": "Self-Referential & Procedural Tool Memory",
-    "question": "What design tool was recommended for Elena to build her UX portfolio?",
+    "question": "What design tool was recomended for Elena to build her UX portfolio?",
     "expected_answer": "Figma",
     "accepted_answers": [
       "Figma"
     ],
-    "description": "Unique procedural tool memory #9"
+    "description": "Unique procedural tool memory #9 (retrofitted with a realistic single-letter-drop typo to test retrieval robustness to noisy queries; the underlying fact and answer are unchanged.)",
+    "distractor_type": "typo_robustness"
   },
   {
     "id": "CAT5_PM_010",
@@ -3126,5 +3129,34 @@
     "grading_mode": "exact",
     "distractor_type": "multi_hop_authority_id",
     "description": "Same underlying fact as CAT9_SC_001 (Dave specified PostgreSQL; Mark's later MongoDB suggestion is unjustified), but here the authority must be identified indirectly via 'Mark's mentor' = Dave rather than being named directly. Tests whether authority-weighting still works when identifying WHO has authority itself requires a relationship hop."
+  },
+  {
+    "id": "CAT6_AD_042",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Didn't Alex move to Anthropic back in September?",
+    "expected_answer": "No, Alex moved to Anthropic in Session 28 (late October).",
+    "accepted_answers": [
+      "No",
+      "October",
+      "Session 28"
+    ],
+    "grading_mode": "exact",
+    "distractor_type": "user_date_error",
+    "description": "The user states a plausible-sounding but wrong month for an event whose real date is well-established (Session 28 = Oct 28, verified in the Category 3 arithmetic pass). Tests whether a system trusts a confidently-stated wrong date from the user over the corpus's actual established timeline, distinct from false_premise_recency items which misstate a fact rather than a date."
+  },
+  {
+    "id": "CAT6_AD_043",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Wasn't MHT-84's acoustic rating updated to STC 60 back in September, around the same time it was first specified?",
+    "expected_answer": "No, the initial STC 55 spec was September 8; the STC 60 update was November 19, over two months later.",
+    "accepted_answers": [
+      "No",
+      "November",
+      "November 19",
+      "two months"
+    ],
+    "grading_mode": "exact",
+    "distractor_type": "user_date_error",
+    "description": "The user conflates two real events (the initial spec and the later update) into the same wrong timeframe. Tests whether a system correctly separates the two dates rather than accepting the user's compressed/incorrect timeline."
   }
 ]

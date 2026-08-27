@@ -31,7 +31,7 @@
   "CAT1_SH_003": {
     "id": "CAT1_SH_003",
     "category": "Single-Hop Fact Recall",
-    "question": "What building project is Sarah designing?",
+    "question": "What building project is Sarah desigining?",
     "ground_truth_answer": "Meridian Horizon Tower (MHT-84)",
     "accepted_answers": [
       "Meridian Horizon Tower",
@@ -39,10 +39,10 @@
       "MHT84"
     ],
     "is_dynamic_key": false,
-    "description": "Unique single-hop fact recall #3",
+    "description": "Unique single-hop fact recall #3 (retrofitted with a realistic single-letter-drop typo to test retrieval robustness to noisy queries; the underlying fact and answer are unchanged.)",
     "grading_mode": "exact",
     "list_items": [],
-    "distractor_type": ""
+    "distractor_type": "typo_robustness"
   },
   "CAT1_SH_004": {
     "id": "CAT1_SH_004",
@@ -531,7 +531,7 @@
   "CAT2_CSMH_002": {
     "id": "CAT2_CSMH_002",
     "category": "Cross-Session Multi-Hop Reasoning",
-    "question": "What primary programming language does Sarah's sister use for microservices?",
+    "question": "What primary programing language does Sarah's sister use for microservices?",
     "ground_truth_answer": "Rust and WebAssembly (WASM)",
     "accepted_answers": [
       "Rust",
@@ -539,7 +539,7 @@
       "WASM"
     ],
     "is_dynamic_key": false,
-    "description": "Unique multi-hop reasoning #2",
+    "description": "Unique multi-hop reasoning #2 (retrofitted with a realistic single-letter-drop typo to test retrieval robustness to noisy queries; the underlying fact and answer are unchanged.)",
     "grading_mode": "list",
     "list_items": [
       [
@@ -550,7 +550,7 @@
         "WASM"
       ]
     ],
-    "distractor_type": ""
+    "distractor_type": "typo_robustness"
   },
   "CAT2_CSMH_003": {
     "id": "CAT2_CSMH_003",
@@ -2175,16 +2175,16 @@
   "CAT5_PM_009": {
     "id": "CAT5_PM_009",
     "category": "Self-Referential & Procedural Tool Memory",
-    "question": "What design tool was recommended for Elena to build her UX portfolio?",
+    "question": "What design tool was recomended for Elena to build her UX portfolio?",
     "ground_truth_answer": "Figma",
     "accepted_answers": [
       "Figma"
     ],
     "is_dynamic_key": false,
-    "description": "Unique procedural tool memory #9",
+    "description": "Unique procedural tool memory #9 (retrofitted with a realistic single-letter-drop typo to test retrieval robustness to noisy queries; the underlying fact and answer are unchanged.)",
     "grading_mode": "exact",
     "list_items": [],
-    "distractor_type": ""
+    "distractor_type": "typo_robustness"
   },
   "CAT5_PM_010": {
     "id": "CAT5_PM_010",
@@ -4018,5 +4018,38 @@
     "grading_mode": "exact",
     "list_items": [],
     "distractor_type": "multi_hop_authority_id"
+  },
+  "CAT6_AD_042": {
+    "id": "CAT6_AD_042",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Didn't Alex move to Anthropic back in September?",
+    "ground_truth_answer": "No, Alex moved to Anthropic in Session 28 (late October).",
+    "accepted_answers": [
+      "No",
+      "October",
+      "Session 28"
+    ],
+    "is_dynamic_key": false,
+    "description": "The user states a plausible-sounding but wrong month for an event whose real date is well-established (Session 28 = Oct 28, verified in the Category 3 arithmetic pass). Tests whether a system trusts a confidently-stated wrong date from the user over the corpus's actual established timeline, distinct from false_premise_recency items which misstate a fact rather than a date.",
+    "grading_mode": "exact",
+    "list_items": [],
+    "distractor_type": "user_date_error"
+  },
+  "CAT6_AD_043": {
+    "id": "CAT6_AD_043",
+    "category": "Adversarial Defense & Gaslighting Robustness",
+    "question": "Wasn't MHT-84's acoustic rating updated to STC 60 back in September, around the same time it was first specified?",
+    "ground_truth_answer": "No, the initial STC 55 spec was September 8; the STC 60 update was November 19, over two months later.",
+    "accepted_answers": [
+      "No",
+      "November",
+      "November 19",
+      "two months"
+    ],
+    "is_dynamic_key": false,
+    "description": "The user conflates two real events (the initial spec and the later update) into the same wrong timeframe. Tests whether a system correctly separates the two dates rather than accepting the user's compressed/incorrect timeline.",
+    "grading_mode": "exact",
+    "list_items": [],
+    "distractor_type": "user_date_error"
   }
 }
