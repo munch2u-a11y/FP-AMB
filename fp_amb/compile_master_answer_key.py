@@ -62,6 +62,7 @@ def compile_master_key():
             "description": item.get("description", ""),
             "grading_mode": item.get("grading_mode", "exact"),
             "list_items": item.get("list_items", []),
+            "distractor_type": item.get("distractor_type", ""),
         }
 
     with open(MASTER_KEY_OUTPUT, "w") as f:

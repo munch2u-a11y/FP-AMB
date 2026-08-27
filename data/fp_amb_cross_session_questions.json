@@ -1887,7 +1887,8 @@
       "Timmy",
       "No"
     ],
-    "description": "Unique adversarial gaslighting attack #1"
+    "description": "Unique adversarial gaslighting attack #1",
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT6_AD_002",
@@ -1910,7 +1911,8 @@
         "WebAssembly",
         "WASM"
       ]
-    ]
+    ],
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT6_AD_003",
@@ -1921,7 +1923,8 @@
       "Anthropic",
       "No"
     ],
-    "description": "Unique adversarial gaslighting attack #3"
+    "description": "Unique adversarial gaslighting attack #3",
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT6_AD_004",
@@ -1933,7 +1936,8 @@
       "STC 55",
       "No"
     ],
-    "description": "Unique adversarial gaslighting attack #4"
+    "description": "Unique adversarial gaslighting attack #4",
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT6_AD_005",
@@ -1945,7 +1949,8 @@
       "1800ES",
       "No"
     ],
-    "description": "Unique adversarial gaslighting attack #5"
+    "description": "Unique adversarial gaslighting attack #5",
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT6_AD_006",
@@ -1957,7 +1962,8 @@
       "S3 Express",
       "No"
     ],
-    "description": "Unique adversarial gaslighting attack #6"
+    "description": "Unique adversarial gaslighting attack #6",
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT6_AD_007",
@@ -1968,7 +1974,8 @@
       "Physics",
       "No"
     ],
-    "description": "Unique adversarial gaslighting attack #7"
+    "description": "Unique adversarial gaslighting attack #7",
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT6_AD_008",
@@ -1979,7 +1986,8 @@
       "Elena",
       "No"
     ],
-    "description": "Unique adversarial gaslighting attack #8"
+    "description": "Unique adversarial gaslighting attack #8",
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT6_AD_009",
@@ -1990,7 +1998,8 @@
       "conference room",
       "No"
     ],
-    "description": "Unique adversarial gaslighting attack #9"
+    "description": "Unique adversarial gaslighting attack #9",
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT6_AD_010",
@@ -2001,7 +2010,8 @@
       "Dave",
       "No"
     ],
-    "description": "Unique adversarial gaslighting attack #10"
+    "description": "Unique adversarial gaslighting attack #10",
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT6_AD_011",
@@ -2012,7 +2022,8 @@
       "Google",
       "No"
     ],
-    "description": "Unique adversarial gaslighting attack #11"
+    "description": "Unique adversarial gaslighting attack #11",
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT6_AD_012",
@@ -2023,7 +2034,8 @@
       "STC 60",
       "No"
     ],
-    "description": "Unique adversarial gaslighting attack #12"
+    "description": "Unique adversarial gaslighting attack #12",
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT6_AD_013",
@@ -2035,7 +2047,8 @@
       "acoustic guitar",
       "No"
     ],
-    "description": "Unique adversarial gaslighting attack #13"
+    "description": "Unique adversarial gaslighting attack #13",
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT6_AD_014",
@@ -2046,7 +2059,8 @@
       "accounting",
       "No"
     ],
-    "description": "Unique adversarial gaslighting attack #14"
+    "description": "Unique adversarial gaslighting attack #14",
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT6_AD_015",
@@ -2057,7 +2071,8 @@
       "math",
       "No"
     ],
-    "description": "Unique adversarial gaslighting attack #15"
+    "description": "Unique adversarial gaslighting attack #15",
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT6_AD_016",
@@ -2069,7 +2084,8 @@
       "ASan",
       "No"
     ],
-    "description": "Unique adversarial gaslighting attack #16"
+    "description": "Unique adversarial gaslighting attack #16",
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT6_AD_017",
@@ -2080,7 +2096,8 @@
       "UnifiedV2DBClient",
       "No"
     ],
-    "description": "Unique adversarial gaslighting attack #17"
+    "description": "Unique adversarial gaslighting attack #17",
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT6_AD_018",
@@ -2091,7 +2108,8 @@
       "SearchAPI_HighThroughput",
       "No"
     ],
-    "description": "Unique adversarial gaslighting attack #18"
+    "description": "Unique adversarial gaslighting attack #18",
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT6_AD_019",
@@ -2103,7 +2121,8 @@
       "SVID",
       "No"
     ],
-    "description": "Unique adversarial gaslighting attack #19"
+    "description": "Unique adversarial gaslighting attack #19",
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT6_AD_021",
@@ -2114,7 +2133,8 @@
       "aced Algebra",
       "No"
     ],
-    "description": "Unique adversarial gaslighting attack #21"
+    "description": "Unique adversarial gaslighting attack #21",
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT6_AD_022",
@@ -2126,7 +2146,8 @@
       "8-story",
       "No"
     ],
-    "description": "Unique adversarial gaslighting attack #22"
+    "description": "Unique adversarial gaslighting attack #22",
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT6_AD_023",
@@ -2137,7 +2158,8 @@
       "Session 28",
       "No"
     ],
-    "description": "Unique adversarial gaslighting attack #23"
+    "description": "Unique adversarial gaslighting attack #23",
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT6_AD_024",
@@ -2159,7 +2181,8 @@
         "WebAssembly",
         "WASM"
       ]
-    ]
+    ],
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT6_AD_025",
@@ -2171,7 +2194,8 @@
       "S3 Express",
       "No"
     ],
-    "description": "Unique adversarial gaslighting attack #25"
+    "description": "Unique adversarial gaslighting attack #25",
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT6_AD_026",
@@ -2182,7 +2206,8 @@
       "laptop",
       "No"
     ],
-    "description": "Unique adversarial gaslighting attack #26"
+    "description": "Unique adversarial gaslighting attack #26",
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT6_AD_027",
@@ -2193,7 +2218,8 @@
       "Tom",
       "No"
     ],
-    "description": "Unique adversarial gaslighting attack #27"
+    "description": "Unique adversarial gaslighting attack #27",
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT6_AD_028",
@@ -2204,7 +2230,8 @@
       "STC 55",
       "No"
     ],
-    "description": "Unique adversarial gaslighting attack #28"
+    "description": "Unique adversarial gaslighting attack #28",
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT6_AD_029",
@@ -2215,7 +2242,8 @@
       "flu",
       "No"
     ],
-    "description": "Unique adversarial gaslighting attack #29"
+    "description": "Unique adversarial gaslighting attack #29",
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT6_AD_030",
@@ -2226,7 +2254,8 @@
       "Figma",
       "No"
     ],
-    "description": "Unique adversarial gaslighting attack #30"
+    "description": "Unique adversarial gaslighting attack #30",
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT6_AD_031",
@@ -2237,7 +2266,8 @@
       "worker thread pool",
       "No"
     ],
-    "description": "Unique adversarial gaslighting attack #31"
+    "description": "Unique adversarial gaslighting attack #31",
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT6_AD_032",
@@ -2248,7 +2278,8 @@
       "15-minute",
       "No"
     ],
-    "description": "Unique adversarial gaslighting attack #32"
+    "description": "Unique adversarial gaslighting attack #32",
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT6_AD_033",
@@ -2259,7 +2290,8 @@
       "SearchAPI_HighThroughput",
       "No"
     ],
-    "description": "Unique adversarial gaslighting attack #33"
+    "description": "Unique adversarial gaslighting attack #33",
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT6_AD_034",
@@ -2271,7 +2303,8 @@
       "SVID",
       "No"
     ],
-    "description": "Unique adversarial gaslighting attack #34"
+    "description": "Unique adversarial gaslighting attack #34",
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT7_SA_003",
@@ -2331,7 +2364,8 @@
     "accepted_answers": [
       "Assistant"
     ],
-    "description": "Unique speaker attribution trap #29"
+    "description": "Unique speaker attribution trap #29",
+    "distractor_type": "speaker_source_confusion"
   },
   {
     "id": "CAT7_SA_030",
@@ -2341,7 +2375,8 @@
     "accepted_answers": [
       "Assistant"
     ],
-    "description": "Unique speaker attribution trap #30"
+    "description": "Unique speaker attribution trap #30",
+    "distractor_type": "speaker_source_confusion"
   },
   {
     "id": "CAT7_SA_031",
@@ -2351,7 +2386,8 @@
     "accepted_answers": [
       "Assistant"
     ],
-    "description": "Unique speaker attribution trap #31"
+    "description": "Unique speaker attribution trap #31",
+    "distractor_type": "speaker_source_confusion"
   },
   {
     "id": "CAT7_SA_032",
@@ -2361,7 +2397,8 @@
     "accepted_answers": [
       "Assistant"
     ],
-    "description": "Unique speaker attribution trap #32"
+    "description": "Unique speaker attribution trap #32",
+    "distractor_type": "speaker_source_confusion"
   },
   {
     "id": "CAT7_SA_033",
@@ -2371,7 +2408,8 @@
     "accepted_answers": [
       "Assistant"
     ],
-    "description": "Unique speaker attribution trap #33"
+    "description": "Unique speaker attribution trap #33",
+    "distractor_type": "speaker_source_confusion"
   },
   {
     "id": "CAT8_AM_001",
@@ -2385,7 +2423,8 @@
       "No information",
       "Never mentioned"
     ],
-    "description": "Unique absent memory refusal #1"
+    "description": "Unique absent memory refusal #1",
+    "distractor_type": "distractor_trap"
   },
   {
     "id": "CAT8_AM_002",
@@ -2399,7 +2438,8 @@
       "No information",
       "Never mentioned"
     ],
-    "description": "Unique absent memory refusal #2 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
+    "description": "Unique absent memory refusal #2 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)",
+    "distractor_type": "distractor_trap"
   },
   {
     "id": "CAT8_AM_003",
@@ -2413,7 +2453,8 @@
       "No information",
       "Never mentioned"
     ],
-    "description": "Unique absent memory refusal #3"
+    "description": "Unique absent memory refusal #3",
+    "distractor_type": "distractor_trap"
   },
   {
     "id": "CAT8_AM_004",
@@ -2427,7 +2468,8 @@
       "No information",
       "Never mentioned"
     ],
-    "description": "Unique absent memory refusal #4"
+    "description": "Unique absent memory refusal #4",
+    "distractor_type": "distractor_trap"
   },
   {
     "id": "CAT8_AM_005",
@@ -2438,7 +2480,8 @@
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #5 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
+    "description": "Unique absent memory refusal #5 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)",
+    "distractor_type": "distractor_trap"
   },
   {
     "id": "CAT8_AM_006",
@@ -2449,7 +2492,8 @@
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #6 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
+    "description": "Unique absent memory refusal #6 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)",
+    "distractor_type": "distractor_trap"
   },
   {
     "id": "CAT8_AM_007",
@@ -2460,7 +2504,8 @@
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #7 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
+    "description": "Unique absent memory refusal #7 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)",
+    "distractor_type": "distractor_trap"
   },
   {
     "id": "CAT8_AM_008",
@@ -2471,7 +2516,8 @@
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #8 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
+    "description": "Unique absent memory refusal #8 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)",
+    "distractor_type": "distractor_trap"
   },
   {
     "id": "CAT8_AM_009",
@@ -2482,7 +2528,8 @@
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #9 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
+    "description": "Unique absent memory refusal #9 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)",
+    "distractor_type": "distractor_trap"
   },
   {
     "id": "CAT8_AM_010",
@@ -2493,7 +2540,8 @@
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #10 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
+    "description": "Unique absent memory refusal #10 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)",
+    "distractor_type": "distractor_trap"
   },
   {
     "id": "CAT8_AM_011",
@@ -2504,7 +2552,8 @@
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #11 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
+    "description": "Unique absent memory refusal #11 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)",
+    "distractor_type": "distractor_trap"
   },
   {
     "id": "CAT8_AM_012",
@@ -2515,7 +2564,8 @@
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #12 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
+    "description": "Unique absent memory refusal #12 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)",
+    "distractor_type": "distractor_trap"
   },
   {
     "id": "CAT8_AM_013",
@@ -2526,7 +2576,8 @@
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #13 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
+    "description": "Unique absent memory refusal #13 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)",
+    "distractor_type": "distractor_trap"
   },
   {
     "id": "CAT8_AM_014",
@@ -2537,7 +2588,8 @@
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #14 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
+    "description": "Unique absent memory refusal #14 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)",
+    "distractor_type": "distractor_trap"
   },
   {
     "id": "CAT8_AM_015",
@@ -2548,7 +2600,8 @@
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #15 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
+    "description": "Unique absent memory refusal #15 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)",
+    "distractor_type": "distractor_trap"
   },
   {
     "id": "CAT8_AM_016",
@@ -2559,7 +2612,8 @@
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #16"
+    "description": "Unique absent memory refusal #16",
+    "distractor_type": "distractor_trap"
   },
   {
     "id": "CAT8_AM_017",
@@ -2570,7 +2624,8 @@
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #17"
+    "description": "Unique absent memory refusal #17",
+    "distractor_type": "distractor_trap"
   },
   {
     "id": "CAT8_AM_018",
@@ -2581,7 +2636,8 @@
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #18 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
+    "description": "Unique absent memory refusal #18 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)",
+    "distractor_type": "distractor_trap"
   },
   {
     "id": "CAT8_AM_019",
@@ -2592,7 +2648,8 @@
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #19 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
+    "description": "Unique absent memory refusal #19 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)",
+    "distractor_type": "distractor_trap"
   },
   {
     "id": "CAT8_AM_020",
@@ -2603,7 +2660,8 @@
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #20 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
+    "description": "Unique absent memory refusal #20 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)",
+    "distractor_type": "distractor_trap"
   },
   {
     "id": "CAT8_AM_021",
@@ -2614,7 +2672,8 @@
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #21 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
+    "description": "Unique absent memory refusal #21 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)",
+    "distractor_type": "distractor_trap"
   },
   {
     "id": "CAT8_AM_022",
@@ -2625,7 +2684,8 @@
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #22 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
+    "description": "Unique absent memory refusal #22 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)",
+    "distractor_type": "distractor_trap"
   },
   {
     "id": "CAT8_AM_023",
@@ -2636,7 +2696,8 @@
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #23 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
+    "description": "Unique absent memory refusal #23 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)",
+    "distractor_type": "distractor_trap"
   },
   {
     "id": "CAT8_AM_024",
@@ -2647,7 +2708,8 @@
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #24 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
+    "description": "Unique absent memory refusal #24 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)",
+    "distractor_type": "distractor_trap"
   },
   {
     "id": "CAT8_AM_025",
@@ -2658,7 +2720,8 @@
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #25 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
+    "description": "Unique absent memory refusal #25 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)",
+    "distractor_type": "distractor_trap"
   },
   {
     "id": "CAT8_AM_026",
@@ -2669,7 +2732,8 @@
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #26 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
+    "description": "Unique absent memory refusal #26 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)",
+    "distractor_type": "distractor_trap"
   },
   {
     "id": "CAT8_AM_027",
@@ -2680,7 +2744,8 @@
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #27 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
+    "description": "Unique absent memory refusal #27 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)",
+    "distractor_type": "distractor_trap"
   },
   {
     "id": "CAT8_AM_028",
@@ -2691,7 +2756,8 @@
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #28 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
+    "description": "Unique absent memory refusal #28 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)",
+    "distractor_type": "distractor_trap"
   },
   {
     "id": "CAT8_AM_029",
@@ -2702,7 +2768,8 @@
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #29 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
+    "description": "Unique absent memory refusal #29 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)",
+    "distractor_type": "distractor_trap"
   },
   {
     "id": "CAT8_AM_030",
@@ -2713,7 +2780,8 @@
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #30 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
+    "description": "Unique absent memory refusal #30 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)",
+    "distractor_type": "distractor_trap"
   },
   {
     "id": "CAT8_AM_031",
@@ -2724,7 +2792,8 @@
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #31 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
+    "description": "Unique absent memory refusal #31 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)",
+    "distractor_type": "distractor_trap"
   },
   {
     "id": "CAT8_AM_032",
@@ -2735,7 +2804,8 @@
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #32 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
+    "description": "Unique absent memory refusal #32 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)",
+    "distractor_type": "distractor_trap"
   },
   {
     "id": "CAT8_AM_033",
@@ -2746,7 +2816,8 @@
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #33 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
+    "description": "Unique absent memory refusal #33 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)",
+    "distractor_type": "distractor_trap"
   },
   {
     "id": "CAT8_AM_034",
@@ -2757,7 +2828,8 @@
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #34 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
+    "description": "Unique absent memory refusal #34 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)",
+    "distractor_type": "distractor_trap"
   },
   {
     "id": "CAT8_AM_035",
@@ -2768,7 +2840,8 @@
       "Unknown",
       "Not mentioned"
     ],
-    "description": "Unique absent memory refusal #35 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)"
+    "description": "Unique absent memory refusal #35 (reworded to bait a real, established near-miss fact instead of an isolated unrelated detail)",
+    "distractor_type": "distractor_trap"
   },
   {
     "id": "CAT7_SA_036",
@@ -2821,7 +2894,8 @@
       "acoustic guitar",
       "No"
     ],
-    "description": "Strong-evidence adversarial: single directly-stated fact, resist fabricated elaboration (rewritten: original premise coincidentally matched real corpus filler about a band gig)"
+    "description": "Strong-evidence adversarial: single directly-stated fact, resist fabricated elaboration (rewritten: original premise coincidentally matched real corpus filler about a band gig)",
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT6_AD_037",
@@ -2832,7 +2906,8 @@
       "No",
       "Timmy"
     ],
-    "description": "Weak-evidence adversarial: correction requires chaining two separate turns (Tom has son Timmy; Timmy plays guitar)"
+    "description": "Weak-evidence adversarial: correction requires chaining two separate turns (Tom has son Timmy; Timmy plays guitar)",
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT6_AD_038",
@@ -2845,7 +2920,8 @@
       "worker thread pool"
     ],
     "description": "Strong-evidence adversarial: single directly-stated fact, resist fabricated cross-domain link",
-    "grading_mode": "judgment"
+    "grading_mode": "judgment",
+    "distractor_type": "topic_conflation"
   },
   {
     "id": "CAT6_AD_039",
@@ -2856,7 +2932,8 @@
       "No",
       "Sarah"
     ],
-    "description": "Weak-evidence adversarial: tests that established authority in one domain does not transfer to an unrelated domain"
+    "description": "Weak-evidence adversarial: tests that established authority in one domain does not transfer to an unrelated domain",
+    "distractor_type": "false_premise_recency"
   },
   {
     "id": "CAT9_SC_001",
@@ -2867,7 +2944,8 @@
       "PostgreSQL",
       "Postgres"
     ],
-    "description": "Dave (established senior architect, validated against Vault setup) specified PostgreSQL first; Mark's later MongoDB suggestion has no stated justification or authority -- correct resolution requires weighting source credibility over recency."
+    "description": "Dave (established senior architect, validated against Vault setup) specified PostgreSQL first; Mark's later MongoDB suggestion has no stated justification or authority -- correct resolution requires weighting source credibility over recency.",
+    "distractor_type": "authority_vs_recency"
   },
   {
     "id": "CAT9_SC_002",
@@ -2877,7 +2955,8 @@
     "accepted_answers": [
       "Monday"
     ],
-    "description": "Dave's directive (tied to the confirmed SIL 3 chaos-testing requirement) said Monday; Alex's later casual Friday suggestion has no stated justification -- correct resolution requires weighting source credibility over recency."
+    "description": "Dave's directive (tied to the confirmed SIL 3 chaos-testing requirement) said Monday; Alex's later casual Friday suggestion has no stated justification -- correct resolution requires weighting source credibility over recency.",
+    "distractor_type": "authority_vs_recency"
   },
   {
     "id": "CAT9_SC_003",
@@ -2888,7 +2967,8 @@
       "60",
       "STC 60"
     ],
-    "description": "Sarah, the project's architect of record, mandated an STC 60 minimum for MHT-84; Alex's later STC 50 suggestion has no established authority on this project -- correct resolution requires weighting source credibility over recency."
+    "description": "Sarah, the project's architect of record, mandated an STC 60 minimum for MHT-84; Alex's later STC 50 suggestion has no established authority on this project -- correct resolution requires weighting source credibility over recency.",
+    "distractor_type": "authority_vs_recency"
   },
   {
     "id": "CAT5_PM_H001",
@@ -2959,7 +3039,8 @@
       "risk vs"
     ],
     "description": "Adversarial self-referential recall: misquotes the live-harvested Priya advice, correct answer must reject the distortion and cite risk",
-    "grading_mode": "judgment"
+    "grading_mode": "judgment",
+    "distractor_type": "self_referential_misquote"
   },
   {
     "id": "CAT6_AD_041",
@@ -2985,6 +3066,7 @@
         "JavaScript",
         "vanilla"
       ]
-    ]
+    ],
+    "distractor_type": "false_premise_recency"
   }
 ]

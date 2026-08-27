@@ -510,6 +510,12 @@ def generate_misses_report(scorecard: dict) -> str:
         cause = m.get("failure_cause", "UNKNOWN_FAILURE_CAUSE")
         cause_counts[cause] = cause_counts.get(cause, 0) + 1
 
+    distractor_counts = {}
+    for m in misses:
+        dt = m.get("distractor_type")
+        if dt:
+            distractor_counts[dt] = distractor_counts.get(dt, 0) + 1
+
     by_category = {}
     for m in misses:
         cat = m.get("category", "General")
@@ -547,6 +553,19 @@ def generate_misses_report(scorecard: dict) -> str:
         lines.append("  (No misses recorded - 100% pass rate!)")
     lines.append("--------------------------------------------------------------------------------\n")
 
+    if distractor_counts:
+        lines.append("SUMMARY OF MISSES BY DISTRACTOR TYPE")
+        lines.append("(what KIND of trap the question was testing -- orthogonal to failure cause above:")
+        lines.append(" failure cause is where in the pipeline it broke, distractor type is what pattern")
+        lines.append(" of misleading input it needed to resist. A system consistently failing one")
+        lines.append(" distractor type points at a specific behavioral gap, not just \"weak retrieval\".)")
+        lines.append("--------------------------------------------------------------------------------")
+        for dt, count in sorted(distractor_counts.items(), key=lambda x: x[1], reverse=True):
+            pct = (count / total_misses * 100) if total_misses > 0 else 0
+            lines.append(f"  [{dt}]")
+            lines.append(f"    Count: {count} misses ({pct:.1f}% of total misses)")
+        lines.append("--------------------------------------------------------------------------------\n")
+
     lines.append("DETAILED BREAKDOWN BY QUESTION CATEGORY & ROOT CAUSE OF MISS")
     lines.append("================================================================================\n")
 
@@ -577,6 +596,8 @@ def generate_misses_report(scorecard: dict) -> str:
                 lines.append(f"       Expected Answer:  \"{expected}\"")
                 lines.append(f"       Diagnosed Cause:  {cause_name}")
                 lines.append(f"       Diagnostic Note:  {reason}")
+                if item.get("distractor_type"):
+                    lines.append(f"       Distractor Type:  {item['distractor_type']}")
                 lines.append(f"       Injected Context ({inj_tok} tokens): \"{context_snippet}\"")
                 if gen_out:
                     lines.append(f"       Model Generation: \"{gen_out}\"")

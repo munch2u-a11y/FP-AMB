@@ -282,6 +282,8 @@ Answer accurately based on context above. If context does not contain informatio
                 "retrieval_time_ms": round(ret_time * 1000.0, 2),
                 "generation_time_seconds": round(gen_time, 2)
             }
+            if item.get("distractor_type"):
+                log_entry["distractor_type"] = item["distractor_type"]
             if self.use_llm_generation:
                 log_entry["generated_output"] = target_text
             if not match:
