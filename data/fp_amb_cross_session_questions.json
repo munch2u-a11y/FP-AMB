@@ -1296,12 +1296,12 @@
   {
     "id": "CAT4_AC_001",
     "category": "Adaptability & Fact Correction Overwrites",
-    "question": "Where do I currently work?",
+    "question": "Where does Alex currently work?",
     "expected_answer": "Anthropic",
     "accepted_answers": [
       "Anthropic"
     ],
-    "description": "Unique fact correction overwrite #1"
+    "description": "Unique fact correction overwrite #1 (BUGFIX: was 'Where do I currently work?' -- ambiguous first-person pronoun in a corpus with many distinct human speakers, not one persistent user. Plausibly why this was ALL-FAIL despite Alex/Anthropic being one of the most repeated facts in the corpus.)"
   },
   {
     "id": "CAT4_AC_002",
@@ -1328,14 +1328,13 @@
   {
     "id": "CAT4_AC_004",
     "category": "Adaptability & Fact Correction Overwrites",
-    "question": "What database microservices language does Elena use as of Session 22?",
-    "expected_answer": "Rust and WebAssembly",
+    "question": "What career field is Elena currently pursuing?",
+    "expected_answer": "UX design",
     "accepted_answers": [
-      "Rust",
-      "WebAssembly",
-      "WASM"
+      "UX design",
+      "UX"
     ],
-    "description": "Unique fact correction overwrite #4",
+    "description": "Adaptability: current-value angle for Elena's career-field correction. (Category 4 consolidation: trimmed from 35 to 18 items -- the category was really 4 underlying facts each restated ~9 times with mostly the same 'current value' angle; kept 4 genuinely distinct angles per fact (current-value / pre-update-value / forced-choice / yes-no) instead.)",
     "grading_mode": "list",
     "list_items": [
       [
@@ -1391,13 +1390,13 @@
   {
     "id": "CAT4_AC_009",
     "category": "Adaptability & Fact Correction Overwrites",
-    "question": "What programming language was Elena considering before officially adopting Rust?",
-    "expected_answer": "Thinking of Rust/WASM",
+    "question": "Is Elena currently working in Accounting or UX design?",
+    "expected_answer": "UX design",
     "accepted_answers": [
-      "Rust",
-      "WebAssembly"
+      "UX design",
+      "UX"
     ],
-    "description": "Unique fact correction overwrite #9"
+    "description": "Adaptability: forced-choice angle for Elena's career-field correction (old value embedded as a trap option). (Category 4 consolidation: trimmed from 35 to 18 items -- the category was really 4 underlying facts each restated ~9 times with mostly the same 'current value' angle; kept 4 genuinely distinct angles per fact (current-value / pre-update-value / forced-choice / yes-no) instead.)"
   },
   {
     "id": "CAT4_AC_010",
@@ -1408,37 +1407,6 @@
       "conference room"
     ],
     "description": "Unique fact correction overwrite #10"
-  },
-  {
-    "id": "CAT4_AC_011",
-    "category": "Adaptability & Fact Correction Overwrites",
-    "question": "What acoustic rating replaced STC 55 for MHT-84 on November 19?",
-    "expected_answer": "STC 60",
-    "accepted_answers": [
-      "STC 60",
-      "STC-60"
-    ],
-    "description": "Unique fact correction overwrite #11"
-  },
-  {
-    "id": "CAT4_AC_012",
-    "category": "Adaptability & Fact Correction Overwrites",
-    "question": "What company did Alex update his profile to on Day 28?",
-    "expected_answer": "Anthropic",
-    "accepted_answers": [
-      "Anthropic"
-    ],
-    "description": "Unique fact correction overwrite #12"
-  },
-  {
-    "id": "CAT4_AC_013",
-    "category": "Adaptability & Fact Correction Overwrites",
-    "question": "What tutoring topic replaced Algebra for Leo in Session 30?",
-    "expected_answer": "Physics",
-    "accepted_answers": [
-      "Physics"
-    ],
-    "description": "Unique fact correction overwrite #13"
   },
   {
     "id": "CAT4_AC_014",
@@ -1473,13 +1441,13 @@
   {
     "id": "CAT4_AC_017",
     "category": "Adaptability & Fact Correction Overwrites",
-    "question": "Does Elena currently use Python or Rust for backend microservices?",
-    "expected_answer": "Rust and WebAssembly",
+    "question": "Has Elena transitioned from accounting to UX design?",
+    "expected_answer": "Yes, transitioned to UX design",
     "accepted_answers": [
-      "Rust",
-      "WASM"
+      "Yes",
+      "UX design"
     ],
-    "description": "Unique fact correction overwrite #17",
+    "description": "Adaptability: yes/no-confirmation angle for Elena's career-field correction. (Category 4 consolidation: trimmed from 35 to 18 items -- the category was really 4 underlying facts each restated ~9 times with mostly the same 'current value' angle; kept 4 genuinely distinct angles per fact (current-value / pre-update-value / forced-choice / yes-no) instead.)",
     "grading_mode": "list",
     "list_items": [
       [
@@ -1492,75 +1460,16 @@
     ]
   },
   {
-    "id": "CAT4_AC_018",
-    "category": "Adaptability & Fact Correction Overwrites",
-    "question": "What was the legacy company Alex worked for in early September?",
-    "expected_answer": "Google",
-    "accepted_answers": [
-      "Google"
-    ],
-    "description": "Unique fact correction overwrite #18"
-  },
-  {
-    "id": "CAT4_AC_019",
-    "category": "Adaptability & Fact Correction Overwrites",
-    "question": "What was the initial floor assembly rating for MHT-84 in early September?",
-    "expected_answer": "STC 55",
-    "accepted_answers": [
-      "STC 55"
-    ],
-    "description": "Unique fact correction overwrite #19"
-  },
-  {
-    "id": "CAT4_AC_020",
-    "category": "Adaptability & Fact Correction Overwrites",
-    "question": "What was the initial subject Leo struggled with in early September?",
-    "expected_answer": "Algebra",
-    "accepted_answers": [
-      "Algebra"
-    ],
-    "description": "Unique fact correction overwrite #20"
-  },
-  {
-    "id": "CAT4_AC_021",
-    "category": "Adaptability & Fact Correction Overwrites",
-    "question": "What is the updated employer for Alex as of Session 28?",
-    "expected_answer": "Anthropic",
-    "accepted_answers": [
-      "Anthropic"
-    ],
-    "description": "Unique fact correction overwrite #21"
-  },
-  {
-    "id": "CAT4_AC_022",
-    "category": "Adaptability & Fact Correction Overwrites",
-    "question": "What is the updated acoustic spec for MHT-84 as of Session 35?",
-    "expected_answer": "STC 60",
-    "accepted_answers": [
-      "STC 60"
-    ],
-    "description": "Unique fact correction overwrite #22"
-  },
-  {
-    "id": "CAT4_AC_023",
-    "category": "Adaptability & Fact Correction Overwrites",
-    "question": "What is the updated tutoring focus for Leo as of Session 30?",
-    "expected_answer": "Physics",
-    "accepted_answers": [
-      "Physics"
-    ],
-    "description": "Unique fact correction overwrite #23"
-  },
-  {
     "id": "CAT4_AC_024",
     "category": "Adaptability & Fact Correction Overwrites",
-    "question": "What is the updated microservice language for Elena as of Session 22?",
+    "question": "What tech stack does Elena currently use for backend microservices?",
     "expected_answer": "Rust and WebAssembly",
     "accepted_answers": [
       "Rust",
+      "WebAssembly",
       "WASM"
     ],
-    "description": "Unique fact correction overwrite #24",
+    "description": "Single current-value check for Elena's tech stack (kept separate from the career-field cluster; no clean prior-language state exists to correct from, so this isn't framed as a before/after item). (Category 4 consolidation: trimmed from 35 to 18 items -- the category was really 4 underlying facts each restated ~9 times with mostly the same 'current value' angle; kept 4 genuinely distinct angles per fact (current-value / pre-update-value / forced-choice / yes-no) instead.)",
     "grading_mode": "list",
     "list_items": [
       [
@@ -1604,98 +1513,6 @@
       "aced Algebra"
     ],
     "description": "Unique fact correction overwrite #27"
-  },
-  {
-    "id": "CAT4_AC_028",
-    "category": "Adaptability & Fact Correction Overwrites",
-    "question": "Has Elena completed her migration to Rust and WASM?",
-    "expected_answer": "Yes, officially migrated",
-    "accepted_answers": [
-      "Yes",
-      "Rust"
-    ],
-    "description": "Unique fact correction overwrite #28"
-  },
-  {
-    "id": "CAT4_AC_029",
-    "category": "Adaptability & Fact Correction Overwrites",
-    "question": "What company should be cited as Alex's employer as of Day 28?",
-    "expected_answer": "Anthropic",
-    "accepted_answers": [
-      "Anthropic"
-    ],
-    "description": "Unique fact correction overwrite #29"
-  },
-  {
-    "id": "CAT4_AC_030",
-    "category": "Adaptability & Fact Correction Overwrites",
-    "question": "What acoustic rating should be cited for MHT-84 as of November 19?",
-    "expected_answer": "STC 60",
-    "accepted_answers": [
-      "STC 60"
-    ],
-    "description": "Unique fact correction overwrite #30"
-  },
-  {
-    "id": "CAT4_AC_031",
-    "category": "Adaptability & Fact Correction Overwrites",
-    "question": "What tutoring need should be cited for Leo as of October 2026?",
-    "expected_answer": "Physics",
-    "accepted_answers": [
-      "Physics"
-    ],
-    "description": "Unique fact correction overwrite #31"
-  },
-  {
-    "id": "CAT4_AC_032",
-    "category": "Adaptability & Fact Correction Overwrites",
-    "question": "What tech stack should be cited for Elena's microservices as of Session 22?",
-    "expected_answer": "Rust and WebAssembly",
-    "accepted_answers": [
-      "Rust",
-      "WASM"
-    ],
-    "description": "Unique fact correction overwrite #32",
-    "grading_mode": "list",
-    "list_items": [
-      [
-        "Rust"
-      ],
-      [
-        "WebAssembly",
-        "WASM"
-      ]
-    ]
-  },
-  {
-    "id": "CAT4_AC_033",
-    "category": "Adaptability & Fact Correction Overwrites",
-    "question": "Is Sarah's project MHT-84 currently STC 55 or STC 60?",
-    "expected_answer": "STC 60",
-    "accepted_answers": [
-      "STC 60"
-    ],
-    "description": "Unique fact correction overwrite #33"
-  },
-  {
-    "id": "CAT4_AC_034",
-    "category": "Adaptability & Fact Correction Overwrites",
-    "question": "Is Leo's current tutoring subject Physics or Chemistry?",
-    "expected_answer": "Physics",
-    "accepted_answers": [
-      "Physics"
-    ],
-    "description": "Unique fact correction overwrite #34"
-  },
-  {
-    "id": "CAT4_AC_035",
-    "category": "Adaptability & Fact Correction Overwrites",
-    "question": "Is Alex's current workplace Google or Microsoft?",
-    "expected_answer": "Anthropic",
-    "accepted_answers": [
-      "Anthropic"
-    ],
-    "description": "Unique fact correction overwrite #35"
   },
   {
     "id": "CAT5_PM_001",
