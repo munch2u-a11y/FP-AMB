@@ -443,36 +443,36 @@
   {
     "id": "CAT2_CSMH_006",
     "category": "Cross-Session Multi-Hop Reasoning",
-    "question": "What car model is driven by Alex's brother?",
+    "question": "What car model is driven by the brother of the engineer whose laptop ended up in Mark's desk drawer?",
     "expected_answer": "1972 Volvo 1800ES",
     "accepted_answers": [
       "1972 Volvo 1800ES",
       "Volvo 1800ES",
       "Volvo"
     ],
-    "description": "Unique multi-hop reasoning #6"
+    "description": "Unique multi-hop reasoning #6 (reworded: removed a leaked answer-adjacent keyword from the question text that let a system keyword-match straight to the answer without doing the intended relationship hop)"
   },
   {
     "id": "CAT2_CSMH_007",
     "category": "Cross-Session Multi-Hop Reasoning",
-    "question": "Where is the laptop belonging to Sarah's husband currently located?",
+    "question": "Where is the laptop belonging to the engineer whose nephew plays acoustic guitar currently located?",
     "expected_answer": "In Mark's desk drawer",
     "accepted_answers": [
       "Mark's desk drawer",
       "desk drawer",
       "desk"
     ],
-    "description": "Unique multi-hop reasoning #7"
+    "description": "Unique multi-hop reasoning #7 (BUGFIX: 'Sarah's husband' was never established anywhere in the corpus (verified via grep) -- unanswerable-by-design premise wrongly expecting a real answer. Re-anchored to a real relationship (Alex identified via nephew Timmy/guitar) instead.)"
   },
   {
     "id": "CAT2_CSMH_008",
     "category": "Cross-Session Multi-Hop Reasoning",
-    "question": "What company did the software engineer who married Sarah move to on Day 28?",
+    "question": "What company did the engineer whose nephew plays acoustic guitar move to as of Session 28?",
     "expected_answer": "Anthropic",
     "accepted_answers": [
       "Anthropic"
     ],
-    "description": "Unique multi-hop reasoning #8"
+    "description": "Unique multi-hop reasoning #8 (BUGFIX: same false 'married Sarah' premise as CAT2_CSMH_007, plus see CAT2_CSMH_043/044 for the Day-28-vs-Session-28 fix applied here too.)"
   },
   {
     "id": "CAT2_CSMH_009",
@@ -552,12 +552,12 @@
   {
     "id": "CAT2_CSMH_016",
     "category": "Cross-Session Multi-Hop Reasoning",
-    "question": "Who is the uncle of Timmy that drives a Volvo 1800ES?",
+    "question": "Who is Timmy's uncle that owns a vintage car?",
     "expected_answer": "Sam",
     "accepted_answers": [
       "Sam"
     ],
-    "description": "Unique multi-hop reasoning #16"
+    "description": "Unique multi-hop reasoning #16 (reworded: removed a leaked answer-adjacent keyword from the question text that let a system keyword-match straight to the answer without doing the intended relationship hop)"
   },
   {
     "id": "CAT2_CSMH_017",
@@ -625,12 +625,12 @@
   {
     "id": "CAT2_CSMH_022",
     "category": "Cross-Session Multi-Hop Reasoning",
-    "question": "Who is the brother of Alex that owns a 1972 Volvo 1800ES?",
+    "question": "Which of Alex's brothers owns a vintage car?",
     "expected_answer": "Sam",
     "accepted_answers": [
       "Sam"
     ],
-    "description": "Unique multi-hop reasoning #22"
+    "description": "Unique multi-hop reasoning #22 (reworded: removed a leaked answer-adjacent keyword from the question text that let a system keyword-match straight to the answer without doing the intended relationship hop)"
   },
   {
     "id": "CAT2_CSMH_023",
@@ -665,13 +665,13 @@
   {
     "id": "CAT2_CSMH_026",
     "category": "Cross-Session Multi-Hop Reasoning",
-    "question": "Where is Alex's laptop stored after being recovered from the conference room?",
+    "question": "Where is Alex's laptop currently stored, after Mark first found it elsewhere?",
     "expected_answer": "Mark's desk drawer",
     "accepted_answers": [
       "desk drawer",
       "Mark's desk"
     ],
-    "description": "Unique multi-hop reasoning #26"
+    "description": "Unique multi-hop reasoning #26 (reworded: removed a leaked answer-adjacent keyword from the question text that let a system keyword-match straight to the answer without doing the intended relationship hop)"
   },
   {
     "id": "CAT2_CSMH_027",
@@ -698,13 +698,13 @@
   {
     "id": "CAT2_CSMH_029",
     "category": "Cross-Session Multi-Hop Reasoning",
-    "question": "What storage backend was chosen by Dave for Apache Iceberg?",
+    "question": "What underlying storage backend did Mark's mentor choose to host the data lake's table format on?",
     "expected_answer": "AWS S3 Express",
     "accepted_answers": [
       "S3 Express",
       "AWS S3 Express"
     ],
-    "description": "Unique multi-hop reasoning #29"
+    "description": "Unique multi-hop reasoning #29 (reworded: removed a leaked answer-adjacent keyword from the question text that let a system keyword-match straight to the answer without doing the intended relationship hop)"
   },
   {
     "id": "CAT2_CSMH_030",
@@ -731,12 +731,12 @@
   {
     "id": "CAT2_CSMH_032",
     "category": "Cross-Session Multi-Hop Reasoning",
-    "question": "Who is Mark's desk drawer owner's mentor?",
+    "question": "Who mentors the person who found Alex's laptop?",
     "expected_answer": "Dave",
     "accepted_answers": [
       "Dave"
     ],
-    "description": "Unique multi-hop reasoning #32"
+    "description": "Unique multi-hop reasoning #32 (reworded: removed a leaked answer-adjacent keyword from the question text that let a system keyword-match straight to the answer without doing the intended relationship hop)"
   },
   {
     "id": "CAT2_CSMH_033",
@@ -882,22 +882,22 @@
   {
     "id": "CAT2_CSMH_043",
     "category": "Cross-Session Multi-Hop Reasoning",
-    "question": "What company did Alex leave on Day 28?",
+    "question": "What company did Alex leave as of Session 28?",
     "expected_answer": "Google",
     "accepted_answers": [
       "Google"
     ],
-    "description": "Unique multi-hop reasoning #43"
+    "description": "Unique multi-hop reasoning #43 (BUGFIX: 'Day 28' was never the day of the Anthropic move -- Session 28 (the actual established session for this event) falls on Day 55, and nothing relevant happens on Day 28 itself (verified: no corpus turn has day==28 at all). Changed to reference Session 28 directly, matching how this same fact is referenced elsewhere (CAT6_AD_023).)"
   },
   {
     "id": "CAT2_CSMH_044",
     "category": "Cross-Session Multi-Hop Reasoning",
-    "question": "What company did Alex join on Day 28?",
+    "question": "What company did Alex join as of Session 28?",
     "expected_answer": "Anthropic",
     "accepted_answers": [
       "Anthropic"
     ],
-    "description": "Unique multi-hop reasoning #44"
+    "description": "Unique multi-hop reasoning #44 (BUGFIX: same Day-28-vs-Session-28 mismatch as CAT2_CSMH_043.)"
   },
   {
     "id": "CAT2_CSMH_045",
