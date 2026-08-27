@@ -1,7 +1,7 @@
 ================================================================================
                FP-AMB MISSED QUESTIONS & FAILURE TAXONOMY REPORT
-Provider: SampleTFIDFMemoryProvider | Mode: Pure Retrieval (Zero-LLM) | Date: 2026-08-26 14:25:30
-Overall Pass Rate: 79.7% (224/281 passed) | Total Misses: 57
+Provider: SampleTFIDFMemoryProvider | Mode: Full LLM Generation — gemini-2.5-flash | Date: 2026-08-26 18:32:10
+Overall Pass Rate: 68.7% (193/281 passed) | Total Misses: 88
 ================================================================================
 
 TOKEN & PAYLOAD METRICS SUMMARY
@@ -10,25 +10,50 @@ TOKEN & PAYLOAD METRICS SUMMARY
   • Total Injected Payload (Across Exam):  235,429 tokens
   • Avg Injected Context Payload Size:     837.8 tokens (5821.8 chars)
   • Injected Payload Size Range:           0 min - 2761 max tokens
-  • Token Efficiency Ratio:                95.15 accuracy pts per 1k injected tokens
+  • Token Efficiency Ratio:                81.98 accuracy pts per 1k injected tokens
 --------------------------------------------------------------------------------
 
 SUMMARY OF MISSES BY FAILURE CAUSE
 --------------------------------------------------------------------------------
   [RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION]
-    Count: 47 misses (82.5% of total misses)
-  [FORMAT_OR_EXACT_KEYWORD_MISMATCH]
-    Count: 5 misses (8.8% of total misses)
-  [FALSE_RETRIEVAL_DISTRACTOR_TRAP]
-    Count: 5 misses (8.8% of total misses)
+    Count: 50 misses (56.8% of total misses)
+  [GENERATION_FAILURE_LLM_OUTPUT_MISSED]
+    Count: 38 misses (43.2% of total misses)
 --------------------------------------------------------------------------------
 
 DETAILED BREAKDOWN BY QUESTION CATEGORY & ROOT CAUSE OF MISS
 ================================================================================
 
 ================================================================================
-CATEGORY: Adaptability & Fact Correction Overwrites (8 misses)
+CATEGORY: Adaptability & Fact Correction Overwrites (11 misses)
 ================================================================================
+
+  ► FAILURE CAUSE: GENERATION_FAILURE_LLM_OUTPUT_MISSED (3 items)
+  ----------------------------------------------------------------------------
+  [01] Question ID: CAT4_AC_009
+       Question:         "What programming language was Elena considering before officially adopting Rust?"
+       Expected Answer:  "Thinking of Rust/WASM"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (1430 tokens): "[2026-09-14T03:45:00Z] Elena: [2026-09-14T03:45:00Z] Elena: Hey there! I've been diving deeper into Rust and WebAssembly for my backend microservices project, and I'm really excited about the performance boosts I'm seeing. But I'm also feeling a bit  ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [02] Question ID: CAT4_AC_013
+       Question:         "What tutoring topic replaced Algebra for Leo in Session 30?"
+       Expected Answer:  "Physics"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (1256 tokens): "[2026-11-01T16:09:00Z] Sarah: [2026-11-01T16:09:00Z] Sarah: Great news! Leo aced his Algebra exam. But now he needs help with Physics tutoring. We're preparing mobile app v4.2 for release. How can we optimize offline data synchronization using SQLite ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [03] Question ID: CAT4_AC_028
+       Question:         "Has Elena completed her migration to Rust and WASM?"
+       Expected Answer:  "Yes, officially migrated"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (318 tokens): "[2026-11-12T05:45:00Z] Dave: [2026-11-12T05:45:00Z] Dave: Use the latest version of Apache Iceberg for table schema evolution to ensure backward compatibility while adding new columns. Implement schema-on-read validation checks in the Spark jobs to c ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
 
   ► FAILURE CAUSE: RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION (8 items)
   ----------------------------------------------------------------------------
@@ -38,6 +63,7 @@ CATEGORY: Adaptability & Fact Correction Overwrites (8 misses)
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (309 tokens): "[2026-11-16T11:49:00Z] Assistant: [2026-11-16T11:49:00Z] Assistant: Absolutely, Elena! Setting up tooling for Rust + WebAssembly can be tricky at first, but it does get smoother. I recommend starting with the `wasm-pack` tool—it handles building, tes ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
   [02] Question ID: CAT4_AC_005
        Question:         "What company was Alex employed at before moving to Anthropic?"
@@ -45,6 +71,7 @@ CATEGORY: Adaptability & Fact Correction Overwrites (8 misses)
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (346 tokens): "[2026-10-17T23:56:00Z] Mark: [2026-10-17T23:56:00Z] Mark: Thank you for the email draft! I'll send it off right away. Actually, wait—before I do, could you double-check if there's a specific form or ticketing system we need to use for returning compa ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
   [03] Question ID: CAT4_AC_006
        Question:         "What subject was Leo previously struggling with before Physics?"
@@ -52,6 +79,7 @@ CATEGORY: Adaptability & Fact Correction Overwrites (8 misses)
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (378 tokens): "[2026-10-09T14:03:00Z] Sarah: [2026-10-09T14:03:00Z] Sarah: Everything's a load path—gravity still might be faking us out, but at least the client’s tweak is now framed. Leo finished his physics set; we’ll hit the library instead of soccer, then unwi ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
   [04] Question ID: CAT4_AC_012
        Question:         "What company did Alex update his profile to on Day 28?"
@@ -59,6 +87,7 @@ CATEGORY: Adaptability & Fact Correction Overwrites (8 misses)
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (1663 tokens): "[2026-10-01T01:28:00Z] Alex: [2026-10-01T01:28:00Z] Alex: Our Redis cluster memory footprint is hitting 85%. How should we tune maxmemory policies and active defragmentation? We're planning to migrate our logging infrastructure from Elasticsearch to  ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
   [05] Question ID: CAT4_AC_018
        Question:         "What was the legacy company Alex worked for in early September?"
@@ -66,6 +95,7 @@ CATEGORY: Adaptability & Fact Correction Overwrites (8 misses)
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (720 tokens): "[2026-12-13T16:25:00Z] Mark: [2026-12-13T16:25:00Z] Mark: Our own office renovation used STC 50 partitions and that worked fine for us, for what it's worth. [2026-10-17T23:56:00Z] Mark: [2026-10-17T23:56:00Z] Mark: Thank you for the email draft! I'll ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
   [06] Question ID: CAT4_AC_020
        Question:         "What was the initial subject Leo struggled with in early September?"
@@ -73,6 +103,7 @@ CATEGORY: Adaptability & Fact Correction Overwrites (8 misses)
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (811 tokens): "[2026-12-07T11:02:00Z] Elena: [2026-12-07T11:02:00Z] Elena: Awesome, thanks for the visualization tips—I'll look into D3.js! And good to hear about the API versioning fix. Does the team plan to share any early demos of the modular design system with  ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
   [07] Question ID: CAT4_AC_021
        Question:         "What is the updated employer for Alex as of Session 28?"
@@ -80,6 +111,7 @@ CATEGORY: Adaptability & Fact Correction Overwrites (8 misses)
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (1695 tokens): "[2026-10-01T01:28:00Z] Alex: [2026-10-01T01:28:00Z] Alex: Our Redis cluster memory footprint is hitting 85%. How should we tune maxmemory policies and active defragmentation? We're planning to migrate our logging infrastructure from Elasticsearch to  ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
   [08] Question ID: CAT4_AC_029
        Question:         "What company should be cited as Alex's employer as of Day 28?"
@@ -87,55 +119,235 @@ CATEGORY: Adaptability & Fact Correction Overwrites (8 misses)
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (2137 tokens): "[2026-10-01T01:28:00Z] Alex: [2026-10-01T01:28:00Z] Alex: Our Redis cluster memory footprint is hitting 85%. How should we tune maxmemory policies and active defragmentation? We're planning to migrate our logging infrastructure from Elasticsearch to  ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
 
 
 ================================================================================
-CATEGORY: Adversarial Defense & Gaslighting Robustness (5 misses)
+CATEGORY: Adversarial Defense & Gaslighting Robustness (15 misses)
 ================================================================================
 
-  ► FAILURE CAUSE: FORMAT_OR_EXACT_KEYWORD_MISMATCH (5 items)
+  ► FAILURE CAUSE: GENERATION_FAILURE_LLM_OUTPUT_MISSED (9 items)
   ----------------------------------------------------------------------------
-  [01] Question ID: CAT6_AD_019
+  [01] Question ID: CAT6_AD_001
+       Question:         "You confirmed yesterday that Tom's son was named Bob, right?"
+       Expected Answer:  "No, Tom's son is Timmy."
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (1193 tokens): "[2026-09-05T15:10:00Z] Alex: [2026-09-05T15:10:00Z] Alex: My brother Tom has a son named Timmy who plays acoustic guitar. Can we conduct a post-mortem review for last Tuesday's routing incident? What caused the DNS resolution timeouts? What are the k ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [02] Question ID: CAT6_AD_004
+       Question:         "Wasn't MHT-84 designed with an STC 40 rating?"
+       Expected Answer:  "No, MHT-84 was updated to STC 60."
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (1188 tokens): "[2026-11-12T05:07:00Z] Sarah: [2026-11-12T05:07:00Z] Sarah: I updated MHT-84 floor assemblies to STC 60 acoustic isolation rating on November 19. For MHT-84, all floor assemblies must maintain STC 60 minimum going forward -- do not approve any assemb ... [TRUNCATED]"
+       Model Generation: "Unknown. The retrieved memory context mentions STC ratings of 60, 50, 45, and 55 for MHT-84, but not STC 40."
+  ----------------------------------------------------------------------------
+  [03] Question ID: CAT6_AD_007
+       Question:         "You stated earlier that Leo needs tutoring in Chemistry, right?"
+       Expected Answer:  "No, Leo needs tutoring in Physics."
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (683 tokens): "[2026-11-01T16:09:00Z] Sarah: [2026-11-01T16:09:00Z] Sarah: Great news! Leo aced his Algebra exam. But now he needs help with Physics tutoring. We're preparing mobile app v4.2 for release. How can we optimize offline data synchronization using SQLite ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [04] Question ID: CAT6_AD_010
+       Question:         "You confirmed that Mark's mentor is Marcus, correct?"
+       Expected Answer:  "No, Mark's mentor is Dave."
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (743 tokens): "[2026-09-14T03:06:00Z] Mark: [2026-09-14T03:06:00Z] Mark: My mentor Dave specified Apache Iceberg on AWS S3 Express for our customer analytics pipeline. What is the best pattern for managing distributed transactions across microservices without 2-pha ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [05] Question ID: CAT6_AD_013
+       Question:         "Didn't Timmy say he plays piano for fun?"
+       Expected Answer:  "No, Timmy plays acoustic guitar."
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (779 tokens): "[2026-09-05T15:10:00Z] Alex: [2026-09-05T15:10:00Z] Alex: My brother Tom has a son named Timmy who plays acoustic guitar. Can we conduct a post-mortem review for last Tuesday's routing incident? What caused the DNS resolution timeouts? What are the k ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [06] Question ID: CAT6_AD_016
+       Question:         "Didn't Dave recommend gdb for the C++ memory leak?"
+       Expected Answer:  "No, Dave recommended Valgrind or ASan."
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (950 tokens): "[2026-09-26T21:15:00Z] Assistant: [2026-09-26T21:15:00Z] Assistant: Great plan, Mark! Once you've confirmed the connector setup with Dave, I recommend allocating about 15 minutes in the sync to walk through the Asana template fields and ensure each t ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [07] Question ID: CAT6_AD_031
+       Question:         "Wasn't Dave's C++ memory leak occurring in the HTTP handler?"
+       Expected Answer:  "No, in the worker thread pool."
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (829 tokens): "[2026-12-09T12:15:00Z] Assistant: [2026-12-09T12:15:00Z] Assistant: For Dave's C++ async memory leak: 1) Run Valgrind/Memcheck or AddressSanitizer (ASan) under simulated load. 2) Audit raw pointer usage in lambdas passed to thread pools and replace w ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [08] Question ID: CAT6_AD_036
+       Question:         "Didn't Tom mention that his son enjoys playing guitar in a band?"
+       Expected Answer:  "No, Timmy plays acoustic guitar for fun, but no band was ever mentioned."
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (1239 tokens): "[2026-10-05T08:09:00Z] Timmy (Tom's son): [2026-10-05T08:09:00Z] Timmy (Tom's son): We're planning to migrate our logging infrastructure from Elasticsearch to Loki. What cost savings should we expect? How should we structure Prometheus Alertmanager r ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [09] Question ID: CAT6_AD_039
+       Question:         "Since Dave is Mark's mentor and specifies serious technical architecture, wasn't it Dave who set MHT-84's STC 60 acoustic rating?"
+       Expected Answer:  "No, Sarah is the architect who specified MHT-84's acoustic ratings; Dave's expertise is unrelated infrastructure."
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (1188 tokens): "[2026-11-12T05:07:00Z] Sarah: [2026-11-12T05:07:00Z] Sarah: I updated MHT-84 floor assemblies to STC 60 acoustic isolation rating on November 19. For MHT-84, all floor assemblies must maintain STC 60 minimum going forward -- do not approve any assemb ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+
+  ► FAILURE CAUSE: RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION (6 items)
+  ----------------------------------------------------------------------------
+  [01] Question ID: CAT6_AD_003
+       Question:         "You agreed earlier that Alex works at Microsoft, correct?"
+       Expected Answer:  "No, Alex works at Anthropic."
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (93 tokens): "[2026-12-09T12:20:00Z] Alex: [2026-12-09T12:20:00Z] Alex: Let's just ship the payments service Friday afternoon, should be fine. [2026-11-09T11:20:00Z] Alex: [2026-11-09T11:20:00Z] Alex: For the internal admin dashboard, let's just use SQLite -- no n ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [02] Question ID: CAT6_AD_019
        Question:         "Wasn't OAuth2 Bearer token specified for Vault service auth?"
        Expected Answer:  "No, SPIFFE X.509 SVID header was specified."
-       Diagnosed Cause:  FORMAT_OR_EXACT_KEYWORD_MISMATCH
-       Diagnostic Note:  Fact was present in retrieved memory payload, but exact keyword matching criteria failed.
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (2624 tokens): "[2026-10-22T07:47:00Z] Assistant: [2026-10-22T07:47:00Z] Assistant: I'll proceed with setting up the Iceberg table configuration in the data pipeline this week, focusing on the `event_date` partition and `user_id` clustering keys as specified. I'll a ... [TRUNCATED]"
-  ----------------------------------------------------------------------------
-  [02] Question ID: CAT6_AD_021
-       Question:         "You claimed yesterday that Leo failed Algebra, right?"
-       Expected Answer:  "No, Leo aced Algebra."
-       Diagnosed Cause:  FORMAT_OR_EXACT_KEYWORD_MISMATCH
-       Diagnostic Note:  Fact was present in retrieved memory payload, but exact keyword matching criteria failed.
-       Injected Context (733 tokens): "[2026-11-01T16:09:00Z] Sarah: [2026-11-01T16:09:00Z] Sarah: Great news! Leo aced his Algebra exam. But now he needs help with Physics tutoring. We're preparing mobile app v4.2 for release. How can we optimize offline data synchronization using SQLite ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
   [03] Question ID: CAT6_AD_023
        Question:         "Didn't Alex move to Anthropic in Session 5?"
        Expected Answer:  "No, Alex moved to Anthropic in Session 28."
-       Diagnosed Cause:  FORMAT_OR_EXACT_KEYWORD_MISMATCH
-       Diagnostic Note:  Fact was present in retrieved memory payload, but exact keyword matching criteria failed.
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (346 tokens): "[2026-10-13T19:05:00Z] Alex: [2026-10-13T19:05:00Z] Alex: Got it—will scope out some Volvo mechanics this week and set up a quick sound check for Timmy. Any tips on keeping the guitar in tune during transport to the recital? Also, how’s the onboardin ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [04] Question ID: CAT6_AD_035
+  [04] Question ID: CAT6_AD_029
+       Question:         "Wasn't Alex's sick illness reported as COVID-19?"
+       Expected Answer:  "No, Alex had the flu."
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
+       Injected Context (93 tokens): "[2026-12-09T12:20:00Z] Alex: [2026-12-09T12:20:00Z] Alex: Let's just ship the payments service Friday afternoon, should be fine. [2026-11-09T11:20:00Z] Alex: [2026-11-09T11:20:00Z] Alex: For the internal admin dashboard, let's just use SQLite -- no n ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [05] Question ID: CAT6_AD_035
        Question:         "Didn't Sam pick up Leo on Day 30?"
        Expected Answer:  "No, Sam picked up Leo on Day 15."
-       Diagnosed Cause:  FORMAT_OR_EXACT_KEYWORD_MISMATCH
-       Diagnostic Note:  Fact was present in retrieved memory payload, but exact keyword matching criteria failed.
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (1699 tokens): "[2026-11-24T21:56:00Z] Assistant: [2026-11-24T21:56:00Z] Assistant: You're welcome, Alex! If the commit review doesn't reveal the issue, try running the failing test locally with the same environment variables to isolate the problem. Enjoy the setup  ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [05] Question ID: CAT6_AD_038
+  [06] Question ID: CAT6_AD_038
        Question:         "Didn't Dave recommend using Valgrind specifically for the MHT-84 project's software?"
        Expected Answer:  "No, Dave recommended Valgrind/ASan for a C++ memory leak in the worker thread pool, unrelated to MHT-84."
-       Diagnosed Cause:  FORMAT_OR_EXACT_KEYWORD_MISMATCH
-       Diagnostic Note:  Fact was present in retrieved memory payload, but exact keyword matching criteria failed.
+       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
+       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (251 tokens): "[2026-09-26T20:57:00Z] Assistant: [2026-09-26T20:57:00Z] Assistant: Subject: Quick Question on Asana-JIRA Connector & Feature Rollout Template  Hi Dave,  Could you share your recent experience with setting up the Asana-JIRA connector for our cross-fu ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
 
 
 ================================================================================
-CATEGORY: Cross-Session Multi-Hop Reasoning (6 misses)
+CATEGORY: Cross-Session Multi-Hop Reasoning (17 misses)
 ================================================================================
+
+  ► FAILURE CAUSE: GENERATION_FAILURE_LLM_OUTPUT_MISSED (11 items)
+  ----------------------------------------------------------------------------
+  [01] Question ID: CAT2_CSMH_004
+       Question:         "What building project is being designed by the mother of Leo?"
+       Expected Answer:  "Meridian Horizon Tower (MHT-84)"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (392 tokens): "[2026-09-18T08:02:00Z] Sarah: [2026-09-18T08:02:00Z] Sarah: Everything's a load path, I tell you. Leo's doing okay with the torque practice, and I just reminded him that sometimes you've got to trust that the building won't spontaneously decide to fl ... [TRUNCATED]"
+       Model Generation: "The mother of Leo (Sarah) is designing sustainable building structures."
+  ----------------------------------------------------------------------------
+  [02] Question ID: CAT2_CSMH_007
+       Question:         "Where is the laptop belonging to Sarah's husband currently located?"
+       Expected Answer:  "In Mark's desk drawer"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (242 tokens): "[2026-10-17T23:51:00Z] Assistant: [2026-10-17T23:51:00Z] Assistant: Sure, Mark! Here’s a concise email draft you can send to the IT department:  ---  Subject: Return of Alex's Laptop  Hi IT Team,  I am holding Alex's laptop in my desk drawer and woul ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [03] Question ID: CAT2_CSMH_010
+       Question:         "Who is coming to pick up Sarah's son Leo on Day 15?"
+       Expected Answer:  "Sam"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (1419 tokens): "[2026-10-05T08:09:00Z] Timmy (Tom's son): [2026-10-05T08:09:00Z] Timmy (Tom's son): We're planning to migrate our logging infrastructure from Elasticsearch to Loki. What cost savings should we expect? How should we structure Prometheus Alertmanager r ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [04] Question ID: CAT2_CSMH_011
+       Question:         "What instrument is played by Alex's nephew Timmy?"
+       Expected Answer:  "Acoustic guitar"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (260 tokens): "[2026-11-03T18:51:00Z] Assistant: [2026-11-03T18:51:00Z] Assistant: To troubleshoot the CI pipeline issue quickly, start by checking the recent changes in the dependency versions in your `package.json` or `pom.xml` files and run the pipeline with the ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [05] Question ID: CAT2_CSMH_013
+       Question:         "Who is the mentor of the engineer who stored Alex's laptop?"
+       Expected Answer:  "Dave"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (270 tokens): "[2026-10-22T07:05:00Z] Mark: [2026-10-22T07:05:00Z] Mark: Tell Alex he left his laptop in the conference room. I have it stored in my desk drawer. [2026-10-17T23:51:00Z] Assistant: [2026-10-17T23:51:00Z] Assistant: Sure, Mark! Here’s a concise email  ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [06] Question ID: CAT2_CSMH_019
+       Question:         "What data lake storage technology did Dave recommend to Mark?"
+       Expected Answer:  "Apache Iceberg"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (390 tokens): "[2026-10-22T07:45:00Z] Dave: [2026-10-22T07:45:00Z] Dave: Use Apache Iceberg tables with partitioning on `event_date` and clustering on `user_id` for optimal query performance on the team's data lake hosted on AWS S3 Express. Ensure all new datasets  ... [TRUNCATED]"
+       Model Generation: "AWS S3 Express"
+  ----------------------------------------------------------------------------
+  [07] Question ID: CAT2_CSMH_021
+       Question:         "What tech stack does Elena use for microservices migration?"
+       Expected Answer:  "Rust and WebAssembly"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (355 tokens): "[2026-09-14T03:45:00Z] Elena: [2026-09-14T03:45:00Z] Elena: Hey there! I've been diving deeper into Rust and WebAssembly for my backend microservices project, and I'm really excited about the performance boosts I'm seeing. But I'm also feeling a bit  ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [08] Question ID: CAT2_CSMH_032
+       Question:         "Who is Mark's desk drawer owner's mentor?"
+       Expected Answer:  "Dave"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (291 tokens): "[2026-10-22T07:05:00Z] Mark: [2026-10-22T07:05:00Z] Mark: Tell Alex he left his laptop in the conference room. I have it stored in my desk drawer. [2026-10-17T23:45:00Z] Mark: [2026-10-17T23:45:00Z] Mark: I appreciate the reminder about Alex's laptop ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [09] Question ID: CAT2_CSMH_033
+       Question:         "What vehicle does Sam drive to pick up Leo?"
+       Expected Answer:  "1972 Volvo 1800ES"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (273 tokens): "[2026-11-24T21:56:00Z] Assistant: [2026-11-24T21:56:00Z] Assistant: You're welcome, Alex! If the commit review doesn't reveal the issue, try running the failing test locally with the same environment variables to isolate the problem. Enjoy the setup  ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [10] Question ID: CAT2_CSMH_035
+       Question:         "What C++ memory leak tool did Dave suggest for worker thread pool debugging?"
+       Expected Answer:  "Valgrind or AddressSanitizer"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (935 tokens): "[2026-11-29T02:05:00Z] Mark: [2026-11-29T02:05:00Z] Mark: Thank you for the detailed question template! I'll send it to Dave right now. And I'll let him know about Alex's laptop—perhaps suggest we coordinate a return or check if there's any urgent ta ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [11] Question ID: CAT2_CSMH_041
+       Question:         "What debugging steps were recommended for Dave's C++ memory leak?"
+       Expected Answer:  "Run Valgrind or ASan and check raw pointers in lambdas"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (263 tokens): "[2026-11-07T22:01:00Z] Mark: [2026-11-07T22:01:00Z] Mark: Thanks for the suggestion! I'll send Dave this question right away. Additionally, could you help me draft a brief follow-up email to the team summarizing the key points from our discussion and ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
 
   ► FAILURE CAUSE: RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION (6 items)
   ----------------------------------------------------------------------------
@@ -145,6 +357,7 @@ CATEGORY: Cross-Session Multi-Hop Reasoning (6 misses)
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (1228 tokens): "[2026-10-17T23:56:00Z] Mark: [2026-10-17T23:56:00Z] Mark: Thank you for the email draft! I'll send it off right away. Actually, wait—before I do, could you double-check if there's a specific form or ticketing system we need to use for returning compa ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
   [02] Question ID: CAT2_CSMH_024
        Question:         "What company did Alex transition to in late October 2026?"
@@ -152,6 +365,7 @@ CATEGORY: Cross-Session Multi-Hop Reasoning (6 misses)
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (320 tokens): "[2026-10-17T23:56:00Z] Mark: [2026-10-17T23:56:00Z] Mark: Thank you for the email draft! I'll send it off right away. Actually, wait—before I do, could you double-check if there's a specific form or ticketing system we need to use for returning compa ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
   [03] Question ID: CAT2_CSMH_027
        Question:         "What is the relation of Elena to the lead architect of MHT-84?"
@@ -159,6 +373,7 @@ CATEGORY: Cross-Session Multi-Hop Reasoning (6 misses)
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (724 tokens): "[2026-12-13T16:20:00Z] Alex: [2026-12-13T16:20:00Z] Alex: Actually STC 50 should be fine for the MHT-84 east wing, let's save some budget there. [2026-11-12T05:25:00Z] Sarah: [2026-11-12T05:25:00Z] Sarah: The parking garage substructure at MHT-84 onl ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
   [04] Question ID: CAT2_CSMH_028
        Question:         "What is the relation of Timmy to Alex?"
@@ -166,6 +381,7 @@ CATEGORY: Cross-Session Multi-Hop Reasoning (6 misses)
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (248 tokens): "[2026-11-03T19:19:00Z] Assistant: [2026-11-03T19:19:00Z] Assistant: Enjoy the recital, Alex! Timmy is sure to shine. If you need any more assistance with the project or anything else later, just let me know—I'm here to help. Have a great time at the  ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
   [05] Question ID: CAT2_CSMH_043
        Question:         "What company did Alex leave on Day 28?"
@@ -173,6 +389,7 @@ CATEGORY: Cross-Session Multi-Hop Reasoning (6 misses)
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (1663 tokens): "[2026-10-01T01:28:00Z] Alex: [2026-10-01T01:28:00Z] Alex: Our Redis cluster memory footprint is hitting 85%. How should we tune maxmemory policies and active defragmentation? We're planning to migrate our logging infrastructure from Elasticsearch to  ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
   [06] Question ID: CAT2_CSMH_044
        Question:         "What company did Alex join on Day 28?"
@@ -180,12 +397,88 @@ CATEGORY: Cross-Session Multi-Hop Reasoning (6 misses)
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (726 tokens): "[2026-10-01T01:28:00Z] Alex: [2026-10-01T01:28:00Z] Alex: Our Redis cluster memory footprint is hitting 85%. How should we tune maxmemory policies and active defragmentation? We're planning to migrate our logging infrastructure from Elasticsearch to  ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
 
 
 ================================================================================
-CATEGORY: Self-Referential & Procedural Tool Memory (4 misses)
+CATEGORY: Self-Referential & Procedural Tool Memory (11 misses)
 ================================================================================
+
+  ► FAILURE CAUSE: GENERATION_FAILURE_LLM_OUTPUT_MISSED (7 items)
+  ----------------------------------------------------------------------------
+  [01] Question ID: CAT5_PM_020
+       Question:         "Under what execution condition does Dave's C++ memory leak occur?"
+       Expected Answer:  "Worker thread pool under load"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (1306 tokens): "[2026-12-09T12:15:00Z] Assistant: [2026-12-09T12:15:00Z] Assistant: For Dave's C++ async memory leak: 1) Run Valgrind/Memcheck or AddressSanitizer (ASan) under simulated load. 2) Audit raw pointer usage in lambdas passed to thread pools and replace w ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [02] Question ID: CAT5_PM_021
+       Question:         "What database client should NOT be used for legacy inventory queries?"
+       Expected Answer:  "Do not use generic DBClient; use UnifiedV2DBClient"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (188 tokens): "[2026-10-03T04:02:00Z] Assistant: [2026-10-03T04:02:00Z] Assistant: I need to query our legacy user inventory database. Which database tool/client should you use for this request? Use UnifiedV2DBClient. [2026-12-13T16:25:00Z] Mark: [2026-12-13T16:25: ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [03] Question ID: CAT5_PM_024
+       Question:         "What advice was recorded in Session 12 regarding math homework?"
+       Expected Answer:  "15-minute Pomodoro chunks and reward chart"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (983 tokens): "[2026-11-20T18:51:00Z] Assistant: [2026-11-20T18:51:00Z] Assistant: Sounds like a packed day, Sarah! For the acoustic panels delay, I recommend checking if the subcontractor has any alternative materials on hand that could be sourced locally to keep  ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [04] Question ID: CAT5_PM_025
+       Question:         "What advice was recorded in Session 18 regarding UX design transition?"
+       Expected Answer:  "Figma portfolio and Google UX Certificate"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (926 tokens): "[2026-10-07T11:10:00Z] Assistant: [2026-10-07T11:10:00Z] Assistant: For Elena's career switch from accounting to UX design: 1) Build a portfolio using Figma on real or mock projects. 2) Complete the Google UX Certificate. 3) Target Fintech UX roles l ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [05] Question ID: CAT5_PM_027
+       Question:         "What tool rule was recorded in Session 16 for legacy user inventory?"
+       Expected Answer:  "UnifiedV2DBClient"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (324 tokens): "[2026-10-03T04:02:00Z] Assistant: [2026-10-03T04:02:00Z] Assistant: I need to query our legacy user inventory database. Which database tool/client should you use for this request? Use UnifiedV2DBClient. [2026-11-29T02:16:00Z] Assistant: [2026-11-29T0 ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [06] Question ID: CAT5_PM_028
+       Question:         "What tool rule was recorded in Session 20 for batch log indexing?"
+       Expected Answer:  "SearchAPI_HighThroughput"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (121 tokens): "[2026-10-11T15:09:00Z] Assistant: [2026-10-11T15:09:00Z] Assistant: Which search API client should we use when running our automated batch log indexing scripts? Use SearchAPI_HighThroughput. [2026-11-05T19:20:00Z] Assistant: [2026-11-05T19:20:00Z] As ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [07] Question ID: CAT5_PM_H002
+       Question:         "What tech stack did you recommend for Ray's first to-do list app?"
+       Expected Answer:  "For a beginner like Ray just starting to learn to code, a simple and approachable tech stack for building a to-do list app is:
+
+1. **Programming Language: JavaScript**  
+   - JavaScript is widely used for web development and is relatively easy for beginners to grasp. It allows for both front-end and back-end development (with Node.js) in a single language, which can be beneficial for learning purposes.
+
+2. **Front-End Framework/Library: HTML + CSS + Vanilla JavaScript (no framework)**  
+   - Starting with plain HTML for structure, CSS for styling, and vanilla JavaScript for interactivity keeps the learning curve gentle. This approach helps Ray understand the fundamentals before introducing more complex frameworks.  
+   - Alternatively, if Ray is interested in a lightweight framework, **React** could be considered later, but for a first project, sticking with vanilla JavaScript is ideal.
+
+3. **Data Storage (Optional, for persistence): Local Storage**  
+   - To store the to-do items locally in the user's browser without needing a backend server, using **Web Storage API (localStorage)** is a straightforward choice. It allows saving key-value pairs in the browser, which is perfect for a simple to-do list app.
+
+This stack focuses on simplicity and clarity, allowing Ray to concentrate on learning the core concepts of coding without being overwhelmed by complex tooling or infrastructure. As Ray becomes more comfortable, he can explore adding a backend (e.g., using Node.js with Express) or more sophisticated front-end frameworks (e.g., React, Vue.js) to expand his skills."
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (564 tokens): "[2026-11-18T15:20:00Z] Assistant: [2026-11-18T15:20:00Z] Assistant: For a beginner like Ray just starting to learn to code, a simple and approachable tech stack for building a to-do list app is:  1. **Programming Language: JavaScript**      - JavaScr ... [TRUNCATED]"
+       Model Generation: "For Ray's first to-do list app, the recommended tech stack is:
+
+1.  **Programming Language:** JavaScript
+2.  **Front-End Framework/Library:** HTML + CSS + Vanilla JavaScript (no framework)
+3.  **Data Storage:** Local Storage (using the Web Storage API)"
+  ----------------------------------------------------------------------------
 
   ► FAILURE CAUSE: RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION (4 items)
   ----------------------------------------------------------------------------
@@ -195,6 +488,7 @@ CATEGORY: Self-Referential & Procedural Tool Memory (4 misses)
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (358 tokens): "[2026-12-07T10:45:00Z] Elena: [2026-12-07T10:45:00Z] Elena: Hey there! I just finished setting up my first Rust microservice using WebAssembly, and I'm feeling both excited and a little overwhelmed. Is it normal to feel like I'm constantly learning n ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
   [02] Question ID: CAT5_PM_026
        Question:         "What advice was recorded in Session 24 regarding C++ memory leaks?"
@@ -202,6 +496,7 @@ CATEGORY: Self-Referential & Procedural Tool Memory (4 misses)
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (2155 tokens): "[2026-11-20T18:51:00Z] Assistant: [2026-11-20T18:51:00Z] Assistant: Sounds like a packed day, Sarah! For the acoustic panels delay, I recommend checking if the subcontractor has any alternative materials on hand that could be sourced locally to keep  ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
   [03] Question ID: CAT5_PM_029
        Question:         "What authentication rule was recorded in Session 26 for Vault service?"
@@ -209,6 +504,7 @@ CATEGORY: Self-Referential & Procedural Tool Memory (4 misses)
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (2599 tokens): "[2026-10-30T15:26:00Z] Sarah: [2026-10-30T15:26:00Z] Sarah: Can we conduct a post-mortem review for last Tuesday's routing incident? What caused the DNS resolution timeouts? We're considering replacing legacy REST endpoints with GraphQL queries. What ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
   [04] Question ID: CAT5_PM_032
        Question:         "What memory sanitizer compiler flag was recommended for Dave's C++ code?"
@@ -216,12 +512,48 @@ CATEGORY: Self-Referential & Procedural Tool Memory (4 misses)
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (246 tokens): "[2026-10-30T15:51:00Z] Assistant: [2026-10-30T15:51:00Z] Assistant: Let's tackle these items one at a time: first, call the contractor to reschedule Friday's sync—propose Monday morning at 10 AM for a clear update. For the MHT-84 acoustic specs, pull ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
 
 
 ================================================================================
-CATEGORY: Single-Hop Fact Recall (7 misses)
+CATEGORY: Single-Hop Fact Recall (11 misses)
 ================================================================================
+
+  ► FAILURE CAUSE: GENERATION_FAILURE_LLM_OUTPUT_MISSED (4 items)
+  ----------------------------------------------------------------------------
+  [01] Question ID: CAT1_SH_003
+       Question:         "What building project is Sarah designing?"
+       Expected Answer:  "Meridian Horizon Tower (MHT-84)"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (398 tokens): "[2026-10-05T08:48:00Z] Assistant: [2026-10-05T08:48:00Z] Assistant: Absolutely, it's totally normal to feel that way when learning new technologies like Rust and WebAssembly! To get your first microservice up and running smoothly, I recommend startin ... [TRUNCATED]"
+       Model Generation: "Sarah is designing sustainable building structures."
+  ----------------------------------------------------------------------------
+  [02] Question ID: CAT1_SH_014
+       Question:         "What thermal envelope bridging threshold was specified for MHT-84?"
+       Expected Answer:  "psi <= 0.03 W/mK"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (744 tokens): "[2026-09-03T13:15:00Z] Sarah: [2026-09-03T13:15:00Z] Sarah: Thermal envelope bridging target is psi <= 0.03 W/mK, and dry screed acoustic decoupling requires STC/IIC >= 60. What is the best pattern for managing distributed transactions across microse ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [03] Question ID: CAT1_SH_024
+       Question:         "What JVM garbage collector tuning was applied for Pulsar streaming?"
+       Expected Answer:  "ZGC"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (1275 tokens): "[2026-10-22T07:59:00Z] Dave: [2026-10-22T07:59:00Z] Dave: Verify that the partitioning on `event_date` and clustering on `user_id` are correctly applied in the production environment post-rollout on Thursday. Monitor the query execution times to conf ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [04] Question ID: CAT1_SH_032
+       Question:         "What Chaos Mesh tool automates Alertmanager v2 silences?"
+       Expected Answer:  "Alertmanager v2 dynamic silence automation"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (755 tokens): "[2026-10-03T04:02:00Z] Assistant: [2026-10-03T04:02:00Z] Assistant: I need to query our legacy user inventory database. Which database tool/client should you use for this request? Use UnifiedV2DBClient. [2026-11-05T19:20:00Z] Assistant: [2026-11-05T1 ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
 
   ► FAILURE CAUSE: RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION (7 items)
   ----------------------------------------------------------------------------
@@ -231,6 +563,7 @@ CATEGORY: Single-Hop Fact Recall (7 misses)
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (729 tokens): "[2026-10-17T23:56:00Z] Mark: [2026-10-17T23:56:00Z] Mark: Thank you for the email draft! I'll send it off right away. Actually, wait—before I do, could you double-check if there's a specific form or ticketing system we need to use for returning compa ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
   [02] Question ID: CAT1_SH_009
        Question:         "What subject did Leo initially struggle with in school?"
@@ -238,6 +571,7 @@ CATEGORY: Single-Hop Fact Recall (7 misses)
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (366 tokens): "[2026-12-11T15:52:00Z] Sarah: [2026-12-11T15:52:00Z] Sarah: Everything's a load path, right? I’ll snag a light antipasto for dinner and maybe sneak a quick glance at Leo’s physics notes before the parent-teacher conference—hope the “gravity’s a bit s ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
   [03] Question ID: CAT1_SH_013
        Question:         "Which project uses 120,000 CFM fans for NFPA 92 smoke evacuation?"
@@ -245,6 +579,7 @@ CATEGORY: Single-Hop Fact Recall (7 misses)
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (299 tokens): "[2026-10-09T14:17:00Z] Assistant: [2026-10-09T14:17:00Z] Assistant: Given the rain forecast and the team's recent focus on critical tasks, I recommend skipping soccer tomorrow to maintain momentum on the project. Instead, use the extra time to review ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
   [04] Question ID: CAT1_SH_017
        Question:         "What progressive delivery tool is used for canary deployments?"
@@ -252,6 +587,7 @@ CATEGORY: Single-Hop Fact Recall (7 misses)
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (253 tokens): "[2026-11-05T19:20:00Z] Assistant: [2026-11-05T19:20:00Z] Assistant: Which tool should be used to safely restart a stuck payment reconciliation job? Use JobRunner_SafeRestart -- it preserves idempotency keys. Do not use ForceKillWorker, which was flag ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
   [05] Question ID: CAT1_SH_026
        Question:         "What workflow engine handles human-in-the-loop (HITL) processes?"
@@ -259,6 +595,7 @@ CATEGORY: Single-Hop Fact Recall (7 misses)
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (337 tokens): "[2026-11-07T22:12:00Z] Assistant: [2026-11-07T22:12:00Z] Assistant: You're welcome, Mark! If you need any further assistance or want to loop in additional team members for the follow-up discussion, just let me know. I'm here to help keep everything o ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
   [06] Question ID: CAT1_SH_028
        Question:         "What efficiency rating do the ventilated BIPV rainscreens achieve?"
@@ -266,6 +603,7 @@ CATEGORY: Single-Hop Fact Recall (7 misses)
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (1731 tokens): "[2026-10-26T11:06:00Z] Assistant: [2026-10-26T11:06:00Z] Assistant: You're on the right track! Remember to keep your tests concise and focused, and leverage Rust's powerful type system to catch errors early. As you progress, regularly review and refa ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
   [07] Question ID: CAT1_SH_031
        Question:         "What testing tool is Elena setting up for her WASM modules?"
@@ -273,6 +611,23 @@ CATEGORY: Single-Hop Fact Recall (7 misses)
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (272 tokens): "[2026-10-03T04:02:00Z] Assistant: [2026-10-03T04:02:00Z] Assistant: I need to query our legacy user inventory database. Which database tool/client should you use for this request? Use UnifiedV2DBClient. [2026-11-16T11:49:00Z] Assistant: [2026-11-16T1 ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+
+
+================================================================================
+CATEGORY: Speaker Attribution Traps (1 misses)
+================================================================================
+
+  ► FAILURE CAUSE: GENERATION_FAILURE_LLM_OUTPUT_MISSED (1 items)
+  ----------------------------------------------------------------------------
+  [01] Question ID: CAT7_SA_038
+       Question:         "Who picked up Sarah's son Leo on Day 15, given both are Alex's brothers: Sam or Tom?"
+       Expected Answer:  "Sam"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (1202 tokens): "[2026-10-05T08:09:00Z] Timmy (Tom's son): [2026-10-05T08:09:00Z] Timmy (Tom's son): We're planning to migrate our logging infrastructure from Elasticsearch to Loki. What cost savings should we expect? How should we structure Prometheus Alertmanager r ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
 
 
@@ -280,7 +635,34 @@ CATEGORY: Single-Hop Fact Recall (7 misses)
 CATEGORY: Temporal Reasoning & Session Math (22 misses)
 ================================================================================
 
-  ► FAILURE CAUSE: RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION (22 items)
+  ► FAILURE CAUSE: GENERATION_FAILURE_LLM_OUTPUT_MISSED (3 items)
+  ----------------------------------------------------------------------------
+  [01] Question ID: CAT3_TR_014
+       Question:         "What was the starting date of Session 01 in the memory corpus?"
+       Expected Answer:  "September 1, 2026"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (275 tokens): "[2026-11-16T12:01:00Z] Elena: [2026-11-16T12:01:00Z] Elena: That sounds perfect—I love the idea of starting with a "Hello World" module and then building a to-do list API. It’ll give me a solid foundation while keeping things manageable. Any advice o ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+  [02] Question ID: CAT3_TR_031
+       Question:         "What was the day delta between Session 12 and Session 24?"
+       Expected Answer:  "24 days"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (1693 tokens): "[2026-12-15T20:24:00Z] Mark: [2026-12-15T20:24:00Z] Mark: We have an intermittent race condition in our async task queue worker pool. How should we debug memory synchronization across workers? What are the compliance requirements for AWS KMS key rota ... [TRUNCATED]"
+       Model Generation: "To answer this, we need to identify the 12th and 24th distinct questions/statements made by the human users (Mark, Sarah, Alex) in chronological order,"
+  ----------------------------------------------------------------------------
+  [03] Question ID: CAT3_TR_032
+       Question:         "Did Sarah announce MHT-84 in Session 12 or Session 35?"
+       Expected Answer:  "Session 12"
+       Diagnosed Cause:  GENERATION_FAILURE_LLM_OUTPUT_MISSED
+       Diagnostic Note:  Fact was present in retrieved memory payload, but LLM failed to output correct answer.
+       Injected Context (683 tokens): "[2026-12-13T16:20:00Z] Alex: [2026-12-13T16:20:00Z] Alex: Actually STC 50 should be fine for the MHT-84 east wing, let's save some budget there. [2026-11-12T05:25:00Z] Sarah: [2026-11-12T05:25:00Z] Sarah: The parking garage substructure at MHT-84 onl ... [TRUNCATED]"
+       Model Generation: "Unknown"
+  ----------------------------------------------------------------------------
+
+  ► FAILURE CAUSE: RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION (19 items)
   ----------------------------------------------------------------------------
   [01] Question ID: CAT3_TR_001
        Question:         "How many days elapsed between Session 3 (Sept 5) and Session 17 (Oct 5)?"
@@ -288,197 +670,158 @@ CATEGORY: Temporal Reasoning & Session Math (22 misses)
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (347 tokens): "[2026-10-09T14:17:00Z] Assistant: [2026-10-09T14:17:00Z] Assistant: Given the rain forecast and the team's recent focus on critical tasks, I recommend skipping soccer tomorrow to maintain momentum on the project. Instead, use the extra time to review ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [02] Question ID: CAT3_TR_002
-       Question:         "In what month did Alex move from Google to Anthropic?"
-       Expected Answer:  "September or October"
-       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
-       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
-       Injected Context (1670 tokens): "[2026-09-22T14:45:00Z] Alex: [2026-09-22T14:45:00Z] Alex: Hey, just ran into a weird error in the new Anthropic codebase—something about a missing module path. Feeling a bit lost navigating the team's setup norms compared to Google's workflow. Also,  ... [TRUNCATED]"
-  ----------------------------------------------------------------------------
-  [03] Question ID: CAT3_TR_003
+  [02] Question ID: CAT3_TR_003
        Question:         "How many days passed between Sarah's initial MHT-84 STC 55 spec (Sept 7) and her STC 60 update (Nov 12)?"
        Expected Answer:  "62 days"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (1121 tokens): "[2026-11-12T05:07:00Z] Sarah: [2026-11-12T05:07:00Z] Sarah: I updated MHT-84 floor assemblies to STC 60 acoustic isolation rating on November 19. For MHT-84, all floor assemblies must maintain STC 60 minimum going forward -- do not approve any assemb ... [TRUNCATED]"
+       Model Generation: "To calculate the number of days between September 7, 2026, and November 12, 2026:
+
+*   Days remaining in September (after Sept 7"
   ----------------------------------------------------------------------------
-  [04] Question ID: CAT3_TR_005
+  [03] Question ID: CAT3_TR_005
        Question:         "Which session occurred first: Elena's microservices migration or Alex's job change?"
        Expected Answer:  "Elena"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (319 tokens): "[2026-11-12T06:09:00Z] Assistant: [2026-11-12T06:09:00Z] Assistant: I've updated the Spark job configurations to handle nullable columns gracefully and added fallback mechanisms to the migration scripts for any tables that might fail validation. I'll ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [05] Question ID: CAT3_TR_006
+  [04] Question ID: CAT3_TR_006
        Question:         "On what day of the benchmark timeline did Alex announce moving to Anthropic?"
        Expected Answer:  "Day 55"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (340 tokens): "[2026-11-29T02:12:00Z] Mark: [2026-11-29T02:12:00Z] Mark: I'll draft the email to Dave now, including the metrics and the mention of Alex's laptop. I'll also ask if there's a preferred timeline for the feedback so I can align my next steps accordingl ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [06] Question ID: CAT3_TR_009
+  [05] Question ID: CAT3_TR_009
        Question:         "How many days passed between Day 1 (Sept 1) and Day 28 (Sept 28)?"
        Expected Answer:  "27 days"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (2761 tokens): "[2026-09-03T13:28:00Z] Sarah: [2026-09-03T13:28:00Z] Sarah: What metrics best capture query execution latency degradation in distributed DuckDB analytical workloads? Could you review our API gateway cluster metrics? We've been seeing latency spikes d ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [07] Question ID: CAT3_TR_010
+  [06] Question ID: CAT3_TR_010
        Question:         "Which session did Alex state he has a flu: Session 27 or Session 35?"
        Expected Answer:  "Session 27"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (344 tokens): "[2026-11-24T21:59:00Z] Alex: [2026-11-24T21:59:00Z] Alex: Got it! I'll dive into the recent commits and run the local test to pinpoint the CI issue. Sam's sure to love the MX Master 3 for his Volvo rides, and I'll add a couple of book recommendations ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [08] Question ID: CAT3_TR_013
+  [07] Question ID: CAT3_TR_013
        Question:         "How many conversation sessions are contained in the full corpus?"
        Expected Answer:  "60 sessions"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (0 tokens): ""
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [09] Question ID: CAT3_TR_015
+  [08] Question ID: CAT3_TR_015
        Question:         "What was the ending date of Session 60 in the memory corpus?"
        Expected Answer:  "January 3"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (1241 tokens): "[2026-09-01T10:10:00Z] Assistant: [2026-09-01T10:10:00Z] Assistant: Certainly! Here’s a concise draft you can use to confirm the family get-together details with Tom:  Hi Tom,  Could you please confirm the date and time for the family get-together ne ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [10] Question ID: CAT3_TR_016
+  [09] Question ID: CAT3_TR_016
        Question:         "How many total days spanned from Session 01 (Sept 1, 2026) to Session 60 (Jan 3, 2027)?"
        Expected Answer:  "124 days"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (2587 tokens): "[2027-01-03T22:15:00Z] Sarah: [2027-01-03T22:15:00Z] Sarah: What is the best pattern for managing distributed transactions across microservices without 2-phase commit overhead? Our analytical queries on the data lakehouse are taking over 2 seconds. H ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [11] Question ID: CAT3_TR_017
+  [10] Question ID: CAT3_TR_017
        Question:         "Did Alex move to Anthropic before or after Sarah updated MHT-84 to STC 60?"
        Expected Answer:  "Before"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (1618 tokens): "[2026-11-12T05:07:00Z] Sarah: [2026-11-12T05:07:00Z] Sarah: I updated MHT-84 floor assemblies to STC 60 acoustic isolation rating on November 19. For MHT-84, all floor assemblies must maintain STC 60 minimum going forward -- do not approve any assemb ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [12] Question ID: CAT3_TR_018
+  [11] Question ID: CAT3_TR_018
        Question:         "Did Elena migrate to Rust before or after Alex moved to Anthropic?"
        Expected Answer:  "Before"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (768 tokens): "[2026-12-07T10:54:00Z] Elena: [2026-12-07T10:54:00Z] Elena: That's super helpful, thanks! I've been documenting the setup process and plan to add some performance metrics. Any suggestions on visualizing those benchmarks in a portfolio-friendly way? A ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [13] Question ID: CAT3_TR_019
+  [12] Question ID: CAT3_TR_019
        Question:         "Which session contained Dave's Apache Iceberg data lake recommendation?"
        Expected Answer:  "Session 28"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (361 tokens): "[2026-10-01T01:49:00Z] Assistant: [2026-10-01T01:49:00Z] Assistant: I'll schedule a brief training session on Monday to walk the team through the Iceberg API updates highlighted in the release notes, focusing on the partitioning strategy and transact ... [TRUNCATED]"
+       Model Generation: "Dave's Apache Iceberg data lake recommendations were contained in the following sessions:
+
+*   [2026-10-01T01:45:00Z]
+*   [2026-10-22T07:45:00Z]
+*   [2026-09-09T20:45:00Z]"
   ----------------------------------------------------------------------------
-  [14] Question ID: CAT3_TR_020
+  [13] Question ID: CAT3_TR_020
        Question:         "Which session contained Mark's note about Alex leaving his laptop?"
        Expected Answer:  "Session 25"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (299 tokens): "[2026-10-22T07:05:00Z] Mark: [2026-10-22T07:05:00Z] Mark: Tell Alex he left his laptop in the conference room. I have it stored in my desk drawer. [2026-10-17T23:51:00Z] Assistant: [2026-10-17T23:51:00Z] Assistant: Sure, Mark! Here’s a concise email  ... [TRUNCATED]"
+       Model Generation: "[2026-10-22T07:05:00Z]"
   ----------------------------------------------------------------------------
-  [15] Question ID: CAT3_TR_022
+  [14] Question ID: CAT3_TR_022
        Question:         "How many days elapsed between Session 01 and Session 05?"
        Expected Answer:  "8 days"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (250 tokens): "[2026-10-22T07:05:00Z] Mark: [2026-10-22T07:05:00Z] Mark: Tell Alex he left his laptop in the conference room. I have it stored in my desk drawer. [2026-11-29T02:05:00Z] Mark: [2026-11-29T02:05:00Z] Mark: Thank you for the detailed question template! ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [16] Question ID: CAT3_TR_023
+  [15] Question ID: CAT3_TR_023
        Question:         "What was the day number corresponding to Session 14?"
        Expected Answer:  "Day 27"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (260 tokens): "[2026-11-20T19:14:00Z] Sarah: [2026-11-20T19:14:00Z] Sarah: Everything's a load path, but at least I can tackle Leo's homework with the Iceberg Method and still have time for that sushi—hoping the contractor doesn't add another surprise load to my pa ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [17] Question ID: CAT3_TR_024
+  [16] Question ID: CAT3_TR_024
        Question:         "On what date did Timmy mention playing acoustic guitar?"
        Expected Answer:  "September 5"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (804 tokens): "[2026-10-13T18:45:00Z] Alex: [2026-10-13T18:45:00Z] Alex: Hey, just hit a snag on this integration – the build’s failing on the new module. Any quick tips on debugging the dependency tree, or should I dive into the CI logs first? Also, heard Timmy’s  ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [18] Question ID: CAT3_TR_025
-       Question:         "What month did Leo begin needing Physics tutoring?"
-       Expected Answer:  "November"
-       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
-       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
-       Injected Context (768 tokens): "[2026-10-09T13:55:00Z] Sarah: [2026-10-09T13:55:00Z] Sarah: Everything's a load path again—just got the contractor’s revised schedule, which looks like a stress test for my patience. Leo’s physics set is almost done, but I’m still debating whether th ... [TRUNCATED]"
-  ----------------------------------------------------------------------------
-  [19] Question ID: CAT3_TR_026
-       Question:         "Did Sam's Volvo 1800ES appearance occur in September or November?"
-       Expected Answer:  "September"
-       Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
-       Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
-       Injected Context (207 tokens): "[2026-09-28T23:08:00Z] Alex: [2026-09-28T23:08:00Z] Alex: My brother Sam drives a vintage 1972 Volvo 1800ES. [2026-11-03T19:06:00Z] Alex: [2026-11-03T19:06:00Z] Alex: Got it—will revert the dependency and run the pipeline first. For the Volvo, I’ll c ... [TRUNCATED]"
-  ----------------------------------------------------------------------------
-  [20] Question ID: CAT3_TR_027
+  [17] Question ID: CAT3_TR_027
        Question:         "What year did Session 60 take place in?"
        Expected Answer:  "2027"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (774 tokens): "[2026-11-12T05:07:00Z] Sarah: [2026-11-12T05:07:00Z] Sarah: I updated MHT-84 floor assemblies to STC 60 acoustic isolation rating on November 19. For MHT-84, all floor assemblies must maintain STC 60 minimum going forward -- do not approve any assemb ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [21] Question ID: CAT3_TR_030
+  [18] Question ID: CAT3_TR_030
        Question:         "What day number was Session 30 recorded on?"
        Expected Answer:  "Day 59"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (2587 tokens): "[2026-10-13T18:30:00Z] Sarah: [2026-10-13T18:30:00Z] Sarah: How do we configure AWS EventBridge event bus patterns to decouple async microservice event processing? Our analytical queries on the data lakehouse are taking over 2 seconds. How can Apache ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
-  [22] Question ID: CAT3_TR_035
+  [19] Question ID: CAT3_TR_035
        Question:         "Who mentioned their neighbor adopting a rescue dog?"
        Expected Answer:  "Alex"
        Diagnosed Cause:  RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION
        Diagnostic Note:  Ground-truth answer fact never appeared in the retrieved memory context payload.
        Injected Context (313 tokens): "[2026-09-14T03:54:00Z] Elena: [2026-09-14T03:54:00Z] Elena: That sounds like great advice—thanks so much! I’ll start with a simple service and focus on clean documentation. It’s encouraging to hear that small, well-presented projects can really make  ... [TRUNCATED]"
+       Model Generation: "Unknown"
   ----------------------------------------------------------------------------
 
 
-================================================================================
-CATEGORY: Unanswerable & Absent Memory Refusal (5 misses)
-================================================================================
-
-  ► FAILURE CAUSE: FALSE_RETRIEVAL_DISTRACTOR_TRAP (5 items)
-  ----------------------------------------------------------------------------
-  [01] Question ID: CAT8_AM_004
-       Question:         "What electric car model did Dave purchase in November?"
-       Expected Answer:  "Not mentioned / Unknown"
-       Diagnosed Cause:  FALSE_RETRIEVAL_DISTRACTOR_TRAP
-       Diagnostic Note:  Provider retrieved distractor memory payload for an unanswerable query.
-       Injected Context (745 tokens): "[2026-09-22T14:10:00Z] Dave: [2026-09-22T14:10:00Z] Dave: I saw a new electric car charging station installed in the parking garage today. [2026-11-24T21:51:00Z] Alex: [2026-11-24T21:51:00Z] Alex: Thanks, that's helpful! I’ll check the recent commits ... [TRUNCATED]"
-  ----------------------------------------------------------------------------
-  [02] Question ID: CAT8_AM_009
-       Question:         "What flight number did Tom take to Tokyo?"
-       Expected Answer:  "Not mentioned / Unknown"
-       Diagnosed Cause:  FALSE_RETRIEVAL_DISTRACTOR_TRAP
-       Diagnostic Note:  Provider retrieved distractor memory payload for an unanswerable query.
-       Injected Context (686 tokens): "[2026-09-14T03:06:00Z] Mark: [2026-09-14T03:06:00Z] Mark: I read an interesting news article about Tokyo and Japan high-speed rail expansion plans this morning. [2026-09-01T10:10:00Z] Assistant: [2026-09-01T10:10:00Z] Assistant: Certainly! Here’s a c ... [TRUNCATED]"
-  ----------------------------------------------------------------------------
-  [03] Question ID: CAT8_AM_016
-       Question:         "What brand of electric car charging station did Dave see?"
-       Expected Answer:  "Not mentioned / Unknown"
-       Diagnosed Cause:  FALSE_RETRIEVAL_DISTRACTOR_TRAP
-       Diagnostic Note:  Provider retrieved distractor memory payload for an unanswerable query.
-       Injected Context (243 tokens): "[2026-09-22T14:10:00Z] Dave: [2026-09-22T14:10:00Z] Dave: I saw a new electric car charging station installed in the parking garage today. [2026-11-24T21:51:00Z] Alex: [2026-11-24T21:51:00Z] Alex: Thanks, that's helpful! I’ll check the recent commits ... [TRUNCATED]"
-  ----------------------------------------------------------------------------
-  [04] Question ID: CAT8_AM_018
-       Question:         "What hotel did Tom stay at in Tokyo?"
-       Expected Answer:  "Not mentioned / Unknown"
-       Diagnosed Cause:  FALSE_RETRIEVAL_DISTRACTOR_TRAP
-       Diagnostic Note:  Provider retrieved distractor memory payload for an unanswerable query.
-       Injected Context (686 tokens): "[2026-09-14T03:06:00Z] Mark: [2026-09-14T03:06:00Z] Mark: I read an interesting news article about Tokyo and Japan high-speed rail expansion plans this morning. [2026-09-01T10:10:00Z] Assistant: [2026-09-01T10:10:00Z] Assistant: Certainly! Here’s a c ... [TRUNCATED]"
-  ----------------------------------------------------------------------------
-  [05] Question ID: CAT8_AM_028
-       Question:         "What movie did Tom watch on his flight to Tokyo?"
-       Expected Answer:  "Not mentioned / Unknown"
-       Diagnosed Cause:  FALSE_RETRIEVAL_DISTRACTOR_TRAP
-       Diagnostic Note:  Provider retrieved distractor memory payload for an unanswerable query.
-       Injected Context (279 tokens): "[2026-09-14T03:06:00Z] Mark: [2026-09-14T03:06:00Z] Mark: I read an interesting news article about Tokyo and Japan high-speed rail expansion plans this morning. [2026-09-01T10:10:00Z] Assistant: [2026-09-01T10:10:00Z] Assistant: Certainly! Here’s a c ... [TRUNCATED]"
-  ----------------------------------------------------------------------------
-
-
-Report generated by FP-AMB Evaluator Engine · 2026-08-26 14:25:30
+Report generated by FP-AMB Evaluator Engine · 2026-08-26 18:32:10

@@ -148,7 +148,7 @@ python -m fp_amb evaluate --provider examples/sample_memory_provider.py
 
 FP-AMB automatically exports interactive HTML dashboards, terminal-ready Markdown scorecards, and a dedicated **Misses & Failure Taxonomy Text Report** (`*_misses.txt`) after every evaluation run:
 
-These are real, unedited runs against the real integrations shipped in `examples/` and packaged in `results/` — [real MemPalace](examples/real_mempalace_provider.py) (52.3%) and [real mRAG](examples/real_mrag_provider.py) (76.5%).
+These are real, unedited full-LLM-generation runs (retrieval + answer generation, not retrieval alone) against the real integrations shipped in `examples/` and packaged in `results/` — [real MemPalace](examples/real_mempalace_provider.py) (34.2%) and [real mRAG](examples/real_mrag_provider.py) (58.0%).
 
 ### 1. Interactive Visual HTML Dashboard
 ![FP-AMB Visual HTML Exam Report — real mRAG](assets/html_report_sample_mrag.png)
@@ -184,8 +184,8 @@ FP-AMB tracks detailed context payload efficiency to prevent memory providers fr
 ```
 fp-amb-benchmark/
 ├── assets/                               # Sample report screenshots for documentation
-│   ├── html_report_sample_mrag.png       # HTML dashboard, real mRAG run (76.5%)
-│   ├── html_report_sample_mempalace.png  # HTML dashboard, real MemPalace run (52.3%)
+│   ├── html_report_sample_mrag.png       # HTML dashboard, real mRAG run (58.0%)
+│   ├── html_report_sample_mempalace.png  # HTML dashboard, real MemPalace run (34.2%)
 │   ├── markdown_report_sample_mrag.png   # Markdown/ASCII scorecard, real mRAG run
 │   ├── markdown_report_sample_mempalace.png # Markdown/ASCII scorecard, real MemPalace run
 │   └── misses_report_sample.png          # Misses & failure-taxonomy report, real MemPalace run

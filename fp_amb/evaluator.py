@@ -26,6 +26,16 @@ import os
 
 DEFAULT_OUTPUT_DIR = ROOT / "results"
 
+# Generic short acceptors ("no"/"yes") legitimately count toward a PASS -- a
+# bare correction/confirmation is an acceptable answer. But they are also
+# common enough in ordinary dialogue that treating them as "the fact is in
+# context" for failure-cause diagnosis produces false RETRIEVAL vs GENERATION
+# labels (verified: "no" alone made ~65% of Adversarial Defense misses look
+# like generation failures when the specific corrected fact was never
+# retrieved at all). Excluded only from that diagnostic check, not from
+# scoring.
+GENERIC_ACCEPTORS = {"no", "yes"}
+
 class FPAMBEvaluator:
     def __init__(
         self,
@@ -61,6 +71,8 @@ class FPAMBEvaluator:
         return elapsed
 
     def _query_llm(self, prompt: str) -> str:
+        if self.model_name and self.model_name.lower().startswith("gemini"):
+            return self._query_gemini(prompt)
         payload = {
             "model": self.model_name,
             "prompt": prompt,
@@ -72,6 +84,31 @@ class FPAMBEvaluator:
                 resp = requests.post(self.ollama_url, json=payload, timeout=90)
                 if resp.status_code == 200:
                     return resp.json().get("response", "").strip()
+            except Exception:
+                time.sleep(1)
+        return "[Connection Timeout]"
+
+    def _query_gemini(self, prompt: str) -> str:
+        api_key = os.getenv("GEMINI_API_KEY", "")
+        if not api_key:
+            return "[Gemini API Key Missing]"
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{self.model_name}:generateContent"
+        payload = {
+            "contents": [{"parts": [{"text": prompt}]}],
+            # Default (dynamic) thinking budget, not disabled: adversarial/gaslighting-
+            # worded questions need it to correct a false premise instead of defaulting
+            # to "Unknown" -- verified empirically, thinkingBudget=0 answered "Unknown"
+            # on every one even with the correcting fact present in context.
+            "generationConfig": {"temperature": 0.1, "maxOutputTokens": 1024},
+        }
+        headers = {"Content-Type": "application/json", "x-goog-api-key": api_key}
+        for attempt in range(3):
+            try:
+                resp = requests.post(url, json=payload, headers=headers, timeout=30)
+                if resp.status_code == 200:
+                    parts = resp.json().get("candidates", [{}])[0].get("content", {}).get("parts", [])
+                    return "".join(p.get("text", "") for p in parts).strip()
+                time.sleep(2 ** attempt if resp.status_code == 429 else 1)
             except Exception:
                 time.sleep(1)
         return "[Connection Timeout]"
@@ -176,7 +213,11 @@ Answer accurately based on context above. If context does not contain informatio
                     failure_reason = "Provider retrieved distractor memory payload for an unanswerable query."
                 else:
                     context_clean = context.lower()
-                    fact_in_context = any(ans.lower().strip() in context_clean for ans in accepted_list if len(ans.strip()) > 1)
+                    fact_in_context = any(
+                        ans.lower().strip() in context_clean
+                        for ans in accepted_list
+                        if len(ans.strip()) > 1 and ans.lower().strip() not in GENERIC_ACCEPTORS
+                    )
                     if not fact_in_context:
                         failure_cause = "RETRIEVAL_FAILURE_FACT_NOT_IN_MEMORY_INJECTION"
                         failure_reason = "Ground-truth answer fact never appeared in the retrieved memory context payload."
